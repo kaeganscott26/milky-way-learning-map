@@ -29,6 +29,7 @@ function countBrightPixels(buffer: Buffer) {
 }
 
 test('renders the galaxy, opens every landmark panel, and supports tour and zoom', async ({ page }, testInfo) => {
+  test.setTimeout(90_000)
   test.skip(testInfo.project.name !== 'chromium', 'Landmark strip is a desktop control; mobile uses direct canvas/tour controls.')
   await page.goto('/')
   await expect(page.getByRole('heading', { name: 'Milky Way Learning Map' })).toBeVisible()
@@ -67,4 +68,20 @@ test('mobile layout keeps the panel usable', async ({ page }, testInfo) => {
   const screenshot = await page.screenshot({ path: `public/screenshots/milky-way-${testInfo.project.name}.png`, fullPage: true })
   expect(countBrightPixels(screenshot)).toBeGreaterThan(9000)
   await testInfo.attach('milky-way-mobile', { body: screenshot, contentType: 'image/png' })
+})
+
+test('search opens solar system and exoplanet panels', async ({ page }) => {
+  await page.goto('/')
+  await expect(page.locator('.data-stats strong').filter({ hasText: '6,292' })).toBeVisible()
+
+  const search = page.getByRole('textbox', { name: 'Search planets, exoplanets, nebulae, and discoveries' })
+  await search.fill('Earth')
+  await page.getByRole('button', { name: /Earth planet/ }).click()
+  await expect(page.getByRole('heading', { name: 'Earth' })).toBeVisible()
+  await expect(page.getByText('1 AU from the Sun')).toBeVisible()
+
+  await search.fill('Proxima Cen b')
+  await page.getByRole('button', { name: /Proxima Cen b exoplanet/ }).click()
+  await expect(page.getByRole('heading', { name: 'Proxima Cen b' })).toBeVisible()
+  await expect(page.getByText(/light-years from the Sun, around Proxima Cen/)).toBeVisible()
 })

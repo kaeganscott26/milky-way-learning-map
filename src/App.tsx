@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from 'react'
-import { Compass, Crosshair, Info, LocateFixed, Map as MapIcon, Play, RotateCcw, Search, SkipForward, X } from 'lucide-react'
+import { useEffect, useMemo, useRef, useState } from 'react'
+import { Compass, Crosshair, Database, Info, LocateFixed, Map as MapIcon, Play, RotateCcw, Search, SkipForward, X } from 'lucide-react'
 import gsap from 'gsap'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
@@ -16,6 +16,8 @@ import {
   type LearningObject,
 } from './data/galaxyData'
 import { localStars, type LocalStar } from './data/localStars'
+import { exoplanetArchiveSnapshot, exoplanets, type Exoplanet } from './data/exoplanets'
+import { solarSystemObjects, type SolarSystemObject } from './data/solarSystem'
 
 type PanelItem = {
   id: string
@@ -36,6 +38,7 @@ type SceneApi = {
 
 const UNIT_PER_LY = 1 / 1000
 const LOCAL_UNIT_PER_LY = 1 / 80
+const SOLAR_UNIT_PER_AU = 0.045
 const sunPosition = new THREE.Vector3(sunGalactocentricDistanceLy * UNIT_PER_LY, 0, 0)
 
 function toScenePosition(positionLy: [number, number, number]) {
@@ -71,6 +74,37 @@ function panelFromStar(star: LocalStar): PanelItem {
     summary: `A real star from the HYG catalog. Spectral class: ${star.spectralClass}; apparent magnitude: ${star.apparentMagnitude}.`,
     fact: star.fact,
     sourceLabels: [sources.hyg.label],
+  }
+}
+
+function panelFromExoplanet(planet: Exoplanet): PanelItem {
+  const stats = [
+    planet.discoveryYear ? `discovered ${planet.discoveryYear}` : null,
+    planet.discoveryMethod,
+    planet.orbitalPeriodDays ? `${planet.orbitalPeriodDays.toLocaleString()} day orbit` : null,
+    planet.radiusEarth ? `${planet.radiusEarth.toLocaleString()} Earth radii` : null,
+  ].filter(Boolean)
+
+  return {
+    id: planet.id,
+    name: planet.name,
+    kind: 'confirmed exoplanet',
+    distance: `${planet.distanceLy.toLocaleString()} light-years from the Sun, around ${planet.host}`,
+    summary: `A confirmed planet in NASA's Exoplanet Archive. ${stats.join(' · ')}.`,
+    fact: planet.fact,
+    sourceLabels: [sources.nasaExoplanetArchive.label],
+  }
+}
+
+function panelFromSolarObject(object: SolarSystemObject): PanelItem {
+  return {
+    id: object.id,
+    name: object.name,
+    kind: object.kind,
+    distance: `${object.distanceAu.toLocaleString()} AU from the Sun in the magnified Solar System inset`,
+    summary: object.summary,
+    fact: object.fact,
+    sourceLabels: [sources.nasaSolarSystem.label, sources.nasaSolarSystemScale.label],
   }
 }
 
@@ -226,6 +260,7 @@ function createScene(
 
   const clickableObjects: THREE.Object3D[] = []
   const objectMeshes = new Map<string, THREE.Mesh>()
+  const objectBaseSizes = new Map<string, number>()
   const sharedSphere = new THREE.SphereGeometry(1, 32, 16)
 
   for (const object of learningObjects) {
@@ -243,6 +278,7 @@ function createScene(
     marker.userData = { item: panelFromObject(object), objectId: object.id }
     clickableObjects.push(marker)
     objectMeshes.set(object.id, marker)
+    objectBaseSizes.set(object.id, markerSize)
     scene.add(marker)
 
     const ring = new THREE.Mesh(
@@ -294,6 +330,82 @@ function createScene(
   localCloud.userData = { localStars: true }
   scene.add(localCloud)
 
+  const exoplanetPositions = new Float32Array(exoplanets.length * 3)
+  const exoplanetColors = new Float32Array(exoplanets.length * 3)
+  exoplanets.forEach((planet, index) => {
+    const position = toScenePosition(planet.positionLy)
+    exoplanetPositions[index * 3] = position.x
+    exoplanetPositions[index * 3 + 1] = position.y
+    exoplanetPositions[index * 3 + 2] = position.z
+    const planetColor = planet.radiusEarth && planet.radiusEarth > 8 ? '#ffc37b' : planet.radiusEarth && planet.radiusEarth < 1.6 ? '#75d5ff' : '#d6a4ff'
+    color.set(planetColor)
+    exoplanetColors[index * 3] = color.r
+    exoplanetColors[index * 3 + 1] = color.g
+    exoplanetColors[index * 3 + 2] = color.b
+  })
+
+  const exoplanetGeometry = new THREE.BufferGeometry()
+  exoplanetGeometry.setAttribute('position', new THREE.BufferAttribute(exoplanetPositions, 3))
+  exoplanetGeometry.setAttribute('color', new THREE.BufferAttribute(exoplanetColors, 3))
+  const exoplanetCloud = new THREE.Points(
+    exoplanetGeometry,
+    new THREE.PointsMaterial({
+      size: 0.13,
+      map: starTexture,
+      vertexColors: true,
+      transparent: true,
+      opacity: 0.72,
+      depthWrite: false,
+      blending: THREE.AdditiveBlending,
+    }),
+  )
+  exoplanetCloud.userData = { exoplanets: true }
+  scene.add(exoplanetCloud)
+
+  const solarGroup = new THREE.Group()
+  solarGroup.position.copy(sunPosition)
+  solarGroup.rotation.x = -0.18
+  scene.add(solarGroup)
+
+  const solarMeshes = new Map<string, THREE.Mesh>()
+  for (const object of solarSystemObjects) {
+    const orbitRadius = object.distanceAu * SOLAR_UNIT_PER_AU
+    const orbit = new THREE.LineLoop(
+      new THREE.BufferGeometry().setFromPoints(
+        Array.from({ length: 160 }, (_, index) => {
+          const theta = (index / 160) * Math.PI * 2
+          return new THREE.Vector3(Math.cos(theta) * orbitRadius, 0, Math.sin(theta) * orbitRadius)
+        }),
+      ),
+      new THREE.LineBasicMaterial({
+        color: object.color,
+        transparent: true,
+        opacity: object.kind === 'planet' ? 0.32 : 0.16,
+      }),
+    )
+    solarGroup.add(orbit)
+
+    const angle = object.distanceAu * 1.73
+    const marker = new THREE.Mesh(
+      sharedSphere,
+      new THREE.MeshBasicMaterial({
+        color: object.color,
+        transparent: true,
+        opacity: 0.86,
+        blending: THREE.AdditiveBlending,
+        depthWrite: false,
+      }),
+    )
+    marker.position.set(Math.cos(angle) * orbitRadius, object.kind === 'planet' ? 0.08 : -0.08, Math.sin(angle) * orbitRadius)
+    const markerSize = Math.max(0.08, Math.log10(object.radiusEarth + 1) * 0.28)
+    marker.scale.setScalar(markerSize)
+    marker.userData = { item: panelFromSolarObject(object), objectId: object.id, solarSystem: true }
+    clickableObjects.push(marker)
+    solarMeshes.set(object.id, marker)
+    objectBaseSizes.set(object.id, markerSize)
+    solarGroup.add(marker)
+  }
+
   const composer = new EffectComposer(renderer)
   composer.addPass(new RenderPass(scene, camera))
   const bloom = new UnrealBloomPass(new THREE.Vector2(container.clientWidth, container.clientHeight), 0.82, 0.45, 0.18)
@@ -318,7 +430,7 @@ function createScene(
     coreGlow.material.rotation += 0.002
     clickableObjects.forEach((object, index) => {
       const pulse = 1 + Math.sin(performance.now() * 0.0018 + index) * 0.04
-      object.scale.setScalar(objectSize(learningObjects[index]) * pulse)
+      object.scale.setScalar((objectBaseSizes.get(object.userData.objectId) ?? 0.2) * pulse)
     })
     controls.update()
     updateScale()
@@ -346,13 +458,33 @@ function createScene(
 
   const selectObject = (id: string) => {
     const object = learningObjects.find((entry) => entry.id === id)
-    if (!object) return
-    const position = toScenePosition(object.position)
-    const cameraOffset = object.scale === 'local' ? new THREE.Vector3(1.8, 1.2, 1.8) : new THREE.Vector3(6, 5, 6)
-    const cameraScene = position.clone().add(cameraOffset)
-    onSelect(panelFromObject(object))
-    gsap.to(camera.position, { x: cameraScene.x, y: cameraScene.y, z: cameraScene.z, duration: 1.25, ease: 'power2.inOut' })
-    gsap.to(controls.target, { x: position.x, y: position.y, z: position.z, duration: 1.25, ease: 'power2.inOut' })
+    if (object) {
+      const position = toScenePosition(object.position)
+      const cameraOffset = object.scale === 'local' ? new THREE.Vector3(1.8, 1.2, 1.8) : new THREE.Vector3(6, 5, 6)
+      const cameraScene = position.clone().add(cameraOffset)
+      onSelect(panelFromObject(object))
+      gsap.to(camera.position, { x: cameraScene.x, y: cameraScene.y, z: cameraScene.z, duration: 1.25, ease: 'power2.inOut' })
+      gsap.to(controls.target, { x: position.x, y: position.y, z: position.z, duration: 1.25, ease: 'power2.inOut' })
+      return
+    }
+
+    const solarObject = solarSystemObjects.find((entry) => entry.id === id)
+    const solarMesh = solarObject ? solarMeshes.get(solarObject.id) : null
+    if (solarObject && solarMesh) {
+      const position = solarMesh.getWorldPosition(new THREE.Vector3())
+      onSelect(panelFromSolarObject(solarObject))
+      gsap.to(camera.position, { x: position.x + 1.6, y: position.y + 1.1, z: position.z + 1.6, duration: 1.25, ease: 'power2.inOut' })
+      gsap.to(controls.target, { x: position.x, y: position.y, z: position.z, duration: 1.25, ease: 'power2.inOut' })
+      return
+    }
+
+    const planet = exoplanets.find((entry) => entry.id === id)
+    if (planet) {
+      const position = toScenePosition(planet.positionLy)
+      onSelect(panelFromExoplanet(planet))
+      gsap.to(camera.position, { x: position.x + 1.5, y: position.y + 1.1, z: position.z + 1.5, duration: 1.25, ease: 'power2.inOut' })
+      gsap.to(controls.target, { x: position.x, y: position.y, z: position.z, duration: 1.25, ease: 'power2.inOut' })
+    }
   }
 
   const onPointerMove = (event: PointerEvent) => {
@@ -360,7 +492,7 @@ function createScene(
     pointer.x = ((event.clientX - rect.left) / rect.width) * 2 - 1
     pointer.y = -((event.clientY - rect.top) / rect.height) * 2 + 1
     raycaster.setFromCamera(pointer, camera)
-    const hits = raycaster.intersectObjects([...clickableObjects, localCloud], false)
+    const hits = raycaster.intersectObjects([...clickableObjects, localCloud, exoplanetCloud], false)
     renderer.domElement.style.cursor = hits.length ? 'pointer' : 'grab'
   }
 
@@ -369,13 +501,19 @@ function createScene(
     pointer.x = ((event.clientX - rect.left) / rect.width) * 2 - 1
     pointer.y = -((event.clientY - rect.top) / rect.height) * 2 + 1
     raycaster.setFromCamera(pointer, camera)
-    const hits = raycaster.intersectObjects([...clickableObjects, localCloud], false)
+    const hits = raycaster.intersectObjects([...clickableObjects, localCloud, exoplanetCloud], false)
     const hit = hits[0]
     if (!hit) return
 
     if (hit.object.userData.localStars && typeof hit.index === 'number') {
       const star = localStars[hit.index]
       if (star) onSelect(panelFromStar(star))
+      return
+    }
+
+    if (hit.object.userData.exoplanets && typeof hit.index === 'number') {
+      const planet = exoplanets[hit.index]
+      if (planet) onSelect(panelFromExoplanet(planet))
       return
     }
 
@@ -420,6 +558,27 @@ function App() {
   const [zoom, setZoom] = useState(0)
   const [tourIndex, setTourIndex] = useState(0)
   const [tourActive, setTourActive] = useState(false)
+  const [query, setQuery] = useState('')
+
+  const searchResults = useMemo(() => {
+    const normalized = query.trim().toLowerCase()
+    if (!normalized) return []
+
+    const candidates = [
+      ...learningObjects.map((object) => ({ id: object.id, name: object.name, kind: object.kind })),
+      ...solarSystemObjects.map((object) => ({ id: object.id, name: object.name, kind: object.kind })),
+      ...exoplanets.map((planet) => ({ id: planet.id, name: planet.name, kind: 'exoplanet' })),
+    ]
+
+    return candidates
+      .filter((candidate) => candidate.name.toLowerCase().includes(normalized))
+      .sort((a, b) => {
+        const aStarts = a.name.toLowerCase().startsWith(normalized) ? 0 : 1
+        const bStarts = b.name.toLowerCase().startsWith(normalized) ? 0 : 1
+        return aStarts - bStarts || a.name.localeCompare(b.name)
+      })
+      .slice(0, 12)
+  }, [query])
 
   useEffect(() => {
     if (!containerRef.current) return undefined
@@ -459,6 +618,21 @@ function App() {
       </header>
 
       <aside className="tool-panel" aria-label="Exploration controls">
+        <div className="data-stats" aria-label="Loaded data layers">
+          <div>
+            <Database size={15} aria-hidden="true" />
+            <strong>{exoplanetArchiveSnapshot.planetsWith3dPlacement.toLocaleString()}</strong>
+            <span>exo-planets placed</span>
+          </div>
+          <div>
+            <strong>{solarSystemObjects.length}</strong>
+            <span>solar bodies</span>
+          </div>
+          <div>
+            <strong>{learningObjects.length}</strong>
+            <span>landmarks</span>
+          </div>
+        </div>
         <div className="control-row">
           <button type="button" onClick={() => sceneRef.current?.selectObject('sun')} aria-label="Go to the Sun">
             <LocateFixed size={18} aria-hidden="true" />
@@ -488,6 +662,34 @@ function App() {
         <div className="ruler" aria-hidden="true">
           <span />
           <strong>{zoom < 45 ? '10,000 ly' : zoom < 82 ? '1,000 ly' : '100 ly'}</strong>
+        </div>
+        <div className="search-panel">
+          <label>
+            <Search size={15} aria-hidden="true" />
+            <input
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+              placeholder="Find Earth, Proxima Cen b, Crab..."
+              aria-label="Search planets, exoplanets, nebulae, and discoveries"
+            />
+          </label>
+          {searchResults.length > 0 && (
+            <div className="search-results">
+              {searchResults.map((result) => (
+                <button
+                  key={result.id}
+                  type="button"
+                  onClick={() => {
+                    sceneRef.current?.selectObject(result.id)
+                    setQuery(result.name)
+                  }}
+                >
+                  <span>{result.name}</span>
+                  <small>{result.kind}</small>
+                </button>
+              ))}
+            </div>
+          )}
         </div>
       </aside>
 
@@ -540,7 +742,7 @@ function App() {
       </nav>
 
       <footer className="source-footer">
-        Data: HYG Database v4.1 for nearby stars; NASA and NASA/JPL pages for Milky Way structure, Sun position, Sagittarius A*, and Messier object distances.
+        Data: HYG Database v4.1 for nearby stars; NASA Exoplanet Archive snapshot ({exoplanetArchiveSnapshot.retrieved}) for {exoplanetArchiveSnapshot.planetsWith3dPlacement.toLocaleString()} confirmed exoplanets with 3D placement; NASA/JPL pages for Solar System scale, Milky Way structure, and major landmarks. {exoplanetArchiveSnapshot.missingPlacement} confirmed exoplanets lacked enough location data for placement.
         {' '}
         {Object.values(sources).map((source, index) => (
           <a key={source.url} href={source.url} target="_blank" rel="noreferrer">
