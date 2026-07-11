@@ -1,5 +1,20 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { Compass, Crosshair, Database, Info, LocateFixed, Map as MapIcon, Play, RotateCcw, Search, SkipForward, X } from 'lucide-react'
+import {
+  ArrowLeft,
+  Clock3,
+  Compass,
+  Crosshair,
+  Database,
+  Eye,
+  Info,
+  LocateFixed,
+  Map as MapIcon,
+  Play,
+  RotateCcw,
+  Search,
+  SkipForward,
+  X,
+} from 'lucide-react'
 import gsap from 'gsap'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
@@ -27,14 +42,43 @@ type PanelItem = {
   summary: string
   fact: string
   sourceLabels: string[]
+  focus?: FocusVisual
+}
+
+type FocusVisual = {
+  name: string
+  label: string
+  className: string
+  note: string
+  facts: string[]
+  ringed?: boolean
 }
 
 type SceneApi = {
   flyTo: (camera: [number, number, number], target: [number, number, number]) => void
   selectObject: (id: string) => void
+  returnToPreviousView: () => void
+  setTimeScale: (yearsPerSecond: number) => void
+  resetSimulationTime: () => void
   setZoom: (value: number) => void
   reset: () => void
 }
+
+type FlightStatus = {
+  active: boolean
+  label: string
+  remainingLy: number
+  canReturn: boolean
+}
+
+const timeScaleOptions = [
+  { label: 'Paused', value: 0 },
+  { label: 'Real time', value: 1 / 31_557_600 },
+  { label: '1 yr/s', value: 1 },
+  { label: '1k yr/s', value: 1_000 },
+  { label: '100k yr/s', value: 100_000 },
+  { label: '1M yr/s', value: 1_000_000 },
+]
 
 const UNIT_PER_LY = 1 / 1000
 const LOCAL_UNIT_PER_LY = 1 / 80
@@ -51,6 +95,65 @@ function localStarPosition(star: LocalStar) {
     star.positionLy[1] * LOCAL_UNIT_PER_LY,
     star.positionLy[2] * LOCAL_UNIT_PER_LY,
   )
+}
+
+function yearsLabel(years: number) {
+  const absolute = Math.abs(years)
+  if (absolute >= 1_000_000) return `${(years / 1_000_000).toFixed(2)} million years`
+  if (absolute >= 1_000) return `${(years / 1_000).toFixed(1)} thousand years`
+  if (absolute >= 1) return `${years.toFixed(1)} years`
+  return 'present day'
+}
+
+function exoplanetFocus(planet: Exoplanet): FocusVisual {
+  const classLabel = planet.visualClass.replaceAll('-', ' ')
+  const facts = [
+    planet.radiusEarth ? `${planet.radiusEarth.toLocaleString()} Earth radii` : 'Radius not listed',
+    planet.massEarth ? `${planet.massEarth.toLocaleString()} Earth masses` : 'Mass not listed',
+    planet.equilibriumTemperatureK ? `${planet.equilibriumTemperatureK.toLocaleString()} K equilibrium temperature` : 'Temperature not listed',
+    planet.semiMajorAxisAu ? `${planet.semiMajorAxisAu.toLocaleString()} AU orbit` : 'Orbit size not listed',
+  ]
+
+  return {
+    name: planet.name,
+    label: classLabel,
+    className: `planet-${planet.visualClass}`,
+    note: 'Artist’s visualization based on known planetary data. Actual surface appearance is unknown.',
+    facts,
+    ringed: planet.visualClass === 'gas-giant' || planet.visualClass === 'ice-giant',
+  }
+}
+
+function solarFocus(object: SolarSystemObject): FocusVisual {
+  const specialClass =
+    object.id === 'solar-earth'
+      ? 'planet-earth'
+      : object.id === 'solar-mars'
+        ? 'planet-mars'
+        : object.id === 'solar-jupiter'
+          ? 'planet-jupiter'
+          : object.id === 'solar-saturn'
+            ? 'planet-saturn'
+            : object.id === 'solar-neptune'
+              ? 'planet-neptune'
+              : object.id === 'solar-uranus'
+                ? 'planet-uranus'
+                : object.kind === 'dwarf planet'
+                  ? 'planet-dwarf'
+                  : 'planet-rocky-world'
+
+  return {
+    name: object.name,
+    label: object.kind,
+    className: specialClass,
+    note: 'Procedural visualization using known Solar System class, color, and scale cues.',
+    facts: [
+      `${object.distanceAu.toLocaleString()} AU from the Sun`,
+      `${object.orbitalPeriodYears.toLocaleString()} Earth-year orbital period`,
+      `${object.radiusEarth.toLocaleString()} Earth radii`,
+    ],
+    ringed: object.id === 'solar-saturn',
+  }
 }
 
 function panelFromObject(object: LearningObject): PanelItem {
@@ -71,7 +174,7 @@ function panelFromStar(star: LocalStar): PanelItem {
     name: star.name,
     kind: 'catalog star',
     distance: `${star.distanceLy.toLocaleString()} light-years from the Sun`,
-    summary: `A real star from the HYG catalog. Spectral class: ${star.spectralClass}; apparent magnitude: ${star.apparentMagnitude}.`,
+    summary: `A real star from the HYG catalog. Spectral class: ${star.spectralClass}; apparent magnitude: ${star.apparentMagnitude}. ${star.hasMeasuredMotion ? 'Its displayed motion uses HYG Cartesian velocity components.' : 'No reliable velocity vector is listed, so it stays anchored in simulation time.'}`,
     fact: star.fact,
     sourceLabels: [sources.hyg.label],
   }
@@ -93,6 +196,7 @@ function panelFromExoplanet(planet: Exoplanet): PanelItem {
     summary: `A confirmed planet in NASA's Exoplanet Archive. ${stats.join(' · ')}.`,
     fact: planet.fact,
     sourceLabels: [sources.nasaExoplanetArchive.label],
+    focus: exoplanetFocus(planet),
   }
 }
 
@@ -105,6 +209,7 @@ function panelFromSolarObject(object: SolarSystemObject): PanelItem {
     summary: object.summary,
     fact: object.fact,
     sourceLabels: [sources.nasaSolarSystem.label, sources.nasaSolarSystemScale.label],
+    focus: solarFocus(object),
   }
 }
 
@@ -190,10 +295,25 @@ function objectSize(object: LearningObject) {
   return Math.max(0.18, object.size * UNIT_PER_LY * 0.55)
 }
 
+function galacticRotatedPosition(positionLy: [number, number, number], years: number) {
+  const radius = Math.hypot(positionLy[0], positionLy[2])
+  if (radius < 600) return toScenePosition(positionLy)
+  const presentAngle = Math.atan2(positionLy[2], positionLy[0])
+  const orbitalPeriodYears = 250_000_000 * Math.max(0.18, radius / sunGalactocentricDistanceLy)
+  const angle = presentAngle + (years / orbitalPeriodYears) * Math.PI * 2
+  return new THREE.Vector3(
+    Math.cos(angle) * radius * UNIT_PER_LY,
+    positionLy[1] * UNIT_PER_LY,
+    Math.sin(angle) * radius * UNIT_PER_LY,
+  )
+}
+
 function createScene(
   container: HTMLDivElement,
   onSelect: (item: PanelItem) => void,
   onScale: (scaleLabel: string) => void,
+  onFlight: (status: FlightStatus) => void,
+  onSimulation: (years: number) => void,
 ): SceneApi {
   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false })
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
@@ -216,6 +336,15 @@ function createScene(
   controls.minDistance = 1.6
   controls.maxDistance = 118
   controls.target.set(12, 0, 0)
+
+  let timeScaleYearsPerSecond = 0
+  let simulationYears = 0
+  let lastFrameTime = performance.now()
+  let lastReportedSimulationYears = 0
+  let selectedObjectId = 'sun'
+  let flightActive = false
+  let previousView: { camera: THREE.Vector3; target: THREE.Vector3 } | null = null
+  let activeFlightDestination: THREE.Vector3 | null = null
 
   scene.add(new THREE.AmbientLight('#9db8ff', 0.42))
   const coreLight = new THREE.PointLight('#ffc891', 55, 42, 1.8)
@@ -261,6 +390,7 @@ function createScene(
   const clickableObjects: THREE.Object3D[] = []
   const objectMeshes = new Map<string, THREE.Mesh>()
   const objectBaseSizes = new Map<string, number>()
+  const landmarkRecords: Array<{ object: LearningObject; marker: THREE.Mesh; ring: THREE.Mesh; baseSize: number }> = []
   const sharedSphere = new THREE.SphereGeometry(1, 32, 16)
 
   for (const object of learningObjects) {
@@ -288,6 +418,7 @@ function createScene(
     ring.rotation.x = Math.PI / 2
     ring.position.copy(marker.position)
     scene.add(ring)
+    landmarkRecords.push({ object, marker, ring, baseSize: markerSize })
   }
 
   const sunMarker = objectMeshes.get('sun')
@@ -298,6 +429,8 @@ function createScene(
   }
 
   const localPositions = new Float32Array(localStars.length * 3)
+  const localBasePositions = new Float32Array(localStars.length * 3)
+  const localVelocityLyPerYear = new Float32Array(localStars.length * 3)
   const localColors = new Float32Array(localStars.length * 3)
   const color = new THREE.Color()
 
@@ -306,6 +439,12 @@ function createScene(
     localPositions[index * 3] = position.x
     localPositions[index * 3 + 1] = position.y
     localPositions[index * 3 + 2] = position.z
+    localBasePositions[index * 3] = star.positionLy[0]
+    localBasePositions[index * 3 + 1] = star.positionLy[1]
+    localBasePositions[index * 3 + 2] = star.positionLy[2]
+    localVelocityLyPerYear[index * 3] = star.velocityLyPerYear[0]
+    localVelocityLyPerYear[index * 3 + 1] = star.velocityLyPerYear[1]
+    localVelocityLyPerYear[index * 3 + 2] = star.velocityLyPerYear[2]
     color.set(star.color)
     localColors[index * 3] = color.r
     localColors[index * 3 + 1] = color.g
@@ -331,12 +470,16 @@ function createScene(
   scene.add(localCloud)
 
   const exoplanetPositions = new Float32Array(exoplanets.length * 3)
+  const exoplanetBasePositions = new Float32Array(exoplanets.length * 3)
   const exoplanetColors = new Float32Array(exoplanets.length * 3)
   exoplanets.forEach((planet, index) => {
     const position = toScenePosition(planet.positionLy)
     exoplanetPositions[index * 3] = position.x
     exoplanetPositions[index * 3 + 1] = position.y
     exoplanetPositions[index * 3 + 2] = position.z
+    exoplanetBasePositions[index * 3] = planet.positionLy[0]
+    exoplanetBasePositions[index * 3 + 1] = planet.positionLy[1]
+    exoplanetBasePositions[index * 3 + 2] = planet.positionLy[2]
     const planetColor = planet.radiusEarth && planet.radiusEarth > 8 ? '#ffc37b' : planet.radiusEarth && planet.radiusEarth < 1.6 ? '#75d5ff' : '#d6a4ff'
     color.set(planetColor)
     exoplanetColors[index * 3] = color.r
@@ -368,6 +511,7 @@ function createScene(
   scene.add(solarGroup)
 
   const solarMeshes = new Map<string, THREE.Mesh>()
+  const solarRecords: Array<{ object: SolarSystemObject; marker: THREE.Mesh; orbitRadius: number; initialAngle: number; baseSize: number }> = []
   for (const object of solarSystemObjects) {
     const orbitRadius = object.distanceAu * SOLAR_UNIT_PER_AU
     const orbit = new THREE.LineLoop(
@@ -391,20 +535,34 @@ function createScene(
       new THREE.MeshBasicMaterial({
         color: object.color,
         transparent: true,
-        opacity: 0.86,
-        blending: THREE.AdditiveBlending,
+        opacity: 0.68,
         depthWrite: false,
       }),
     )
     marker.position.set(Math.cos(angle) * orbitRadius, object.kind === 'planet' ? 0.08 : -0.08, Math.sin(angle) * orbitRadius)
-    const markerSize = Math.max(0.08, Math.log10(object.radiusEarth + 1) * 0.28)
+    const markerSize = Math.max(0.045, Math.log10(object.radiusEarth + 1) * 0.16)
     marker.scale.setScalar(markerSize)
     marker.userData = { item: panelFromSolarObject(object), objectId: object.id, solarSystem: true }
     clickableObjects.push(marker)
     solarMeshes.set(object.id, marker)
     objectBaseSizes.set(object.id, markerSize)
     solarGroup.add(marker)
+    solarRecords.push({ object, marker, orbitRadius, initialAngle: angle, baseSize: markerSize })
   }
+
+  const highlight = new THREE.Mesh(
+    new THREE.RingGeometry(0.55, 0.62, 72),
+    new THREE.MeshBasicMaterial({ color: '#9fe6ff', transparent: true, opacity: 0.86, side: THREE.DoubleSide }),
+  )
+  highlight.rotation.x = Math.PI / 2
+  highlight.visible = false
+  scene.add(highlight)
+
+  const pathLine = new THREE.Line(
+    new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(), new THREE.Vector3()]),
+    new THREE.LineBasicMaterial({ color: '#9fe6ff', transparent: true, opacity: 0 }),
+  )
+  scene.add(pathLine)
 
   const composer = new EffectComposer(renderer)
   composer.addPass(new RenderPass(scene, camera))
@@ -416,6 +574,118 @@ function createScene(
   const pointer = new THREE.Vector2()
   let raf = 0
 
+  const getObjectScenePosition = (id: string) => {
+    const landmark = landmarkRecords.find((record) => record.object.id === id)
+    if (landmark) return landmark.marker.position.clone()
+
+    const solarMesh = solarMeshes.get(id)
+    if (solarMesh) return solarMesh.getWorldPosition(new THREE.Vector3())
+
+    const planetIndex = exoplanets.findIndex((planet) => planet.id === id)
+    if (planetIndex >= 0) {
+      return new THREE.Vector3(
+        exoplanetPositions[planetIndex * 3],
+        exoplanetPositions[planetIndex * 3 + 1],
+        exoplanetPositions[planetIndex * 3 + 2],
+      )
+    }
+
+    const starIndex = localStars.findIndex((star) => star.id === id)
+    if (starIndex >= 0) {
+      return new THREE.Vector3(
+        localPositions[starIndex * 3],
+        localPositions[starIndex * 3 + 1],
+        localPositions[starIndex * 3 + 2],
+      )
+    }
+
+    return null
+  }
+
+  const shouldRotateLandmark = (object: LearningObject) =>
+    object.kind !== 'core' &&
+    object.id !== 'fermi-bubbles-north' &&
+    object.id !== 'fermi-bubbles-south' &&
+    object.id !== 'local-bubble'
+
+  const updateSimulationPositions = () => {
+    const localAttribute = localGeometry.getAttribute('position') as THREE.BufferAttribute
+    for (let index = 0; index < localStars.length; index += 1) {
+      const baseX = localBasePositions[index * 3]
+      const baseY = localBasePositions[index * 3 + 1]
+      const baseZ = localBasePositions[index * 3 + 2]
+      const nextX = baseX + localVelocityLyPerYear[index * 3] * simulationYears
+      const nextY = baseY + localVelocityLyPerYear[index * 3 + 1] * simulationYears
+      const nextZ = baseZ + localVelocityLyPerYear[index * 3 + 2] * simulationYears
+      localPositions[index * 3] = sunPosition.x + nextX * LOCAL_UNIT_PER_LY
+      localPositions[index * 3 + 1] = nextY * LOCAL_UNIT_PER_LY
+      localPositions[index * 3 + 2] = nextZ * LOCAL_UNIT_PER_LY
+    }
+    localAttribute.needsUpdate = true
+
+    const exoplanetAttribute = exoplanetGeometry.getAttribute('position') as THREE.BufferAttribute
+    for (let index = 0; index < exoplanets.length; index += 1) {
+      const planet = exoplanets[index]
+      const hostPosition = galacticRotatedPosition(
+        [
+          exoplanetBasePositions[index * 3],
+          exoplanetBasePositions[index * 3 + 1],
+          exoplanetBasePositions[index * 3 + 2],
+        ],
+        simulationYears,
+      )
+      const periodYears = planet.orbitalPeriodDays ? planet.orbitalPeriodDays / 365.25 : null
+      const orbitRadius = planet.semiMajorAxisAu ? Math.min(0.42, Math.max(0.018, planet.semiMajorAxisAu * 0.022)) : 0
+      const theta = periodYears ? (simulationYears / periodYears) * Math.PI * 2 + index * 0.83 : index * 0.83
+      exoplanetPositions[index * 3] = hostPosition.x + Math.cos(theta) * orbitRadius
+      exoplanetPositions[index * 3 + 1] = hostPosition.y + Math.sin(theta * 0.37) * orbitRadius * 0.16
+      exoplanetPositions[index * 3 + 2] = hostPosition.z + Math.sin(theta) * orbitRadius
+    }
+    exoplanetAttribute.needsUpdate = true
+
+    for (const record of landmarkRecords) {
+      const nextPosition = shouldRotateLandmark(record.object)
+        ? galacticRotatedPosition(record.object.position, simulationYears)
+        : toScenePosition(record.object.position)
+      record.marker.position.copy(nextPosition)
+      record.ring.position.copy(nextPosition)
+    }
+
+    for (const record of solarRecords) {
+      const theta = record.initialAngle + (simulationYears / record.object.orbitalPeriodYears) * Math.PI * 2
+      record.marker.position.set(
+        Math.cos(theta) * record.orbitRadius,
+        record.object.kind === 'planet' ? 0.08 : -0.08,
+        Math.sin(theta) * record.orbitRadius,
+      )
+    }
+  }
+
+  const updateHighlight = () => {
+    const selectedPosition = getObjectScenePosition(selectedObjectId)
+    highlight.visible = Boolean(selectedPosition)
+    if (!selectedPosition) return
+    highlight.position.copy(selectedPosition)
+    const distance = camera.position.distanceTo(selectedPosition)
+    const size = THREE.MathUtils.clamp(distance * 0.08, 0.28, 2.7)
+    highlight.scale.setScalar(size * (1 + Math.sin(performance.now() * 0.004) * 0.08))
+  }
+
+  const updateRenderQuality = () => {
+    const distanceUnits = camera.position.distanceTo(controls.target)
+    const galaxyScale = THREE.MathUtils.clamp((distanceUnits - 7) / 72, 0, 1)
+    const flightFade = flightActive ? 0.42 : 1
+    bloom.strength = THREE.MathUtils.lerp(0.16, 0.28, 1 - galaxyScale) * flightFade
+    bloom.radius = THREE.MathUtils.lerp(0.12, 0.22, 1 - galaxyScale)
+    galaxyMaterial.size = THREE.MathUtils.lerp(0.055, 0.11, 1 - galaxyScale)
+    galaxyMaterial.opacity = THREE.MathUtils.lerp(0.72, 0.9, 1 - galaxyScale)
+    localCloud.material.size = THREE.MathUtils.lerp(0.022, 0.038, 1 - galaxyScale)
+    localCloud.material.opacity = THREE.MathUtils.lerp(0.1, 0.36, 1 - galaxyScale) * flightFade
+    exoplanetCloud.material.size = THREE.MathUtils.lerp(0.018, 0.034, 1 - galaxyScale)
+    exoplanetCloud.material.opacity = THREE.MathUtils.lerp(0.08, 0.22, 1 - galaxyScale) * flightFade
+    coreSpriteMaterial.opacity = THREE.MathUtils.lerp(0.3, 0.5, 1 - galaxyScale)
+  }
+
   const updateScale = () => {
     const distanceUnits = camera.position.distanceTo(controls.target)
     const viewLy = Math.round(distanceUnits / UNIT_PER_LY)
@@ -425,23 +695,74 @@ function createScene(
 
   const animate = () => {
     raf = window.requestAnimationFrame(animate)
-    galaxy.rotation.y += 0.00008
-    dust.rotation.y += 0.000055
+    const now = performance.now()
+    const deltaSeconds = Math.min(0.08, (now - lastFrameTime) / 1000)
+    lastFrameTime = now
+    simulationYears += timeScaleYearsPerSecond * deltaSeconds
+    if (Math.abs(simulationYears - lastReportedSimulationYears) > Math.max(0.5, Math.abs(timeScaleYearsPerSecond) * 0.5)) {
+      lastReportedSimulationYears = simulationYears
+      onSimulation(simulationYears)
+    }
+    updateSimulationPositions()
+    galaxy.rotation.y += 0.00008 + timeScaleYearsPerSecond * 0.0000000009
+    dust.rotation.y += 0.000055 + timeScaleYearsPerSecond * 0.0000000005
     coreGlow.material.rotation += 0.002
     clickableObjects.forEach((object, index) => {
-      const pulse = 1 + Math.sin(performance.now() * 0.0018 + index) * 0.04
-      object.scale.setScalar((objectBaseSizes.get(object.userData.objectId) ?? 0.2) * pulse)
+      const baseSize = objectBaseSizes.get(object.userData.objectId) ?? 0.2
+      const selectedBoost = object.userData.objectId === selectedObjectId ? 1.9 : 1
+      const pulse = 1 + Math.sin(now * 0.0018 + index) * 0.04
+      const distanceFade = THREE.MathUtils.clamp(camera.position.distanceTo(controls.target) / 78, 0.35, 1)
+      object.scale.setScalar(baseSize * pulse * selectedBoost * distanceFade)
     })
+    updateHighlight()
+    updateRenderQuality()
     controls.update()
     updateScale()
+    if (flightActive && activeFlightDestination) {
+      onFlight({
+        active: true,
+        label: 'Traveling through the Milky Way',
+        remainingLy: Math.round(camera.position.distanceTo(activeFlightDestination) / UNIT_PER_LY),
+        canReturn: Boolean(previousView),
+      })
+    }
     composer.render()
+  }
+
+  const startFlight = (cameraScene: THREE.Vector3, targetScene: THREE.Vector3, label: string, rememberView = true) => {
+    if (rememberView) {
+      previousView = { camera: camera.position.clone(), target: controls.target.clone() }
+    }
+    flightActive = true
+    activeFlightDestination = targetScene.clone()
+    const travelLy = camera.position.distanceTo(cameraScene) / UNIT_PER_LY
+    const duration = THREE.MathUtils.clamp(1.2 + Math.log10(Math.max(10, travelLy)) * 0.75, 1.8, 5.8)
+    pathLine.geometry.dispose()
+    pathLine.geometry = new THREE.BufferGeometry().setFromPoints([controls.target.clone(), targetScene.clone()])
+    ;(pathLine.material as THREE.LineBasicMaterial).opacity = 0.42
+    onFlight({ active: true, label, remainingLy: Math.round(travelLy), canReturn: Boolean(previousView) })
+    gsap.killTweensOf(camera.position)
+    gsap.killTweensOf(controls.target)
+    gsap.to(camera.position, { x: cameraScene.x, y: cameraScene.y, z: cameraScene.z, duration, ease: 'power3.inOut' })
+    gsap.to(controls.target, {
+      x: targetScene.x,
+      y: targetScene.y,
+      z: targetScene.z,
+      duration,
+      ease: 'power3.inOut',
+      onComplete: () => {
+        flightActive = false
+        activeFlightDestination = null
+        gsap.to(pathLine.material, { opacity: 0, duration: 0.8 })
+        onFlight({ active: false, label: '', remainingLy: 0, canReturn: Boolean(previousView) })
+      },
+    })
   }
 
   const flyTo = (cameraTarget: [number, number, number], lookTarget: [number, number, number]) => {
     const cameraScene = new THREE.Vector3(cameraTarget[0], cameraTarget[1], cameraTarget[2]).multiplyScalar(UNIT_PER_LY)
     const targetScene = new THREE.Vector3(lookTarget[0], lookTarget[1], lookTarget[2]).multiplyScalar(UNIT_PER_LY)
-    gsap.to(camera.position, { x: cameraScene.x, y: cameraScene.y, z: cameraScene.z, duration: 2.2, ease: 'power3.inOut' })
-    gsap.to(controls.target, { x: targetScene.x, y: targetScene.y, z: targetScene.z, duration: 2.2, ease: 'power3.inOut' })
+    startFlight(cameraScene, targetScene, 'Guided tour flight', false)
   }
 
   const setZoom = (value: number) => {
@@ -452,38 +773,46 @@ function createScene(
     const targetLocal = sunPosition.clone()
     const cameraNext = overview.lerp(local, t)
     const targetNext = targetOverview.lerp(targetLocal, t)
-    gsap.to(camera.position, { x: cameraNext.x, y: cameraNext.y, z: cameraNext.z, duration: 0.9, ease: 'power2.out' })
-    gsap.to(controls.target, { x: targetNext.x, y: targetNext.y, z: targetNext.z, duration: 0.9, ease: 'power2.out' })
+    startFlight(cameraNext, targetNext, 'Scaling the map view', false)
   }
 
   const selectObject = (id: string) => {
     const object = learningObjects.find((entry) => entry.id === id)
     if (object) {
-      const position = toScenePosition(object.position)
-      const cameraOffset = object.scale === 'local' ? new THREE.Vector3(1.8, 1.2, 1.8) : new THREE.Vector3(6, 5, 6)
+      selectedObjectId = object.id
+      const position = getObjectScenePosition(object.id) ?? toScenePosition(object.position)
+      const cameraOffset = object.scale === 'local' ? new THREE.Vector3(1.8, 1.2, 1.8) : new THREE.Vector3(7.5, 5.5, 7.5)
       const cameraScene = position.clone().add(cameraOffset)
       onSelect(panelFromObject(object))
-      gsap.to(camera.position, { x: cameraScene.x, y: cameraScene.y, z: cameraScene.z, duration: 1.25, ease: 'power2.inOut' })
-      gsap.to(controls.target, { x: position.x, y: position.y, z: position.z, duration: 1.25, ease: 'power2.inOut' })
+      startFlight(cameraScene, position, `Traveling to ${object.name}`)
       return
     }
 
     const solarObject = solarSystemObjects.find((entry) => entry.id === id)
     const solarMesh = solarObject ? solarMeshes.get(solarObject.id) : null
     if (solarObject && solarMesh) {
+      selectedObjectId = solarObject.id
       const position = solarMesh.getWorldPosition(new THREE.Vector3())
       onSelect(panelFromSolarObject(solarObject))
-      gsap.to(camera.position, { x: position.x + 1.6, y: position.y + 1.1, z: position.z + 1.6, duration: 1.25, ease: 'power2.inOut' })
-      gsap.to(controls.target, { x: position.x, y: position.y, z: position.z, duration: 1.25, ease: 'power2.inOut' })
+      startFlight(position.clone().add(new THREE.Vector3(1.45, 1.05, 1.45)), position, `Traveling to ${solarObject.name}`)
       return
     }
 
     const planet = exoplanets.find((entry) => entry.id === id)
     if (planet) {
-      const position = toScenePosition(planet.positionLy)
+      selectedObjectId = planet.id
+      const position = getObjectScenePosition(planet.id) ?? toScenePosition(planet.positionLy)
       onSelect(panelFromExoplanet(planet))
-      gsap.to(camera.position, { x: position.x + 1.5, y: position.y + 1.1, z: position.z + 1.5, duration: 1.25, ease: 'power2.inOut' })
-      gsap.to(controls.target, { x: position.x, y: position.y, z: position.z, duration: 1.25, ease: 'power2.inOut' })
+      startFlight(position.clone().add(new THREE.Vector3(1.35, 1.05, 1.35)), position, `Traveling to ${planet.name}`)
+      return
+    }
+
+    const star = localStars.find((entry) => entry.id === id)
+    if (star) {
+      selectedObjectId = star.id
+      const position = getObjectScenePosition(star.id) ?? localStarPosition(star)
+      onSelect(panelFromStar(star))
+      startFlight(position.clone().add(new THREE.Vector3(1.1, 0.8, 1.1)), position, `Traveling to ${star.name}`)
     }
   }
 
@@ -507,18 +836,18 @@ function createScene(
 
     if (hit.object.userData.localStars && typeof hit.index === 'number') {
       const star = localStars[hit.index]
-      if (star) onSelect(panelFromStar(star))
+      if (star) selectObject(star.id)
       return
     }
 
     if (hit.object.userData.exoplanets && typeof hit.index === 'number') {
       const planet = exoplanets[hit.index]
-      if (planet) onSelect(panelFromExoplanet(planet))
+      if (planet) selectObject(planet.id)
       return
     }
 
     const item = hit.object.userData.item as PanelItem | undefined
-    if (item) onSelect(item)
+    if (item) selectObject(item.id)
   }
 
   const onResize = () => {
@@ -536,6 +865,22 @@ function createScene(
   return {
     flyTo,
     selectObject,
+    returnToPreviousView: () => {
+      if (!previousView) return
+      const returnView = previousView
+      previousView = null
+      startFlight(returnView.camera, returnView.target, 'Returning to previous view', false)
+    },
+    setTimeScale: (yearsPerSecond: number) => {
+      timeScaleYearsPerSecond = yearsPerSecond
+      lastFrameTime = performance.now()
+    },
+    resetSimulationTime: () => {
+      simulationYears = 0
+      lastReportedSimulationYears = 0
+      updateSimulationPositions()
+      onSimulation(0)
+    },
     setZoom,
     reset: () => {
       window.cancelAnimationFrame(raf)
@@ -559,6 +904,10 @@ function App() {
   const [tourIndex, setTourIndex] = useState(0)
   const [tourActive, setTourActive] = useState(false)
   const [query, setQuery] = useState('')
+  const [flightStatus, setFlightStatus] = useState<FlightStatus>({ active: false, label: '', remainingLy: 0, canReturn: false })
+  const [timeScale, setTimeScale] = useState(0)
+  const [simulationYears, setSimulationYears] = useState(0)
+  const [focusVisual, setFocusVisual] = useState<FocusVisual | null>(null)
 
   const searchResults = useMemo(() => {
     const normalized = query.trim().toLowerCase()
@@ -566,6 +915,7 @@ function App() {
 
     const candidates = [
       ...learningObjects.map((object) => ({ id: object.id, name: object.name, kind: object.kind })),
+      ...localStars.map((star) => ({ id: star.id, name: star.name, kind: 'star' })),
       ...solarSystemObjects.map((object) => ({ id: object.id, name: object.name, kind: object.kind })),
       ...exoplanets.map((planet) => ({ id: planet.id, name: planet.name, kind: 'exoplanet' })),
     ]
@@ -582,7 +932,7 @@ function App() {
 
   useEffect(() => {
     if (!containerRef.current) return undefined
-    sceneRef.current = createScene(containerRef.current, setSelected, setScaleLabel)
+    sceneRef.current = createScene(containerRef.current, setSelected, setScaleLabel, setFlightStatus, setSimulationYears)
     return () => {
       sceneRef.current?.reset()
       sceneRef.current = null
@@ -595,6 +945,11 @@ function App() {
     setTourIndex(nextIndex)
     sceneRef.current?.flyTo(stop.camera, stop.target)
     sceneRef.current?.selectObject(stop.objectId)
+  }
+
+  const updateTimeScale = (value: number) => {
+    setTimeScale(value)
+    sceneRef.current?.setTimeScale(value)
   }
 
   const selectedStop = tourStops[tourIndex]
@@ -616,6 +971,31 @@ function App() {
           <span>View radius: {scaleLabel}</span>
         </div>
       </header>
+
+      {(flightStatus.active || flightStatus.canReturn || timeScale > 0) && (
+        <div className="flight-hud" aria-live="polite">
+          {flightStatus.active && (
+            <div>
+              <Compass size={15} aria-hidden="true" />
+              <span>{flightStatus.label}</span>
+              <strong>{flightStatus.remainingLy.toLocaleString()} ly remaining</strong>
+            </div>
+          )}
+          {timeScale > 0 && (
+            <div>
+              <Clock3 size={15} aria-hidden="true" />
+              <span>Simulation offset</span>
+              <strong>{yearsLabel(simulationYears)}</strong>
+            </div>
+          )}
+          {flightStatus.canReturn && (
+            <button type="button" onClick={() => sceneRef.current?.returnToPreviousView()}>
+              <ArrowLeft size={16} aria-hidden="true" />
+              Return
+            </button>
+          )}
+        </div>
+      )}
 
       <aside className="tool-panel" aria-label="Exploration controls">
         <div className="data-stats" aria-label="Loaded data layers">
@@ -640,6 +1020,9 @@ function App() {
           <button type="button" onClick={() => sceneRef.current?.selectObject('sagittarius-a')} aria-label="Go to Sagittarius A star">
             <Compass size={18} aria-hidden="true" />
           </button>
+          <button type="button" onClick={() => sceneRef.current?.flyTo([0, 5500, 82000], [0, 0, 0])} aria-label="Edge-on galaxy view">
+            <Eye size={18} aria-hidden="true" />
+          </button>
           <button type="button" onClick={() => sceneRef.current?.flyTo([0, 62000, 62000], [12000, 0, 0])} aria-label="Reset galaxy view">
             <RotateCcw size={18} aria-hidden="true" />
           </button>
@@ -662,6 +1045,32 @@ function App() {
         <div className="ruler" aria-hidden="true">
           <span />
           <strong>{zoom < 45 ? '10,000 ly' : zoom < 82 ? '1,000 ly' : '100 ly'}</strong>
+        </div>
+        <div className="time-control">
+          <label>
+            <Clock3 size={15} aria-hidden="true" />
+            <select
+              aria-label="Simulation time scale"
+              value={timeScale}
+              onChange={(event) => updateTimeScale(Number(event.target.value))}
+            >
+              {timeScaleOptions.map((option) => (
+                <option key={option.label} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
+          </label>
+          <button
+            type="button"
+            onClick={() => {
+              updateTimeScale(0)
+              sceneRef.current?.resetSimulationTime()
+            }}
+          >
+            <RotateCcw size={15} aria-hidden="true" />
+            Present
+          </button>
         </div>
         <div className="search-panel">
           <label>
@@ -726,6 +1135,12 @@ function App() {
           <Info size={18} aria-hidden="true" />
           <p>{selected.fact}</p>
         </div>
+        {selected.focus && (
+          <button type="button" className="focus-button" onClick={() => setFocusVisual(selected.focus ?? null)}>
+            <Eye size={16} aria-hidden="true" />
+            Object focus
+          </button>
+        )}
         <div className="sources-list">
           <Search size={16} aria-hidden="true" />
           <span>{selected.sourceLabels.join(' + ')}</span>
@@ -750,6 +1165,27 @@ function App() {
           </a>
         ))}
       </footer>
+
+      {focusVisual && (
+        <section className="focus-view" aria-label={`${focusVisual.name} object focus mode`}>
+          <button type="button" className="focus-close" onClick={() => setFocusVisual(null)} aria-label="Close object focus mode">
+            <X size={18} aria-hidden="true" />
+          </button>
+          <div className="focus-orb-wrap">
+            <div className={`focus-orb ${focusVisual.className}`}>{focusVisual.ringed && <span />}</div>
+          </div>
+          <div className="focus-copy">
+            <span>{focusVisual.label}</span>
+            <h2>{focusVisual.name}</h2>
+            <p>{focusVisual.note}</p>
+            <div>
+              {focusVisual.facts.map((fact) => (
+                <strong key={fact}>{fact}</strong>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
     </main>
   )
 }

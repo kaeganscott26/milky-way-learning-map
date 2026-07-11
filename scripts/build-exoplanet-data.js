@@ -83,6 +83,23 @@ function factForPlanet(row) {
   return `It was confirmed by ${method} and is part of NASA's catalog of known exoplanets.`
 }
 
+function visualClass(row) {
+  const radius = toNumber(row.pl_rade)
+  const mass = toNumber(row.pl_bmasse)
+  const eqt = toNumber(row.pl_eqt)
+  const semiMajorAxis = toNumber(row.pl_orbsmax)
+
+  if (eqt && eqt > 1200 && (radius ?? 0) > 6) return 'hot-jupiter'
+  if (eqt && eqt > 900 && (radius ?? 0) < 2) return 'lava-world'
+  if (radius && radius < 1.6) return 'rocky-world'
+  if (radius && radius < 2.6) return 'super-earth'
+  if (radius && radius < 6) return 'mini-neptune'
+  if (radius && radius >= 8) return 'gas-giant'
+  if (mass && mass > 100) return 'gas-giant'
+  if (semiMajorAxis && semiMajorAxis > 5 && radius && radius > 3) return 'ice-giant'
+  return 'unknown'
+}
+
 const text = fs.readFileSync(inputPath, 'utf8')
 const [headerLine, ...lines] = text.trim().split(/\r?\n/)
 const headers = parseCsvLine(headerLine)
@@ -109,6 +126,10 @@ const planets = lines
       semiMajorAxisAu: toNumber(row.pl_orbsmax),
       radiusEarth: toNumber(row.pl_rade),
       massEarth: toNumber(row.pl_bmasse),
+      equilibriumTemperatureK: toNumber(row.pl_eqt),
+      stellarSpectralType: row.st_spectype || null,
+      stellarTemperatureK: toNumber(row.st_teff),
+      visualClass: visualClass(row),
       fact: factForPlanet(row),
     }
   })
@@ -127,6 +148,10 @@ const source = `export type Exoplanet = {
   semiMajorAxisAu: number | null
   radiusEarth: number | null
   massEarth: number | null
+  equilibriumTemperatureK: number | null
+  stellarSpectralType: string | null
+  stellarTemperatureK: number | null
+  visualClass: string
   fact: string
 }
 

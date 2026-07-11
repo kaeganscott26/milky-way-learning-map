@@ -114,6 +114,39 @@ a:focus-visible {
   white-space: nowrap;
 }
 
+.flight-hud {
+  position: fixed;
+  top: 86px;
+  left: 50%;
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  max-width: min(760px, calc(100vw - 48px));
+  transform: translateX(-50%);
+  pointer-events: auto;
+}
+
+.flight-hud div,
+.flight-hud button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 34px;
+  padding: 0 11px;
+  border: 1px solid rgba(159, 230, 255, 0.2);
+  border-radius: 999px;
+  background: rgba(5, 12, 23, 0.72);
+  backdrop-filter: blur(18px);
+  color: #cfe9ff;
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+.flight-hud strong {
+  color: #ffffff;
+}
+
 .tool-panel {
   position: fixed;
   left: 24px;
@@ -126,7 +159,7 @@ a:focus-visible {
 
 .control-row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 8px;
 }
 
@@ -218,6 +251,47 @@ a:focus-visible {
 
 .ruler span::after {
   right: 12%;
+}
+
+.time-control {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.time-control label {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 8px;
+  height: 36px;
+  padding: 0 9px;
+  border: 1px solid rgba(210, 232, 255, 0.16);
+  border-radius: 7px;
+  background: rgba(4, 10, 18, 0.42);
+  color: #9fdcff;
+}
+
+.time-control select {
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  color: #f4f9ff;
+  background: transparent;
+  font-size: 0.8rem;
+}
+
+.time-control button,
+.focus-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 36px;
+  padding: 0 10px;
+  border-radius: 7px;
+  font-size: 0.8rem;
 }
 
 .search-panel {
@@ -405,6 +479,11 @@ a:focus-visible {
   line-height: 1.35;
 }
 
+.focus-button {
+  width: max-content;
+  color: #dff5ff;
+}
+
 .object-strip {
   position: fixed;
   left: 50%;
@@ -464,6 +543,178 @@ a:focus-visible {
   text-decoration: none;
 }
 
+.focus-view {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: grid;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(280px, 0.7fr);
+  gap: 34px;
+  align-items: center;
+  justify-content: center;
+  padding: 54px;
+  background:
+    radial-gradient(circle at 35% 50%, rgba(126, 204, 255, 0.16), transparent 28%),
+    rgba(1, 4, 10, 0.88);
+  backdrop-filter: blur(18px);
+}
+
+.focus-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+}
+
+.focus-orb-wrap {
+  display: grid;
+  place-items: center;
+  min-height: min(70svh, 680px);
+}
+
+.focus-orb {
+  position: relative;
+  width: min(46vw, 520px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 32% 26%, rgba(255, 255, 255, 0.9), transparent 7%),
+    radial-gradient(circle at 42% 36%, rgba(255, 255, 255, 0.2), transparent 18%),
+    linear-gradient(120deg, #314661, #1a2434 48%, #090d18);
+  box-shadow:
+    inset -46px -32px 72px rgba(0, 0, 0, 0.72),
+    inset 26px 20px 42px rgba(255, 255, 255, 0.09),
+    0 0 90px rgba(122, 208, 255, 0.28);
+  animation: planet-spin 18s linear infinite;
+  overflow: visible;
+}
+
+.focus-orb::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background:
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.07) 0 2px, transparent 2px 18px),
+    radial-gradient(circle at 74% 58%, rgba(0, 0, 0, 0.34), transparent 28%);
+  mix-blend-mode: screen;
+  opacity: 0.5;
+}
+
+.focus-orb span {
+  position: absolute;
+  left: -18%;
+  right: -18%;
+  top: 44%;
+  height: 13%;
+  border: 4px solid rgba(238, 222, 184, 0.68);
+  border-radius: 50%;
+  transform: rotate(-13deg);
+  box-shadow: 0 0 28px rgba(255, 221, 164, 0.28);
+}
+
+.planet-earth {
+  background:
+    radial-gradient(circle at 28% 24%, rgba(255, 255, 255, 0.9), transparent 7%),
+    linear-gradient(138deg, #3a8ad8 0 34%, #2f8a63 35% 43%, #194782 44% 70%, #dedac0 71% 76%, #0d2245);
+}
+
+.planet-mars,
+.planet-lava-world {
+  background:
+    radial-gradient(circle at 28% 22%, rgba(255, 223, 190, 0.8), transparent 8%),
+    linear-gradient(130deg, #ffb06b, #b94a2e 48%, #321b17);
+}
+
+.planet-jupiter,
+.planet-hot-jupiter,
+.planet-gas-giant {
+  background:
+    repeating-linear-gradient(0deg, #d7a05c 0 8%, #f0d19d 8% 17%, #8b5e43 17% 25%, #e2b77b 25% 34%),
+    radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.65), transparent 10%);
+}
+
+.planet-saturn,
+.planet-ice-giant,
+.planet-uranus,
+.planet-neptune,
+.planet-mini-neptune {
+  background:
+    radial-gradient(circle at 29% 24%, rgba(255, 255, 255, 0.78), transparent 8%),
+    linear-gradient(130deg, #9ee8f2, #5576c9 48%, #151d45);
+}
+
+.planet-rocky-world,
+.planet-super-earth,
+.planet-dwarf {
+  background:
+    radial-gradient(circle at 30% 22%, rgba(255, 246, 210, 0.72), transparent 8%),
+    linear-gradient(130deg, #a58b72, #5b4a45 48%, #17151a);
+}
+
+.planet-unknown {
+  background:
+    radial-gradient(circle at 30% 22%, rgba(255, 255, 255, 0.72), transparent 8%),
+    linear-gradient(130deg, #7f8fb4, #393d59 48%, #11131d);
+}
+
+.focus-copy {
+  display: grid;
+  gap: 14px;
+  max-width: 520px;
+}
+
+.focus-copy span {
+  color: #83d9ff;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.focus-copy h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(2rem, 5vw, 4.2rem);
+  line-height: 0.95;
+  letter-spacing: 0;
+}
+
+.focus-copy p {
+  margin: 0;
+  color: #d5e5f4;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.focus-copy div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.focus-copy strong {
+  padding: 7px 10px;
+  border: 1px solid rgba(210, 232, 255, 0.14);
+  border-radius: 999px;
+  color: #f4f9ff;
+  background: rgba(8, 17, 31, 0.62);
+  font-size: 0.78rem;
+}
+
+@keyframes planet-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @media (max-width: 1060px) {
   .topbar {
     align-items: stretch;
@@ -495,6 +746,12 @@ a:focus-visible {
 
   .source-footer {
     display: none;
+  }
+
+  .flight-hud {
+    top: 118px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -528,7 +785,7 @@ a:focus-visible {
     left: 12px;
     bottom: 80px;
     width: calc(100vw - 24px);
-    max-height: 160px;
+    max-height: 190px;
     overflow: auto;
     box-sizing: border-box;
   }
@@ -542,5 +799,32 @@ a:focus-visible {
 
   .object-strip {
     display: none;
+  }
+
+  .flight-hud {
+    top: 80px;
+    left: 12px;
+    right: 12px;
+    transform: none;
+  }
+
+  .flight-hud div,
+  .flight-hud button {
+    min-height: 30px;
+    font-size: 0.7rem;
+  }
+
+  .focus-view {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 58px 20px 24px;
+  }
+
+  .focus-orb-wrap {
+    min-height: 36svh;
+  }
+
+  .focus-orb {
+    width: min(72vw, 340px);
   }
 }

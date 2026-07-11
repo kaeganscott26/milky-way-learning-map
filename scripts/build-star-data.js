@@ -81,6 +81,12 @@ const stars = lines
         Number((zPc * LY_PER_PC).toFixed(3)),
         Number((yPc * LY_PER_PC).toFixed(3)),
       ],
+      velocityLyPerYear: [
+        Number((Number(row.vx || 0) * LY_PER_PC).toExponential(6)),
+        Number((Number(row.vz || 0) * LY_PER_PC).toExponential(6)),
+        Number((Number(row.vy || 0) * LY_PER_PC).toExponential(6)),
+      ],
+      hasMeasuredMotion: [row.vx, row.vy, row.vz].some((value) => Number(value) !== 0),
       fact:
         row.proper === 'Proxima Centauri'
           ? 'This small red dwarf is the closest known star to the Sun.'
@@ -107,6 +113,8 @@ const source = `export type LocalStar = {
   colorIndex: number | null
   color: string
   positionLy: [number, number, number]
+  velocityLyPerYear: [number, number, number]
+  hasMeasuredMotion: boolean
   fact: string
 }
 

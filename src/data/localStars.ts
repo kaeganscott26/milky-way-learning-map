@@ -7,6 +7,8 @@ export type LocalStar = {
   colorIndex: number | null
   color: string
   positionLy: [number, number, number]
+  velocityLyPerYear: [number, number, number]
+  hasMeasuredMotion: boolean
   fact: string
 }
 
@@ -24,6 +26,12 @@ export const localStars: LocalStar[] = [
       -3.755,
       -1.179
     ],
+    "velocityLyPerYear": [
+      -0.0000386821,
+      0.00005463113,
+      0.00006780783
+    ],
+    "hasMeasuredMotion": true,
     "fact": "This small red dwarf is the closest known star to the Sun."
   },
   {
@@ -39,6 +47,12 @@ export const localStars: LocalStar[] = [
       -3.773,
       -1.35
     ],
+    "velocityLyPerYear": [
+      -0.00002354846,
+      0.00008124546,
+      0.00008075623
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -54,6 +68,12 @@ export const localStars: LocalStar[] = [
       -3.772,
       -1.351
     ],
+    "velocityLyPerYear": [
+      -0.00002354846,
+      0.00008124546,
+      0.00008075623
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -69,6 +89,12 @@ export const localStars: LocalStar[] = [
       0.486,
       -5.925
     ],
+    "velocityLyPerYear": [
+      -0.00001927582,
+      0.0002572719,
+      0.0003926918
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Barnard's Star has one of the fastest apparent motions across our sky."
   },
   {
@@ -84,6 +110,12 @@ export const localStars: LocalStar[] = [
       0.953,
       2.118
     ],
+    "velocityLyPerYear": [
+      -0.00001412255,
+      -0.00009657479,
+      0.0001542066
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -99,6 +131,12 @@ export const localStars: LocalStar[] = [
       4.878,
       1.645
     ],
+    "velocityLyPerYear": [
+      0.0001169922,
+      -0.0003205461,
+      -0.00000541419
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -114,6 +152,12 @@ export const localStars: LocalStar[] = [
       -2.642,
       3.415
     ],
+    "velocityLyPerYear": [
+      0.0000326156,
+      -0.000007697282,
+      0.00016647
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -129,6 +173,12 @@ export const localStars: LocalStar[] = [
       -2.642,
       3.415
     ],
+    "velocityLyPerYear": [
+      0.00004125873,
+      -0.00001076315,
+      0.0001704491
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -144,6 +194,12 @@ export const localStars: LocalStar[] = [
       -2.474,
       8.078
     ],
+    "velocityLyPerYear": [
+      0.00003108267,
+      -0.00003982365,
+      -0.00003936703
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Sirius looks so bright mostly because it is close and intrinsically luminous."
   },
   {
@@ -159,6 +215,12 @@ export const localStars: LocalStar[] = [
       -2.474,
       8.078
     ],
+    "velocityLyPerYear": [
+      0.00002504878,
+      -0.00004804278,
+      -0.000009686833
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -174,6 +236,12 @@ export const localStars: LocalStar[] = [
       -3.914,
       -8.651
     ],
+    "velocityLyPerYear": [
+      0.0000204826,
+      0.000008056053,
+      0.00004608584
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -189,6 +257,12 @@ export const localStars: LocalStar[] = [
       7.193,
       -0.584
     ],
+    "velocityLyPerYear": [
+      -0.0001289295,
+      -0.00023842,
+      0.00001444871
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -204,6 +278,12 @@ export const localStars: LocalStar[] = [
       -1.724,
       8.289
     ],
+    "velocityLyPerYear": [
+      0.00007315679,
+      -0.000008349594,
+      0.00001493794
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -219,6 +299,12 @@ export const localStars: LocalStar[] = [
       -6.258,
       -2.027
     ],
+    "velocityLyPerYear": [
+      0.0001462484,
+      0.00003711655,
+      0.000325308
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -234,6 +320,12 @@ export const localStars: LocalStar[] = [
       0.154,
       0.585
     ],
+    "velocityLyPerYear": [
+      0.0001009453,
+      -0.00006614444,
+      -0.00003757317
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -249,6 +341,12 @@ export const localStars: LocalStar[] = [
       9.721,
       -5.598
     ],
+    "velocityLyPerYear": [
+      -0.00009054091,
+      0.00005443544,
+      0.00006934077
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -264,6 +362,12 @@ export const localStars: LocalStar[] = [
       1.039,
       10.31
     ],
+    "velocityLyPerYear": [
+      0.00003307222,
+      -0.00005626191,
+      0.00002100445
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -279,6 +383,12 @@ export const localStars: LocalStar[] = [
       1.044,
       10.359
     ],
+    "velocityLyPerYear": [
+      0.00003953011,
+      -0.00005844716,
+      0.000009425908
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -294,6 +404,12 @@ export const localStars: LocalStar[] = [
       10.043,
       -5.783
     ],
+    "velocityLyPerYear": [
+      -0.0000901169,
+      0.00004911909,
+      0.00007364602
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -309,6 +425,12 @@ export const localStars: LocalStar[] = [
       8.089,
       0.67
     ],
+    "velocityLyPerYear": [
+      -0.000002054783,
+      0.00004301998,
+      0.0001628497
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -324,6 +446,12 @@ export const localStars: LocalStar[] = [
       8.131,
       0.674
     ],
+    "velocityLyPerYear": [
+      -5.544652e-7,
+      0.00004455291,
+      0.00016435
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -339,6 +467,12 @@ export const localStars: LocalStar[] = [
       -9.884,
       -3.153
     ],
+    "velocityLyPerYear": [
+      -0.00006011055,
+      0.00003307222,
+      0.0002933121
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -354,6 +488,12 @@ export const localStars: LocalStar[] = [
       5.328,
       8.38
     ],
+    "velocityLyPerYear": [
+      0.00005153265,
+      -0.00003829071,
+      0.00004031288
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -369,6 +509,12 @@ export const localStars: LocalStar[] = [
       -3.269,
       5.021
     ],
+    "velocityLyPerYear": [
+      0.000006751429,
+      0.00006298072,
+      -0.0001072727
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -384,6 +530,12 @@ export const localStars: LocalStar[] = [
       -3.519,
       3.581
     ],
+    "velocityLyPerYear": [
+      0.00007341772,
+      0.000008773596,
+      0.00009830342
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -399,6 +551,12 @@ export const localStars: LocalStar[] = [
       1.13,
       11.464
     ],
+    "velocityLyPerYear": [
+      -0.00006193702,
+      -0.0002156543,
+      0.00006213272
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -414,6 +572,12 @@ export const localStars: LocalStar[] = [
       -9.029,
       8.823
     ],
+    "velocityLyPerYear": [
+      -0.0003245578,
+      -0.0008297082,
+      0.0004054119
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -429,6 +593,12 @@ export const localStars: LocalStar[] = [
       -8.077,
       -6.533
     ],
+    "velocityLyPerYear": [
+      -0.0001110561,
+      -0.0001147417,
+      -0.0001726996
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -444,6 +614,12 @@ export const localStars: LocalStar[] = [
       11.029,
       -2.725
     ],
+    "velocityLyPerYear": [
+      -0.00005296773,
+      -0.0001098167,
+      -0.00003731225
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -459,6 +635,12 @@ export const localStars: LocalStar[] = [
       11.044,
       -2.728
     ],
+    "velocityLyPerYear": [
+      -0.00005384836,
+      -0.0001026413,
+      -0.00003597501
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -474,6 +656,12 @@ export const localStars: LocalStar[] = [
       -0.659,
       13.302
     ],
+    "velocityLyPerYear": [
+      -0.00004507476,
+      -0.0000453683,
+      -0.000008056053
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -489,6 +677,12 @@ export const localStars: LocalStar[] = [
       -0.661,
       13.334
     ],
+    "velocityLyPerYear": [
+      -0.00005182619,
+      -0.00004305259,
+      0.00004742308
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -504,6 +698,12 @@ export const localStars: LocalStar[] = [
       1.306,
       2.947
     ],
+    "velocityLyPerYear": [
+      0.0001743304,
+      -0.0001649371,
+      0.000123026
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -519,6 +719,12 @@ export const localStars: LocalStar[] = [
       -3.069,
       -12.626
     ],
+    "velocityLyPerYear": [
+      0.00001699273,
+      -0.00006894938,
+      0.00005782746
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -534,6 +740,12 @@ export const localStars: LocalStar[] = [
       -9.811,
       8.074
     ],
+    "velocityLyPerYear": [
+      -0.00007909283,
+      0.00002742972,
+      -0.00002485309
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -549,6 +761,12 @@ export const localStars: LocalStar[] = [
       2.202,
       -2.008
     ],
+    "velocityLyPerYear": [
+      -0.0000152641,
+      0.0000156881,
+      0.0001212974
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -564,6 +782,12 @@ export const localStars: LocalStar[] = [
       2.202,
       -2.008
     ],
+    "velocityLyPerYear": [
+      -0.0000152641,
+      0.0000156881,
+      0.0001212974
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -579,6 +803,12 @@ export const localStars: LocalStar[] = [
       -8.589,
       0.265
     ],
+    "velocityLyPerYear": [
+      -0.00004559661,
+      -0.0001738738,
+      0.0003856469
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -594,6 +824,12 @@ export const localStars: LocalStar[] = [
       2.146,
       10.231
     ],
+    "velocityLyPerYear": [
+      -0.00001846043,
+      -0.00002191768,
+      -0.00001369855
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -609,6 +845,12 @@ export const localStars: LocalStar[] = [
       3.29,
       7.108
     ],
+    "velocityLyPerYear": [
+      -0.0001021194,
+      -0.0001451068,
+      0.00003183283
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -624,6 +866,12 @@ export const localStars: LocalStar[] = [
       -12.827,
       2.281
     ],
+    "velocityLyPerYear": [
+      -0.00008721411,
+      0.0000551856,
+      0.00005531606
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -639,6 +887,12 @@ export const localStars: LocalStar[] = [
       -2.901,
       4.459
     ],
+    "velocityLyPerYear": [
+      0.00002889742,
+      -0.0001024782,
+      -0.0000545659
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -654,6 +908,12 @@ export const localStars: LocalStar[] = [
       13.725,
       -5.422
     ],
+    "velocityLyPerYear": [
+      -0.00002857127,
+      -0.0001054789,
+      -0.00005326127
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -669,6 +929,12 @@ export const localStars: LocalStar[] = [
       -10.812,
       -10.025
     ],
+    "velocityLyPerYear": [
+      0.00005022802,
+      -0.00001832997,
+      0.00006311119
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -684,6 +950,12 @@ export const localStars: LocalStar[] = [
       -13.604,
       0.398
     ],
+    "velocityLyPerYear": [
+      0.0000106653,
+      -0.00001073053,
+      -0.000195237
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -699,6 +971,12 @@ export const localStars: LocalStar[] = [
       -3.768,
       -4.254
     ],
+    "velocityLyPerYear": [
+      0.000003979103,
+      -0.00004732524,
+      0.00007312418
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -714,6 +992,12 @@ export const localStars: LocalStar[] = [
       -2.01,
       0.446
     ],
+    "velocityLyPerYear": [
+      -0.000155185,
+      -0.0001193731,
+      -0.00006529643
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -729,6 +1013,12 @@ export const localStars: LocalStar[] = [
       10.767,
       -9.66
     ],
+    "velocityLyPerYear": [
+      0.00004324829,
+      -0.00003108267,
+      -0.00001121977
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -744,6 +1034,12 @@ export const localStars: LocalStar[] = [
       10.767,
       -9.659
     ],
+    "velocityLyPerYear": [
+      0.00004324829,
+      -0.00003108267,
+      -0.00001121977
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -759,6 +1055,12 @@ export const localStars: LocalStar[] = [
       10.853,
       2.691
     ],
+    "velocityLyPerYear": [
+      0.0001270378,
+      0.00005176096,
+      0.0003177738
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -774,6 +1076,12 @@ export const localStars: LocalStar[] = [
       10.891,
       2.702
     ],
+    "velocityLyPerYear": [
+      -0.00003372453,
+      0.0002104685,
+      0.0003560319
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -789,6 +1097,12 @@ export const localStars: LocalStar[] = [
       12.077,
       4.716
     ],
+    "velocityLyPerYear": [
+      0.00007058016,
+      -0.00008966028,
+      0.00008170208
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -804,6 +1118,12 @@ export const localStars: LocalStar[] = [
       5.438,
       6.382
     ],
+    "velocityLyPerYear": [
+      -0.00001983028,
+      0.00001014345,
+      0.0000518588
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -819,6 +1139,12 @@ export const localStars: LocalStar[] = [
       -12.195,
       -6.32
     ],
+    "velocityLyPerYear": [
+      -0.00003378976,
+      -0.00005234804,
+      0.00002058044
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -834,6 +1160,12 @@ export const localStars: LocalStar[] = [
       -4.519,
       1.054
     ],
+    "velocityLyPerYear": [
+      -0.0001100776,
+      -0.00001989552,
+      0.00005009756
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -849,6 +1181,12 @@ export const localStars: LocalStar[] = [
       -2.165,
       14.458
     ],
+    "velocityLyPerYear": [
+      0.00008029961,
+      -0.0002481721,
+      -0.000236724
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -864,6 +1202,12 @@ export const localStars: LocalStar[] = [
       -2.192,
       14.633
     ],
+    "velocityLyPerYear": [
+      0.000109621,
+      -0.0002623925,
+      -0.0001715254
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -879,6 +1223,12 @@ export const localStars: LocalStar[] = [
       -2.191,
       14.629
     ],
+    "velocityLyPerYear": [
+      0.00007335248,
+      -0.000251401,
+      -0.0002454324
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -894,6 +1244,12 @@ export const localStars: LocalStar[] = [
       -11.572,
       -11.791
     ],
+    "velocityLyPerYear": [
+      -0.00003718178,
+      0.00008594211,
+      0.0002005207
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -909,6 +1265,12 @@ export const localStars: LocalStar[] = [
       0.723,
       -16.566
     ],
+    "velocityLyPerYear": [
+      0.00001956936,
+      -0.00008995382,
+      0.00002990851
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -924,6 +1286,12 @@ export const localStars: LocalStar[] = [
       11.676,
       -3.751
     ],
+    "velocityLyPerYear": [
+      0.000005642499,
+      -0.00002778849,
+      -0.00006196964
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -939,6 +1307,12 @@ export const localStars: LocalStar[] = [
       2.579,
       -14.636
     ],
+    "velocityLyPerYear": [
+      -0.000003652947,
+      0.00001748196,
+      0.0001006844
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -954,6 +1328,12 @@ export const localStars: LocalStar[] = [
       5.763,
       11.428
     ],
+    "velocityLyPerYear": [
+      0.000125407,
+      -0.00004106304,
+      -0.00002491832
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -969,6 +1349,12 @@ export const localStars: LocalStar[] = [
       5.765,
       11.432
     ],
+    "velocityLyPerYear": [
+      0.00005048895,
+      -0.000002707095,
+      0.00005110865
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -984,6 +1370,12 @@ export const localStars: LocalStar[] = [
       17.112,
       0.184
     ],
+    "velocityLyPerYear": [
+      0.0001097189,
+      -0.0003590325,
+      -0.00006888415
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -999,6 +1391,12 @@ export const localStars: LocalStar[] = [
       0.827,
       17.488
     ],
+    "velocityLyPerYear": [
+      -0.00001937367,
+      -0.000006294811,
+      2.935404e-7
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1014,6 +1412,12 @@ export const localStars: LocalStar[] = [
       4.519,
       -7.564
     ],
+    "velocityLyPerYear": [
+      -0.000007566819,
+      -0.0001060985,
+      -0.0001730584
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1029,6 +1433,12 @@ export const localStars: LocalStar[] = [
       15.412,
       8.58
     ],
+    "velocityLyPerYear": [
+      -0.00005570744,
+      -0.00008731196,
+      0.0001798098
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1044,6 +1454,12 @@ export const localStars: LocalStar[] = [
       15.592,
       8.682
     ],
+    "velocityLyPerYear": [
+      -0.0000365947,
+      -0.00004452029,
+      0.0002137953
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1059,6 +1475,12 @@ export const localStars: LocalStar[] = [
       -1.183,
       18.271
     ],
+    "velocityLyPerYear": [
+      -0.00006568782,
+      -0.000188616,
+      0.00002465739
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1074,6 +1496,12 @@ export const localStars: LocalStar[] = [
       -13.256,
       -12.2
     ],
+    "velocityLyPerYear": [
+      0.000003946488,
+      -0.0002189159,
+      0.0001577943
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1089,6 +1517,12 @@ export const localStars: LocalStar[] = [
       -2.714,
       -17.793
     ],
+    "velocityLyPerYear": [
+      -0.00006591613,
+      -0.00007850575,
+      0.00003101744
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1104,6 +1538,12 @@ export const localStars: LocalStar[] = [
       -2.734,
       -17.796
     ],
+    "velocityLyPerYear": [
+      -0.00008515933,
+      -0.00008848612,
+      -0.00003202852
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1119,6 +1559,12 @@ export const localStars: LocalStar[] = [
       -6.988,
       17.397
     ],
+    "velocityLyPerYear": [
+      0.00001281793,
+      -0.00006673152,
+      -0.000007501588
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1134,6 +1580,12 @@ export const localStars: LocalStar[] = [
       17.6,
       -6.001
     ],
+    "velocityLyPerYear": [
+      0.0001210691,
+      0.0000332353,
+      -0.0001452047
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1149,6 +1601,12 @@ export const localStars: LocalStar[] = [
       10.309,
       15.264
     ],
+    "velocityLyPerYear": [
+      0.00004677077,
+      0.00001183946,
+      0.00009748803
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1164,6 +1622,12 @@ export const localStars: LocalStar[] = [
       15.075,
       7.599
     ],
+    "velocityLyPerYear": [
+      0.00004155227,
+      0.000004990187,
+      0.0001512059
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1179,6 +1643,12 @@ export const localStars: LocalStar[] = [
       4.112,
       18.509
     ],
+    "velocityLyPerYear": [
+      -0.0001544675,
+      -0.00006513335,
+      0.0003884192
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1194,6 +1664,12 @@ export const localStars: LocalStar[] = [
       -16.006,
       -10.251
     ],
+    "velocityLyPerYear": [
+      -0.00008483318,
+      0.0002555106,
+      0.0003176107
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1209,6 +1685,12 @@ export const localStars: LocalStar[] = [
       -6.956,
       -12.401
     ],
+    "velocityLyPerYear": [
+      0.00004377014,
+      -0.0001837889,
+      -0.00009080183
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1224,6 +1706,12 @@ export const localStars: LocalStar[] = [
       1.725,
       -18.004
     ],
+    "velocityLyPerYear": [
+      -0.00000733851,
+      -0.000112165,
+      -0.0001420736
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1239,6 +1727,12 @@ export const localStars: LocalStar[] = [
       1.719,
       -18.013
     ],
+    "velocityLyPerYear": [
+      -0.00004650985,
+      -0.0001242002,
+      -0.00002814726
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1254,6 +1748,12 @@ export const localStars: LocalStar[] = [
       -7.048,
       14.937
     ],
+    "velocityLyPerYear": [
+      0.00001069792,
+      -0.00006050194,
+      -0.00002155891
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1269,6 +1769,12 @@ export const localStars: LocalStar[] = [
       -7.055,
       -12.58
     ],
+    "velocityLyPerYear": [
+      0.00004344398,
+      -0.0001793532,
+      -0.00008685534
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1284,6 +1790,12 @@ export const localStars: LocalStar[] = [
       -12.757,
       -11.615
     ],
+    "velocityLyPerYear": [
+      -0.00007318941,
+      -0.0001063921,
+      0.00008633349
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1299,6 +1811,12 @@ export const localStars: LocalStar[] = [
       -8.666,
       -16.976
     ],
+    "velocityLyPerYear": [
+      -0.00003480085,
+      -0.00009729233,
+      0.0000530982
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1314,6 +1832,12 @@ export const localStars: LocalStar[] = [
       16.433,
       2.199
     ],
+    "velocityLyPerYear": [
+      0.00003604024,
+      -0.00000489234,
+      0.0001125564
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1329,6 +1853,12 @@ export const localStars: LocalStar[] = [
       16.434,
       2.198
     ],
+    "velocityLyPerYear": [
+      0.00003597501,
+      0.000004109566,
+      0.0001135023
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1344,6 +1874,12 @@ export const localStars: LocalStar[] = [
       1.204,
       17.404
     ],
+    "velocityLyPerYear": [
+      -0.00001135023,
+      -0.00003682301,
+      0.00009677049
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1359,6 +1895,12 @@ export const localStars: LocalStar[] = [
       -8.703,
       -17.103
     ],
+    "velocityLyPerYear": [
+      -0.00003542054,
+      -0.0000947157,
+      0.0000554139
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1374,6 +1916,12 @@ export const localStars: LocalStar[] = [
       13.945,
       -13.328
     ],
+    "velocityLyPerYear": [
+      0.00002230907,
+      -0.0001767113,
+      -0.00004324829
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1389,6 +1937,12 @@ export const localStars: LocalStar[] = [
       0.817,
       -0.917
     ],
+    "velocityLyPerYear": [
+      -0.000229092,
+      -0.0001014019,
+      0.000104957
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1404,6 +1958,12 @@ export const localStars: LocalStar[] = [
       -8.742,
       -17.124
     ],
+    "velocityLyPerYear": [
+      -0.00003675778,
+      -0.00009611817,
+      0.00005440282
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1419,6 +1979,12 @@ export const localStars: LocalStar[] = [
       -11.557,
       -13.321
     ],
+    "velocityLyPerYear": [
+      -0.0002007816,
+      0.0001340501,
+      0.0003917786
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1434,6 +2000,12 @@ export const localStars: LocalStar[] = [
       -11.63,
       -13.405
     ],
+    "velocityLyPerYear": [
+      -0.00001118715,
+      -0.0001210365,
+      0.00009771634
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1449,6 +2021,12 @@ export const localStars: LocalStar[] = [
       -4.285,
       -12.032
     ],
+    "velocityLyPerYear": [
+      -0.0000539462,
+      0.00004915171,
+      8.1539e-7
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1464,6 +2042,12 @@ export const localStars: LocalStar[] = [
       -18.226,
       -6.809
     ],
+    "velocityLyPerYear": [
+      0.00003020205,
+      0.00002211338,
+      0.0001715254
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1479,6 +2063,12 @@ export const localStars: LocalStar[] = [
       -2.42,
       19.229
     ],
+    "velocityLyPerYear": [
+      0.00004908648,
+      -0.00005286989,
+      -0.00001934105
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1494,6 +2084,12 @@ export const localStars: LocalStar[] = [
       18.928,
       -6.555
     ],
+    "velocityLyPerYear": [
+      -0.0001157201,
+      0.00003447469,
+      0.0001053484
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1509,6 +2105,12 @@ export const localStars: LocalStar[] = [
       2.482,
       18.237
     ],
+    "velocityLyPerYear": [
+      -0.00001930844,
+      -0.00002775588,
+      -0.000004859724
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1524,6 +2126,12 @@ export const localStars: LocalStar[] = [
       6.875,
       -2.321
     ],
+    "velocityLyPerYear": [
+      0.000012133,
+      -0.000004500953,
+      0.0000530982
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1539,6 +2147,12 @@ export const localStars: LocalStar[] = [
       -2.93,
       -19.206
     ],
+    "velocityLyPerYear": [
+      -0.00008568118,
+      -0.00009103014,
+      -0.000003816025
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1554,6 +2168,12 @@ export const localStars: LocalStar[] = [
       -14.335,
       -11.889
     ],
+    "velocityLyPerYear": [
+      0.00001715581,
+      0.00006252411,
+      0.0001123281
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1569,6 +2189,12 @@ export const localStars: LocalStar[] = [
       -18.895,
       4.109
     ],
+    "velocityLyPerYear": [
+      -0.00006037148,
+      0.0001048918,
+      0.00004856463
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1584,6 +2210,12 @@ export const localStars: LocalStar[] = [
       -9.562,
       -12.442
     ],
+    "velocityLyPerYear": [
+      -0.000005348958,
+      -0.0000719174,
+      0.00006073025
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1599,6 +2231,12 @@ export const localStars: LocalStar[] = [
       -2.724,
       -15.355
     ],
+    "velocityLyPerYear": [
+      -0.00007110201,
+      -0.000005479421,
+      0.0001023151
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1614,6 +2252,12 @@ export const localStars: LocalStar[] = [
       6.948,
       -2.345
     ],
+    "velocityLyPerYear": [
+      0.000003587716,
+      -0.000002902788,
+      0.00005528344
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1629,6 +2273,12 @@ export const localStars: LocalStar[] = [
       12.789,
       15.317
     ],
+    "velocityLyPerYear": [
+      -0.00000570773,
+      0.000004924956,
+      0.0001635346
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1644,6 +2294,12 @@ export const localStars: LocalStar[] = [
       14.749,
       -14.097
     ],
+    "velocityLyPerYear": [
+      1.956936e-7,
+      -0.0001090666,
+      -0.0001142524
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1659,6 +2315,12 @@ export const localStars: LocalStar[] = [
       16.581,
       8.357
     ],
+    "velocityLyPerYear": [
+      0.00004178058,
+      -0.000001206777,
+      0.0001721451
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1674,6 +2336,12 @@ export const localStars: LocalStar[] = [
       7.429,
       -5.635
     ],
+    "velocityLyPerYear": [
+      0.00001751458,
+      -0.00001196993,
+      0.00001268747
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1689,6 +2357,12 @@ export const localStars: LocalStar[] = [
       -1.532,
       21.009
     ],
+    "velocityLyPerYear": [
+      -0.0000564576,
+      -0.0002348649,
+      -0.00001578595
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1704,6 +2378,12 @@ export const localStars: LocalStar[] = [
       17.26,
       -11.36
     ],
+    "velocityLyPerYear": [
+      0.00004491168,
+      -0.00004438983,
+      -0.000008480056
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1719,6 +2399,12 @@ export const localStars: LocalStar[] = [
       4.116,
       -1.734
     ],
+    "velocityLyPerYear": [
+      -0.000006947123,
+      0.00002087398,
+      0.000132615
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1734,6 +2420,12 @@ export const localStars: LocalStar[] = [
       17.94,
       -2.343
     ],
+    "velocityLyPerYear": [
+      -0.00001386163,
+      -0.00003447469,
+      0.0002221122
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1749,6 +2441,12 @@ export const localStars: LocalStar[] = [
       8.432,
       5.177
     ],
+    "velocityLyPerYear": [
+      -0.000008349594,
+      -0.00002328754,
+      0.00004872771
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1764,6 +2462,12 @@ export const localStars: LocalStar[] = [
       7.15,
       -14.042
     ],
+    "velocityLyPerYear": [
+      -3.26156e-8,
+      -0.000006914507,
+      -0.00001956936
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1779,6 +2483,12 @@ export const localStars: LocalStar[] = [
       6.628,
       -12.714
     ],
+    "velocityLyPerYear": [
+      -0.000007077585,
+      0.00001281793,
+      0.0001403449
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1794,6 +2504,12 @@ export const localStars: LocalStar[] = [
       7.164,
       -14.068
     ],
+    "velocityLyPerYear": [
+      0.000004142181,
+      -0.000004761878,
+      -0.00001829735
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1809,6 +2525,12 @@ export const localStars: LocalStar[] = [
       -3.17,
       -20.816
     ],
+    "velocityLyPerYear": [
+      -0.00006620967,
+      -0.00008724673,
+      0.00008193039
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1824,6 +2546,12 @@ export const localStars: LocalStar[] = [
       3.361,
       18.263
     ],
+    "velocityLyPerYear": [
+      -0.00008685534,
+      -0.0005540412,
+      -0.00009442216
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1839,6 +2567,12 @@ export const localStars: LocalStar[] = [
       2.614,
       6.505
     ],
+    "velocityLyPerYear": [
+      0.00001859089,
+      -0.00008626826,
+      0.00008427871
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1854,6 +2588,12 @@ export const localStars: LocalStar[] = [
       -20.241,
       -3.182
     ],
+    "velocityLyPerYear": [
+      -0.000008838828,
+      -0.00001539456,
+      0.00007426572
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1869,6 +2609,12 @@ export const localStars: LocalStar[] = [
       -12.785,
       -17.973
     ],
+    "velocityLyPerYear": [
+      0.0001227977,
+      -0.000009752064,
+      -0.00001901489
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1884,6 +2630,12 @@ export const localStars: LocalStar[] = [
       6.361,
       -5.846
     ],
+    "velocityLyPerYear": [
+      -0.0001079576,
+      -0.00005590314,
+      -0.00008558333
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1899,6 +2651,12 @@ export const localStars: LocalStar[] = [
       -20.868,
       7.5
     ],
+    "velocityLyPerYear": [
+      -0.00006757952,
+      -0.00006024101,
+      -0.0002036844
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1914,6 +2672,12 @@ export const localStars: LocalStar[] = [
       -13.039,
       -18.329
     ],
+    "velocityLyPerYear": [
+      0.0001257984,
+      -0.00001865612,
+      -0.00001366594
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1929,6 +2693,12 @@ export const localStars: LocalStar[] = [
       -13.041,
       -18.328
     ],
+    "velocityLyPerYear": [
+      0.0001282772,
+      -0.00001653611,
+      -0.00001399209
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1944,6 +2714,12 @@ export const localStars: LocalStar[] = [
       20.327,
       -7.811
     ],
+    "velocityLyPerYear": [
+      0.000034279,
+      -0.00009044306,
+      -0.00003613808
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1959,6 +2735,12 @@ export const localStars: LocalStar[] = [
       0.338,
       8.92
     ],
+    "velocityLyPerYear": [
+      -5.870808e-7,
+      -0.00008137592,
+      0.00007322202
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1974,6 +2756,12 @@ export const localStars: LocalStar[] = [
       -14.567,
       -3.101
     ],
+    "velocityLyPerYear": [
+      0.0000786036,
+      -0.0001174162,
+      0.00009151937
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -1989,6 +2777,12 @@ export const localStars: LocalStar[] = [
       2.814,
       14.713
     ],
+    "velocityLyPerYear": [
+      -0.00007935375,
+      0.0001740368,
+      0.0002017275
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2004,6 +2798,12 @@ export const localStars: LocalStar[] = [
       -0.981,
       -2.542
     ],
+    "velocityLyPerYear": [
+      0.000005642499,
+      -0.00009647694,
+      0.00008871443
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2019,6 +2819,12 @@ export const localStars: LocalStar[] = [
       21.733,
       -9.556
     ],
+    "velocityLyPerYear": [
+      0.00005701207,
+      -0.00001901489,
+      -0.00003855164
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2034,6 +2840,12 @@ export const localStars: LocalStar[] = [
       10.053,
       -21.423
     ],
+    "velocityLyPerYear": [
+      0.0000566533,
+      0.000004337875,
+      0.00001229608
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2049,6 +2861,12 @@ export const localStars: LocalStar[] = [
       10.054,
       -21.423
     ],
+    "velocityLyPerYear": [
+      0.0000566533,
+      0.000004337875,
+      0.00001229608
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2064,6 +2882,12 @@ export const localStars: LocalStar[] = [
       16.772,
       -17.138
     ],
+    "velocityLyPerYear": [
+      0.00003343099,
+      -0.00002367893,
+      -0.00003065866
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2079,6 +2903,12 @@ export const localStars: LocalStar[] = [
       -7.357,
       -9.511
     ],
+    "velocityLyPerYear": [
+      -0.00000949114,
+      -0.00008039745,
+      0.00004106304
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2094,6 +2924,12 @@ export const localStars: LocalStar[] = [
       -23.729,
       0.602
     ],
+    "velocityLyPerYear": [
+      0.00002459216,
+      -0.00006607921,
+      0.0002662411
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2109,6 +2945,12 @@ export const localStars: LocalStar[] = [
       10.554,
       14.52
     ],
+    "velocityLyPerYear": [
+      0.00001457917,
+      0.000003620332,
+      0.0001488902
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2124,6 +2966,12 @@ export const localStars: LocalStar[] = [
       -11.19,
       2.347
     ],
+    "velocityLyPerYear": [
+      -0.0006156521,
+      0.0003993128,
+      -0.00007312418
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2139,6 +2987,12 @@ export const localStars: LocalStar[] = [
       -6.761,
       -23.618
     ],
+    "velocityLyPerYear": [
+      -0.00006718814,
+      -0.00003985626,
+      0.000009164984
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2154,6 +3008,12 @@ export const localStars: LocalStar[] = [
       20.16,
       4.155
     ],
+    "velocityLyPerYear": [
+      0.00002782111,
+      -0.0001080555,
+      0.0004361684
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2169,6 +3029,12 @@ export const localStars: LocalStar[] = [
       20.16,
       4.156
     ],
+    "velocityLyPerYear": [
+      -0.0001501622,
+      -0.0003775582,
+      0.0003813742
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2184,6 +3050,12 @@ export const localStars: LocalStar[] = [
       21.28,
       12.484
     ],
+    "velocityLyPerYear": [
+      0.00001696011,
+      -0.00004944525,
+      0.00008437656
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2199,6 +3071,12 @@ export const localStars: LocalStar[] = [
       -12.992,
       -5.793
     ],
+    "velocityLyPerYear": [
+      0.00002579894,
+      -0.00003209375,
+      0.00003398546
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2214,6 +3092,12 @@ export const localStars: LocalStar[] = [
       -7.109,
       17.007
     ],
+    "velocityLyPerYear": [
+      0.00002276569,
+      -0.00003062605,
+      -0.00003519223
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2229,6 +3113,12 @@ export const localStars: LocalStar[] = [
       -7.109,
       17.007
     ],
+    "velocityLyPerYear": [
+      0,
+      0,
+      0
+    ],
+    "hasMeasuredMotion": false,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2244,6 +3134,12 @@ export const localStars: LocalStar[] = [
       4.498,
       -9.399
     ],
+    "velocityLyPerYear": [
+      -0.0000127527,
+      -0.0001193079,
+      -0.000153065
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2259,6 +3155,12 @@ export const localStars: LocalStar[] = [
       15.687,
       -19.269
     ],
+    "velocityLyPerYear": [
+      0.00001552503,
+      0.00000192432,
+      0.00005655545
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2274,6 +3176,12 @@ export const localStars: LocalStar[] = [
       0.925,
       -24.819
     ],
+    "velocityLyPerYear": [
+      -0.00005913208,
+      -0.0001470311,
+      0.00008206085
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2289,6 +3197,12 @@ export const localStars: LocalStar[] = [
       -12.419,
       -5.869
     ],
+    "velocityLyPerYear": [
+      0.00001829735,
+      -0.00002742972,
+      0.00003652947
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2304,6 +3218,12 @@ export const localStars: LocalStar[] = [
       22.391,
       11.369
     ],
+    "velocityLyPerYear": [
+      -0.00004957571,
+      -0.00002221122,
+      0.00003091959
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2319,6 +3239,12 @@ export const localStars: LocalStar[] = [
       8.384,
       23.075
     ],
+    "velocityLyPerYear": [
+      -0.0001074358,
+      -0.0001037502,
+      0.000009230215
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2334,6 +3260,12 @@ export const localStars: LocalStar[] = [
       -1.338,
       -25.264
     ],
+    "velocityLyPerYear": [
+      0.00007230879,
+      -0.00004647723,
+      -0.0001045004
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2349,6 +3281,12 @@ export const localStars: LocalStar[] = [
       -17.489,
       -3.254
     ],
+    "velocityLyPerYear": [
+      0.00002974543,
+      0.0001629802,
+      0.0001030979
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2364,6 +3302,12 @@ export const localStars: LocalStar[] = [
       -17.405,
       0.176
     ],
+    "velocityLyPerYear": [
+      -0.00005746869,
+      -0.00006056717,
+      0.00007501588
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2379,6 +3323,12 @@ export const localStars: LocalStar[] = [
       -1.677,
       11.598
     ],
+    "velocityLyPerYear": [
+      -0.00001245916,
+      -0.00003183283,
+      0.00002769064
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2394,6 +3344,12 @@ export const localStars: LocalStar[] = [
       12.658,
       -8.802
     ],
+    "velocityLyPerYear": [
+      -0.00001956936,
+      -0.00001696011,
+      0.00002185245
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2409,6 +3365,12 @@ export const localStars: LocalStar[] = [
       2.437,
       25.954
     ],
+    "velocityLyPerYear": [
+      0.00006040409,
+      -0.0001177097,
+      0.00001014345
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2424,6 +3386,12 @@ export const localStars: LocalStar[] = [
       23.721,
       -8.581
     ],
+    "velocityLyPerYear": [
+      0.00003297437,
+      0.00004556399,
+      0.00004898863
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2439,6 +3407,12 @@ export const localStars: LocalStar[] = [
       25.096,
       -7.768
     ],
+    "velocityLyPerYear": [
+      0.00007420049,
+      0.0000886492,
+      -0.00006793829
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2454,6 +3428,12 @@ export const localStars: LocalStar[] = [
       3.189,
       24.908
     ],
+    "velocityLyPerYear": [
+      -0.00003206113,
+      0.00001135023,
+      0.00009468309
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2469,6 +3449,12 @@ export const localStars: LocalStar[] = [
       -10.267,
       -6.38
     ],
+    "velocityLyPerYear": [
+      0.00001836258,
+      -0.00001272008,
+      -0.0001264833
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2484,6 +3470,12 @@ export const localStars: LocalStar[] = [
       12.608,
       -23.952
     ],
+    "velocityLyPerYear": [
+      -0.00003802979,
+      -0.0001131435,
+      0.00000570773
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2499,6 +3491,12 @@ export const localStars: LocalStar[] = [
       4.624,
       -5.588
     ],
+    "velocityLyPerYear": [
+      -0.0000982708,
+      -0.00004951048,
+      0.0001154592
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2514,6 +3512,12 @@ export const localStars: LocalStar[] = [
       18.188,
       -3.031
     ],
+    "velocityLyPerYear": [
+      -0.0000045988,
+      0.0000439006,
+      0.00009442216
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2529,6 +3533,12 @@ export const localStars: LocalStar[] = [
       -25.356,
       1.04
     ],
+    "velocityLyPerYear": [
+      0.000135159,
+      0.00003998673,
+      0.0002445518
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2544,6 +3554,12 @@ export const localStars: LocalStar[] = [
       9.792,
       26.497
     ],
+    "velocityLyPerYear": [
+      0.00002142845,
+      -0.00002821249,
+      -0.00003776886
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2559,6 +3575,12 @@ export const localStars: LocalStar[] = [
       -2.847,
       27.322
     ],
+    "velocityLyPerYear": [
+      -0.00005841454,
+      -0.0001593924,
+      0.00007579865
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2574,6 +3596,12 @@ export const localStars: LocalStar[] = [
       -2.562,
       27.559
     ],
+    "velocityLyPerYear": [
+      0.00008026699,
+      0.00000244617,
+      -0.00001415517
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2589,6 +3617,12 @@ export const localStars: LocalStar[] = [
       -20.872,
       -19.399
     ],
+    "velocityLyPerYear": [
+      0.0001304624,
+      -0.00004533568,
+      -0.00008832304
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2604,6 +3638,12 @@ export const localStars: LocalStar[] = [
       -13.209,
       -21.506
     ],
+    "velocityLyPerYear": [
+      0.00004889078,
+      0.00005968655,
+      0.0002412902
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2619,6 +3659,12 @@ export const localStars: LocalStar[] = [
       -11.118,
       26.848
     ],
+    "velocityLyPerYear": [
+      0.00003780148,
+      -0.00003571408,
+      -0.00005244588
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2634,6 +3680,12 @@ export const localStars: LocalStar[] = [
       -11.157,
       26.979
     ],
+    "velocityLyPerYear": [
+      0.00004031288,
+      -0.00003604024,
+      -0.00004801016
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2649,6 +3701,12 @@ export const localStars: LocalStar[] = [
       -5,
       24.038
     ],
+    "velocityLyPerYear": [
+      0.00001154592,
+      0.0001074358,
+      -0.000006360042
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2664,6 +3722,12 @@ export const localStars: LocalStar[] = [
       18.14,
       0.718
     ],
+    "velocityLyPerYear": [
+      -0.0002675784,
+      -0.0008631719,
+      -0.0005675441
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2679,6 +3743,12 @@ export const localStars: LocalStar[] = [
       13.923,
       -8.119
     ],
+    "velocityLyPerYear": [
+      0.000006653582,
+      0.0001205799,
+      0.0001238414
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2694,6 +3764,12 @@ export const localStars: LocalStar[] = [
       1.752,
       22.744
     ],
+    "velocityLyPerYear": [
+      0.00001037176,
+      0.00001718842,
+      0.00007253709
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2709,6 +3785,12 @@ export const localStars: LocalStar[] = [
       -19.532,
       1.345
     ],
+    "velocityLyPerYear": [
+      -0.0000637635,
+      0.00001157854,
+      0.0002274286
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2724,6 +3806,12 @@ export const localStars: LocalStar[] = [
       -27.458,
       -7.819
     ],
+    "velocityLyPerYear": [
+      0.00005887116,
+      0.0001380292,
+      -0.00003150667
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2739,6 +3827,12 @@ export const localStars: LocalStar[] = [
       -16.903,
       2.91
     ],
+    "velocityLyPerYear": [
+      0.000007110201,
+      0.0001454982,
+      0.0001012388
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2754,6 +3848,12 @@ export const localStars: LocalStar[] = [
       17.66,
       -25.26
     ],
+    "velocityLyPerYear": [
+      0.00003209375,
+      -0.000006784045,
+      0.0001136328
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2769,6 +3869,12 @@ export const localStars: LocalStar[] = [
       29.476,
       6.555
     ],
+    "velocityLyPerYear": [
+      -0.000005283727,
+      -0.000005348958,
+      0.0001012388
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2784,6 +3890,12 @@ export const localStars: LocalStar[] = [
       14.865,
       2.294
     ],
+    "velocityLyPerYear": [
+      -0.00009843388,
+      -0.0001020216,
+      -0.0001364963
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2799,6 +3911,12 @@ export const localStars: LocalStar[] = [
       -15.404,
       0.264
     ],
+    "velocityLyPerYear": [
+      -0.0000995102,
+      -0.0001655568,
+      0.0001742978
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2814,6 +3932,12 @@ export const localStars: LocalStar[] = [
       -32.091,
       8.738
     ],
+    "velocityLyPerYear": [
+      -0.00001950413,
+      -0.00012133,
+      -0.000003359407
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2829,6 +3953,12 @@ export const localStars: LocalStar[] = [
       -7.463,
       22.514
     ],
+    "velocityLyPerYear": [
+      -0.000004924956,
+      -0.00004412891,
+      0.0000846701
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2844,6 +3974,12 @@ export const localStars: LocalStar[] = [
       15.875,
       26.729
     ],
+    "velocityLyPerYear": [
+      0.00008558333,
+      -0.000001011084,
+      0.000058121
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2859,6 +3995,12 @@ export const localStars: LocalStar[] = [
       17.765,
       5.254
     ],
+    "velocityLyPerYear": [
+      0.000007925591,
+      -0.0001092949,
+      0.00006976477
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2874,6 +4016,12 @@ export const localStars: LocalStar[] = [
       17.765,
       5.254
     ],
+    "velocityLyPerYear": [
+      0.000001500318,
+      -0.0001052832,
+      0.00007093893
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2889,6 +4037,12 @@ export const localStars: LocalStar[] = [
       26.187,
       16.363
     ],
+    "velocityLyPerYear": [
+      -0.00007403741,
+      0.0001158832,
+      0.0002298747
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2904,6 +4058,12 @@ export const localStars: LocalStar[] = [
       -3.084,
       -33.79
     ],
+    "velocityLyPerYear": [
+      -0.0001737107,
+      -0.0002019558,
+      -0.00005701207
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2919,6 +4079,12 @@ export const localStars: LocalStar[] = [
       18.314,
       -28.027
     ],
+    "velocityLyPerYear": [
+      0.000003848641,
+      -0.00007325464,
+      0.0002435733
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2934,6 +4100,12 @@ export const localStars: LocalStar[] = [
       -27.264,
       11.973
     ],
+    "velocityLyPerYear": [
+      -0.00002511401,
+      -0.00006682936,
+      0.0004074667
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2949,6 +4121,12 @@ export const localStars: LocalStar[] = [
       19.782,
       16.373
     ],
+    "velocityLyPerYear": [
+      -0.0001060659,
+      -0.00004709693,
+      0.0001653285
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2964,6 +4142,12 @@ export const localStars: LocalStar[] = [
       18.45,
       -28.238
     ],
+    "velocityLyPerYear": [
+      -0.00006343734,
+      0.00005688161,
+      0.00005984963
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2979,6 +4163,12 @@ export const localStars: LocalStar[] = [
       34.397,
       -0.293
     ],
+    "velocityLyPerYear": [
+      -0.000003620332,
+      0.000007305894,
+      0.00005900162
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -2994,6 +4184,12 @@ export const localStars: LocalStar[] = [
       1.098,
       1.446
     ],
+    "velocityLyPerYear": [
+      -0.00002097183,
+      -0.000046412,
+      -0.0001272987
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3009,6 +4205,12 @@ export const localStars: LocalStar[] = [
       9.027,
       1.657
     ],
+    "velocityLyPerYear": [
+      -1.956936e-7,
+      -0.00001930844,
+      0.00008688796
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3024,6 +4226,12 @@ export const localStars: LocalStar[] = [
       2.225,
       -35.662
     ],
+    "velocityLyPerYear": [
+      -0.00003793194,
+      -0.00001242654,
+      -0.00007250448
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3039,6 +4247,12 @@ export const localStars: LocalStar[] = [
       22.362,
       -28.131
     ],
+    "velocityLyPerYear": [
+      -0.00005502252,
+      -0.0001035545,
+      -0.000003196329
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3054,6 +4268,12 @@ export const localStars: LocalStar[] = [
       10.568,
       -11.363
     ],
+    "velocityLyPerYear": [
+      0.0000035551,
+      -0.00003711655,
+      -0.0001157854
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3069,6 +4289,12 @@ export const localStars: LocalStar[] = [
       27.485,
       15.565
     ],
+    "velocityLyPerYear": [
+      0.00001053484,
+      0.00005130434,
+      0.00008708365
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3084,6 +4310,12 @@ export const localStars: LocalStar[] = [
       -22.809,
       21.404
     ],
+    "velocityLyPerYear": [
+      -0.000008773596,
+      0.00001679703,
+      0.00009125845
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3099,6 +4331,12 @@ export const localStars: LocalStar[] = [
       -25.052,
       14.074
     ],
+    "velocityLyPerYear": [
+      0.00002485309,
+      -0.00003845379,
+      -0.0001118389
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3114,6 +4352,12 @@ export const localStars: LocalStar[] = [
       9.909,
       -30.33
     ],
+    "velocityLyPerYear": [
+      0.000005022802,
+      -0.00021373,
+      -0.00009947758
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3129,6 +4373,12 @@ export const localStars: LocalStar[] = [
       12.064,
       -19.349
     ],
+    "velocityLyPerYear": [
+      -0.0001925951,
+      -0.0003415832,
+      0.0001050222
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3144,6 +4394,12 @@ export const localStars: LocalStar[] = [
       26.444,
       0.637
     ],
+    "velocityLyPerYear": [
+      0.0000163078,
+      -0.00001868874,
+      0.0001575333
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3159,6 +4415,12 @@ export const localStars: LocalStar[] = [
       11.731,
       -16.921
     ],
+    "velocityLyPerYear": [
+      -0.0000259294,
+      -0.00006017578,
+      -0.000001663396
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3174,6 +4436,12 @@ export const localStars: LocalStar[] = [
       -35.57,
       -0.982
     ],
+    "velocityLyPerYear": [
+      -0.0000535222,
+      -0.0002679045,
+      0.00003033251
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3189,6 +4457,12 @@ export const localStars: LocalStar[] = [
       12.316,
       -24.343
     ],
+    "velocityLyPerYear": [
+      0.00002514663,
+      0.000003359407,
+      0.0001345393
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3204,6 +4478,12 @@ export const localStars: LocalStar[] = [
       -32.024,
       19.849
     ],
+    "velocityLyPerYear": [
+      0.00000896929,
+      0.00001836258,
+      0.00001216562
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3219,6 +4499,12 @@ export const localStars: LocalStar[] = [
       -0.964,
       -6.887
     ],
+    "velocityLyPerYear": [
+      0.00004438983,
+      0.00001288316,
+      0.0001240045
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3234,6 +4520,12 @@ export const localStars: LocalStar[] = [
       16.372,
       -16.358
     ],
+    "velocityLyPerYear": [
+      0.000009556371,
+      -0.000003326791,
+      0.00005730561
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3249,6 +4541,12 @@ export const localStars: LocalStar[] = [
       -33.114,
       -11.177
     ],
+    "velocityLyPerYear": [
+      0.00007925591,
+      -0.00003418115,
+      0.0001582509
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3264,6 +4562,12 @@ export const localStars: LocalStar[] = [
       -0.976,
       -6.971
     ],
+    "velocityLyPerYear": [
+      0.00004530307,
+      0.000002935404,
+      0.0001148395
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3279,6 +4583,12 @@ export const localStars: LocalStar[] = [
       -10.751,
       -20.38
     ],
+    "velocityLyPerYear": [
+      -0.000002707095,
+      -0.00004755354,
+      0.00006082809
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3294,6 +4604,12 @@ export const localStars: LocalStar[] = [
       -34.763,
       13.705
     ],
+    "velocityLyPerYear": [
+      -0.0001096863,
+      0.00002061306,
+      0.0002624577
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3309,6 +4625,12 @@ export const localStars: LocalStar[] = [
       -34.812,
       13.787
     ],
+    "velocityLyPerYear": [
+      -0.0001103712,
+      0.00002276569,
+      0.000260827
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3324,6 +4646,12 @@ export const localStars: LocalStar[] = [
       -37.156,
       -12.402
     ],
+    "velocityLyPerYear": [
+      0.00002416816,
+      -0.00001660134,
+      -0.00004122612
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3339,6 +4667,12 @@ export const localStars: LocalStar[] = [
       5.061,
       -32.744
     ],
+    "velocityLyPerYear": [
+      0.00008770335,
+      -0.00004226982,
+      0.00021161
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3354,6 +4688,12 @@ export const localStars: LocalStar[] = [
       -20.806,
       26.675
     ],
+    "velocityLyPerYear": [
+      0.00009373723,
+      0.00009800988,
+      0.0002284397
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3369,6 +4709,12 @@ export const localStars: LocalStar[] = [
       32.182,
       23.751
     ],
+    "velocityLyPerYear": [
+      0.000006425273,
+      -0.00005567483,
+      0.00008502887
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3384,6 +4730,12 @@ export const localStars: LocalStar[] = [
       19.102,
       25.849
     ],
+    "velocityLyPerYear": [
+      -3.587716e-7,
+      0.000002804942,
+      0.0001388772
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3399,6 +4751,12 @@ export const localStars: LocalStar[] = [
       -36.108,
       -15.443
     ],
+    "velocityLyPerYear": [
+      0.0000045988,
+      -0.00003636639,
+      0.00007876667
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3414,6 +4772,12 @@ export const localStars: LocalStar[] = [
       -28.301,
       2.388
     ],
+    "velocityLyPerYear": [
+      -0.0000541419,
+      0.00000296802,
+      0.0001339523
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3429,6 +4793,12 @@ export const localStars: LocalStar[] = [
       -8.912,
       32.731
     ],
+    "velocityLyPerYear": [
+      -0.00007752728,
+      -0.000212882,
+      0.00001523149
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3444,6 +4814,12 @@ export const localStars: LocalStar[] = [
       26.537,
       31.015
     ],
+    "velocityLyPerYear": [
+      -0.00005681638,
+      0.00004132397,
+      0.0002695353
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3459,6 +4835,12 @@ export const localStars: LocalStar[] = [
       -18.079,
       21.176
     ],
+    "velocityLyPerYear": [
+      0.00007416787,
+      0.00006986262,
+      -0.000001728627
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3474,6 +4856,12 @@ export const localStars: LocalStar[] = [
       28.131,
       13.138
     ],
+    "velocityLyPerYear": [
+      -0.00003943226,
+      -0.00001969982,
+      0.0001577617
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3489,6 +4877,12 @@ export const localStars: LocalStar[] = [
       30.751,
       -20.143
     ],
+    "velocityLyPerYear": [
+      -0.00005903424,
+      0.00001190469,
+      0.0000518588
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3504,6 +4898,12 @@ export const localStars: LocalStar[] = [
       -7.548,
       -0.132
     ],
+    "velocityLyPerYear": [
+      0.00001744935,
+      -0.00009598771,
+      -0.00002860388
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3519,6 +4919,12 @@ export const localStars: LocalStar[] = [
       -26.337,
       -29.509
     ],
+    "velocityLyPerYear": [
+      -0.000004631415,
+      -0.00003529008,
+      -0.00004650985
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3534,6 +4940,12 @@ export const localStars: LocalStar[] = [
       38.522,
       -15.922
     ],
+    "velocityLyPerYear": [
+      -0.00009862957,
+      -0.0001175792,
+      0.00006572043
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3549,6 +4961,12 @@ export const localStars: LocalStar[] = [
       2.434,
       -36.006
     ],
+    "velocityLyPerYear": [
+      -0.00006735121,
+      0.00001875397,
+      0.00007667928
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3564,6 +4982,12 @@ export const localStars: LocalStar[] = [
       4.148,
       25.514
     ],
+    "velocityLyPerYear": [
+      -0.000008251747,
+      0.00003140882,
+      0.0001360397
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3579,6 +5003,12 @@ export const localStars: LocalStar[] = [
       3.645,
       -41.186
     ],
+    "velocityLyPerYear": [
+      0.0001059029,
+      -0.0001439,
+      -0.00003369191
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3594,6 +5024,12 @@ export const localStars: LocalStar[] = [
       30.36,
       28.795
     ],
+    "velocityLyPerYear": [
+      0.0000102413,
+      0.0000213306,
+      0.0001412908
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3609,6 +5045,12 @@ export const localStars: LocalStar[] = [
       -2.592,
       41.986
     ],
+    "velocityLyPerYear": [
+      0.000035551,
+      -0.0001524127,
+      -0.0002032604
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3624,6 +5066,12 @@ export const localStars: LocalStar[] = [
       -34.116,
       22.845
     ],
+    "velocityLyPerYear": [
+      -0.0001370181,
+      0.0001108604,
+      0.00008832304
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3639,6 +5087,12 @@ export const localStars: LocalStar[] = [
       -15.329,
       -39.255
     ],
+    "velocityLyPerYear": [
+      0.000003131098,
+      -0.00007557035,
+      -0.0001099146
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3654,6 +5108,12 @@ export const localStars: LocalStar[] = [
       30.789,
       29.205
     ],
+    "velocityLyPerYear": [
+      0.000006262195,
+      -0.000008284362,
+      0.0001160789
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3669,6 +5129,12 @@ export const localStars: LocalStar[] = [
       15.347,
       37.841
     ],
+    "velocityLyPerYear": [
+      0.0000595887,
+      -0.00004125873,
+      0.00002198291
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3684,6 +5150,12 @@ export const localStars: LocalStar[] = [
       34.391,
       -16.14
     ],
+    "velocityLyPerYear": [
+      -0.00001073053,
+      0.00006180656,
+      0.00004275905
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3699,6 +5171,12 @@ export const localStars: LocalStar[] = [
       -14.006,
       -40.508
     ],
+    "velocityLyPerYear": [
+      -0.00004876032,
+      0.000006392658,
+      0.0001391381
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3714,6 +5192,12 @@ export const localStars: LocalStar[] = [
       19.84,
       -17.854
     ],
+    "velocityLyPerYear": [
+      0.000005479421,
+      -0.0000483037,
+      0.0001047613
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3729,6 +5213,12 @@ export const localStars: LocalStar[] = [
       34.49,
       16.324
     ],
+    "velocityLyPerYear": [
+      0.00002377677,
+      -0.0000307239,
+      0.0002342126
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3744,6 +5234,12 @@ export const localStars: LocalStar[] = [
       29.103,
       13.529
     ],
+    "velocityLyPerYear": [
+      -0.000001369855,
+      -0.0001242654,
+      -0.00004096519
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3759,6 +5255,12 @@ export const localStars: LocalStar[] = [
       -21.879,
       -13.019
     ],
+    "velocityLyPerYear": [
+      0.00002860388,
+      -0.00000489234,
+      0.00007628789
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3774,6 +5276,12 @@ export const localStars: LocalStar[] = [
       -38.757,
       -21.212
     ],
+    "velocityLyPerYear": [
+      -0.00001203516,
+      0.00003649686,
+      -0.0001255374
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3789,6 +5297,12 @@ export const localStars: LocalStar[] = [
       20.198,
       -18.177
     ],
+    "velocityLyPerYear": [
+      0.000002641864,
+      -0.00004928217,
+      0.0001108278
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3804,6 +5318,12 @@ export const localStars: LocalStar[] = [
       21.631,
       1.125
     ],
+    "velocityLyPerYear": [
+      2.935404e-7,
+      -0.00004259597,
+      0.0000821587
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3819,6 +5339,12 @@ export const localStars: LocalStar[] = [
       4.985,
       -38.896
     ],
+    "velocityLyPerYear": [
+      -0.00005065203,
+      -0.0001187534,
+      0.00011285
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3834,6 +5360,12 @@ export const localStars: LocalStar[] = [
       -39.363,
       3.261
     ],
+    "velocityLyPerYear": [
+      -0.000005055418,
+      -0.000005772961,
+      0.0001129152
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3849,6 +5381,12 @@ export const localStars: LocalStar[] = [
       4.385,
       -3.889
     ],
+    "velocityLyPerYear": [
+      0.00003457254,
+      -0.00009249784,
+      0.00007886452
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3864,6 +5402,12 @@ export const localStars: LocalStar[] = [
       -36.202,
       -11.452
     ],
+    "velocityLyPerYear": [
+      -0.0000832024,
+      -0.00004553138,
+      0.0001457265
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3879,6 +5423,12 @@ export const localStars: LocalStar[] = [
       -38.23,
       -21.728
     ],
+    "velocityLyPerYear": [
+      -0.00005890377,
+      -0.0001942911,
+      0.0003016943
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3894,6 +5444,12 @@ export const localStars: LocalStar[] = [
       -18.594,
       -36.778
     ],
+    "velocityLyPerYear": [
+      -0.00004902125,
+      -0.0000763205,
+      0.00003307222
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3909,6 +5465,12 @@ export const localStars: LocalStar[] = [
       29.746,
       9.115
     ],
+    "velocityLyPerYear": [
+      -0.000002413554,
+      0.00003444207,
+      0.00007341772
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3924,6 +5486,12 @@ export const localStars: LocalStar[] = [
       13.679,
       43.304
     ],
+    "velocityLyPerYear": [
+      -0.00003662732,
+      0.00003656209,
+      0.0001280815
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3939,6 +5507,12 @@ export const localStars: LocalStar[] = [
       40.525,
       -21.532
     ],
+    "velocityLyPerYear": [
+      0.00004337875,
+      -0.00005286989,
+      -0.0001043373
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3954,6 +5528,12 @@ export const localStars: LocalStar[] = [
       44.927,
       -0.887
     ],
+    "velocityLyPerYear": [
+      -0.00005922993,
+      -0.0001343437,
+      -0.000005577268
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3969,6 +5549,12 @@ export const localStars: LocalStar[] = [
       -22.305,
       29.929
     ],
+    "velocityLyPerYear": [
+      -0.000009164984,
+      0.0001245264,
+      0.0001010757
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3984,6 +5570,12 @@ export const localStars: LocalStar[] = [
       -23.361,
       9.145
     ],
+    "velocityLyPerYear": [
+      -0.00004804278,
+      0.00001784073,
+      0.0001315387
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -3999,6 +5591,12 @@ export const localStars: LocalStar[] = [
       12.262,
       -7.955
     ],
+    "velocityLyPerYear": [
+      -0.00009458524,
+      -0.00005883854,
+      -0.00004419414
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4014,6 +5612,12 @@ export const localStars: LocalStar[] = [
       -2.908,
       41.924
     ],
+    "velocityLyPerYear": [
+      0.00001715581,
+      -0.00005792531,
+      -0.00007384172
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4029,6 +5633,12 @@ export const localStars: LocalStar[] = [
       -14.773,
       29.004
     ],
+    "velocityLyPerYear": [
+      0.00001369855,
+      -0.00001947151,
+      0.0001110235
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4044,6 +5654,12 @@ export const localStars: LocalStar[] = [
       -22.503,
       30.193
     ],
+    "velocityLyPerYear": [
+      -0.00005652283,
+      0.0001528693,
+      0.00006219795
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4059,6 +5675,12 @@ export const localStars: LocalStar[] = [
       41.017,
       -16.49
     ],
+    "velocityLyPerYear": [
+      -0.0001830387,
+      -0.0001681986,
+      0.0002376046
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4074,6 +5696,12 @@ export const localStars: LocalStar[] = [
       -17.555,
       -19.909
     ],
+    "velocityLyPerYear": [
+      -0.00004393321,
+      -0.00005740346,
+      0.0004226982
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4089,6 +5717,12 @@ export const localStars: LocalStar[] = [
       14.07,
       -13.392
     ],
+    "velocityLyPerYear": [
+      0.00006444843,
+      0.000003489869,
+      0.0001214931
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4104,6 +5738,12 @@ export const localStars: LocalStar[] = [
       42.441,
       15.191
     ],
+    "velocityLyPerYear": [
+      0.00002785372,
+      -0.00002997374,
+      -0.00002361369
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4119,6 +5759,12 @@ export const localStars: LocalStar[] = [
       -18.91,
       -32.86
     ],
+    "velocityLyPerYear": [
+      0.00002537494,
+      0.0001568158,
+      0.0001468028
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4134,6 +5780,12 @@ export const localStars: LocalStar[] = [
       -15.191,
       -39.649
     ],
+    "velocityLyPerYear": [
+      0.00001190469,
+      -0.00004543353,
+      0.00001138284
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4149,6 +5801,12 @@ export const localStars: LocalStar[] = [
       -25.345,
       -18.064
     ],
+    "velocityLyPerYear": [
+      0.0000110893,
+      -0.000003587716,
+      -0.00001676442
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4164,6 +5822,12 @@ export const localStars: LocalStar[] = [
       35.192,
       22.45
     ],
+    "velocityLyPerYear": [
+      0.00003180021,
+      -0.00001069792,
+      0.0001116106
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4179,6 +5843,12 @@ export const localStars: LocalStar[] = [
       29.903,
       -32.19
     ],
+    "velocityLyPerYear": [
+      -0.00003662732,
+      -0.0001170248,
+      0.0002058371
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4194,6 +5864,12 @@ export const localStars: LocalStar[] = [
       37.27,
       -17.331
     ],
+    "velocityLyPerYear": [
+      -0.0000712977,
+      -0.00008652919,
+      0.00001493794
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4209,6 +5885,12 @@ export const localStars: LocalStar[] = [
       -34.802,
       30.638
     ],
+    "velocityLyPerYear": [
+      -0.00007325464,
+      -0.00005179357,
+      0.000221199
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4224,6 +5906,12 @@ export const localStars: LocalStar[] = [
       -36.977,
       -17.624
     ],
+    "velocityLyPerYear": [
+      0.00007641835,
+      -0.0001017607,
+      0.00006575305
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4239,6 +5927,12 @@ export const localStars: LocalStar[] = [
       -20.905,
       41.434
     ],
+    "velocityLyPerYear": [
+      -0.00005720776,
+      -0.000009882527,
+      0.00002782111
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4254,6 +5948,12 @@ export const localStars: LocalStar[] = [
       45.795,
       2.639
     ],
+    "velocityLyPerYear": [
+      0.00003502915,
+      0.00003326791,
+      0.00008838828
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4269,6 +5969,12 @@ export const localStars: LocalStar[] = [
       2.098,
       -39.602
     ],
+    "velocityLyPerYear": [
+      -0.00004559661,
+      -0.00003065866,
+      -0.00004898863
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4284,6 +5990,12 @@ export const localStars: LocalStar[] = [
       -39.872,
       -23.443
     ],
+    "velocityLyPerYear": [
+      -0.00009024737,
+      -0.00006249149,
+      -0.0001046308
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4299,6 +6011,12 @@ export const localStars: LocalStar[] = [
       -20.437,
       -32.412
     ],
+    "velocityLyPerYear": [
+      0.00003238729,
+      -0.00006960169,
+      -0.0000545659
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4314,6 +6032,12 @@ export const localStars: LocalStar[] = [
       15.448,
       45.194
     ],
+    "velocityLyPerYear": [
+      0.00002922358,
+      -0.00004520522,
+      -0.00001099146
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4329,6 +6053,12 @@ export const localStars: LocalStar[] = [
       -32.539,
       -30.438
     ],
+    "velocityLyPerYear": [
+      -0.00008059315,
+      -0.0001132087,
+      -0.00001878659
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4344,6 +6074,12 @@ export const localStars: LocalStar[] = [
       -35.227,
       31.014
     ],
+    "velocityLyPerYear": [
+      -0.00002811465,
+      0.00009076921,
+      0.000093248
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4359,6 +6095,12 @@ export const localStars: LocalStar[] = [
       -36.08,
       -24.772
     ],
+    "velocityLyPerYear": [
+      -0.0001644152,
+      0.0001300384,
+      0.0003977799
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4374,6 +6116,12 @@ export const localStars: LocalStar[] = [
       26.348,
       -39.471
     ],
+    "velocityLyPerYear": [
+      0.00001917797,
+      -0.0001114149,
+      0.0001182315
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4389,6 +6137,12 @@ export const localStars: LocalStar[] = [
       -11.878,
       47.046
     ],
+    "velocityLyPerYear": [
+      0.000009980374,
+      0.00003284391,
+      0.000003326791
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4404,6 +6158,12 @@ export const localStars: LocalStar[] = [
       38.121,
       -5.763
     ],
+    "velocityLyPerYear": [
+      -0.0000719174,
+      0.000001011084,
+      0.00007674451
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4419,6 +6179,12 @@ export const localStars: LocalStar[] = [
       10.566,
       -47.14
     ],
+    "velocityLyPerYear": [
+      0.00002005859,
+      -0.00004204151,
+      -0.00005495729
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4434,6 +6200,12 @@ export const localStars: LocalStar[] = [
       -20.379,
       -1.624
     ],
+    "velocityLyPerYear": [
+      -0.000004044334,
+      -0.00001249177,
+      -0.00002380939
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4449,6 +6221,12 @@ export const localStars: LocalStar[] = [
       26.537,
       -39.756
     ],
+    "velocityLyPerYear": [
+      0.00004047596,
+      -0.00003108267,
+      -0.00001046961
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4464,6 +6242,12 @@ export const localStars: LocalStar[] = [
       -19.85,
       25.315
     ],
+    "velocityLyPerYear": [
+      -0.00005580529,
+      0.00000949114,
+      0.0001531629
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4479,6 +6263,12 @@ export const localStars: LocalStar[] = [
       43.538,
       -14.622
     ],
+    "velocityLyPerYear": [
+      0.000001859089,
+      -0.00002876696,
+      0.00004520522
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4494,6 +6284,12 @@ export const localStars: LocalStar[] = [
       -35.181,
       11.127
     ],
+    "velocityLyPerYear": [
+      0.00000326156,
+      0.000002217861,
+      0.000168851
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4509,6 +6305,12 @@ export const localStars: LocalStar[] = [
       -36.481,
       6.618
     ],
+    "velocityLyPerYear": [
+      -0.00002031952,
+      0.00004073688,
+      0.00004086735
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4524,6 +6326,12 @@ export const localStars: LocalStar[] = [
       -3.535,
       49.313
     ],
+    "velocityLyPerYear": [
+      -0.000009849911,
+      -0.00006281765,
+      0.0001028044
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4539,6 +6347,12 @@ export const localStars: LocalStar[] = [
       -27.864,
       36.765
     ],
+    "velocityLyPerYear": [
+      -0.0001817667,
+      0.000150521,
+      0.0004857115
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4554,6 +6368,12 @@ export const localStars: LocalStar[] = [
       13.346,
       47.968
     ],
+    "velocityLyPerYear": [
+      0.00003043035,
+      -0.00003447469,
+      -0.00003003897
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4569,6 +6389,12 @@ export const localStars: LocalStar[] = [
       -30.773,
       -33.085
     ],
+    "velocityLyPerYear": [
+      -0.00005981701,
+      -0.00003029989,
+      0.00009347631
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4584,6 +6410,12 @@ export const localStars: LocalStar[] = [
       30.936,
       31.585
     ],
+    "velocityLyPerYear": [
+      0.00001686227,
+      -0.000008904059,
+      -0.000003946488
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4599,6 +6431,12 @@ export const localStars: LocalStar[] = [
       -4.693,
       38.979
     ],
+    "velocityLyPerYear": [
+      0.000004500953,
+      -0.000181995,
+      -0.00008395255
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4614,6 +6452,12 @@ export const localStars: LocalStar[] = [
       -21.044,
       7.4
     ],
+    "velocityLyPerYear": [
+      -0.000002283092,
+      -0.00002977804,
+      0.0003505525
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4629,6 +6473,12 @@ export const localStars: LocalStar[] = [
       -2.702,
       49.522
     ],
+    "velocityLyPerYear": [
+      -0.0001174488,
+      0.0000177755,
+      0.0003156864
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4644,6 +6494,12 @@ export const localStars: LocalStar[] = [
       2.394,
       -17.966
     ],
+    "velocityLyPerYear": [
+      -0.00008382209,
+      0.0000529025,
+      -0.000035551
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4659,6 +6515,12 @@ export const localStars: LocalStar[] = [
       -39.775,
       -31.187
     ],
+    "velocityLyPerYear": [
+      1.304624e-7,
+      -0.000005381574,
+      0.00005554437
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4674,6 +6536,12 @@ export const localStars: LocalStar[] = [
       2.751,
       -47.084
     ],
+    "velocityLyPerYear": [
+      0.00002116752,
+      0.00001435086,
+      0.0001163725
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4689,6 +6557,12 @@ export const localStars: LocalStar[] = [
       -1.025,
       43.57
     ],
+    "velocityLyPerYear": [
+      0.0000478797,
+      -0.00003453992,
+      -0.00000704497
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4704,6 +6578,12 @@ export const localStars: LocalStar[] = [
       -21.225,
       7.464
     ],
+    "velocityLyPerYear": [
+      0.00001872135,
+      -0.00003656209,
+      0.0003489869
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4719,6 +6599,12 @@ export const localStars: LocalStar[] = [
       26.871,
       39.563
     ],
+    "velocityLyPerYear": [
+      0.00003206113,
+      -0.00002044998,
+      0.00005365266
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4734,6 +6620,12 @@ export const localStars: LocalStar[] = [
       18.051,
       -12.827
     ],
+    "velocityLyPerYear": [
+      -0.00009253046,
+      -0.00002579894,
+      0.00007922329
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4749,6 +6641,12 @@ export const localStars: LocalStar[] = [
       15.281,
       -21.921
     ],
+    "velocityLyPerYear": [
+      -0.000004207412,
+      -0.000003359407,
+      0.0001307886
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4764,6 +6662,12 @@ export const localStars: LocalStar[] = [
       -28.893,
       -17.968
     ],
+    "velocityLyPerYear": [
+      0.00004279167,
+      -0.00003388761,
+      -0.0000361707
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4779,6 +6683,12 @@ export const localStars: LocalStar[] = [
       -9.49,
       10.956
     ],
+    "velocityLyPerYear": [
+      0.00002811465,
+      -0.00006095856,
+      -0.00005107603
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4794,6 +6704,12 @@ export const localStars: LocalStar[] = [
       28.163,
       -40.174
     ],
+    "velocityLyPerYear": [
+      -0.000009328062,
+      -0.000003685563,
+      0.00008176731
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4809,6 +6725,12 @@ export const localStars: LocalStar[] = [
       20.372,
       -40.482
     ],
+    "velocityLyPerYear": [
+      -0.0001708079,
+      -0.0002112186,
+      -0.0002012056
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4824,6 +6746,12 @@ export const localStars: LocalStar[] = [
       27.234,
       40.092
     ],
+    "velocityLyPerYear": [
+      0.00003339837,
+      -0.00002292877,
+      0.0000250814
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4839,6 +6767,12 @@ export const localStars: LocalStar[] = [
       -34.46,
       7.622
     ],
+    "velocityLyPerYear": [
+      -0.00009217169,
+      0.00004357444,
+      0.00005828408
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4854,6 +6788,12 @@ export const localStars: LocalStar[] = [
       25.621,
       -28.015
     ],
+    "velocityLyPerYear": [
+      0.00004028027,
+      0.00003033251,
+      -0.00002814726
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4869,6 +6809,12 @@ export const localStars: LocalStar[] = [
       25.779,
       -38.471
     ],
+    "velocityLyPerYear": [
+      0.0001124586,
+      -0.0001902142,
+      0.0001456939
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4884,6 +6830,12 @@ export const localStars: LocalStar[] = [
       16.548,
       47.754
     ],
+    "velocityLyPerYear": [
+      -0.0001298101,
+      0.000006588351,
+      0.0000280168
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4899,6 +6851,12 @@ export const localStars: LocalStar[] = [
       34.987,
       -32.494
     ],
+    "velocityLyPerYear": [
+      0.0002232538,
+      -0.0000102413,
+      0.0001504558
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4914,6 +6872,12 @@ export const localStars: LocalStar[] = [
       -38.341,
       -19.233
     ],
+    "velocityLyPerYear": [
+      -0.00003558362,
+      -0.00003467038,
+      0.0000729611
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4929,6 +6893,12 @@ export const localStars: LocalStar[] = [
       -32.388,
       34.036
     ],
+    "velocityLyPerYear": [
+      0.00002814726,
+      -0.000008806212,
+      0.0001366267
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4944,6 +6914,12 @@ export const localStars: LocalStar[] = [
       -26.208,
       -17.495
     ],
+    "velocityLyPerYear": [
+      -0.00005384836,
+      -0.0001911274,
+      0.00008356117
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4959,6 +6935,12 @@ export const localStars: LocalStar[] = [
       34.923,
       27.558
     ],
+    "velocityLyPerYear": [
+      0.00001324193,
+      0.00001868874,
+      0.0001615777
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4974,6 +6956,12 @@ export const localStars: LocalStar[] = [
       2.503,
       -18.778
     ],
+    "velocityLyPerYear": [
+      0.000002707095,
+      0.00005172834,
+      -2.283092e-7
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -4989,6 +6977,12 @@ export const localStars: LocalStar[] = [
       -49.174,
       -2.786
     ],
+    "velocityLyPerYear": [
+      0.00005280466,
+      -0.00002981066,
+      0.0001487598
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5004,6 +6998,12 @@ export const localStars: LocalStar[] = [
       -45.911,
       22.802
     ],
+    "velocityLyPerYear": [
+      -0.0001401166,
+      -0.00002576632,
+      -0.0000219503
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5019,6 +7019,12 @@ export const localStars: LocalStar[] = [
       -50.871,
       5.898
     ],
+    "velocityLyPerYear": [
+      0.00001183946,
+      0.00001311147,
+      -7.175432e-7
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5034,6 +7040,12 @@ export const localStars: LocalStar[] = [
       51.461,
       11.017
     ],
+    "velocityLyPerYear": [
+      0.000001402471,
+      0.00003111528,
+      0.0001747544
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5049,6 +7061,12 @@ export const localStars: LocalStar[] = [
       11.208,
       -16.338
     ],
+    "velocityLyPerYear": [
+      0.00002570109,
+      -0.0001281467,
+      0.00005476159
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5064,6 +7082,12 @@ export const localStars: LocalStar[] = [
       -0.989,
       -52.847
     ],
+    "velocityLyPerYear": [
+      8.480056e-7,
+      -0.00003966057,
+      0.0002606965
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5079,6 +7103,12 @@ export const localStars: LocalStar[] = [
       41.868,
       -32.681
     ],
+    "velocityLyPerYear": [
+      0.00004999971,
+      -0.0001162094,
+      -0.000008023438
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5094,6 +7124,12 @@ export const localStars: LocalStar[] = [
       8.724,
       -34.502
     ],
+    "velocityLyPerYear": [
+      -0.00001689488,
+      -0.00004041073,
+      0.0000648072
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5109,6 +7145,12 @@ export const localStars: LocalStar[] = [
       -27.563,
       45.82
     ],
+    "velocityLyPerYear": [
+      0.00009752064,
+      0.0000505868,
+      0.0004264816
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5124,6 +7166,12 @@ export const localStars: LocalStar[] = [
       35.709,
       28.177
     ],
+    "velocityLyPerYear": [
+      0.00004895602,
+      -0.00004814063,
+      0.0001102733
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5139,6 +7187,12 @@ export const localStars: LocalStar[] = [
       -0.997,
       -53.176
     ],
+    "velocityLyPerYear": [
+      0.000001304624,
+      -0.00004054119,
+      0.0002488896
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5154,6 +7208,12 @@ export const localStars: LocalStar[] = [
       9.111,
       -33.383
     ],
+    "velocityLyPerYear": [
+      0.00006350257,
+      -0.00007266756,
+      -0.00001757981
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5169,6 +7229,12 @@ export const localStars: LocalStar[] = [
       -37.154,
       37.496
     ],
+    "velocityLyPerYear": [
+      -0.0000510108,
+      -0.0001252439,
+      0.0002753409
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5184,6 +7250,12 @@ export const localStars: LocalStar[] = [
       -48.971,
       -14.886
     ],
+    "velocityLyPerYear": [
+      0.000001598164,
+      -0.00004771662,
+      0.00006787306
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5199,6 +7271,12 @@ export const localStars: LocalStar[] = [
       -13.059,
       46.633
     ],
+    "velocityLyPerYear": [
+      0.00002573371,
+      -0.00008793166,
+      -0.00001095884
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5214,6 +7292,12 @@ export const localStars: LocalStar[] = [
       37.584,
       38.68
     ],
+    "velocityLyPerYear": [
+      0.00001787335,
+      -0.00002325492,
+      -0.00008607257
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5229,6 +7313,12 @@ export const localStars: LocalStar[] = [
       -22.064,
       49.79
     ],
+    "velocityLyPerYear": [
+      0.000007599435,
+      -0.000003424638,
+      0.00008078884
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5244,6 +7334,12 @@ export const localStars: LocalStar[] = [
       4.727,
       -41.679
     ],
+    "velocityLyPerYear": [
+      0.00009034521,
+      0.000006457889,
+      0.0002473893
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5259,6 +7355,12 @@ export const localStars: LocalStar[] = [
       26.69,
       41.282
     ],
+    "velocityLyPerYear": [
+      -0.00005786007,
+      -0.000245465,
+      0.0001900837
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5274,6 +7376,12 @@ export const localStars: LocalStar[] = [
       46.997,
       1.124
     ],
+    "velocityLyPerYear": [
+      0.00005482682,
+      0.000007795128,
+      0.0001411929
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5289,6 +7397,12 @@ export const localStars: LocalStar[] = [
       -49.058,
       19.208
     ],
+    "velocityLyPerYear": [
+      -0.00005815361,
+      -0.0002004229,
+      0.0000794516
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5304,6 +7418,12 @@ export const localStars: LocalStar[] = [
       53.356,
       4.413
     ],
+    "velocityLyPerYear": [
+      -0.000004142181,
+      -0.00007286325,
+      -0.00001121977
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5319,6 +7439,12 @@ export const localStars: LocalStar[] = [
       10.253,
       -52.823
     ],
+    "velocityLyPerYear": [
+      0.00003235468,
+      -0.000119634,
+      0.00001288316
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5334,6 +7460,12 @@ export const localStars: LocalStar[] = [
       40.452,
       35.377
     ],
+    "velocityLyPerYear": [
+      -0.00008199562,
+      0.0001749175,
+      0.0002144476
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5349,6 +7481,12 @@ export const localStars: LocalStar[] = [
       23.199,
       -10.587
     ],
+    "velocityLyPerYear": [
+      -0.000004827109,
+      -0.00003796456,
+      0.00009057352
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5364,6 +7502,12 @@ export const localStars: LocalStar[] = [
       47.418,
       -3.527
     ],
+    "velocityLyPerYear": [
+      -0.00003007158,
+      -0.00005410928,
+      0.0003022161
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5379,6 +7523,12 @@ export const localStars: LocalStar[] = [
       -33.903,
       -41.843
     ],
+    "velocityLyPerYear": [
+      -0.00002116752,
+      -0.0001972918,
+      -0.0001044025
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5394,6 +7544,12 @@ export const localStars: LocalStar[] = [
       47.21,
       -26.583
     ],
+    "velocityLyPerYear": [
+      -0.0000832024,
+      -0.00002312446,
+      -0.0001551198
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5409,6 +7565,12 @@ export const localStars: LocalStar[] = [
       10.367,
       -27.932
     ],
+    "velocityLyPerYear": [
+      0.00003124574,
+      -0.00008744242,
+      -0.000007990822
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5424,6 +7586,12 @@ export const localStars: LocalStar[] = [
       -22.856,
       -34.464
     ],
+    "velocityLyPerYear": [
+      0.000007697282,
+      -0.00001614472,
+      0.0003539445
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5439,6 +7607,12 @@ export const localStars: LocalStar[] = [
       -3.729,
       -13.913
     ],
+    "velocityLyPerYear": [
+      -0.0001157528,
+      -0.00004602061,
+      0.0001400514
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5454,6 +7628,12 @@ export const localStars: LocalStar[] = [
       -43.243,
       -16.566
     ],
+    "velocityLyPerYear": [
+      -0.00001682965,
+      0.00005446805,
+      0.0001696337
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5469,6 +7649,12 @@ export const localStars: LocalStar[] = [
       -2.676,
       34.077
     ],
+    "velocityLyPerYear": [
+      -0.00005254373,
+      -0.00001040438,
+      -0.000005968655
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5484,6 +7670,12 @@ export const localStars: LocalStar[] = [
       -43.392,
       23.049
     ],
+    "velocityLyPerYear": [
+      7.827744e-7,
+      -0.00000244617,
+      0.000120058
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5499,6 +7691,12 @@ export const localStars: LocalStar[] = [
       55.262,
       8.286
     ],
+    "velocityLyPerYear": [
+      0.0001266138,
+      -0.00001956936,
+      0.00003838856
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5514,6 +7712,12 @@ export const localStars: LocalStar[] = [
       1.215,
       -32.801
     ],
+    "velocityLyPerYear": [
+      0.00008440917,
+      -0.0001311147,
+      -0.00001405732
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5529,6 +7733,12 @@ export const localStars: LocalStar[] = [
       30.866,
       -40.795
     ],
+    "velocityLyPerYear": [
+      -0.0001294187,
+      -0.0001423671,
+      -0.000118362
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5544,6 +7754,12 @@ export const localStars: LocalStar[] = [
       -0.026,
       -53.876
     ],
+    "velocityLyPerYear": [
+      -0.0002294834,
+      -0.000404727,
+      -0.00008891013
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5559,6 +7775,12 @@ export const localStars: LocalStar[] = [
       26.922,
       32.139
     ],
+    "velocityLyPerYear": [
+      -0.00001666657,
+      -0.0001521844,
+      -0.000003652947
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5574,6 +7796,12 @@ export const localStars: LocalStar[] = [
       -1.331,
       -42.224
     ],
+    "velocityLyPerYear": [
+      -0.0002598485,
+      -0.0001342784,
+      0.0002342779
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5589,6 +7817,12 @@ export const localStars: LocalStar[] = [
       7.258,
       15.307
     ],
+    "velocityLyPerYear": [
+      0.0000167318,
+      -0.00002100445,
+      0.0000687863
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5604,6 +7838,12 @@ export const localStars: LocalStar[] = [
       -34.014,
       -43.157
     ],
+    "velocityLyPerYear": [
+      -0.00002824511,
+      0.00004589015,
+      0.0001874745
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5619,6 +7859,12 @@ export const localStars: LocalStar[] = [
       -51.594,
       19.747
     ],
+    "velocityLyPerYear": [
+      0.00005368528,
+      -0.00001451394,
+      -0.000006131733
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5634,6 +7880,12 @@ export const localStars: LocalStar[] = [
       36.468,
       7.649
     ],
+    "velocityLyPerYear": [
+      -0.00006187179,
+      -0.0002781785,
+      0.00008786643
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5649,6 +7901,12 @@ export const localStars: LocalStar[] = [
       -2.731,
       34.543
     ],
+    "velocityLyPerYear": [
+      -0.0000453683,
+      -0.000002609248,
+      9.78468e-8
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5664,6 +7922,12 @@ export const localStars: LocalStar[] = [
       -20.389,
       -52.042
     ],
+    "velocityLyPerYear": [
+      0.00007892975,
+      -0.00004184581,
+      0.00003476823
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5679,6 +7943,12 @@ export const localStars: LocalStar[] = [
       -5.37,
       40.896
     ],
+    "velocityLyPerYear": [
+      0.000008936674,
+      -0.000001728627,
+      0.0001553481
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5694,6 +7964,12 @@ export const localStars: LocalStar[] = [
       -36.582,
       33.74
     ],
+    "velocityLyPerYear": [
+      -0.000003979103,
+      0.000008904059,
+      0.00001288316
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5709,6 +7985,12 @@ export const localStars: LocalStar[] = [
       28.607,
       -27.101
     ],
+    "velocityLyPerYear": [
+      -0.00004021503,
+      0.00004174797,
+      0.0001048918
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5724,6 +8006,12 @@ export const localStars: LocalStar[] = [
       -45.85,
       14.543
     ],
+    "velocityLyPerYear": [
+      -0.00001832997,
+      -0.00005208711,
+      0.0000422372
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5739,6 +8027,12 @@ export const localStars: LocalStar[] = [
       -39.975,
       -33.255
     ],
+    "velocityLyPerYear": [
+      -0.00000163078,
+      -0.00003943226,
+      0.00007935375
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5754,6 +8048,12 @@ export const localStars: LocalStar[] = [
       23.105,
       51.157
     ],
+    "velocityLyPerYear": [
+      -0.00003711655,
+      -0.0001302015,
+      -0.0001134371
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5769,6 +8069,12 @@ export const localStars: LocalStar[] = [
       -0.808,
       49.576
     ],
+    "velocityLyPerYear": [
+      0.00004983664,
+      1.956936e-7,
+      0.00001285055
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5784,6 +8090,12 @@ export const localStars: LocalStar[] = [
       -28.742,
       2.734
     ],
+    "velocityLyPerYear": [
+      0.000001793858,
+      -0.00007413526,
+      0.00007331987
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5799,6 +8111,12 @@ export const localStars: LocalStar[] = [
       -56.177,
       0.711
     ],
+    "velocityLyPerYear": [
+      -0.00002420078,
+      -0.000002837557,
+      0.0001186229
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5814,6 +8132,12 @@ export const localStars: LocalStar[] = [
       27.334,
       32.627
     ],
+    "velocityLyPerYear": [
+      -0.00006069763,
+      -0.00012345,
+      0.00003245252
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5829,6 +8153,12 @@ export const localStars: LocalStar[] = [
       -33.667,
       -46.287
     ],
+    "velocityLyPerYear": [
+      0.00003026728,
+      -0.00002410293,
+      -0.00003607285
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5844,6 +8174,12 @@ export const localStars: LocalStar[] = [
       52.688,
       -18.589
     ],
+    "velocityLyPerYear": [
+      0.00006118687,
+      0.00001829735,
+      0.0001410299
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5859,6 +8195,12 @@ export const localStars: LocalStar[] = [
       -13.792,
       -38.09
     ],
+    "velocityLyPerYear": [
+      -0.00000978468,
+      0.00001474225,
+      0.0001549241
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5874,6 +8216,12 @@ export const localStars: LocalStar[] = [
       -50.72,
       -26.938
     ],
+    "velocityLyPerYear": [
+      -0.00001682965,
+      -0.00005678376,
+      -0.0001050875
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5889,6 +8237,12 @@ export const localStars: LocalStar[] = [
       -22.695,
       44.157
     ],
+    "velocityLyPerYear": [
+      0.0000169275,
+      -0.0001444219,
+      -0.00005538129
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5904,6 +8258,12 @@ export const localStars: LocalStar[] = [
       -11.241,
       -51.889
     ],
+    "velocityLyPerYear": [
+      -7.827744e-7,
+      0.00003630116,
+      0.0001695685
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5919,6 +8279,12 @@ export const localStars: LocalStar[] = [
       -1.359,
       -43.127
     ],
+    "velocityLyPerYear": [
+      -0.0001103386,
+      -0.0001350938,
+      0.0004104347
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5934,6 +8300,12 @@ export const localStars: LocalStar[] = [
       -53.348,
       -19.031
     ],
+    "velocityLyPerYear": [
+      0.0001030653,
+      -0.00003535531,
+      0.0002856148
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5949,6 +8321,12 @@ export const localStars: LocalStar[] = [
       -33.288,
       45.151
     ],
+    "velocityLyPerYear": [
+      0.000001500318,
+      -0.00002615771,
+      -0.00001973244
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5964,6 +8342,12 @@ export const localStars: LocalStar[] = [
       -31.147,
       48.354
     ],
+    "velocityLyPerYear": [
+      -0.00007058016,
+      -0.00002149368,
+      -0.000003359407
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5979,6 +8363,12 @@ export const localStars: LocalStar[] = [
       26.337,
       30.991
     ],
+    "velocityLyPerYear": [
+      -0.00002243953,
+      -0.00004765139,
+      0.00006862322
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -5994,6 +8384,12 @@ export const localStars: LocalStar[] = [
       42.708,
       -37.881
     ],
+    "velocityLyPerYear": [
+      -0.00001888443,
+      0.00003287652,
+      0.00007808175
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6009,6 +8405,12 @@ export const localStars: LocalStar[] = [
       -0.826,
       50.564
     ],
+    "velocityLyPerYear": [
+      0.00004491168,
+      0.000001043699,
+      0.00001007822
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6024,6 +8426,12 @@ export const localStars: LocalStar[] = [
       17.511,
       -16.668
     ],
+    "velocityLyPerYear": [
+      0.000007892975,
+      0.00002318969,
+      0.0001342784
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6039,6 +8447,12 @@ export const localStars: LocalStar[] = [
       -27.835,
       -49.597
     ],
+    "velocityLyPerYear": [
+      0.00002074352,
+      -0.00009106276,
+      -0.00001389425
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6054,6 +8468,12 @@ export const localStars: LocalStar[] = [
       -45.633,
       17.523
     ],
+    "velocityLyPerYear": [
+      -0.00004960833,
+      0.0000662749,
+      0.0001923342
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6069,6 +8489,12 @@ export const localStars: LocalStar[] = [
       29.384,
       -38.988
     ],
+    "velocityLyPerYear": [
+      0.00002491832,
+      -0.00005531606,
+      -0.00002563586
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6084,6 +8510,12 @@ export const localStars: LocalStar[] = [
       57.33,
       10.344
     ],
+    "velocityLyPerYear": [
+      -0.000008088669,
+      0.00002061306,
+      0.0001792553
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6099,6 +8531,12 @@ export const localStars: LocalStar[] = [
       -27.893,
       49.232
     ],
+    "velocityLyPerYear": [
+      -0.00004967356,
+      -0.00007583127,
+      0.00001917797
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6114,6 +8552,12 @@ export const localStars: LocalStar[] = [
       14.874,
       -31.436
     ],
+    "velocityLyPerYear": [
+      -0.000002315708,
+      -0.00004546615,
+      0.00008026699
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6129,6 +8573,12 @@ export const localStars: LocalStar[] = [
       -35.167,
       -44.618
     ],
+    "velocityLyPerYear": [
+      -0.00002707095,
+      0.00004341136,
+      0.0001815058
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6144,6 +8594,12 @@ export const localStars: LocalStar[] = [
       20.485,
       10.884
     ],
+    "velocityLyPerYear": [
+      0.00004106304,
+      -0.00005821885,
+      -0.00004977141
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6159,6 +8615,12 @@ export const localStars: LocalStar[] = [
       -33.322,
       42.456
     ],
+    "velocityLyPerYear": [
+      -0.000002902788,
+      0.000004827109,
+      0.0001250156
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6174,6 +8636,12 @@ export const localStars: LocalStar[] = [
       10.797,
       57.446
     ],
+    "velocityLyPerYear": [
+      -0.00002416816,
+      -0.00007919068,
+      0.00003388761
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6189,6 +8657,12 @@ export const localStars: LocalStar[] = [
       3.072,
       8.45
     ],
+    "velocityLyPerYear": [
+      0.00002716879,
+      0.00005450067,
+      0.0002055435
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6204,6 +8678,12 @@ export const localStars: LocalStar[] = [
       4.538,
       38.527
     ],
+    "velocityLyPerYear": [
+      -0.00002022167,
+      0.000005316343,
+      0.00005847977
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6219,6 +8699,12 @@ export const localStars: LocalStar[] = [
       26.724,
       48.752
     ],
+    "velocityLyPerYear": [
+      -0.00001784073,
+      0.00001637303,
+      0.0001389425
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6234,6 +8720,12 @@ export const localStars: LocalStar[] = [
       -26.016,
       -33.8
     ],
+    "velocityLyPerYear": [
+      -0.0001803643,
+      -0.00006558997,
+      -0.00006451366
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6249,6 +8741,12 @@ export const localStars: LocalStar[] = [
       20.839,
       26.299
     ],
+    "velocityLyPerYear": [
+      -0.00001444871,
+      -0.0000336593,
+      0.00002332015
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6264,6 +8762,12 @@ export const localStars: LocalStar[] = [
       13.101,
       56.11
     ],
+    "velocityLyPerYear": [
+      0.00001060007,
+      -0.00003062605,
+      0.0001139589
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6279,6 +8783,12 @@ export const localStars: LocalStar[] = [
       -35.137,
       -16.231
     ],
+    "velocityLyPerYear": [
+      -0.00001963459,
+      -0.0000202869,
+      0.00009621602
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6294,6 +8804,12 @@ export const localStars: LocalStar[] = [
       -34.88,
       -24.867
     ],
+    "velocityLyPerYear": [
+      -0.000006196964,
+      -0.0001214605,
+      0.0001701556
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6309,6 +8825,12 @@ export const localStars: LocalStar[] = [
       -25.614,
       -30.184
     ],
+    "velocityLyPerYear": [
+      -0.00004354183,
+      0.0001246568,
+      0.00009347631
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6324,6 +8846,12 @@ export const localStars: LocalStar[] = [
       22.02,
       51.244
     ],
+    "velocityLyPerYear": [
+      0.000001891705,
+      3.26156e-8,
+      0.000009099752
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6339,6 +8867,12 @@ export const localStars: LocalStar[] = [
       31.004,
       46.3
     ],
+    "velocityLyPerYear": [
+      -0.00003434423,
+      0.00005244588,
+      -0.00003607285
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6354,6 +8888,12 @@ export const localStars: LocalStar[] = [
       11.818,
       44.431
     ],
+    "velocityLyPerYear": [
+      0.00003375715,
+      -0.0001494121,
+      0.000008512672
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6369,6 +8909,12 @@ export const localStars: LocalStar[] = [
       24.023,
       -36.65
     ],
+    "velocityLyPerYear": [
+      0.00003698609,
+      0.000004859724,
+      -0.00002250476
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6384,6 +8930,12 @@ export const localStars: LocalStar[] = [
       -50.931,
       -9.702
     ],
+    "velocityLyPerYear": [
+      0.0001185251,
+      0.0001626214,
+      0.0001155897
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6399,6 +8951,12 @@ export const localStars: LocalStar[] = [
       40.29,
       24.513
     ],
+    "velocityLyPerYear": [
+      -0.0001145786,
+      -0.0002023146,
+      0.00006575305
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6414,6 +8972,12 @@ export const localStars: LocalStar[] = [
       -27.011,
       5.634
     ],
+    "velocityLyPerYear": [
+      0.000001402471,
+      0.00001594903,
+      0.0001935736
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6429,6 +8993,12 @@ export const localStars: LocalStar[] = [
       -51.15,
       27.323
     ],
+    "velocityLyPerYear": [
+      0.00001607949,
+      -0.0001087404,
+      0.000001402471
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6444,6 +9014,12 @@ export const localStars: LocalStar[] = [
       27.257,
       43.403
     ],
+    "velocityLyPerYear": [
+      -0.00008033222,
+      -0.00004631415,
+      0.0001239393
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6459,6 +9035,12 @@ export const localStars: LocalStar[] = [
       -5.876,
       -38.723
     ],
+    "velocityLyPerYear": [
+      0.00001474225,
+      -0.00009350893,
+      -0.00002703833
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6474,6 +9056,12 @@ export const localStars: LocalStar[] = [
       -32.074,
       -23.175
     ],
+    "velocityLyPerYear": [
+      0.00002260261,
+      0.00002958235,
+      0.0001278532
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6489,6 +9077,12 @@ export const localStars: LocalStar[] = [
       -16.631,
       -7.986
     ],
+    "velocityLyPerYear": [
+      -0.000009915142,
+      -0.00001545979,
+      0.0001224716
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6504,6 +9098,12 @@ export const localStars: LocalStar[] = [
       43.923,
       -38.961
     ],
+    "velocityLyPerYear": [
+      -0.00002146106,
+      0.00003714917,
+      0.00008160423
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6519,6 +9119,12 @@ export const localStars: LocalStar[] = [
       -58.911,
       9.842
     ],
+    "velocityLyPerYear": [
+      -0.00005952347,
+      0.00001940628,
+      0.0003125879
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6534,6 +9140,12 @@ export const localStars: LocalStar[] = [
       -52.444,
       27.693
     ],
+    "velocityLyPerYear": [
+      0.00001888443,
+      -0.00002557063,
+      0.0001099798
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6549,6 +9161,12 @@ export const localStars: LocalStar[] = [
       45.958,
       -34.924
     ],
+    "velocityLyPerYear": [
+      -0.00004990187,
+      -0.00002120014,
+      0.0001057072
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6564,6 +9182,12 @@ export const localStars: LocalStar[] = [
       43.112,
       22.568
     ],
+    "velocityLyPerYear": [
+      -0.00006099117,
+      -0.000006686198,
+      -0.00003741009
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6579,6 +9203,12 @@ export const localStars: LocalStar[] = [
       10.473,
       -39.239
     ],
+    "velocityLyPerYear": [
+      0.00001614472,
+      -0.00008603995,
+      -0.000004664031
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6594,6 +9224,12 @@ export const localStars: LocalStar[] = [
       10.478,
       -39.254
     ],
+    "velocityLyPerYear": [
+      -0.00001921059,
+      -0.00009650956,
+      0.00003339837
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6609,6 +9245,12 @@ export const localStars: LocalStar[] = [
       49.15,
       -30.08
     ],
+    "velocityLyPerYear": [
+      0.00001607949,
+      -0.00004331352,
+      -8.480056e-7
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6624,6 +9266,12 @@ export const localStars: LocalStar[] = [
       22.634,
       52.678
     ],
+    "velocityLyPerYear": [
+      0.00002106968,
+      -0.00002120014,
+      -0.00004178058
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6639,6 +9287,12 @@ export const localStars: LocalStar[] = [
       -3.059,
       -60.14
     ],
+    "velocityLyPerYear": [
+      -0.0001586749,
+      -0.0002063263,
+      -0.00002746234
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6654,6 +9308,12 @@ export const localStars: LocalStar[] = [
       -39.279,
       27.918
     ],
+    "velocityLyPerYear": [
+      0.000022994,
+      0.00001532933,
+      0.00005176096
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6669,6 +9329,12 @@ export const localStars: LocalStar[] = [
       -32.759,
       -4.472
     ],
+    "velocityLyPerYear": [
+      -0.00006705767,
+      -0.00006079548,
+      0.00004582492
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6684,6 +9350,12 @@ export const localStars: LocalStar[] = [
       56.058,
       12.85
     ],
+    "velocityLyPerYear": [
+      -0.00002547278,
+      -0.00007283063,
+      0.0001652632
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6699,6 +9371,12 @@ export const localStars: LocalStar[] = [
       44.396,
       -39.993
     ],
+    "velocityLyPerYear": [
+      0.0001073706,
+      0.00005551175,
+      0.0002732861
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6714,6 +9392,12 @@ export const localStars: LocalStar[] = [
       -1.926,
       -60.167
     ],
+    "velocityLyPerYear": [
+      0.00002641864,
+      -0.00005130434,
+      0.0001878659
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6729,6 +9413,12 @@ export const localStars: LocalStar[] = [
       -11.781,
       35.77
     ],
+    "velocityLyPerYear": [
+      0.00001376378,
+      0.000003065866,
+      0.00008108238
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6744,6 +9434,12 @@ export const localStars: LocalStar[] = [
       30.63,
       -40.642
     ],
+    "velocityLyPerYear": [
+      0.00003258298,
+      -0.00006519858,
+      -0.00002286354
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6759,6 +9455,12 @@ export const localStars: LocalStar[] = [
       -24.024,
       11.992
     ],
+    "velocityLyPerYear": [
+      -0.000004109566,
+      0.00002589679,
+      0.0001554133
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6774,6 +9476,12 @@ export const localStars: LocalStar[] = [
       -21.325,
       -50.218
     ],
+    "velocityLyPerYear": [
+      0.00002997374,
+      -0.0001501948,
+      -0.0001285055
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6789,6 +9497,12 @@ export const localStars: LocalStar[] = [
       -58.486,
       -11.981
     ],
+    "velocityLyPerYear": [
+      0.00001751458,
+      -0.00002876696,
+      0.0001593924
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6804,6 +9518,12 @@ export const localStars: LocalStar[] = [
       53.534,
       6.776
     ],
+    "velocityLyPerYear": [
+      -0.000005609883,
+      0.00008506148,
+      -0.00002217861
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6819,6 +9539,12 @@ export const localStars: LocalStar[] = [
       57.3,
       18.943
     ],
+    "velocityLyPerYear": [
+      0.0000133724,
+      -0.00006467673,
+      0.0000723414
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6834,6 +9560,12 @@ export const localStars: LocalStar[] = [
       38.132,
       -40.997
     ],
+    "velocityLyPerYear": [
+      0.00002563586,
+      -0.00002074352,
+      0.0001084795
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6849,6 +9581,12 @@ export const localStars: LocalStar[] = [
       -39.827,
       28.307
     ],
+    "velocityLyPerYear": [
+      0.000001304624,
+      -0.000008056053,
+      0.00005404405
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6864,6 +9602,12 @@ export const localStars: LocalStar[] = [
       -0.288,
       53.54
     ],
+    "velocityLyPerYear": [
+      -0.00001046961,
+      -0.00007530942,
+      0.00007322202
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6879,6 +9623,12 @@ export const localStars: LocalStar[] = [
       -35.216,
       -47.176
     ],
+    "velocityLyPerYear": [
+      0.000005838192,
+      -0.000007077585,
+      0.00005172834
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6894,6 +9644,12 @@ export const localStars: LocalStar[] = [
       16.632,
       -51.278
     ],
+    "velocityLyPerYear": [
+      0.00001536195,
+      -0.0001502275,
+      -0.0001201233
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6909,6 +9665,12 @@ export const localStars: LocalStar[] = [
       -25.449,
       22.436
     ],
+    "velocityLyPerYear": [
+      -0.0001877028,
+      0.00002325492,
+      0.000008284362
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6924,6 +9686,12 @@ export const localStars: LocalStar[] = [
       9.286,
       -24.409
     ],
+    "velocityLyPerYear": [
+      -0.00005671853,
+      0.00002817988,
+      0.0001418452
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6939,6 +9707,12 @@ export const localStars: LocalStar[] = [
       -11.65,
       -9.828
     ],
+    "velocityLyPerYear": [
+      0.0001525105,
+      0.00005495729,
+      0.0001133718
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6954,6 +9728,12 @@ export const localStars: LocalStar[] = [
       30.572,
       52.321
     ],
+    "velocityLyPerYear": [
+      -0.00009908619,
+      -0.0001768092,
+      0.0001761895
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6969,6 +9749,12 @@ export const localStars: LocalStar[] = [
       34.894,
       35.297
     ],
+    "velocityLyPerYear": [
+      -0.00002941927,
+      0.00002077614,
+      0.000106229
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6984,6 +9770,12 @@ export const localStars: LocalStar[] = [
       11.316,
       -54.475
     ],
+    "velocityLyPerYear": [
+      0.00006761214,
+      -0.00004024765,
+      0.00002798418
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -6999,6 +9791,12 @@ export const localStars: LocalStar[] = [
       -54.462,
       30.611
     ],
+    "velocityLyPerYear": [
+      0.00004429198,
+      -0.00005133695,
+      -0.000009588986
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7014,6 +9812,12 @@ export const localStars: LocalStar[] = [
       5.581,
       62.357
     ],
+    "velocityLyPerYear": [
+      0.0000554139,
+      0.00005472898,
+      0.00003153929
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7029,6 +9833,12 @@ export const localStars: LocalStar[] = [
       2.98,
       -42.081
     ],
+    "velocityLyPerYear": [
+      -0.00008150638,
+      -0.00002289615,
+      0.00004589015
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7044,6 +9854,12 @@ export const localStars: LocalStar[] = [
       -24.378,
       44.868
     ],
+    "velocityLyPerYear": [
+      -0.00006278503,
+      0.00005870808,
+      0.0002040106
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7059,6 +9875,12 @@ export const localStars: LocalStar[] = [
       31.261,
       26.087
     ],
+    "velocityLyPerYear": [
+      -0.00001193731,
+      -0.0000890732,
+      -0.000002250476
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7074,6 +9896,12 @@ export const localStars: LocalStar[] = [
       -49.322,
       39.784
     ],
+    "velocityLyPerYear": [
+      0.000001989552,
+      -0.00003607285,
+      0.00006151302
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7089,6 +9917,12 @@ export const localStars: LocalStar[] = [
       24.494,
       -50.589
     ],
+    "velocityLyPerYear": [
+      0.00001431825,
+      -0.00007116724,
+      -0.0000261251
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7104,6 +9938,12 @@ export const localStars: LocalStar[] = [
       45.592,
       -30.89
     ],
+    "velocityLyPerYear": [
+      0.00004155227,
+      -0.000002185245,
+      0.0001325498
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7119,6 +9959,12 @@ export const localStars: LocalStar[] = [
       -26.229,
       -27.01
     ],
+    "velocityLyPerYear": [
+      -0.00006164348,
+      -0.00007155863,
+      0.0001697316
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7134,6 +9980,12 @@ export const localStars: LocalStar[] = [
       -26.153,
       49.172
     ],
+    "velocityLyPerYear": [
+      -0.0000551856,
+      -0.00005013018,
+      0.0001372791
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7149,6 +10001,12 @@ export const localStars: LocalStar[] = [
       -32.67,
       -43.689
     ],
+    "velocityLyPerYear": [
+      -0.00005502252,
+      -0.0001364637,
+      0.00006555736
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7164,6 +10022,12 @@ export const localStars: LocalStar[] = [
       20.122,
       -55.726
     ],
+    "velocityLyPerYear": [
+      -0.00008287624,
+      0.0001110561,
+      0.00007488542
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7179,6 +10043,12 @@ export const localStars: LocalStar[] = [
       -35.899,
       -50.214
     ],
+    "velocityLyPerYear": [
+      -0.0001644479,
+      -0.00005965393,
+      0.0001070444
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7194,6 +10064,12 @@ export const localStars: LocalStar[] = [
       -62.146,
       11.881
     ],
+    "velocityLyPerYear": [
+      -0.00004060642,
+      0.00005035849,
+      -0.000001011084
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7209,6 +10085,12 @@ export const localStars: LocalStar[] = [
       20.5,
       60.566
     ],
+    "velocityLyPerYear": [
+      -3.913872e-7,
+      -0.000002902788,
+      9.78468e-7
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7224,6 +10106,12 @@ export const localStars: LocalStar[] = [
       20.253,
       -56.087
     ],
+    "velocityLyPerYear": [
+      -0.00004011719,
+      0.00007570081,
+      0.0001821907
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7239,6 +10127,12 @@ export const localStars: LocalStar[] = [
       -21.245,
       60.038
     ],
+    "velocityLyPerYear": [
+      -0.00002012383,
+      -0.00002511401,
+      0.000002544017
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7254,6 +10148,12 @@ export const localStars: LocalStar[] = [
       -58.211,
       -0.829
     ],
+    "velocityLyPerYear": [
+      -0.000001956936,
+      -0.00003212637,
+      -0.00001076315
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7269,6 +10169,12 @@ export const localStars: LocalStar[] = [
       -61.71,
       -12.646
     ],
+    "velocityLyPerYear": [
+      0.00002733187,
+      0.000006262195,
+      0.0001708731
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7284,6 +10190,12 @@ export const localStars: LocalStar[] = [
       0.182,
       -41.967
     ],
+    "velocityLyPerYear": [
+      0.00002733187,
+      -0.00005880593,
+      0.0001699599
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7299,6 +10211,12 @@ export const localStars: LocalStar[] = [
       64.048,
       -6.286
     ],
+    "velocityLyPerYear": [
+      -0.00004686862,
+      -0.000006686198,
+      -0.000006588351
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7314,6 +10232,12 @@ export const localStars: LocalStar[] = [
       -25.031,
       46.073
     ],
+    "velocityLyPerYear": [
+      0.00002420078,
+      0.000124559,
+      0.00008786643
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7329,6 +10253,12 @@ export const localStars: LocalStar[] = [
       34.807,
       -28.583
     ],
+    "velocityLyPerYear": [
+      0.00003496392,
+      -0.00008685534,
+      0.00005652283
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7344,6 +10274,12 @@ export const localStars: LocalStar[] = [
       -57.162,
       26.464
     ],
+    "velocityLyPerYear": [
+      0.00006405704,
+      -0.0001182968,
+      -0.000009752064
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7359,6 +10295,12 @@ export const localStars: LocalStar[] = [
       -63.037,
       -10.856
     ],
+    "velocityLyPerYear": [
+      0.00002922358,
+      -0.000001565549,
+      -0.00002511401
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7374,6 +10316,12 @@ export const localStars: LocalStar[] = [
       55.164,
       -33.193
     ],
+    "velocityLyPerYear": [
+      0.00001715581,
+      -0.000005022802,
+      0.0001697642
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7389,6 +10337,12 @@ export const localStars: LocalStar[] = [
       48.969,
       41.945
     ],
+    "velocityLyPerYear": [
+      -0.0001810492,
+      -0.0001477487,
+      0.000003816025
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7404,6 +10358,12 @@ export const localStars: LocalStar[] = [
       -1.615,
       57.487
     ],
+    "velocityLyPerYear": [
+      -0.00009269354,
+      -0.00002808203,
+      0.0003363973
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7419,6 +10379,12 @@ export const localStars: LocalStar[] = [
       51.422,
       40.797
     ],
+    "velocityLyPerYear": [
+      0.0001631758,
+      -0.00009376985,
+      -0.0001339523
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7434,6 +10400,12 @@ export const localStars: LocalStar[] = [
       -43.893,
       46.069
     ],
+    "velocityLyPerYear": [
+      0.00003760579,
+      -0.00001956936,
+      -0.00002840819
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7449,6 +10421,12 @@ export const localStars: LocalStar[] = [
       26.202,
       31.806
     ],
+    "velocityLyPerYear": [
+      -0.00005378312,
+      -0.00006177395,
+      0.0000382581
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7464,6 +10442,12 @@ export const localStars: LocalStar[] = [
       45.894,
       20.264
     ],
+    "velocityLyPerYear": [
+      -0.00005084772,
+      -0.00008809474,
+      0.000001728627
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7479,6 +10463,12 @@ export const localStars: LocalStar[] = [
       56.369,
       0.944
     ],
+    "velocityLyPerYear": [
+      -0.00004647723,
+      -0.00003542054,
+      0.00007990822
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7494,6 +10484,12 @@ export const localStars: LocalStar[] = [
       40.887,
       -34.485
     ],
+    "velocityLyPerYear": [
+      -0.00006510074,
+      0.00005635976,
+      0.0001409972
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7509,6 +10505,12 @@ export const localStars: LocalStar[] = [
       17.185,
       42.866
     ],
+    "velocityLyPerYear": [
+      0.000007664666,
+      0.0001195688,
+      0.0002200575
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7524,6 +10526,12 @@ export const localStars: LocalStar[] = [
       61.244,
       17.416
     ],
+    "velocityLyPerYear": [
+      -0.00001992813,
+      -0.0000202869,
+      0.00001258962
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7539,6 +10547,12 @@ export const localStars: LocalStar[] = [
       18.541,
       -53.702
     ],
+    "velocityLyPerYear": [
+      -0.0002154587,
+      0.00007866883,
+      0.00008796427
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7554,6 +10568,12 @@ export const localStars: LocalStar[] = [
       -61.853,
       -15.49
     ],
+    "velocityLyPerYear": [
+      0.00007915806,
+      -0.00001532933,
+      -0.000005348958
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7569,6 +10589,12 @@ export const localStars: LocalStar[] = [
       19.054,
       54.508
     ],
+    "velocityLyPerYear": [
+      -0.00001493794,
+      -0.00003007158,
+      0.0001101429
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7584,6 +10610,12 @@ export const localStars: LocalStar[] = [
       18.939,
       59.646
     ],
+    "velocityLyPerYear": [
+      0.00004983664,
+      -0.000006979738,
+      0.0001862025
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7599,6 +10631,12 @@ export const localStars: LocalStar[] = [
       -62.166,
       7.796
     ],
+    "velocityLyPerYear": [
+      -0.000002217861,
+      -0.000001598164,
+      0.0001334304
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7614,6 +10652,12 @@ export const localStars: LocalStar[] = [
       -52.222,
       37.355
     ],
+    "velocityLyPerYear": [
+      0.00001412255,
+      -0.00002866911,
+      0.0001032284
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7629,6 +10673,12 @@ export const localStars: LocalStar[] = [
       17.284,
       43.109
     ],
+    "velocityLyPerYear": [
+      0.0001293861,
+      0.00007322202,
+      0.0001147743
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7644,6 +10694,12 @@ export const localStars: LocalStar[] = [
       -10.867,
       -52.002
     ],
+    "velocityLyPerYear": [
+      0.00001617734,
+      -0.0001181011,
+      -0.00002221122
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7659,6 +10715,12 @@ export const localStars: LocalStar[] = [
       -2.643,
       -20.848
     ],
+    "velocityLyPerYear": [
+      -0.00001408994,
+      0.000003131098,
+      0.00004249813
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7674,6 +10736,12 @@ export const localStars: LocalStar[] = [
       53.559,
       -7.52
     ],
+    "velocityLyPerYear": [
+      0.00001741673,
+      -0.0001134697,
+      0.00003352884
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7689,6 +10757,12 @@ export const localStars: LocalStar[] = [
       -59.146,
       -5.871
     ],
+    "velocityLyPerYear": [
+      5.544652e-7,
+      0.000001304624,
+      0.00005808838
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7704,6 +10778,12 @@ export const localStars: LocalStar[] = [
       -56.752,
       -14.404
     ],
+    "velocityLyPerYear": [
+      -0.0000470317,
+      -0.00007941899,
+      0.00008489841
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7719,6 +10799,12 @@ export const localStars: LocalStar[] = [
       -10.905,
       -52.231
     ],
+    "velocityLyPerYear": [
+      0.00001386163,
+      -0.0001211343,
+      -0.00002067829
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7734,6 +10820,12 @@ export const localStars: LocalStar[] = [
       62.876,
       9.704
     ],
+    "velocityLyPerYear": [
+      -0.00001914536,
+      -0.00009047567,
+      -0.0001435413
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7749,6 +10841,12 @@ export const localStars: LocalStar[] = [
       0.826,
       -65.484
     ],
+    "velocityLyPerYear": [
+      0.000007175432,
+      -0.0001101429,
+      0.00005110865
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7764,6 +10862,12 @@ export const localStars: LocalStar[] = [
       -41.322,
       -16.472
     ],
+    "velocityLyPerYear": [
+      -0.00001001299,
+      0.00004282428,
+      0.0001281793
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7779,6 +10883,12 @@ export const localStars: LocalStar[] = [
       22.234,
       55.876
     ],
+    "velocityLyPerYear": [
+      -0.00002191768,
+      -0.000160958,
+      -0.00002328754
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7794,6 +10904,12 @@ export const localStars: LocalStar[] = [
       67.289,
       2.387
     ],
+    "velocityLyPerYear": [
+      0.000009621602,
+      0.00003140882,
+      -0.00001040438
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7809,6 +10925,12 @@ export const localStars: LocalStar[] = [
       -15.738,
       -11.674
     ],
+    "velocityLyPerYear": [
+      0.00004412891,
+      -0.00003630116,
+      0.00009448739
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7824,6 +10946,12 @@ export const localStars: LocalStar[] = [
       36.398,
       57.244
     ],
+    "velocityLyPerYear": [
+      -0.00001245916,
+      -0.0001011736,
+      -0.0001106321
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7839,6 +10967,12 @@ export const localStars: LocalStar[] = [
       -46.88,
       47.305
     ],
+    "velocityLyPerYear": [
+      -0.00005238065,
+      -0.0001134371,
+      0.0003058365
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7854,6 +10988,12 @@ export const localStars: LocalStar[] = [
       -52.185,
       41.395
     ],
+    "velocityLyPerYear": [
+      0.0001238088,
+      -0.0001149048,
+      -0.000093248
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7869,6 +11009,12 @@ export const localStars: LocalStar[] = [
       -6.115,
       -38.804
     ],
+    "velocityLyPerYear": [
+      -0.00009155199,
+      -0.00003744271,
+      0.0001904425
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7884,6 +11030,12 @@ export const localStars: LocalStar[] = [
       66.919,
       12.558
     ],
+    "velocityLyPerYear": [
+      0.00001601426,
+      -0.00002511401,
+      -0.00006236103
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7899,6 +11051,12 @@ export const localStars: LocalStar[] = [
       -11.637,
       -17.1
     ],
+    "velocityLyPerYear": [
+      -0.0001057398,
+      0.00005936039,
+      0.0002546626
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7914,6 +11072,12 @@ export const localStars: LocalStar[] = [
       -60.813,
       4.406
     ],
+    "velocityLyPerYear": [
+      -0.00001363332,
+      -0.000004990187,
+      0.00002599463
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7929,6 +11093,12 @@ export const localStars: LocalStar[] = [
       42.051,
       -35.466
     ],
+    "velocityLyPerYear": [
+      -0.00003183283,
+      0.0001126217,
+      0.00009725972
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7944,6 +11114,12 @@ export const localStars: LocalStar[] = [
       6.24,
       47.92
     ],
+    "velocityLyPerYear": [
+      0.0001408015,
+      -0.00007981037,
+      -0.00002416816
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7959,6 +11135,12 @@ export const localStars: LocalStar[] = [
       23.294,
       -49.063
     ],
+    "velocityLyPerYear": [
+      -0.00006506812,
+      0.00005649022,
+      0.0001381597
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7974,6 +11156,12 @@ export const localStars: LocalStar[] = [
       -63.755,
       7.996
     ],
+    "velocityLyPerYear": [
+      -0.000002413554,
+      0.000002772326,
+      0.0001431825
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -7989,6 +11177,12 @@ export const localStars: LocalStar[] = [
       60.039,
       28.262
     ],
+    "velocityLyPerYear": [
+      -0.00004732524,
+      0.0001006844,
+      0.0002023146
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8004,6 +11198,12 @@ export const localStars: LocalStar[] = [
       -19.064,
       46.861
     ],
+    "velocityLyPerYear": [
+      -0.0003438337,
+      -0.00004377014,
+      0.0002320926
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8019,6 +11219,12 @@ export const localStars: LocalStar[] = [
       58.537,
       -31.133
     ],
+    "velocityLyPerYear": [
+      -0.00003917134,
+      0.0000361707,
+      0.0001468354
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8034,6 +11240,12 @@ export const localStars: LocalStar[] = [
       -4.302,
       10.494
     ],
+    "velocityLyPerYear": [
+      0.000007664666,
+      -0.000008740981,
+      0.0001390729
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8049,6 +11261,12 @@ export const localStars: LocalStar[] = [
       -23.898,
       0.234
     ],
+    "velocityLyPerYear": [
+      0.00008639872,
+      -0.0001182642,
+      -0.00004801016
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8064,6 +11282,12 @@ export const localStars: LocalStar[] = [
       38.304,
       -51.169
     ],
+    "velocityLyPerYear": [
+      -0.00007175432,
+      -0.00004670554,
+      0.00005521821
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8079,6 +11303,12 @@ export const localStars: LocalStar[] = [
       29.876,
       12.224
     ],
+    "velocityLyPerYear": [
+      0.000007925591,
+      0.00001741673,
+      0.00003440946
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8094,6 +11324,12 @@ export const localStars: LocalStar[] = [
       -64.215,
       8.001
     ],
+    "velocityLyPerYear": [
+      -0.000008740981,
+      0.00001369855,
+      0.0001359092
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8109,6 +11345,12 @@ export const localStars: LocalStar[] = [
       38.129,
       -51.404
     ],
+    "velocityLyPerYear": [
+      0.00004559661,
+      -0.0001144481,
+      -0.00008193039
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8124,6 +11366,12 @@ export const localStars: LocalStar[] = [
       -0.874,
       53.85
     ],
+    "velocityLyPerYear": [
+      0.00005065203,
+      0.000007827744,
+      0.00004060642
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8139,6 +11387,12 @@ export const localStars: LocalStar[] = [
       6.084,
       18.474
     ],
+    "velocityLyPerYear": [
+      0.00002619033,
+      0.00007941899,
+      0.0001253418
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8154,6 +11408,12 @@ export const localStars: LocalStar[] = [
       61.659,
       -11.384
     ],
+    "velocityLyPerYear": [
+      0.00005629453,
+      -0.00005883854,
+      0.0001634368
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8169,6 +11429,12 @@ export const localStars: LocalStar[] = [
       -67.478,
       -8.578
     ],
+    "velocityLyPerYear": [
+      -0.00003173498,
+      -0.0001295818,
+      0.00004833632
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8184,6 +11450,12 @@ export const localStars: LocalStar[] = [
       53.401,
       -39.718
     ],
+    "velocityLyPerYear": [
+      -0.00004833632,
+      -0.0001072075,
+      -0.000003913872
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8199,6 +11471,12 @@ export const localStars: LocalStar[] = [
       -48.935,
       -27.3
     ],
+    "velocityLyPerYear": [
+      0.00004429198,
+      -0.00004067165,
+      -0.00002175461
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8214,6 +11492,12 @@ export const localStars: LocalStar[] = [
       -38.458,
       -49.89
     ],
+    "velocityLyPerYear": [
+      -4.240028e-7,
+      -0.00006568782,
+      0.00008838828
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8229,6 +11513,12 @@ export const localStars: LocalStar[] = [
       -39.935,
       2.904
     ],
+    "velocityLyPerYear": [
+      -0.00001771027,
+      0.00005720776,
+      0.0000560336
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8244,6 +11534,12 @@ export const localStars: LocalStar[] = [
       1.905,
       -58.24
     ],
+    "velocityLyPerYear": [
+      9.132368e-7,
+      -0.00005870808,
+      0.0001104364
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8259,6 +11555,12 @@ export const localStars: LocalStar[] = [
       -61.057,
       32.651
     ],
+    "velocityLyPerYear": [
+      0.0000045988,
+      -0.00008303932,
+      0.00007465711
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8274,6 +11576,12 @@ export const localStars: LocalStar[] = [
       27.889,
       -62.074
     ],
+    "velocityLyPerYear": [
+      0.00005978439,
+      -0.00007403741,
+      -0.00005701207
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8289,6 +11597,12 @@ export const localStars: LocalStar[] = [
       -33.906,
       19.995
     ],
+    "velocityLyPerYear": [
+      0.00003140882,
+      -0.00001435086,
+      0.00006624228
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8304,6 +11618,12 @@ export const localStars: LocalStar[] = [
       -50.91,
       45.497
     ],
+    "velocityLyPerYear": [
+      0.00003467038,
+      0.00002211338,
+      0.00004174797
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8319,6 +11639,12 @@ export const localStars: LocalStar[] = [
       -39.967,
       -8.859
     ],
+    "velocityLyPerYear": [
+      0.00001366594,
+      -0.00003714917,
+      0.00008026699
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8334,6 +11660,12 @@ export const localStars: LocalStar[] = [
       20.266,
       -63.979
     ],
+    "velocityLyPerYear": [
+      0.00004380275,
+      -0.00008440917,
+      -0.00006728598
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8349,6 +11681,12 @@ export const localStars: LocalStar[] = [
       -53.131,
       -45.348
     ],
+    "velocityLyPerYear": [
+      0.00003845379,
+      -0.00004856463,
+      0.00003457254
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8364,6 +11702,12 @@ export const localStars: LocalStar[] = [
       59.687,
       1.002
     ],
+    "velocityLyPerYear": [
+      -0.00002769064,
+      -0.00002981066,
+      0.00008326763
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8379,6 +11723,12 @@ export const localStars: LocalStar[] = [
       -14.415,
       43.974
     ],
+    "velocityLyPerYear": [
+      -0.00001082838,
+      -0.00008933413,
+      0.00006709029
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8394,6 +11744,12 @@ export const localStars: LocalStar[] = [
       69.536,
       3.436
     ],
+    "velocityLyPerYear": [
+      0.00001487271,
+      0.00001480748,
+      0.000022994
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8409,6 +11765,12 @@ export const localStars: LocalStar[] = [
       -7.825,
       -22.893
     ],
+    "velocityLyPerYear": [
+      -0.0000840504,
+      -0.00009142153,
+      -0.00002651648
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8424,6 +11786,12 @@ export const localStars: LocalStar[] = [
       48.852,
       -8.406
     ],
+    "velocityLyPerYear": [
+      -0.000004696646,
+      0.00006379611,
+      0.0002203836
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8439,6 +11807,12 @@ export const localStars: LocalStar[] = [
       57.312,
       -17.822
     ],
+    "velocityLyPerYear": [
+      0.000002315708,
+      -0.000005283727,
+      0.00007977776
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8454,6 +11828,12 @@ export const localStars: LocalStar[] = [
       -9.238,
       -32.325
     ],
+    "velocityLyPerYear": [
+      -0.00006702506,
+      -0.000142628,
+      0.00006797091
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8469,6 +11849,12 @@ export const localStars: LocalStar[] = [
       2.192,
       13.74
     ],
+    "velocityLyPerYear": [
+      0.00004161751,
+      -0.0001942911,
+      -0.000008740981
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8484,6 +11870,12 @@ export const localStars: LocalStar[] = [
       -6.214,
       12.66
     ],
+    "velocityLyPerYear": [
+      -0.00008734458,
+      -0.00005502252,
+      -0.0002595876
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8499,6 +11891,12 @@ export const localStars: LocalStar[] = [
       5.5,
       -59.364
     ],
+    "velocityLyPerYear": [
+      0.00005397882,
+      0.00001868874,
+      0.000003620332
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8514,6 +11912,12 @@ export const localStars: LocalStar[] = [
       -18.029,
       68.02
     ],
+    "velocityLyPerYear": [
+      0.000008056053,
+      -0.00001428563,
+      0.00005208711
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8529,6 +11933,12 @@ export const localStars: LocalStar[] = [
       -35.173,
       24.629
     ],
+    "velocityLyPerYear": [
+      0.00009380247,
+      -0.00002824511,
+      0.00007325464
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8544,6 +11954,12 @@ export const localStars: LocalStar[] = [
       -65.827,
       8.201
     ],
+    "velocityLyPerYear": [
+      -0.00002286354,
+      0.000009393293,
+      0.0001427911
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8559,6 +11975,12 @@ export const localStars: LocalStar[] = [
       -62.976,
       25.473
     ],
+    "velocityLyPerYear": [
+      -0.00002325492,
+      0.00002253738,
+      0.0001848326
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8574,6 +11996,12 @@ export const localStars: LocalStar[] = [
       39.406,
       -52.644
     ],
+    "velocityLyPerYear": [
+      -0.00007142816,
+      -0.00004944525,
+      0.00006330688
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8589,6 +12017,12 @@ export const localStars: LocalStar[] = [
       5.973,
       -70.642
     ],
+    "velocityLyPerYear": [
+      5.218496e-7,
+      0.000003392022,
+      2.935404e-7
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8604,6 +12038,12 @@ export const localStars: LocalStar[] = [
       -11.655,
       45.045
     ],
+    "velocityLyPerYear": [
+      0.00001715581,
+      -0.00002452693,
+      -0.00004778185
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8619,6 +12059,12 @@ export const localStars: LocalStar[] = [
       38.135,
       50.337
     ],
+    "velocityLyPerYear": [
+      0.00002165676,
+      -0.0001325824,
+      0.0002585765
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8634,6 +12080,12 @@ export const localStars: LocalStar[] = [
       -57.342,
       15.879
     ],
+    "velocityLyPerYear": [
+      -0.00003786671,
+      -0.00001373117,
+      0.0001713297
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8649,6 +12101,12 @@ export const localStars: LocalStar[] = [
       45.537,
       -44.217
     ],
+    "velocityLyPerYear": [
+      -0.0001197319,
+      0.00001549241,
+      0.0001029022
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8664,6 +12122,12 @@ export const localStars: LocalStar[] = [
       -43.156,
       52.196
     ],
+    "velocityLyPerYear": [
+      0.00001480748,
+      -0.000002641864,
+      0.00004311782
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8679,6 +12143,12 @@ export const localStars: LocalStar[] = [
       43.176,
       56.603
     ],
+    "velocityLyPerYear": [
+      -0.0001658177,
+      -0.0001944868,
+      0.00004549876
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8694,6 +12164,12 @@ export const localStars: LocalStar[] = [
       -34.36,
       62.189
     ],
+    "velocityLyPerYear": [
+      0.00006024101,
+      -0.00002951712,
+      -0.00002664695
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8709,6 +12185,12 @@ export const localStars: LocalStar[] = [
       47.275,
       44.806
     ],
+    "velocityLyPerYear": [
+      0.00005029326,
+      -0.0002125232,
+      0.0004551507
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8724,6 +12206,12 @@ export const localStars: LocalStar[] = [
       33.227,
       59.835
     ],
+    "velocityLyPerYear": [
+      0.00001294839,
+      -0.00005505513,
+      0.00009425908
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8739,6 +12227,12 @@ export const localStars: LocalStar[] = [
       41.844,
       11.923
     ],
+    "velocityLyPerYear": [
+      -0.000003848641,
+      -0.00004879294,
+      0.00008884489
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8754,6 +12248,12 @@ export const localStars: LocalStar[] = [
       31.146,
       -55.227
     ],
+    "velocityLyPerYear": [
+      -0.00002954973,
+      -0.00002149368,
+      -0.000002250476
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8769,6 +12269,12 @@ export const localStars: LocalStar[] = [
       -28.927,
       38.183
     ],
+    "velocityLyPerYear": [
+      0.000005218496,
+      -0.00002619033,
+      0.00008806212
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8784,6 +12290,12 @@ export const localStars: LocalStar[] = [
       -31.742,
       -46.054
     ],
+    "velocityLyPerYear": [
+      -0.00001686227,
+      0.000003522485,
+      0.00006470935
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8799,6 +12311,12 @@ export const localStars: LocalStar[] = [
       61.867,
       31.077
     ],
+    "velocityLyPerYear": [
+      0.00006011055,
+      0.00002798418,
+      -0.00009174768
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8814,6 +12332,12 @@ export const localStars: LocalStar[] = [
       -63.135,
       16.931
     ],
+    "velocityLyPerYear": [
+      -0.00001715581,
+      -0.0000401498,
+      0.00009540063
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8829,6 +12353,12 @@ export const localStars: LocalStar[] = [
       -4.165,
       -39.303
     ],
+    "velocityLyPerYear": [
+      -0.0001124586,
+      -0.0001181663,
+      -0.000006620967
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8844,6 +12374,12 @@ export const localStars: LocalStar[] = [
       48.029,
       -42.06
     ],
+    "velocityLyPerYear": [
+      -0.0001175792,
+      0.0001039133,
+      0.00006089333
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8859,6 +12395,12 @@ export const localStars: LocalStar[] = [
       -47.544,
       -23.942
     ],
+    "velocityLyPerYear": [
+      -0.0001173183,
+      -0.0001654916,
+      0.0002799723
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8874,6 +12416,12 @@ export const localStars: LocalStar[] = [
       -65.539,
       5.743
     ],
+    "velocityLyPerYear": [
+      -0.0001102081,
+      -0.0004036507,
+      0.00003437684
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8889,6 +12437,12 @@ export const localStars: LocalStar[] = [
       -13.343,
       -54.814
     ],
+    "velocityLyPerYear": [
+      0.000003718178,
+      -0.0000662749,
+      0.00003636639
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8904,6 +12458,12 @@ export const localStars: LocalStar[] = [
       31.979,
       -64.664
     ],
+    "velocityLyPerYear": [
+      0.0001379966,
+      -0.0001582509,
+      -0.0001537826
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8919,6 +12479,12 @@ export const localStars: LocalStar[] = [
       -50.276,
       -37.018
     ],
+    "velocityLyPerYear": [
+      -0.0003113811,
+      -0.0002228298,
+      0.00005994747
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8934,6 +12500,12 @@ export const localStars: LocalStar[] = [
       -31.816,
       13.475
     ],
+    "velocityLyPerYear": [
+      -0.0001761569,
+      -0.0001035219,
+      -0.00005991486
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8949,6 +12521,12 @@ export const localStars: LocalStar[] = [
       -12.523,
       -61.802
     ],
+    "velocityLyPerYear": [
+      -0.00003741009,
+      -0.000153065,
+      -0.0001085773
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8964,6 +12542,12 @@ export const localStars: LocalStar[] = [
       30.915,
       -57.327
     ],
+    "velocityLyPerYear": [
+      -0.00002915835,
+      0.0001527389,
+      0.0003017269
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8979,6 +12563,12 @@ export const localStars: LocalStar[] = [
       -14.892,
       -2.932
     ],
+    "velocityLyPerYear": [
+      0.000003424638,
+      -0.00005906685,
+      -0.0001127195
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -8994,6 +12584,12 @@ export const localStars: LocalStar[] = [
       -7.582,
       -40.339
     ],
+    "velocityLyPerYear": [
+      -0.00003245252,
+      -0.0001518908,
+      -0.00001092623
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9009,6 +12605,12 @@ export const localStars: LocalStar[] = [
       34.877,
       -35.527
     ],
+    "velocityLyPerYear": [
+      0.0001235153,
+      -0.00004947787,
+      0.00002716879
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9024,6 +12626,12 @@ export const localStars: LocalStar[] = [
       51.9,
       40.566
     ],
+    "velocityLyPerYear": [
+      -0.000003098482,
+      -0.0001625235,
+      0.0000152641
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9039,6 +12647,12 @@ export const localStars: LocalStar[] = [
       53.461,
       -48.743
     ],
+    "velocityLyPerYear": [
+      0.00006343734,
+      0.00001829735,
+      0.00001180685
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9054,6 +12668,12 @@ export const localStars: LocalStar[] = [
       40.625,
       -45.122
     ],
+    "velocityLyPerYear": [
+      0.00003078913,
+      0.00007622266,
+      0.0001545001
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9069,6 +12689,12 @@ export const localStars: LocalStar[] = [
       46.572,
       -45.223
     ],
+    "velocityLyPerYear": [
+      -0.00003209375,
+      -0.000137116,
+      0.0002453998
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9084,6 +12710,12 @@ export const localStars: LocalStar[] = [
       -35.741,
       -47.958
     ],
+    "velocityLyPerYear": [
+      -0.00007273279,
+      -0.00003131098,
+      0.00006073025
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9099,6 +12731,12 @@ export const localStars: LocalStar[] = [
       -36.059,
       25.79
     ],
+    "velocityLyPerYear": [
+      -0.00001043699,
+      0.00003062605,
+      0.00001937367
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9114,6 +12752,12 @@ export const localStars: LocalStar[] = [
       46.746,
       -45.332
     ],
+    "velocityLyPerYear": [
+      -0.00002296138,
+      -0.0001264833,
+      0.0002385179
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9129,6 +12773,12 @@ export const localStars: LocalStar[] = [
       35.137,
       -35.794
     ],
+    "velocityLyPerYear": [
+      0.0001317344,
+      -0.00002795157,
+      0.000008056053
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9144,6 +12794,12 @@ export const localStars: LocalStar[] = [
       -30.934,
       46.405
     ],
+    "velocityLyPerYear": [
+      0.00009804249,
+      -0.00008313716,
+      0.0001106973
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9159,6 +12815,12 @@ export const localStars: LocalStar[] = [
       -30.944,
       46.423
     ],
+    "velocityLyPerYear": [
+      -0.000005283727,
+      -0.000003816025,
+      0.000002837557
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9174,6 +12836,12 @@ export const localStars: LocalStar[] = [
       -60.848,
       39.627
     ],
+    "velocityLyPerYear": [
+      0.00007077585,
+      0.000137116,
+      0.0002102728
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9189,6 +12857,12 @@ export const localStars: LocalStar[] = [
       -50.333,
       -52.364
     ],
+    "velocityLyPerYear": [
+      0.00003581193,
+      -0.00001288316,
+      0.0001311799
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9204,6 +12878,12 @@ export const localStars: LocalStar[] = [
       -13.668,
       33.218
     ],
+    "velocityLyPerYear": [
+      0.000006914507,
+      -0.00003362668,
+      -0.00004569446
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9219,6 +12899,12 @@ export const localStars: LocalStar[] = [
       -58.594,
       3.294
     ],
+    "velocityLyPerYear": [
+      0.00001454656,
+      0.00007749467,
+      0.0001139263
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9234,6 +12920,12 @@ export const localStars: LocalStar[] = [
       -14.632,
       -63.25
     ],
+    "velocityLyPerYear": [
+      0.00002703833,
+      0.00001043699,
+      0.00009191076
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9249,6 +12941,12 @@ export const localStars: LocalStar[] = [
       11.532,
       54.816
     ],
+    "velocityLyPerYear": [
+      -0.0001397578,
+      -0.0001544023,
+      0.00005861023
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9264,6 +12962,12 @@ export const localStars: LocalStar[] = [
       27.206,
       -68.5
     ],
+    "velocityLyPerYear": [
+      -0.00005547914,
+      -0.0001763852,
+      -0.0001537826
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9279,6 +12983,12 @@ export const localStars: LocalStar[] = [
       -57.802,
       42.822
     ],
+    "velocityLyPerYear": [
+      0.00009256307,
+      -0.000009425908,
+      0.00004399844
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9294,6 +13004,12 @@ export const localStars: LocalStar[] = [
       8.277,
       -60.977
     ],
+    "velocityLyPerYear": [
+      0.00003604024,
+      0.0000167318,
+      -0.00003290914
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9309,6 +13025,12 @@ export const localStars: LocalStar[] = [
       -26.158,
       -25.165
     ],
+    "velocityLyPerYear": [
+      -6.196964e-7,
+      -0.00004422675,
+      0.00008555072
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9324,6 +13046,12 @@ export const localStars: LocalStar[] = [
       -0.77,
       -29.741
     ],
+    "velocityLyPerYear": [
+      -6.52312e-8,
+      0.00001790596,
+      0.0001093275
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9339,6 +13067,12 @@ export const localStars: LocalStar[] = [
       52.821,
       -52.316
     ],
+    "velocityLyPerYear": [
+      -0.00003607285,
+      -0.0001827126,
+      0.0001210691
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9354,6 +13088,12 @@ export const localStars: LocalStar[] = [
       70.896,
       -22.761
     ],
+    "velocityLyPerYear": [
+      0.000003392022,
+      -0.00007335248,
+      -0.00007922329
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9369,6 +13109,12 @@ export const localStars: LocalStar[] = [
       -40.62,
       28.019
     ],
+    "velocityLyPerYear": [
+      -0.00005616406,
+      -0.00005668591,
+      0.0001776246
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9384,6 +13130,12 @@ export const localStars: LocalStar[] = [
       -50.799,
       41.507
     ],
+    "velocityLyPerYear": [
+      0.00005114126,
+      -0.00007579865,
+      0.00009001906
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9399,6 +13151,12 @@ export const localStars: LocalStar[] = [
       44.169,
       -27.529
     ],
+    "velocityLyPerYear": [
+      0.000008088669,
+      -0.0001091644,
+      0.000006196964
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9414,6 +13172,12 @@ export const localStars: LocalStar[] = [
       56.208,
       19.224
     ],
+    "velocityLyPerYear": [
+      -0.0002188181,
+      -0.0002274938,
+      0.00006112163
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9429,6 +13193,12 @@ export const localStars: LocalStar[] = [
       -20.654,
       -48.829
     ],
+    "velocityLyPerYear": [
+      0.00002632079,
+      8.480056e-7,
+      0.00009142153
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9444,6 +13214,12 @@ export const localStars: LocalStar[] = [
       57.309,
       -45.965
     ],
+    "velocityLyPerYear": [
+      -0.0001578269,
+      0.0000439006,
+      0.0002198618
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9459,6 +13235,12 @@ export const localStars: LocalStar[] = [
       33.737,
       -54.007
     ],
+    "velocityLyPerYear": [
+      0.00002309184,
+      -0.00002605986,
+      -0.00004253074
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9474,6 +13256,12 @@ export const localStars: LocalStar[] = [
       -29.435,
       45.917
     ],
+    "velocityLyPerYear": [
+      -0.00005574006,
+      0.00004732524,
+      0.00009295446
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9489,6 +13277,12 @@ export const localStars: LocalStar[] = [
       31.561,
       -66.874
     ],
+    "velocityLyPerYear": [
+      0.00001135023,
+      -0.0001081533,
+      0.00009660741
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9504,6 +13298,12 @@ export const localStars: LocalStar[] = [
       -63.94,
       -7.311
     ],
+    "velocityLyPerYear": [
+      0.00005365266,
+      -0.00003692086,
+      -0.00002302661
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9519,6 +13319,12 @@ export const localStars: LocalStar[] = [
       71.602,
       -22.977
     ],
+    "velocityLyPerYear": [
+      0.000006131733,
+      -0.00006516597,
+      -0.00008457225
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9534,6 +13340,12 @@ export const localStars: LocalStar[] = [
       -23.629,
       40.038
     ],
+    "velocityLyPerYear": [
+      0.00001086099,
+      -0.00004846678,
+      -0.00001141546
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9549,6 +13361,12 @@ export const localStars: LocalStar[] = [
       70.418,
       -27.234
     ],
+    "velocityLyPerYear": [
+      0.00001324193,
+      -0.00000215263,
+      0.0001263202
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9564,6 +13382,12 @@ export const localStars: LocalStar[] = [
       -14.023,
       34.193
     ],
+    "velocityLyPerYear": [
+      0.00001679703,
+      -0.00003346361,
+      -0.00005277204
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9579,6 +13403,12 @@ export const localStars: LocalStar[] = [
       -20.945,
       -49.419
     ],
+    "velocityLyPerYear": [
+      0.00008877966,
+      0.00001868874,
+      0.0001348655
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9594,6 +13424,12 @@ export const localStars: LocalStar[] = [
       -10.621,
       6.118
     ],
+    "velocityLyPerYear": [
+      -0.0000541419,
+      -0.00004761878,
+      0.0001495751
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9609,6 +13445,12 @@ export const localStars: LocalStar[] = [
       53.723,
       4.956
     ],
+    "velocityLyPerYear": [
+      0.0000646115,
+      -0.00003705132,
+      0.0002132408
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9624,6 +13466,12 @@ export const localStars: LocalStar[] = [
       20.133,
       63.474
     ],
+    "velocityLyPerYear": [
+      0.00005322866,
+      -0.00001650349,
+      0.00003571408
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9639,6 +13487,12 @@ export const localStars: LocalStar[] = [
       -69.453,
       25.935
     ],
+    "velocityLyPerYear": [
+      -0.00006467673,
+      -0.00004275905,
+      -0.0001544675
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9654,6 +13508,12 @@ export const localStars: LocalStar[] = [
       43.316,
       45.722
     ],
+    "velocityLyPerYear": [
+      0.000009849911,
+      -0.000008936674,
+      0.00001757981
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9669,6 +13529,12 @@ export const localStars: LocalStar[] = [
       61.725,
       -42.83
     ],
+    "velocityLyPerYear": [
+      -0.00001497056,
+      -0.00002181984,
+      0.0000566533
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9684,6 +13550,12 @@ export const localStars: LocalStar[] = [
       27.939,
       59.936
     ],
+    "velocityLyPerYear": [
+      0.0000470317,
+      -0.00006718814,
+      -0.00009151937
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9699,6 +13571,12 @@ export const localStars: LocalStar[] = [
       54.924,
       -5.054
     ],
+    "velocityLyPerYear": [
+      0.0000142204,
+      -0.000004272644,
+      0.0001310495
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9714,6 +13592,12 @@ export const localStars: LocalStar[] = [
       -16.654,
       -40.478
     ],
+    "velocityLyPerYear": [
+      -0.00006037148,
+      -0.00007028662,
+      0.00007433095
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9729,6 +13613,12 @@ export const localStars: LocalStar[] = [
       61.457,
       -31.267
     ],
+    "velocityLyPerYear": [
+      -0.0001250156,
+      0.00006614444,
+      0.0003775582
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9744,6 +13634,12 @@ export const localStars: LocalStar[] = [
       34.632,
       47.4
     ],
+    "velocityLyPerYear": [
+      0.00002364631,
+      -0.00001549241,
+      0.0001582183
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9759,6 +13655,12 @@ export const localStars: LocalStar[] = [
       9.053,
       76.01
     ],
+    "velocityLyPerYear": [
+      -0.00006438319,
+      -0.0001141546,
+      -0.000166046
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9774,6 +13676,12 @@ export const localStars: LocalStar[] = [
       -54.033,
       -33.672
     ],
+    "velocityLyPerYear": [
+      0.0001139915,
+      0.00002941927,
+      0.000035127
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9789,6 +13697,12 @@ export const localStars: LocalStar[] = [
       -6.228,
       76.56
     ],
+    "velocityLyPerYear": [
+      -0.00002658171,
+      -0.0000754725,
+      -0.000005936039
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9804,6 +13718,12 @@ export const localStars: LocalStar[] = [
       -4.944,
       -76.654
     ],
+    "velocityLyPerYear": [
+      0.00005710992,
+      -0.000007305894,
+      0.0001439979
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9819,6 +13739,12 @@ export const localStars: LocalStar[] = [
       17.993,
       -66.831
     ],
+    "velocityLyPerYear": [
+      0.00001836258,
+      -0.0001376704,
+      -0.0001157854
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9834,6 +13760,12 @@ export const localStars: LocalStar[] = [
       -69.4,
       29.549
     ],
+    "velocityLyPerYear": [
+      0.00001105669,
+      -0.00002788634,
+      0.0001678399
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9849,6 +13781,12 @@ export const localStars: LocalStar[] = [
       -56.572,
       -17.348
     ],
+    "velocityLyPerYear": [
+      -0.00004801016,
+      -0.0001264833,
+      0.00001927582
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9864,6 +13802,12 @@ export const localStars: LocalStar[] = [
       -38.456,
       26.929
     ],
+    "velocityLyPerYear": [
+      -0.000003033251,
+      0.00003741009,
+      0.00006030624
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9879,6 +13823,12 @@ export const localStars: LocalStar[] = [
       19.263,
       72.762
     ],
+    "velocityLyPerYear": [
+      -0.00007361341,
+      -0.00005962132,
+      0.0001482705
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9894,6 +13844,12 @@ export const localStars: LocalStar[] = [
       14.11,
       11.9
     ],
+    "velocityLyPerYear": [
+      0.00001888443,
+      -0.00003473561,
+      -0.00005632714
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9909,6 +13865,12 @@ export const localStars: LocalStar[] = [
       57.358,
       -11.204
     ],
+    "velocityLyPerYear": [
+      -0.000006262195,
+      -0.00001373117,
+      0.00005779484
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9924,6 +13886,12 @@ export const localStars: LocalStar[] = [
       27.533,
       62.695
     ],
+    "velocityLyPerYear": [
+      -0.00005107603,
+      -0.0002242975,
+      -0.00004696646
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9939,6 +13907,12 @@ export const localStars: LocalStar[] = [
       28.654,
       27.256
     ],
+    "velocityLyPerYear": [
+      -0.000008610518,
+      -0.00005055418,
+      0.0001812449
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9954,6 +13928,12 @@ export const localStars: LocalStar[] = [
       51.609,
       -35.066
     ],
+    "velocityLyPerYear": [
+      -0.000007958206,
+      -0.00006092594,
+      -0.00008219131
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9969,6 +13949,12 @@ export const localStars: LocalStar[] = [
       -53.632,
       6.407
     ],
+    "velocityLyPerYear": [
+      0.00003101744,
+      -0.00001709057,
+      0.00004377014
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9984,6 +13970,12 @@ export const localStars: LocalStar[] = [
       40.183,
       -7.111
     ],
+    "velocityLyPerYear": [
+      -0.000004240028,
+      -0.0001215257,
+      -0.0000740048
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -9999,6 +13991,12 @@ export const localStars: LocalStar[] = [
       -21.059,
       -15.728
     ],
+    "velocityLyPerYear": [
+      0.000001859089,
+      0.00001620995,
+      -0.00003033251
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10014,6 +14012,12 @@ export const localStars: LocalStar[] = [
       39.095,
       -65.02
     ],
+    "velocityLyPerYear": [
+      -0.0000177755,
+      -0.000002804942,
+      0.0001512385
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10029,6 +14033,12 @@ export const localStars: LocalStar[] = [
       -58.584,
       -35.891
     ],
+    "velocityLyPerYear": [
+      0.000005805577,
+      -0.000177331,
+      0.00001389425
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10044,6 +14054,12 @@ export const localStars: LocalStar[] = [
       -62.532,
       -29.818
     ],
+    "velocityLyPerYear": [
+      -0.000004435722,
+      0.000003065866,
+      0.00005097818
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10059,6 +14075,12 @@ export const localStars: LocalStar[] = [
       6.332,
       -77.706
     ],
+    "velocityLyPerYear": [
+      -0.00002116752,
+      -0.0001539782,
+      0.0003899847
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10074,6 +14096,12 @@ export const localStars: LocalStar[] = [
       43.927,
       -63.984
     ],
+    "velocityLyPerYear": [
+      -0.0000708737,
+      -0.00007808175,
+      0.0001665679
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10089,6 +14117,12 @@ export const localStars: LocalStar[] = [
       17.539,
       71.151
     ],
+    "velocityLyPerYear": [
+      -0.00008796427,
+      -0.0001281467,
+      0.0001401166
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10104,6 +14138,12 @@ export const localStars: LocalStar[] = [
       -33.559,
       -70.081
     ],
+    "velocityLyPerYear": [
+      -0.00003639901,
+      -0.000001891705,
+      0.0001572072
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10119,6 +14159,12 @@ export const localStars: LocalStar[] = [
       -9.268,
       59.948
     ],
+    "velocityLyPerYear": [
+      0.00008610518,
+      0.0000163078,
+      0.0000733851
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10134,6 +14180,12 @@ export const localStars: LocalStar[] = [
       39.964,
       -12.771
     ],
+    "velocityLyPerYear": [
+      0.00003411592,
+      0.00004465076,
+      0.0001323867
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10149,6 +14201,12 @@ export const localStars: LocalStar[] = [
       68.133,
       -8.182
     ],
+    "velocityLyPerYear": [
+      0.00001813427,
+      -0.00004054119,
+      -0.00003799717
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10164,6 +14222,12 @@ export const localStars: LocalStar[] = [
       -4.333,
       49.641
     ],
+    "velocityLyPerYear": [
+      -0.00005365266,
+      0.00001996075,
+      0.0001151983
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10179,6 +14243,12 @@ export const localStars: LocalStar[] = [
       -64.507,
       32.643
     ],
+    "velocityLyPerYear": [
+      0.00001572072,
+      -0.00001454656,
+      -0.00002974543
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10194,6 +14264,12 @@ export const localStars: LocalStar[] = [
       64.47,
       -16.215
     ],
+    "velocityLyPerYear": [
+      0.00002224384,
+      -0.00003202852,
+      -0.000034703
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10209,6 +14285,12 @@ export const localStars: LocalStar[] = [
       -62.059,
       -36.691
     ],
+    "velocityLyPerYear": [
+      0.00003209375,
+      -0.00000844744,
+      0.00005365266
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10224,6 +14306,12 @@ export const localStars: LocalStar[] = [
       -56.431,
       41.471
     ],
+    "velocityLyPerYear": [
+      0.00006979738,
+      0.00002831034,
+      0.00000273971
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10239,6 +14327,12 @@ export const localStars: LocalStar[] = [
       -48.061,
       -60.823
     ],
+    "velocityLyPerYear": [
+      0.00001728627,
+      -0.000058545,
+      0.0001570115
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10254,6 +14348,12 @@ export const localStars: LocalStar[] = [
       69.588,
       26.965
     ],
+    "velocityLyPerYear": [
+      -0.00003225683,
+      -0.0001147417,
+      0.0003644467
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10269,6 +14369,12 @@ export const localStars: LocalStar[] = [
       16.443,
       36.308
     ],
+    "velocityLyPerYear": [
+      0.00002791895,
+      0.00000600127,
+      0.00009370462
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10284,6 +14390,12 @@ export const localStars: LocalStar[] = [
       -15.65,
       -68.099
     ],
+    "velocityLyPerYear": [
+      0.00003137621,
+      0.00000867575,
+      0.0001058376
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10299,6 +14411,12 @@ export const localStars: LocalStar[] = [
       -15.65,
       -68.1
     ],
+    "velocityLyPerYear": [
+      0.00002694049,
+      0.00000681666,
+      0.00009781418
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10314,6 +14432,12 @@ export const localStars: LocalStar[] = [
       -15.647,
       -68.1
     ],
+    "velocityLyPerYear": [
+      0.00002749495,
+      0.00001343763,
+      0.0001033915
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10329,6 +14453,12 @@ export const localStars: LocalStar[] = [
       18.585,
       -69.03
     ],
+    "velocityLyPerYear": [
+      0.00001425302,
+      -0.0001385185,
+      -0.0001243307
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10344,6 +14474,12 @@ export const localStars: LocalStar[] = [
       -41.892,
       66.261
     ],
+    "velocityLyPerYear": [
+      0.00007175432,
+      -0.00015587,
+      0.00004393321
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10359,6 +14495,12 @@ export const localStars: LocalStar[] = [
       -10.945,
       25.117
     ],
+    "velocityLyPerYear": [
+      0.00006725337,
+      0.00009712926,
+      0.0000758965
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10374,6 +14516,12 @@ export const localStars: LocalStar[] = [
       -19.652,
       72.223
     ],
+    "velocityLyPerYear": [
+      0.00002335277,
+      -0.00005635976,
+      -0.0000240377
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10389,6 +14537,12 @@ export const localStars: LocalStar[] = [
       49.411,
       -52.371
     ],
+    "velocityLyPerYear": [
+      -0.00001255701,
+      0.0000223743,
+      0.00004341136
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10404,6 +14558,12 @@ export const localStars: LocalStar[] = [
       4.494,
       51.961
     ],
+    "velocityLyPerYear": [
+      0.00002648387,
+      -0.00005694684,
+      -0.00005179357
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10419,6 +14579,12 @@ export const localStars: LocalStar[] = [
       -54.659,
       -37.537
     ],
+    "velocityLyPerYear": [
+      0.00008476794,
+      -0.00001832997,
+      0.0000505868
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10434,6 +14600,12 @@ export const localStars: LocalStar[] = [
       66.407,
       11.084
     ],
+    "velocityLyPerYear": [
+      0.0000240377,
+      -0.0000261251,
+      -0.00003884518
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10449,6 +14621,12 @@ export const localStars: LocalStar[] = [
       60.958,
       -48.89
     ],
+    "velocityLyPerYear": [
+      -0.0001598491,
+      0.00005055418,
+      0.0002351911
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10464,6 +14642,12 @@ export const localStars: LocalStar[] = [
       -65.089,
       34.679
     ],
+    "velocityLyPerYear": [
+      0.000009849911,
+      -0.00001722104,
+      -0.00002371154
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10479,6 +14663,12 @@ export const localStars: LocalStar[] = [
       -44.033,
       45.526
     ],
+    "velocityLyPerYear": [
+      0.00001095884,
+      -0.0001090992,
+      0.0002392354
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10494,6 +14684,12 @@ export const localStars: LocalStar[] = [
       51.691,
       -2.562
     ],
+    "velocityLyPerYear": [
+      -0.00001950413,
+      -0.00001389425,
+      0.0001210691
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10509,6 +14705,12 @@ export const localStars: LocalStar[] = [
       -50.357,
       -57.582
     ],
+    "velocityLyPerYear": [
+      -0.00007374387,
+      0.000005772961,
+      0.0002594245
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10524,6 +14726,12 @@ export const localStars: LocalStar[] = [
       61.683,
       -0.419
     ],
+    "velocityLyPerYear": [
+      -0.00008039745,
+      0.00005244588,
+      -0.00001709057
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10539,6 +14747,12 @@ export const localStars: LocalStar[] = [
       7.308,
       56.12
     ],
+    "velocityLyPerYear": [
+      0.000145172,
+      -0.00008574641,
+      -0.00001852566
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10554,6 +14768,12 @@ export const localStars: LocalStar[] = [
       36.566,
       47.913
     ],
+    "velocityLyPerYear": [
+      -0.0000275928,
+      -0.00002746234,
+      0.0001136654
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10569,6 +14789,12 @@ export const localStars: LocalStar[] = [
       -18.622,
       -10.235
     ],
+    "velocityLyPerYear": [
+      -0.00001461179,
+      -0.00002201553,
+      0.0001009127
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10584,6 +14810,12 @@ export const localStars: LocalStar[] = [
       -70.038,
       -30.29
     ],
+    "velocityLyPerYear": [
+      -0.00006408965,
+      -0.00001731888,
+      0.0002661107
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10599,6 +14831,12 @@ export const localStars: LocalStar[] = [
       -57.075,
       51.103
     ],
+    "velocityLyPerYear": [
+      0.0000652312,
+      -0.0002184267,
+      -0.00006542689
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10614,6 +14852,12 @@ export const localStars: LocalStar[] = [
       67.548,
       -2.947
     ],
+    "velocityLyPerYear": [
+      0.00002954973,
+      -0.00003584454,
+      -0.00003851902
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10629,6 +14873,12 @@ export const localStars: LocalStar[] = [
       -65.749,
       35.029
     ],
+    "velocityLyPerYear": [
+      0.00001060007,
+      -0.0000294845,
+      -0.00002919096
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10644,6 +14894,12 @@ export const localStars: LocalStar[] = [
       57.303,
       57.408
     ],
+    "velocityLyPerYear": [
+      0.00002208076,
+      -0.00004595538,
+      -0.00004559661
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10659,6 +14915,12 @@ export const localStars: LocalStar[] = [
       52.499,
       39.424
     ],
+    "velocityLyPerYear": [
+      0.0000995102,
+      -0.0002006512,
+      0.00009246523
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10674,6 +14936,12 @@ export const localStars: LocalStar[] = [
       -70.101,
       7.259
     ],
+    "velocityLyPerYear": [
+      0.00008959505,
+      0.00008453964,
+      0.0003699588
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10689,6 +14957,12 @@ export const localStars: LocalStar[] = [
       44.625,
       33.855
     ],
+    "velocityLyPerYear": [
+      -0.00006744906,
+      -0.0001814406,
+      0.00007204786
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10704,6 +14978,12 @@ export const localStars: LocalStar[] = [
       -68.439,
       40.508
     ],
+    "velocityLyPerYear": [
+      -0.00001011084,
+      0.00001007822,
+      -0.000003326791
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10719,6 +14999,12 @@ export const localStars: LocalStar[] = [
       -40.041,
       60.419
     ],
+    "velocityLyPerYear": [
+      -0.00005104341,
+      -0.00009334585,
+      -0.0001726996
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10734,6 +15020,12 @@ export const localStars: LocalStar[] = [
       62,
       -49.292
     ],
+    "velocityLyPerYear": [
+      0.00003695347,
+      0.0000179712,
+      0.0003977146
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10749,6 +15041,12 @@ export const localStars: LocalStar[] = [
       75.713,
       -28.716
     ],
+    "velocityLyPerYear": [
+      -0.000057697,
+      0.00009527017,
+      0.0001728627
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10764,6 +15062,12 @@ export const localStars: LocalStar[] = [
       -25.399,
       76.322
     ],
+    "velocityLyPerYear": [
+      -0.0001257005,
+      -0.00001878659,
+      0.0001603383
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10779,6 +15083,12 @@ export const localStars: LocalStar[] = [
       66.933,
       -17.037
     ],
+    "velocityLyPerYear": [
+      0.00002808203,
+      -0.00002817988,
+      -0.00004021503
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10794,6 +15104,12 @@ export const localStars: LocalStar[] = [
       -17.325,
       28.468
     ],
+    "velocityLyPerYear": [
+      0.00003372453,
+      -0.0002561303,
+      -0.0001267768
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10809,6 +15125,12 @@ export const localStars: LocalStar[] = [
       24.8,
       65.339
     ],
+    "velocityLyPerYear": [
+      -2.283092e-7,
+      -0.0000681666,
+      -0.00002022167
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10824,6 +15146,12 @@ export const localStars: LocalStar[] = [
       6.517,
       -81.374
     ],
+    "velocityLyPerYear": [
+      -0.00001285055,
+      0.00005962132,
+      0.00004595538
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10839,6 +15167,12 @@ export const localStars: LocalStar[] = [
       67.158,
       -6.377
     ],
+    "velocityLyPerYear": [
+      0.00001056745,
+      -0.00001669919,
+      -0.00003848641
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10854,6 +15188,12 @@ export const localStars: LocalStar[] = [
       62.386,
       -36.909
     ],
+    "velocityLyPerYear": [
+      0.00000622958,
+      -0.0000988905,
+      -0.0000551856
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10869,6 +15209,12 @@ export const localStars: LocalStar[] = [
       63.866,
       -47
     ],
+    "velocityLyPerYear": [
+      0.00003519223,
+      -0.00004572707,
+      -0.00004911909
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10884,6 +15230,12 @@ export const localStars: LocalStar[] = [
       9.448,
       63.296
     ],
+    "velocityLyPerYear": [
+      -0.00001757981,
+      -0.00004145443,
+      0.0001068487
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10899,6 +15251,12 @@ export const localStars: LocalStar[] = [
       4.63,
       53.512
     ],
+    "velocityLyPerYear": [
+      0.00000733851,
+      -0.000058969,
+      -0.00006728598
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10914,6 +15272,12 @@ export const localStars: LocalStar[] = [
       -47.548,
       64.147
     ],
+    "velocityLyPerYear": [
+      -0.00003770363,
+      0.00005114126,
+      0.00004908648
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10929,6 +15293,12 @@ export const localStars: LocalStar[] = [
       27.008,
       28.549
     ],
+    "velocityLyPerYear": [
+      -0.00002367893,
+      -0.000006033886,
+      -0.00002084137
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10944,6 +15314,12 @@ export const localStars: LocalStar[] = [
       -4.08,
       62.713
     ],
+    "velocityLyPerYear": [
+      -0.00002945189,
+      -0.00004425937,
+      0.000120482
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10959,6 +15335,12 @@ export const localStars: LocalStar[] = [
       -25.006,
       11.971
     ],
+    "velocityLyPerYear": [
+      0.000002380939,
+      1.956936e-7,
+      0.00003881256
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10974,6 +15356,12 @@ export const localStars: LocalStar[] = [
       -59.873,
       55.253
     ],
+    "velocityLyPerYear": [
+      -0.00003320268,
+      0.00005397882,
+      0.0001511081
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -10989,6 +15377,12 @@ export const localStars: LocalStar[] = [
       -16.353,
       -70.693
     ],
+    "velocityLyPerYear": [
+      0.00002638602,
+      0.00001265485,
+      0.000104957
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11004,6 +15398,12 @@ export const localStars: LocalStar[] = [
       -55.828,
       45.635
     ],
+    "velocityLyPerYear": [
+      0.00004341136,
+      -0.00009624864,
+      -0.00004964094
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11019,6 +15419,12 @@ export const localStars: LocalStar[] = [
       -31.304,
       70.003
     ],
+    "velocityLyPerYear": [
+      -0.0000631438,
+      -0.00005984963,
+      0.0001855828
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11034,6 +15440,12 @@ export const localStars: LocalStar[] = [
       68.967,
       -14.299
     ],
+    "velocityLyPerYear": [
+      0.00002390723,
+      -0.00002873434,
+      -0.00003920395
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11049,6 +15461,12 @@ export const localStars: LocalStar[] = [
       68.405,
       -10.793
     ],
+    "velocityLyPerYear": [
+      0.00002387462,
+      -0.00002687525,
+      -0.00004024765
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11064,6 +15482,12 @@ export const localStars: LocalStar[] = [
       -55.729,
       -0.973
     ],
+    "velocityLyPerYear": [
+      -0.0000637635,
+      -0.0001203189,
+      -0.0001306255
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11079,6 +15503,12 @@ export const localStars: LocalStar[] = [
       63.764,
       -22.279
     ],
+    "velocityLyPerYear": [
+      0.00001806904,
+      -0.00001617734,
+      0.00006363304
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11094,6 +15524,12 @@ export const localStars: LocalStar[] = [
       76.277,
       -23.901
     ],
+    "velocityLyPerYear": [
+      0.00001164377,
+      -0.0002086094,
+      -0.0001211343
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11109,6 +15545,12 @@ export const localStars: LocalStar[] = [
       50.212,
       -61.904
     ],
+    "velocityLyPerYear": [
+      -0.000006653582,
+      -0.00005479421,
+      -0.00005489205
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11124,6 +15566,12 @@ export const localStars: LocalStar[] = [
       74.856,
       33.016
     ],
+    "velocityLyPerYear": [
+      0.00002120014,
+      0.0000100456,
+      -0.0000311479
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11139,6 +15587,12 @@ export const localStars: LocalStar[] = [
       -9.462,
       -31.078
     ],
+    "velocityLyPerYear": [
+      -0.000009719449,
+      -0.00003969319,
+      0.00007367864
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11154,6 +15608,12 @@ export const localStars: LocalStar[] = [
       -40.722,
       -3.074
     ],
+    "velocityLyPerYear": [
+      0.000006653582,
+      0.000006196964,
+      0.00007416787
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11169,6 +15629,12 @@ export const localStars: LocalStar[] = [
       19.895,
       -77.353
     ],
+    "velocityLyPerYear": [
+      -0.00002292877,
+      -0.00005724038,
+      0.00006806876
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11184,6 +15650,12 @@ export const localStars: LocalStar[] = [
       -65.831,
       7.602
     ],
+    "velocityLyPerYear": [
+      0.0000683623,
+      -0.00008255008,
+      0.0001031958
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11199,6 +15671,12 @@ export const localStars: LocalStar[] = [
       -59.928,
       57.396
     ],
+    "velocityLyPerYear": [
+      0.00004057381,
+      -0.0001574029,
+      -0.0001131109
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11214,6 +15692,12 @@ export const localStars: LocalStar[] = [
       67.034,
       1.326
     ],
+    "velocityLyPerYear": [
+      0.00002811465,
+      -0.00003228944,
+      -0.00004422675
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11229,6 +15713,12 @@ export const localStars: LocalStar[] = [
       -4.679,
       68.267
     ],
+    "velocityLyPerYear": [
+      -0.000002087398,
+      -0.0001090013,
+      0.0004840807
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11244,6 +15734,12 @@ export const localStars: LocalStar[] = [
       -22.565,
       41.703
     ],
+    "velocityLyPerYear": [
+      -0.000008480056,
+      -0.00001761242,
+      0.000004435722
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11259,6 +15755,12 @@ export const localStars: LocalStar[] = [
       48.393,
       68.102
     ],
+    "velocityLyPerYear": [
+      0.0000495431,
+      -0.0001261245,
+      0.00003036512
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11274,6 +15776,12 @@ export const localStars: LocalStar[] = [
       19.069,
       79.127
     ],
+    "velocityLyPerYear": [
+      -0.00004419414,
+      -0.0000131767,
+      0.00007106939
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11289,6 +15797,12 @@ export const localStars: LocalStar[] = [
       -38.375,
       -42.854
     ],
+    "velocityLyPerYear": [
+      0.00003453992,
+      -0.00000326156,
+      0.00016647
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11304,6 +15818,12 @@ export const localStars: LocalStar[] = [
       -42.057,
       16.3
     ],
+    "velocityLyPerYear": [
+      0.00003672517,
+      -0.00006748168,
+      0.0002020863
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11319,6 +15839,12 @@ export const localStars: LocalStar[] = [
       66.836,
       -49.139
     ],
+    "velocityLyPerYear": [
+      -0.00004422675,
+      0.00005567483,
+      0.00007468972
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11334,6 +15860,12 @@ export const localStars: LocalStar[] = [
       -63.367,
       1.515
     ],
+    "velocityLyPerYear": [
+      -0.00001301362,
+      -0.00001718842,
+      0.0002335929
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11349,6 +15881,12 @@ export const localStars: LocalStar[] = [
       79.234,
       27.553
     ],
+    "velocityLyPerYear": [
+      -0.000008480056,
+      0.0000194389,
+      0.0001975201
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11364,6 +15902,12 @@ export const localStars: LocalStar[] = [
       14.762,
       54.549
     ],
+    "velocityLyPerYear": [
+      9.78468e-8,
+      0.000005609883,
+      0.0001546306
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11379,6 +15923,12 @@ export const localStars: LocalStar[] = [
       -79.515,
       -24.147
     ],
+    "velocityLyPerYear": [
+      -0.00001457917,
+      -0.0001330716,
+      0.0001473899
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11394,6 +15944,12 @@ export const localStars: LocalStar[] = [
       -47.719,
       43.797
     ],
+    "velocityLyPerYear": [
+      -0.00001996075,
+      -0.0001067182,
+      -0.00002589679
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11409,6 +15965,12 @@ export const localStars: LocalStar[] = [
       -22.803,
       -79.085
     ],
+    "velocityLyPerYear": [
+      0.00001245916,
+      0.00003649686,
+      -0.00001327455
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11424,6 +15986,12 @@ export const localStars: LocalStar[] = [
       60.771,
       48.708
     ],
+    "velocityLyPerYear": [
+      -0.00005528344,
+      0.00002067829,
+      0.0001286033
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11439,6 +16007,12 @@ export const localStars: LocalStar[] = [
       -40.35,
       72.175
     ],
+    "velocityLyPerYear": [
+      -0.0001415517,
+      -0.0002738406,
+      0.00009461786
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11454,6 +16028,12 @@ export const localStars: LocalStar[] = [
       -79.453,
       28.628
     ],
+    "velocityLyPerYear": [
+      0.0001594903,
+      0.0001290273,
+      0.0004832653
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11469,6 +16049,12 @@ export const localStars: LocalStar[] = [
       36.586,
       50.548
     ],
+    "velocityLyPerYear": [
+      -0.00001236131,
+      -0.00003444207,
+      0.0001197645
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11484,6 +16070,12 @@ export const localStars: LocalStar[] = [
       -57.023,
       7.17
     ],
+    "velocityLyPerYear": [
+      0.00007576604,
+      -0.0002757975,
+      0.000104957
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11499,6 +16091,12 @@ export const localStars: LocalStar[] = [
       20.121,
       -81.503
     ],
+    "velocityLyPerYear": [
+      0.00002364631,
+      0.0000131767,
+      0.0001636977
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11514,6 +16112,12 @@ export const localStars: LocalStar[] = [
       -37.554,
       -66.484
     ],
+    "velocityLyPerYear": [
+      0.00004947787,
+      0.00005844716,
+      0.00008365901
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11529,6 +16133,12 @@ export const localStars: LocalStar[] = [
       -67.401,
       27.903
     ],
+    "velocityLyPerYear": [
+      -0.00002041737,
+      0.00004664031,
+      0.0001256353
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11544,6 +16154,12 @@ export const localStars: LocalStar[] = [
       -35.91,
       53.85
     ],
+    "velocityLyPerYear": [
+      0.00009882527,
+      -0.00008202823,
+      0.0001053484
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11559,6 +16175,12 @@ export const localStars: LocalStar[] = [
       -64.334,
       53.904
     ],
+    "velocityLyPerYear": [
+      0.00003118051,
+      -0.00004667292,
+      0.00004898863
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11574,6 +16196,12 @@ export const localStars: LocalStar[] = [
       71.243,
       -44.196
     ],
+    "velocityLyPerYear": [
+      0.00002012383,
+      0.000005772961,
+      0.00002563586
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11589,6 +16217,12 @@ export const localStars: LocalStar[] = [
       -6.071,
       -10.529
     ],
+    "velocityLyPerYear": [
+      -0.0000397258,
+      -0.00007628789,
+      0.00007932114
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11604,6 +16238,12 @@ export const localStars: LocalStar[] = [
       7.735,
       -25.116
     ],
+    "velocityLyPerYear": [
+      -0.000102837,
+      -0.0002671544,
+      -0.00006842753
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11619,6 +16259,12 @@ export const localStars: LocalStar[] = [
       -47.73,
       -70.615
     ],
+    "velocityLyPerYear": [
+      -0.00007821221,
+      -0.0001983028,
+      0.0001284728
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11634,6 +16280,12 @@ export const localStars: LocalStar[] = [
       71.698,
       -20.553
     ],
+    "velocityLyPerYear": [
+      0.000069406,
+      0.00000733851,
+      0.0001858111
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11649,6 +16301,12 @@ export const localStars: LocalStar[] = [
       39.824,
       -65.336
     ],
+    "velocityLyPerYear": [
+      -0.0001445523,
+      3.26156e-7,
+      0.0003897564
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11664,6 +16322,12 @@ export const localStars: LocalStar[] = [
       9.871,
       66.101
     ],
+    "velocityLyPerYear": [
+      -0.0000259294,
+      -0.0000437049,
+      0.0001116758
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11679,6 +16343,12 @@ export const localStars: LocalStar[] = [
       83.166,
       18.208
     ],
+    "velocityLyPerYear": [
+      0.00003069128,
+      0.000009980374,
+      0.000102413
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11694,6 +16364,12 @@ export const localStars: LocalStar[] = [
       -76.336,
       38.732
     ],
+    "velocityLyPerYear": [
+      -0.00004337875,
+      0.0000330396,
+      0.0002513032
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11709,6 +16385,12 @@ export const localStars: LocalStar[] = [
       70.226,
       -17.656
     ],
+    "velocityLyPerYear": [
+      0.00002106968,
+      -0.00002054783,
+      -0.00004592276
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11724,6 +16406,12 @@ export const localStars: LocalStar[] = [
       -74.537,
       -7.43
     ],
+    "velocityLyPerYear": [
+      -0.0000687863,
+      -0.00002684264,
+      -0.0001222759
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11739,6 +16427,12 @@ export const localStars: LocalStar[] = [
       54.965,
       -59.975
     ],
+    "velocityLyPerYear": [
+      -0.00001767766,
+      -0.00006258934,
+      0.00008966028
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11754,6 +16448,12 @@ export const localStars: LocalStar[] = [
       34.007,
       1.704
     ],
+    "velocityLyPerYear": [
+      -0.000002217861,
+      -0.000002870173,
+      0.0001594577
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11769,6 +16469,12 @@ export const localStars: LocalStar[] = [
       81.174,
       -17.987
     ],
+    "velocityLyPerYear": [
+      -0.000001402471,
+      0.000005512036,
+      0.00002315708
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11784,6 +16490,12 @@ export const localStars: LocalStar[] = [
       62.43,
       -5.799
     ],
+    "velocityLyPerYear": [
+      0.0001489881,
+      -0.0001047613,
+      0.00005215234
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11799,6 +16511,12 @@ export const localStars: LocalStar[] = [
       -73.928,
       31.387
     ],
+    "velocityLyPerYear": [
+      -0.00003330053,
+      0.00002785372,
+      0.0001368877
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11814,6 +16532,12 @@ export const localStars: LocalStar[] = [
       -1.308,
       29.081
     ],
+    "velocityLyPerYear": [
+      -0.000005120649,
+      -0.0001056745,
+      0.0001899533
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11829,6 +16553,12 @@ export const localStars: LocalStar[] = [
       -61.312,
       61.222
     ],
+    "velocityLyPerYear": [
+      0.00003186544,
+      0.00001223085,
+      0.0001346698
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11844,6 +16574,12 @@ export const localStars: LocalStar[] = [
       20.88,
       84.204
     ],
+    "velocityLyPerYear": [
+      -0.000156033,
+      -0.0001972918,
+      0.00005264158
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11859,6 +16595,12 @@ export const localStars: LocalStar[] = [
       53.8,
       -41.946
     ],
+    "velocityLyPerYear": [
+      0.0000775599,
+      -0.0000263534,
+      0.0001223411
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11874,6 +16616,12 @@ export const localStars: LocalStar[] = [
       17.498,
       -75.068
     ],
+    "velocityLyPerYear": [
+      -0.0001449111,
+      -0.0001504884,
+      -0.00003695347
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11889,6 +16637,12 @@ export const localStars: LocalStar[] = [
       -20.342,
       -44.317
     ],
+    "velocityLyPerYear": [
+      0.00001099146,
+      0.00002240692,
+      0.0001480096
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11904,6 +16658,12 @@ export const localStars: LocalStar[] = [
       -24.692,
       -10.821
     ],
+    "velocityLyPerYear": [
+      -0.00002348323,
+      -0.00006477458,
+      0.00008607257
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11919,6 +16679,12 @@ export const localStars: LocalStar[] = [
       60.283,
       -61.605
     ],
+    "velocityLyPerYear": [
+      -0.00006464412,
+      -0.0001033915,
+      0.00009628125
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11934,6 +16700,12 @@ export const localStars: LocalStar[] = [
       -22.893,
       51.743
     ],
+    "velocityLyPerYear": [
+      -0.00006532905,
+      -0.00003437684,
+      -0.00009442216
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11949,6 +16721,12 @@ export const localStars: LocalStar[] = [
       81.945,
       26.306
     ],
+    "velocityLyPerYear": [
+      0.00001947151,
+      -0.0000926283,
+      0.00004885817
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11964,6 +16742,12 @@ export const localStars: LocalStar[] = [
       76.574,
       28.849
     ],
+    "velocityLyPerYear": [
+      -0.0000173515,
+      0.00009181291,
+      0.00006839491
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11979,6 +16763,12 @@ export const localStars: LocalStar[] = [
       43.336,
       -65.921
     ],
+    "velocityLyPerYear": [
+      -0.0000265491,
+      0.00003744271,
+      0.0001402145
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -11994,6 +16784,12 @@ export const localStars: LocalStar[] = [
       -50.961,
       70.687
     ],
+    "velocityLyPerYear": [
+      -0.00001011084,
+      -0.00003476823,
+      0.0003415179
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12009,6 +16805,12 @@ export const localStars: LocalStar[] = [
       -19.911,
       7.889
     ],
+    "velocityLyPerYear": [
+      0.00006092594,
+      0.00007005831,
+      -0.00004797755
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12024,6 +16826,12 @@ export const localStars: LocalStar[] = [
       -32.686,
       15.688
     ],
+    "velocityLyPerYear": [
+      0.00005808838,
+      0.00001532933,
+      -0.00001699273
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12039,6 +16847,12 @@ export const localStars: LocalStar[] = [
       -82.008,
       -8.362
     ],
+    "velocityLyPerYear": [
+      0.00001950413,
+      0.00001996075,
+      -0.00002475524
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12054,6 +16868,12 @@ export const localStars: LocalStar[] = [
       22.613,
       -43.208
     ],
+    "velocityLyPerYear": [
+      -0.00001229608,
+      0.00000133724,
+      0.00002139583
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12069,6 +16889,12 @@ export const localStars: LocalStar[] = [
       -68.832,
       26.499
     ],
+    "velocityLyPerYear": [
+      0.00000704497,
+      0.0000556096,
+      0.0001737759
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12084,6 +16910,12 @@ export const localStars: LocalStar[] = [
       -18.139,
       55.342
     ],
+    "velocityLyPerYear": [
+      -0.00001229608,
+      -0.0001076315,
+      0.00006875368
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12099,6 +16931,12 @@ export const localStars: LocalStar[] = [
       -43.939,
       -73.638
     ],
+    "velocityLyPerYear": [
+      0.00001157854,
+      -0.00003519223,
+      -0.00006363304
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12114,6 +16952,12 @@ export const localStars: LocalStar[] = [
       8.291,
       81.808
     ],
+    "velocityLyPerYear": [
+      -0.00001656872,
+      -0.0001335935,
+      -0.0001470637
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12129,6 +16973,12 @@ export const localStars: LocalStar[] = [
       -23.949,
       -83.072
     ],
+    "velocityLyPerYear": [
+      0.00001643826,
+      0.0000424329,
+      -0.00000733851
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12144,6 +16994,12 @@ export const localStars: LocalStar[] = [
       -40.652,
       77.119
     ],
+    "velocityLyPerYear": [
+      -0.000001696011,
+      0.0001305602,
+      0.00002214599
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12159,6 +17015,12 @@ export const localStars: LocalStar[] = [
       -74.366,
       -6.519
     ],
+    "velocityLyPerYear": [
+      0.00005834931,
+      -0.0001204494,
+      -0.000004109566
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12174,6 +17036,12 @@ export const localStars: LocalStar[] = [
       55.306,
       -53.263
     ],
+    "velocityLyPerYear": [
+      0.00006386134,
+      -0.0001093927,
+      0.00005808838
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12189,6 +17057,12 @@ export const localStars: LocalStar[] = [
       -35.517,
       58.014
     ],
+    "velocityLyPerYear": [
+      0.00001712319,
+      -0.000008838828,
+      -0.00007214571
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12204,6 +17078,12 @@ export const localStars: LocalStar[] = [
       -20.657,
       6.767
     ],
+    "velocityLyPerYear": [
+      0.00007775559,
+      -0.00002214599,
+      0.0001774941
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12219,6 +17099,12 @@ export const localStars: LocalStar[] = [
       -79.771,
       5.805
     ],
+    "velocityLyPerYear": [
+      0.00005244588,
+      0.000002609248,
+      0.0001289295
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12234,6 +17120,12 @@ export const localStars: LocalStar[] = [
       -71.138,
       -51.519
     ],
+    "velocityLyPerYear": [
+      0.00001102407,
+      -0.0000612521,
+      0.00004151966
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12249,6 +17141,12 @@ export const localStars: LocalStar[] = [
       -11.675,
       81.456
     ],
+    "velocityLyPerYear": [
+      -0.00003437684,
+      0.00004977141,
+      0.00002609248
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12264,6 +17162,12 @@ export const localStars: LocalStar[] = [
       29.344,
       -62.497
     ],
+    "velocityLyPerYear": [
+      -0.00008437656,
+      0.00007566819,
+      0.0002902462
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12279,6 +17183,12 @@ export const localStars: LocalStar[] = [
       1.597,
       -80.932
     ],
+    "velocityLyPerYear": [
+      0.000001826474,
+      0.00001800381,
+      0.0001663069
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12294,6 +17204,12 @@ export const localStars: LocalStar[] = [
       15.198,
       -25.483
     ],
+    "velocityLyPerYear": [
+      0.00009438955,
+      0.00002455955,
+      0.0002065546
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12309,6 +17225,12 @@ export const localStars: LocalStar[] = [
       75.141,
       -35.832
     ],
+    "velocityLyPerYear": [
+      -0.000001989552,
+      -0.0001457265,
+      -0.0000388778
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12324,6 +17246,12 @@ export const localStars: LocalStar[] = [
       -33.678,
       -24.725
     ],
+    "velocityLyPerYear": [
+      0.0001070118,
+      -0.0001202863,
+      -0.00002788634
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12339,6 +17267,12 @@ export const localStars: LocalStar[] = [
       -88.639,
       4.526
     ],
+    "velocityLyPerYear": [
+      0.00002726664,
+      -0.00001148069,
+      0.00007058016
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12354,6 +17288,12 @@ export const localStars: LocalStar[] = [
       -20.951,
       -83.975
     ],
+    "velocityLyPerYear": [
+      -0.00006653582,
+      -0.0002013361,
+      -0.0002281787
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12369,6 +17309,12 @@ export const localStars: LocalStar[] = [
       -7.922,
       86.711
     ],
+    "velocityLyPerYear": [
+      0.00002765803,
+      -0.00002984327,
+      -0.00004073688
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12384,6 +17330,12 @@ export const localStars: LocalStar[] = [
       -57.63,
       52.846
     ],
+    "velocityLyPerYear": [
+      0.00009892311,
+      0.00001386163,
+      0.00008773596
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12399,6 +17351,12 @@ export const localStars: LocalStar[] = [
       72.82,
       -50.527
     ],
+    "velocityLyPerYear": [
+      -0.00001408994,
+      -0.00002615771,
+      0.00006317642
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12414,6 +17372,12 @@ export const localStars: LocalStar[] = [
       78.561,
       5.22
     ],
+    "velocityLyPerYear": [
+      -0.00002641864,
+      -0.00001474225,
+      0.000003457254
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12429,6 +17393,12 @@ export const localStars: LocalStar[] = [
       -36.802,
       -77.553
     ],
+    "velocityLyPerYear": [
+      0.00001581857,
+      -0.000004924956,
+      0.0001082186
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12444,6 +17414,12 @@ export const localStars: LocalStar[] = [
       -47.626,
       -25.79
     ],
+    "velocityLyPerYear": [
+      -8.480056e-7,
+      0.00004465076,
+      0.0001593598
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12459,6 +17435,12 @@ export const localStars: LocalStar[] = [
       58.943,
       49.702
     ],
+    "velocityLyPerYear": [
+      0.000006392658,
+      0.000008284362,
+      0.000008382209
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12474,6 +17456,12 @@ export const localStars: LocalStar[] = [
       87.147,
       -17.305
     ],
+    "velocityLyPerYear": [
+      -0.00004435722,
+      0.00003268083,
+      0.0002668935
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12489,6 +17477,12 @@ export const localStars: LocalStar[] = [
       43.646,
       69.359
     ],
+    "velocityLyPerYear": [
+      0.00004807539,
+      0.00001643826,
+      0.000002804942
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12504,6 +17498,12 @@ export const localStars: LocalStar[] = [
       -75.833,
       44.884
     ],
+    "velocityLyPerYear": [
+      0.00002694049,
+      -0.000003000635,
+      -0.00005192404
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12519,6 +17519,12 @@ export const localStars: LocalStar[] = [
       -19.736,
       -73.852
     ],
+    "velocityLyPerYear": [
+      0.0001008474,
+      -0.0001000647,
+      2.935404e-7
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12534,6 +17540,12 @@ export const localStars: LocalStar[] = [
       -78.96,
       -34.654
     ],
+    "velocityLyPerYear": [
+      -0.0000411935,
+      0.00001806904,
+      0.0001001625
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12549,6 +17561,12 @@ export const localStars: LocalStar[] = [
       49.068,
       34.918
     ],
+    "velocityLyPerYear": [
+      -0.00009556371,
+      0.00006249149,
+      -0.0001316039
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12564,6 +17582,12 @@ export const localStars: LocalStar[] = [
       -50.247,
       24.534
     ],
+    "velocityLyPerYear": [
+      -0.00006154564,
+      -0.0001323867,
+      0.00006431796
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12579,6 +17603,12 @@ export const localStars: LocalStar[] = [
       -86.23,
       -7.721
     ],
+    "velocityLyPerYear": [
+      0.000002902788,
+      -0.0001203189,
+      -0.0001197645
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12594,6 +17624,12 @@ export const localStars: LocalStar[] = [
       -84.312,
       -21.715
     ],
+    "velocityLyPerYear": [
+      0.00002025429,
+      0.00004611846,
+      0.0002155565
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12609,6 +17645,12 @@ export const localStars: LocalStar[] = [
       -14.058,
       82.798
     ],
+    "velocityLyPerYear": [
+      -0.00002896265,
+      -0.0001013693,
+      0.000172243
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12624,6 +17666,12 @@ export const localStars: LocalStar[] = [
       79.901,
       5.313
     ],
+    "velocityLyPerYear": [
+      0.00004086735,
+      -0.0001602078,
+      0.000001369855
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12639,6 +17687,12 @@ export const localStars: LocalStar[] = [
       -88.465,
       -22.815
     ],
+    "velocityLyPerYear": [
+      -0.0004089018,
+      -0.0002184919,
+      0.0001277553
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12654,6 +17708,12 @@ export const localStars: LocalStar[] = [
       14.899,
       -86.922
     ],
+    "velocityLyPerYear": [
+      -0.00007583127,
+      -0.00003467038,
+      0.0002117405
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12669,6 +17729,12 @@ export const localStars: LocalStar[] = [
       -58.48,
       57.43
     ],
+    "velocityLyPerYear": [
+      -0.00003535531,
+      -0.00002547278,
+      0.0002047281
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12684,6 +17750,12 @@ export const localStars: LocalStar[] = [
       -60.662,
       -20.575
     ],
+    "velocityLyPerYear": [
+      -0.00005580529,
+      -0.0001172531,
+      -0.0001524453
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12699,6 +17771,12 @@ export const localStars: LocalStar[] = [
       -53.423,
       69.356
     ],
+    "velocityLyPerYear": [
+      0.00001992813,
+      -0.00008140854,
+      -0.00007048231
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12714,6 +17792,12 @@ export const localStars: LocalStar[] = [
       -38.828,
       36.95
     ],
+    "velocityLyPerYear": [
+      -0.000003131098,
+      -0.00005032587,
+      0.00007759251
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12729,6 +17813,12 @@ export const localStars: LocalStar[] = [
       1.437,
       59.162
     ],
+    "velocityLyPerYear": [
+      -0.00008238701,
+      -0.00005326127,
+      0.0001494121
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12744,6 +17834,12 @@ export const localStars: LocalStar[] = [
       19.965,
       88.853
     ],
+    "velocityLyPerYear": [
+      -0.00002928881,
+      -0.00008871443,
+      0.00005358743
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12759,6 +17855,12 @@ export const localStars: LocalStar[] = [
       -0.032,
       -35.591
     ],
+    "velocityLyPerYear": [
+      0.0001222107,
+      0.00001666657,
+      0.00004109566
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12774,6 +17876,12 @@ export const localStars: LocalStar[] = [
       -32.346,
       -23.657
     ],
+    "velocityLyPerYear": [
+      -0.00006353519,
+      -0.00002915835,
+      -0.00008408302
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12789,6 +17897,12 @@ export const localStars: LocalStar[] = [
       90.598,
       -15.111
     ],
+    "velocityLyPerYear": [
+      0.00002879957,
+      -0.00006242626,
+      -0.0000426612
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12804,6 +17918,12 @@ export const localStars: LocalStar[] = [
       80.934,
       -40.12
     ],
+    "velocityLyPerYear": [
+      0.00001099146,
+      -0.00002811465,
+      0.00004331352
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12819,6 +17939,12 @@ export const localStars: LocalStar[] = [
       37.468,
       -84.165
     ],
+    "velocityLyPerYear": [
+      -0.00000652312,
+      -0.000008056053,
+      0.00009911881
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12834,6 +17960,12 @@ export const localStars: LocalStar[] = [
       9.964,
       -42.295
     ],
+    "velocityLyPerYear": [
+      0.00003356145,
+      0.00001105669,
+      0.0001247221
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12849,6 +17981,12 @@ export const localStars: LocalStar[] = [
       86.72,
       26.993
     ],
+    "velocityLyPerYear": [
+      -0.00002553801,
+      -0.00002586417,
+      -0.00009432432
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12864,6 +18002,12 @@ export const localStars: LocalStar[] = [
       -89.717,
       -12.913
     ],
+    "velocityLyPerYear": [
+      -0.0001081533,
+      0.00009239999,
+      0.00006102379
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12879,6 +18023,12 @@ export const localStars: LocalStar[] = [
       77.673,
       -49.944
     ],
+    "velocityLyPerYear": [
+      -0.000006686198,
+      -0.00001653611,
+      -0.00002429862
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12894,6 +18044,12 @@ export const localStars: LocalStar[] = [
       -3.674,
       -20.467
     ],
+    "velocityLyPerYear": [
+      -0.00007188478,
+      -0.00003802979,
+      0.0003087719
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12909,6 +18065,12 @@ export const localStars: LocalStar[] = [
       66.474,
       24.459
     ],
+    "velocityLyPerYear": [
+      -0.000003718178,
+      -0.000008610518,
+      0.0001726344
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12924,6 +18086,12 @@ export const localStars: LocalStar[] = [
       -55.75,
       61.628
     ],
+    "velocityLyPerYear": [
+      0.00001823212,
+      0.00002638602,
+      0.00006223056
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12939,6 +18107,12 @@ export const localStars: LocalStar[] = [
       -32.867,
       -24.035
     ],
+    "velocityLyPerYear": [
+      -0.00006888415,
+      -0.00002694049,
+      -0.00008532241
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12954,6 +18128,12 @@ export const localStars: LocalStar[] = [
       -56.463,
       70.268
     ],
+    "velocityLyPerYear": [
+      0.00002136322,
+      0.00001581857,
+      0.0001241024
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12969,6 +18149,12 @@ export const localStars: LocalStar[] = [
       -89.162,
       -11.535
     ],
+    "velocityLyPerYear": [
+      -0.000003979103,
+      -0.0001733193,
+      0.000648072
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12984,6 +18170,12 @@ export const localStars: LocalStar[] = [
       24.83,
       37.262
     ],
+    "velocityLyPerYear": [
+      -0.00001725365,
+      -0.00002077614,
+      0.0001386489
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -12999,6 +18191,12 @@ export const localStars: LocalStar[] = [
       -48.288,
       -76.882
     ],
+    "velocityLyPerYear": [
+      0.00001435086,
+      -0.00002260261,
+      0.00001862351
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13014,6 +18212,12 @@ export const localStars: LocalStar[] = [
       34.066,
       48.064
     ],
+    "velocityLyPerYear": [
+      -0.00002557063,
+      0.00000896929,
+      0.0000719174
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13029,6 +18233,12 @@ export const localStars: LocalStar[] = [
       -38.025,
       15.17
     ],
+    "velocityLyPerYear": [
+      -0.0002683938,
+      -0.00008395255,
+      0.0002468675
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13044,6 +18254,12 @@ export const localStars: LocalStar[] = [
       -89.781,
       -11.61
     ],
+    "velocityLyPerYear": [
+      -0.00002984327,
+      -0.00009487878,
+      0.0006643472
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13059,6 +18275,12 @@ export const localStars: LocalStar[] = [
       52.38,
       -0.175
     ],
+    "velocityLyPerYear": [
+      0.000005512036,
+      -0.00005401143,
+      -0.00002700572
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13074,6 +18296,12 @@ export const localStars: LocalStar[] = [
       33.181,
       79.646
     ],
+    "velocityLyPerYear": [
+      0.00004279167,
+      -0.000007566819,
+      0.00004582492
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13089,6 +18317,12 @@ export const localStars: LocalStar[] = [
       -8.835,
       90.807
     ],
+    "velocityLyPerYear": [
+      0.000003652947,
+      0.00001976505,
+      0.0001902794
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13104,6 +18338,12 @@ export const localStars: LocalStar[] = [
       12.075,
       22.286
     ],
+    "velocityLyPerYear": [
+      0.00001875397,
+      -0.00001940628,
+      0.0001579574
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13119,6 +18359,12 @@ export const localStars: LocalStar[] = [
       38.704,
       20.561
     ],
+    "velocityLyPerYear": [
+      0.00002742972,
+      -0.00008708365,
+      -0.00008039745
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13134,6 +18380,12 @@ export const localStars: LocalStar[] = [
       -25.851,
       89.389
     ],
+    "velocityLyPerYear": [
+      -0.00007540727,
+      -0.0001289621,
+      0.000093248
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13149,6 +18401,12 @@ export const localStars: LocalStar[] = [
       74.064,
       -33.136
     ],
+    "velocityLyPerYear": [
+      0.0000202869,
+      -0.00002305923,
+      0.00009690095
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13164,6 +18422,12 @@ export const localStars: LocalStar[] = [
       53.344,
       22.507
     ],
+    "velocityLyPerYear": [
+      -0.0001253418,
+      -0.00007876667,
+      -0.000006849276
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13179,6 +18443,12 @@ export const localStars: LocalStar[] = [
       -81.311,
       14.061
     ],
+    "velocityLyPerYear": [
+      -0.00003848641,
+      -0.00001392686,
+      -0.00002684264
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13194,6 +18464,12 @@ export const localStars: LocalStar[] = [
       -48.458,
       64.121
     ],
+    "velocityLyPerYear": [
+      -0.000009067137,
+      0.00005580529,
+      0.0001498361
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13209,6 +18485,12 @@ export const localStars: LocalStar[] = [
       86.891,
       -9.519
     ],
+    "velocityLyPerYear": [
+      -0.00002504878,
+      0.00002146106,
+      -0.000003979103
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13224,6 +18506,12 @@ export const localStars: LocalStar[] = [
       64.444,
       -37.504
     ],
+    "velocityLyPerYear": [
+      -0.0000156881,
+      -0.0001622626,
+      -0.00008603995
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13239,6 +18527,12 @@ export const localStars: LocalStar[] = [
       -55.985,
       -35.641
     ],
+    "velocityLyPerYear": [
+      -0.00007534204,
+      -0.00007511373,
+      0.0002328754
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13254,6 +18548,12 @@ export const localStars: LocalStar[] = [
       -54.694,
       -19.242
     ],
+    "velocityLyPerYear": [
+      0.00001425302,
+      0.00004367229,
+      0.00003228944
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13269,6 +18569,12 @@ export const localStars: LocalStar[] = [
       16.216,
       -64.248
     ],
+    "velocityLyPerYear": [
+      0.00002093922,
+      0.000006457889,
+      0.000156457
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13284,6 +18590,12 @@ export const localStars: LocalStar[] = [
       -56.099,
       -35.716
     ],
+    "velocityLyPerYear": [
+      -0.00007671189,
+      -0.00007576604,
+      0.0002366262
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13299,6 +18611,12 @@ export const localStars: LocalStar[] = [
       -29.745,
       17.32
     ],
+    "velocityLyPerYear": [
+      0.0000255054,
+      8.1539e-7,
+      0.0001156223
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13314,6 +18632,12 @@ export const localStars: LocalStar[] = [
       89.597,
       -8.409
     ],
+    "velocityLyPerYear": [
+      -0.00002449432,
+      -0.00002857127,
+      0.0002907355
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13329,6 +18653,12 @@ export const localStars: LocalStar[] = [
       -4.807,
       -90.671
     ],
+    "velocityLyPerYear": [
+      0.00003698609,
+      -0.0002007164,
+      0.00013966
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13344,6 +18674,12 @@ export const localStars: LocalStar[] = [
       -33.22,
       87.942
     ],
+    "velocityLyPerYear": [
+      -0.00003088697,
+      0.000008284362,
+      0.00002475524
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13359,6 +18695,12 @@ export const localStars: LocalStar[] = [
       87.214,
       -20.085
     ],
+    "velocityLyPerYear": [
+      0.000008251747,
+      -1.956936e-7,
+      0.0001102081
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13374,6 +18716,12 @@ export const localStars: LocalStar[] = [
       -85.205,
       44.416
     ],
+    "velocityLyPerYear": [
+      0.000003685563,
+      -0.00000733851,
+      0.0001360723
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13389,6 +18737,12 @@ export const localStars: LocalStar[] = [
       4.758,
       6.018
     ],
+    "velocityLyPerYear": [
+      0.000003000635,
+      -0.00005215234,
+      0.00008917105
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13404,6 +18758,12 @@ export const localStars: LocalStar[] = [
       74.366,
       -19.566
     ],
+    "velocityLyPerYear": [
+      -0.00006630751,
+      -0.0001308212,
+      0.0001418779
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13419,6 +18779,12 @@ export const localStars: LocalStar[] = [
       -49.054,
       -83.503
     ],
+    "velocityLyPerYear": [
+      -0.00002566848,
+      -0.0001106647,
+      -0.00002077614
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13434,6 +18800,12 @@ export const localStars: LocalStar[] = [
       94.161,
       -20.648
     ],
+    "velocityLyPerYear": [
+      0.00003917134,
+      0.00000326156,
+      0.00009243261
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13449,6 +18821,12 @@ export const localStars: LocalStar[] = [
       -94.56,
       15.965
     ],
+    "velocityLyPerYear": [
+      -0.00001239393,
+      -0.00005547914,
+      0.00006676413
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13464,6 +18842,12 @@ export const localStars: LocalStar[] = [
       94.002,
       -21.517
     ],
+    "velocityLyPerYear": [
+      0.00001604688,
+      -8.806212e-7,
+      0.0001312452
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13479,6 +18863,12 @@ export const localStars: LocalStar[] = [
       47.166,
       3.102
     ],
+    "velocityLyPerYear": [
+      -6.52312e-8,
+      -0.00008643134,
+      0.00006386134
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13494,6 +18884,12 @@ export const localStars: LocalStar[] = [
       -88.127,
       34.389
     ],
+    "velocityLyPerYear": [
+      -0.00006170872,
+      -0.0001375074,
+      0.0001690467
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13509,6 +18905,12 @@ export const localStars: LocalStar[] = [
       -42.486,
       87.05
     ],
+    "velocityLyPerYear": [
+      0.0000729611,
+      -0.0001438022,
+      0.00007214571
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13524,6 +18926,12 @@ export const localStars: LocalStar[] = [
       90.108,
       -35.187
     ],
+    "velocityLyPerYear": [
+      0.0000397258,
+      0.00009370462,
+      0.00002208076
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13539,6 +18947,12 @@ export const localStars: LocalStar[] = [
       -56.051,
       69.708
     ],
+    "velocityLyPerYear": [
+      0.00008887751,
+      0.00003564885,
+      0.0001902468
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13554,6 +18968,12 @@ export const localStars: LocalStar[] = [
       4.194,
       21.298
     ],
+    "velocityLyPerYear": [
+      0.000004403106,
+      0.00002002598,
+      0.0001338544
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13569,6 +18989,12 @@ export const localStars: LocalStar[] = [
       -61.572,
       -30.586
     ],
+    "velocityLyPerYear": [
+      -0.000006457889,
+      -0.0003203504,
+      -0.0002342126
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13584,6 +19010,12 @@ export const localStars: LocalStar[] = [
       17.204,
       -74.327
     ],
+    "velocityLyPerYear": [
+      0.000008023438,
+      -0.0000204826,
+      0.0002311794
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13599,6 +19031,12 @@ export const localStars: LocalStar[] = [
       78.962,
       -2.93
     ],
+    "velocityLyPerYear": [
+      -0.00005952347,
+      -0.00002345062,
+      0.00007537465
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13614,6 +19052,12 @@ export const localStars: LocalStar[] = [
       -72.253,
       -51.542
     ],
+    "velocityLyPerYear": [
+      0.0000309522,
+      0.00002455955,
+      -7.175432e-7
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13629,6 +19073,12 @@ export const localStars: LocalStar[] = [
       70.619,
       65.571
     ],
+    "velocityLyPerYear": [
+      -0.00009712926,
+      -0.0001258636,
+      0.0002951059
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13644,6 +19094,12 @@ export const localStars: LocalStar[] = [
       -59.395,
       -75.95
     ],
+    "velocityLyPerYear": [
+      -0.00003271345,
+      -0.0001507167,
+      -0.0001242002
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13659,6 +19115,12 @@ export const localStars: LocalStar[] = [
       -81.759,
       1.193
     ],
+    "velocityLyPerYear": [
+      -0.00001898228,
+      -0.0001940628,
+      -0.00009944496
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13674,6 +19136,12 @@ export const localStars: LocalStar[] = [
       80.995,
       -55.912
     ],
+    "velocityLyPerYear": [
+      0.00007654881,
+      -0.00002625556,
+      0.00004089996
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13689,6 +19157,12 @@ export const localStars: LocalStar[] = [
       -30.199,
       -74.845
     ],
+    "velocityLyPerYear": [
+      0.0000286365,
+      -0.00002227645,
+      -0.00005022802
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13704,6 +19178,12 @@ export const localStars: LocalStar[] = [
       -79.349,
       -37.837
     ],
+    "velocityLyPerYear": [
+      -0.000008740981,
+      0.00001969982,
+      0.00007449403
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13719,6 +19199,12 @@ export const localStars: LocalStar[] = [
       95.455,
       -19.012
     ],
+    "velocityLyPerYear": [
+      -0.00005786007,
+      -0.00002374416,
+      0.0003457906
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13734,6 +19220,12 @@ export const localStars: LocalStar[] = [
       71.331,
       -38.496
     ],
+    "velocityLyPerYear": [
+      0.00001063269,
+      0.00003346361,
+      0.000115818
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13749,6 +19241,12 @@ export const localStars: LocalStar[] = [
       70.675,
       -46.729
     ],
+    "velocityLyPerYear": [
+      -0.00008809474,
+      -0.0002191116,
+      -0.00007534204
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13764,6 +19262,12 @@ export const localStars: LocalStar[] = [
       -10.492,
       60.804
     ],
+    "velocityLyPerYear": [
+      -0.00007436357,
+      -0.00005091295,
+      0.0002004229
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13779,6 +19283,12 @@ export const localStars: LocalStar[] = [
       -42.644,
       -59.391
     ],
+    "velocityLyPerYear": [
+      0.00001565549,
+      -0.000006490504,
+      0.0001017933
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13794,6 +19304,12 @@ export const localStars: LocalStar[] = [
       86.293,
       18.05
     ],
+    "velocityLyPerYear": [
+      -0.00002234169,
+      0.000008414825,
+      0.0001451394
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13809,6 +19325,12 @@ export const localStars: LocalStar[] = [
       81.626,
       -56.373
     ],
+    "velocityLyPerYear": [
+      0.00007543988,
+      -0.00002661433,
+      0.00004644461
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13824,6 +19346,12 @@ export const localStars: LocalStar[] = [
       57.983,
       -68.395
     ],
+    "velocityLyPerYear": [
+      -0.00002067829,
+      -0.0001827778,
+      -0.00002553801
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13839,6 +19367,12 @@ export const localStars: LocalStar[] = [
       -22.325,
       34.37
     ],
+    "velocityLyPerYear": [
+      0.00001121977,
+      -0.00003515962,
+      0.0002430841
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13854,6 +19388,12 @@ export const localStars: LocalStar[] = [
       -85.239,
       -39.181
     ],
+    "velocityLyPerYear": [
+      -0.00001043699,
+      -0.00006128471,
+      0.00006082809
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13869,6 +19409,12 @@ export const localStars: LocalStar[] = [
       -24.624,
       -87.968
     ],
+    "velocityLyPerYear": [
+      -0.00007371126,
+      -0.00005600099,
+      0.00004044334
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13884,6 +19430,12 @@ export const localStars: LocalStar[] = [
       -85.498,
       48.404
     ],
+    "velocityLyPerYear": [
+      0.00001653611,
+      0.00001477487,
+      0.00008956244
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13899,6 +19451,12 @@ export const localStars: LocalStar[] = [
       -4.049,
       -38.961
     ],
+    "velocityLyPerYear": [
+      -0.000002772326,
+      0.0001370508,
+      0.0004492147
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13914,6 +19472,12 @@ export const localStars: LocalStar[] = [
       -79.854,
       -8.825
     ],
+    "velocityLyPerYear": [
+      0.00008812735,
+      -0.000009458524,
+      0.000003359407
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13929,6 +19493,12 @@ export const localStars: LocalStar[] = [
       -34.594,
       26.993
     ],
+    "velocityLyPerYear": [
+      0.00003858425,
+      -0.0001049896,
+      -0.0000524785
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13944,6 +19514,12 @@ export const localStars: LocalStar[] = [
       -20.594,
       -19.849
     ],
+    "velocityLyPerYear": [
+      0.00002058044,
+      0.00003780148,
+      0.0001448459
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13959,6 +19535,12 @@ export const localStars: LocalStar[] = [
       -23.947,
       71.308
     ],
+    "velocityLyPerYear": [
+      0.000009393293,
+      -0.0001333326,
+      0.000004337875
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13974,6 +19556,12 @@ export const localStars: LocalStar[] = [
       28.721,
       91.148
     ],
+    "velocityLyPerYear": [
+      0.00002932142,
+      -0.00002651648,
+      -0.00001523149
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -13989,6 +19577,12 @@ export const localStars: LocalStar[] = [
       25.421,
       -75.454
     ],
+    "velocityLyPerYear": [
+      0.00000133724,
+      -0.00004187843,
+      0.00008956244
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14004,6 +19598,12 @@ export const localStars: LocalStar[] = [
       -83.738,
       1.225
     ],
+    "velocityLyPerYear": [
+      -0.00002749495,
+      -0.000206946,
+      -0.0001051527
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14019,6 +19619,12 @@ export const localStars: LocalStar[] = [
       -45.344,
       -47.267
     ],
+    "velocityLyPerYear": [
+      -0.00003189806,
+      -0.0001024782,
+      -0.00004435722
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14034,6 +19640,12 @@ export const localStars: LocalStar[] = [
       -86.503,
       48.974
     ],
+    "velocityLyPerYear": [
+      0.00000733851,
+      0.00003956272,
+      0.00006722075
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14049,6 +19661,12 @@ export const localStars: LocalStar[] = [
       -73.826,
       -32.302
     ],
+    "velocityLyPerYear": [
+      0.000004435722,
+      -0.00007599435,
+      0.0000683623
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14064,6 +19682,12 @@ export const localStars: LocalStar[] = [
       17.616,
       -5.624
     ],
+    "velocityLyPerYear": [
+      0.000004142181,
+      -0.0001777876,
+      -0.0001026413
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14079,6 +19703,12 @@ export const localStars: LocalStar[] = [
       -43.784,
       -89.896
     ],
+    "velocityLyPerYear": [
+      0.00006082809,
+      -0.0000890732,
+      0.0001444871
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14094,6 +19724,12 @@ export const localStars: LocalStar[] = [
       -77.497,
       -52.993
     ],
+    "velocityLyPerYear": [
+      -0.0001760916,
+      -0.0001246568,
+      -0.00005691422
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14109,6 +19745,12 @@ export const localStars: LocalStar[] = [
       86.711,
       -40.677
     ],
+    "velocityLyPerYear": [
+      0.00001324193,
+      -0.00002707095,
+      0.00002296138
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14124,6 +19766,12 @@ export const localStars: LocalStar[] = [
       31.61,
       15.951
     ],
+    "velocityLyPerYear": [
+      0.00001063269,
+      -0.0000489234,
+      0.00007341772
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14139,6 +19787,12 @@ export const localStars: LocalStar[] = [
       10.245,
       60.216
     ],
+    "velocityLyPerYear": [
+      -0.00008003868,
+      0.00004416152,
+      0.0001570115
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14154,6 +19808,12 @@ export const localStars: LocalStar[] = [
       -18.252,
       -77.933
     ],
+    "velocityLyPerYear": [
+      0.000002804942,
+      -0.0000681666,
+      0.00005730561
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14169,6 +19829,12 @@ export const localStars: LocalStar[] = [
       -10.775,
       62.462
     ],
+    "velocityLyPerYear": [
+      -0.00006797091,
+      -0.00005730561,
+      0.0001955305
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14184,6 +19850,12 @@ export const localStars: LocalStar[] = [
       -11.589,
       -93.614
     ],
+    "velocityLyPerYear": [
+      0.00000681666,
+      -0.00009161722,
+      -0.0001983681
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14199,6 +19871,12 @@ export const localStars: LocalStar[] = [
       -99.384,
       23.971
     ],
+    "velocityLyPerYear": [
+      -0.00004801016,
+      -0.0001510755,
+      0.0001908339
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14214,6 +19892,12 @@ export const localStars: LocalStar[] = [
       -59.366,
       -30.731
     ],
+    "velocityLyPerYear": [
+      -0.0001061964,
+      0.00004363967,
+      0.0002178396
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14229,6 +19913,12 @@ export const localStars: LocalStar[] = [
       -83.564,
       -21.242
     ],
+    "velocityLyPerYear": [
+      0.00008636611,
+      -0.0002571088,
+      0.0001599795
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14244,6 +19934,12 @@ export const localStars: LocalStar[] = [
       -100.058,
       -2.6
     ],
+    "velocityLyPerYear": [
+      0.00002058044,
+      -0.00008444179,
+      0.000005446805
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14259,6 +19955,12 @@ export const localStars: LocalStar[] = [
       78.918,
       -24.747
     ],
+    "velocityLyPerYear": [
+      0.00001180685,
+      -0.000004827109,
+      0.00006888415
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14274,6 +19976,12 @@ export const localStars: LocalStar[] = [
       4.855,
       -102.533
     ],
+    "velocityLyPerYear": [
+      -0.00001037176,
+      -0.00003848641,
+      0.00002214599
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14289,6 +19997,12 @@ export const localStars: LocalStar[] = [
       -60.44,
       38.767
     ],
+    "velocityLyPerYear": [
+      0.00001030653,
+      -0.00006529643,
+      0.0002445844
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14304,6 +20018,12 @@ export const localStars: LocalStar[] = [
       -66.758,
       -52.672
     ],
+    "velocityLyPerYear": [
+      -0.00002168937,
+      -0.0000974228,
+      0.000058121
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14319,6 +20039,12 @@ export const localStars: LocalStar[] = [
       42.943,
       46.99
     ],
+    "velocityLyPerYear": [
+      0.00001696011,
+      0.000002120014,
+      0.0001257658
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14334,6 +20060,12 @@ export const localStars: LocalStar[] = [
       -90.809,
       -32.096
     ],
+    "velocityLyPerYear": [
+      -0.00002103706,
+      -0.00004986925,
+      0.0003270366
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14349,6 +20081,12 @@ export const localStars: LocalStar[] = [
       -41.035,
       74.431
     ],
+    "velocityLyPerYear": [
+      0.00007788605,
+      0.00004990187,
+      0.0001793206
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14364,6 +20102,12 @@ export const localStars: LocalStar[] = [
       61.233,
       -83.682
     ],
+    "velocityLyPerYear": [
+      -0.00006846014,
+      -0.000008219131,
+      -0.000004664031
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14379,6 +20123,12 @@ export const localStars: LocalStar[] = [
       78.814,
       -30.641
     ],
+    "velocityLyPerYear": [
+      -0.00001157854,
+      -0.00003294176,
+      0.00006262195
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14394,6 +20144,12 @@ export const localStars: LocalStar[] = [
       58.127,
       -78.736
     ],
+    "velocityLyPerYear": [
+      -0.00005117388,
+      0.00002178722,
+      -0.000007208048
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14409,6 +20165,12 @@ export const localStars: LocalStar[] = [
       12.468,
       -0.311
     ],
+    "velocityLyPerYear": [
+      0.00001363332,
+      -0.00005551175,
+      0.0000750485
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14424,6 +20186,12 @@ export const localStars: LocalStar[] = [
       -49.447,
       65.969
     ],
+    "velocityLyPerYear": [
+      -0.00008731196,
+      -0.0002660128,
+      0.0001166008
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14439,6 +20207,12 @@ export const localStars: LocalStar[] = [
       -100.437,
       -26.701
     ],
+    "velocityLyPerYear": [
+      0.000002380939,
+      -0.00001327455,
+      0.00007759251
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14454,6 +20228,12 @@ export const localStars: LocalStar[] = [
       -27.955,
       -101.014
     ],
+    "velocityLyPerYear": [
+      -0.000005642499,
+      0.000007925591,
+      0.0001478465
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14469,6 +20249,12 @@ export const localStars: LocalStar[] = [
       -23.795,
       97.091
     ],
+    "velocityLyPerYear": [
+      0.0001766135,
+      0.00004305259,
+      0.000288485
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14484,6 +20270,12 @@ export const localStars: LocalStar[] = [
       54.126,
       15.467
     ],
+    "velocityLyPerYear": [
+      -0.000008349594,
+      -0.00004843417,
+      0.00005844716
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14499,6 +20291,12 @@ export const localStars: LocalStar[] = [
       -47.139,
       18.208
     ],
+    "velocityLyPerYear": [
+      0.0001649697,
+      -0.0000137964,
+      0.0001959219
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14514,6 +20312,12 @@ export const localStars: LocalStar[] = [
       -80.635,
       36.615
     ],
+    "velocityLyPerYear": [
+      0.00001298101,
+      -0.00001976505,
+      -0.00002315708
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14529,6 +20333,12 @@ export const localStars: LocalStar[] = [
       63.136,
       3.217
     ],
+    "velocityLyPerYear": [
+      -3.26156e-7,
+      -0.000081539,
+      -0.00005890377
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14544,6 +20354,12 @@ export const localStars: LocalStar[] = [
       -60.541,
       85.31
     ],
+    "velocityLyPerYear": [
+      -0.00005485944,
+      -0.0001816689,
+      -0.00003173498
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14559,6 +20375,12 @@ export const localStars: LocalStar[] = [
       -22.986,
       -85.118
     ],
+    "velocityLyPerYear": [
+      0.0000275928,
+      9.132368e-7,
+      0.00001581857
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14574,6 +20396,12 @@ export const localStars: LocalStar[] = [
       44.171,
       -29.008
     ],
+    "velocityLyPerYear": [
+      0.00007540727,
+      9.458524e-7,
+      0.0000539462
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14589,6 +20417,12 @@ export const localStars: LocalStar[] = [
       -13.931,
       -59.6
     ],
+    "velocityLyPerYear": [
+      0.0001257984,
+      -0.0001142524,
+      -0.00008026699
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14604,6 +20438,12 @@ export const localStars: LocalStar[] = [
       2.202,
       -22.868
     ],
+    "velocityLyPerYear": [
+      -0.00002439647,
+      -0.0003314723,
+      0.00003685563
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14619,6 +20459,12 @@ export const localStars: LocalStar[] = [
       -45.418,
       67.903
     ],
+    "velocityLyPerYear": [
+      -0.000008088669,
+      0.000009588986,
+      0.0001242654
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14634,6 +20480,12 @@ export const localStars: LocalStar[] = [
       -79.793,
       -20.089
     ],
+    "velocityLyPerYear": [
+      -4.240028e-7,
+      -0.00002527709,
+      0.0001167312
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14649,6 +20501,12 @@ export const localStars: LocalStar[] = [
       -99.17,
       25.216
     ],
+    "velocityLyPerYear": [
+      0.00001738411,
+      -0.0001057072,
+      0.00005932778
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14664,6 +20522,12 @@ export const localStars: LocalStar[] = [
       -8.708,
       -95.82
     ],
+    "velocityLyPerYear": [
+      0.00004866248,
+      0.00002270046,
+      0.000003326791
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14679,6 +20543,12 @@ export const localStars: LocalStar[] = [
       3.312,
       -8.34
     ],
+    "velocityLyPerYear": [
+      0.00003711655,
+      -0.00007876667,
+      -0.00007009092
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14694,6 +20564,12 @@ export const localStars: LocalStar[] = [
       -28.495,
       43.144
     ],
+    "velocityLyPerYear": [
+      -0.0002311468,
+      0.00007410264,
+      0.0002319948
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14709,6 +20585,12 @@ export const localStars: LocalStar[] = [
       -25.381,
       -81.298
     ],
+    "velocityLyPerYear": [
+      -0.00005273943,
+      0.00006924292,
+      0.0001238088
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14724,6 +20606,12 @@ export const localStars: LocalStar[] = [
       -19.052,
       51.584
     ],
+    "velocityLyPerYear": [
+      0.00004569446,
+      -0.0001184272,
+      -0.0001937693
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14739,6 +20627,12 @@ export const localStars: LocalStar[] = [
       -98.344,
       35.001
     ],
+    "velocityLyPerYear": [
+      0.00003613808,
+      -0.0001156875,
+      -0.00001751458
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14754,6 +20648,12 @@ export const localStars: LocalStar[] = [
       13.82,
       -97.847
     ],
+    "velocityLyPerYear": [
+      0.0000727654,
+      -0.00009112799,
+      0.000110893
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14769,6 +20669,12 @@ export const localStars: LocalStar[] = [
       17.029,
       65.603
     ],
+    "velocityLyPerYear": [
+      0.000002772326,
+      -0.000001761242,
+      -0.00002899527
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14784,6 +20690,12 @@ export const localStars: LocalStar[] = [
       -88.043,
       56.466
     ],
+    "velocityLyPerYear": [
+      -0.00001418779,
+      -0.00008287624,
+      -0.0001428563
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14799,6 +20711,12 @@ export const localStars: LocalStar[] = [
       -63.694,
       44.384
     ],
+    "velocityLyPerYear": [
+      -0.00004187843,
+      -0.00006562259,
+      0.00007909283
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14814,6 +20732,12 @@ export const localStars: LocalStar[] = [
       68.259,
       -79.788
     ],
+    "velocityLyPerYear": [
+      0.000001565549,
+      -0.00001806904,
+      -0.00005231542
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14829,6 +20753,12 @@ export const localStars: LocalStar[] = [
       -93.529,
       49.162
     ],
+    "velocityLyPerYear": [
+      -0.000100032,
+      -0.00006764475,
+      -0.0001575986
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14844,6 +20774,12 @@ export const localStars: LocalStar[] = [
       -53.377,
       38.972
     ],
+    "velocityLyPerYear": [
+      -0.00004885817,
+      -0.00005055418,
+      0.0001433129
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14859,6 +20795,12 @@ export const localStars: LocalStar[] = [
       -86.66,
       -16.809
     ],
+    "velocityLyPerYear": [
+      -0.00001594903,
+      -0.000001467702,
+      -0.00003131098
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14874,6 +20816,12 @@ export const localStars: LocalStar[] = [
       30.859,
       103.438
     ],
+    "velocityLyPerYear": [
+      0.00000622958,
+      -0.00004624892,
+      -0.00003098482
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14889,6 +20837,12 @@ export const localStars: LocalStar[] = [
       -12.568,
       42.351
     ],
+    "velocityLyPerYear": [
+      0.000007142816,
+      -0.0001588054,
+      0.0002125885
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14904,6 +20858,12 @@ export const localStars: LocalStar[] = [
       -101.862,
       25.899
     ],
+    "velocityLyPerYear": [
+      0.00004644461,
+      -0.000007534204,
+      0.00002442908
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14919,6 +20879,12 @@ export const localStars: LocalStar[] = [
       20.835,
       -28.834
     ],
+    "velocityLyPerYear": [
+      0.000006947123,
+      0.000001532933,
+      0.0001536195
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14934,6 +20900,12 @@ export const localStars: LocalStar[] = [
       -16.826,
       81.793
     ],
+    "velocityLyPerYear": [
+      -0.000004696646,
+      0.00002596202,
+      -0.000008480056
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14949,6 +20921,12 @@ export const localStars: LocalStar[] = [
       38.872,
       102.191
     ],
+    "velocityLyPerYear": [
+      0.00004292213,
+      -0.0002364957,
+      0.000002478786
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14964,6 +20942,12 @@ export const localStars: LocalStar[] = [
       -27.142,
       99.738
     ],
+    "velocityLyPerYear": [
+      0.00007788605,
+      -0.0001263202,
+      0.00009014952
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14979,6 +20963,12 @@ export const localStars: LocalStar[] = [
       -74.465,
       -77.821
     ],
+    "velocityLyPerYear": [
+      -0.00002429862,
+      0.00002439647,
+      0.0001205146
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -14994,6 +20984,12 @@ export const localStars: LocalStar[] = [
       -88.17,
       54.545
     ],
+    "velocityLyPerYear": [
+      0.00006232841,
+      -0.00002971281,
+      -0.00009174768
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15009,6 +21005,12 @@ export const localStars: LocalStar[] = [
       -55.681,
       60.967
     ],
+    "velocityLyPerYear": [
+      0.00001532933,
+      -0.00008297409,
+      0.00008137592
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15024,6 +21026,12 @@ export const localStars: LocalStar[] = [
       88.604,
       12.826
     ],
+    "velocityLyPerYear": [
+      0.00009089968,
+      -0.00009331323,
+      -0.0001054789
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15039,6 +21047,12 @@ export const localStars: LocalStar[] = [
       100.297,
       -30.878
     ],
+    "velocityLyPerYear": [
+      -0.00002658171,
+      -0.00007221094,
+      0.00007517896
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15054,6 +21068,12 @@ export const localStars: LocalStar[] = [
       48.309,
       -56.034
     ],
+    "velocityLyPerYear": [
+      -0.000008545287,
+      -0.000004990187,
+      0.00003613808
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15069,6 +21089,12 @@ export const localStars: LocalStar[] = [
       57.279,
       61.228
     ],
+    "velocityLyPerYear": [
+      0.00002407031,
+      -0.0003563254,
+      -0.0003231227
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15084,6 +21110,12 @@ export const localStars: LocalStar[] = [
       54.388,
       -76.938
     ],
+    "velocityLyPerYear": [
+      -0.00002919096,
+      0.00001030653,
+      0.0001222433
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15099,6 +21131,12 @@ export const localStars: LocalStar[] = [
       -111.399,
       -9.988
     ],
+    "velocityLyPerYear": [
+      -0.0001532607,
+      0.00003313745,
+      0.0001024782
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15114,6 +21152,12 @@ export const localStars: LocalStar[] = [
       21.252,
       109.116
     ],
+    "velocityLyPerYear": [
+      -0.0001118715,
+      -0.00003343099,
+      -0.000007827744
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15129,6 +21173,12 @@ export const localStars: LocalStar[] = [
       -91.967,
       -59.189
     ],
+    "velocityLyPerYear": [
+      0.00002374416,
+      -0.00002876696,
+      -0.000002283092
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15144,6 +21194,12 @@ export const localStars: LocalStar[] = [
       62.556,
       52.604
     ],
+    "velocityLyPerYear": [
+      0.00003137621,
+      0.000002315708,
+      0.00005104341
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15159,6 +21215,12 @@ export const localStars: LocalStar[] = [
       -24.079,
       50.514
     ],
+    "velocityLyPerYear": [
+      0.000005642499,
+      -0.00006699244,
+      0.0001201559
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15174,6 +21236,12 @@ export const localStars: LocalStar[] = [
       94.251,
       -61.481
     ],
+    "velocityLyPerYear": [
+      0.00005342435,
+      -0.00004924956,
+      0.00008176731
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15189,6 +21257,12 @@ export const localStars: LocalStar[] = [
       -110.313,
       20.769
     ],
+    "velocityLyPerYear": [
+      0.00001914536,
+      -0.000004403106,
+      -0.00001451394
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15204,6 +21278,12 @@ export const localStars: LocalStar[] = [
       79.521,
       58.803
     ],
+    "velocityLyPerYear": [
+      0.00001395948,
+      0.00001320932,
+      0.0001547936
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15219,6 +21299,12 @@ export const localStars: LocalStar[] = [
       68.677,
       -69.986
     ],
+    "velocityLyPerYear": [
+      -0.00003105005,
+      0.00001950413,
+      0.00009054091
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15234,6 +21320,12 @@ export const localStars: LocalStar[] = [
       -106.152,
       26.098
     ],
+    "velocityLyPerYear": [
+      0.00001999336,
+      0.00003636639,
+      0.00009800988
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15249,6 +21341,12 @@ export const localStars: LocalStar[] = [
       4.583,
       75.001
     ],
+    "velocityLyPerYear": [
+      -0.00002106968,
+      -0.0001696011,
+      -0.00006399181
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15264,6 +21362,12 @@ export const localStars: LocalStar[] = [
       -84.396,
       11.784
     ],
+    "velocityLyPerYear": [
+      -0.00002824511,
+      -0.00005619668,
+      0.00002181984
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15279,6 +21383,12 @@ export const localStars: LocalStar[] = [
       -93.354,
       62.894
     ],
+    "velocityLyPerYear": [
+      0.0000137964,
+      -0.0001603383,
+      0.000006979738
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15294,6 +21404,12 @@ export const localStars: LocalStar[] = [
       -6.117,
       -6.179
     ],
+    "velocityLyPerYear": [
+      -0.00007821221,
+      0.0002283092,
+      0.0003311136
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15309,6 +21425,12 @@ export const localStars: LocalStar[] = [
       -40.531,
       106.181
     ],
+    "velocityLyPerYear": [
+      -0.0001192752,
+      -0.0004514325,
+      0.0001859089
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15324,6 +21446,12 @@ export const localStars: LocalStar[] = [
       -16.199,
       40.379
     ],
+    "velocityLyPerYear": [
+      0.00005273943,
+      -0.0001210365,
+      -0.00002605986
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15339,6 +21467,12 @@ export const localStars: LocalStar[] = [
       9.273,
       109.097
     ],
+    "velocityLyPerYear": [
+      -0.00006904723,
+      -0.0001009779,
+      0.00002840819
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15354,6 +21488,12 @@ export const localStars: LocalStar[] = [
       77.498,
       -9.675
     ],
+    "velocityLyPerYear": [
+      -0.00003202852,
+      0.00008160423,
+      0.000139236
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15369,6 +21509,12 @@ export const localStars: LocalStar[] = [
       -11.283,
       81.683
     ],
+    "velocityLyPerYear": [
+      -0.000190312,
+      -0.0001391381,
+      0.00006898199
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15384,6 +21530,12 @@ export const localStars: LocalStar[] = [
       24.07,
       45.995
     ],
+    "velocityLyPerYear": [
+      0.00001304624,
+      0.000004696646,
+      -0.00003969319
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15399,6 +21551,12 @@ export const localStars: LocalStar[] = [
       71.182,
       -21.801
     ],
+    "velocityLyPerYear": [
+      -0.00000541419,
+      0.00001780812,
+      0.0001325498
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15414,6 +21572,12 @@ export const localStars: LocalStar[] = [
       -77.392,
       76.132
     ],
+    "velocityLyPerYear": [
+      -0.00003075651,
+      -0.0001333652,
+      -0.000009360677
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15429,6 +21593,12 @@ export const localStars: LocalStar[] = [
       -105.327,
       14.129
     ],
+    "velocityLyPerYear": [
+      -0.00007919068,
+      -0.00002791895,
+      0.00004021503
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15444,6 +21614,12 @@ export const localStars: LocalStar[] = [
       -77.962,
       -84.485
     ],
+    "velocityLyPerYear": [
+      0.0001133718,
+      -0.0001557721,
+      0.0001154918
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15459,6 +21635,12 @@ export const localStars: LocalStar[] = [
       35.671,
       76.308
     ],
+    "velocityLyPerYear": [
+      -0.00004807539,
+      -0.0001008148,
+      0.0001723082
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15474,6 +21656,12 @@ export const localStars: LocalStar[] = [
       105.486,
       -14.052
     ],
+    "velocityLyPerYear": [
+      0.00003424638,
+      -0.00006474197,
+      -0.00004960833
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15489,6 +21677,12 @@ export const localStars: LocalStar[] = [
       -72.028,
       -62.899
     ],
+    "velocityLyPerYear": [
+      -0.00002876696,
+      -0.00005795792,
+      0.000006262195
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15504,6 +21698,12 @@ export const localStars: LocalStar[] = [
       113.374,
       -3.501
     ],
+    "velocityLyPerYear": [
+      0.000006653582,
+      -0.0000587407,
+      0.00008095192
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15519,6 +21719,12 @@ export const localStars: LocalStar[] = [
       6.349,
       51.393
     ],
+    "velocityLyPerYear": [
+      0.000003033251,
+      -0.0002282114,
+      -0.000145596
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15534,6 +21740,12 @@ export const localStars: LocalStar[] = [
       -75.504,
       -15.865
     ],
+    "velocityLyPerYear": [
+      0.00003988888,
+      -0.0001142198,
+      0.00006519858
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15549,6 +21761,12 @@ export const localStars: LocalStar[] = [
       -80.241,
       -61.656
     ],
+    "velocityLyPerYear": [
+      0.00001976505,
+      -0.00001069792,
+      0.0001249177
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15564,6 +21782,12 @@ export const localStars: LocalStar[] = [
       92.842,
       -3.44
     ],
+    "velocityLyPerYear": [
+      -0.00005883854,
+      -0.00005668591,
+      0.00009582463
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15579,6 +21803,12 @@ export const localStars: LocalStar[] = [
       -85.844,
       -59.938
     ],
+    "velocityLyPerYear": [
+      -0.00005942562,
+      -0.0000413892,
+      0.0002502269
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15594,6 +21824,12 @@ export const localStars: LocalStar[] = [
       60.683,
       -91.204
     ],
+    "velocityLyPerYear": [
+      0.00002273307,
+      -0.0002141866,
+      -0.00009083445
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15609,6 +21845,12 @@ export const localStars: LocalStar[] = [
       99.674,
       31.912
     ],
+    "velocityLyPerYear": [
+      -0.00001265485,
+      0.0000332353,
+      0.0002041737
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15624,6 +21866,12 @@ export const localStars: LocalStar[] = [
       20.5,
       109.909
     ],
+    "velocityLyPerYear": [
+      -0.000006164348,
+      -0.00006360042,
+      0.00005955609
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15639,6 +21887,12 @@ export const localStars: LocalStar[] = [
       -106.106,
       -47.854
     ],
+    "velocityLyPerYear": [
+      0.0000508151,
+      -0.000006425273,
+      0.000193541
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15654,6 +21908,12 @@ export const localStars: LocalStar[] = [
       -32.538,
       13.902
     ],
+    "velocityLyPerYear": [
+      -0.00001082838,
+      -0.000123711,
+      -0.0002032278
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15669,6 +21929,12 @@ export const localStars: LocalStar[] = [
       -90.02,
       72.769
     ],
+    "velocityLyPerYear": [
+      0.0000215263,
+      -0.0000345073,
+      0.0001937367
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15684,6 +21950,12 @@ export const localStars: LocalStar[] = [
       88.313,
       50.88
     ],
+    "velocityLyPerYear": [
+      -0.00003750794,
+      -0.0000652312,
+      0.00007136293
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15699,6 +21971,12 @@ export const localStars: LocalStar[] = [
       69.396,
       -83.02
     ],
+    "velocityLyPerYear": [
+      0.00005717515,
+      0.0001185251,
+      0.0001580552
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15714,6 +21992,12 @@ export const localStars: LocalStar[] = [
       12.202,
       101.514
     ],
+    "velocityLyPerYear": [
+      -0.00001239393,
+      -0.000003000635,
+      -0.00001575333
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15729,6 +22013,12 @@ export const localStars: LocalStar[] = [
       -86.807,
       -60.494
     ],
+    "velocityLyPerYear": [
+      -0.00001053484,
+      -0.00002263523,
+      0.0001133718
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15744,6 +22034,12 @@ export const localStars: LocalStar[] = [
       -113.358,
       28.58
     ],
+    "velocityLyPerYear": [
+      0.00003819287,
+      -0.0001822886,
+      -0.0001416822
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15759,6 +22055,12 @@ export const localStars: LocalStar[] = [
       -88.978,
       23.939
     ],
+    "velocityLyPerYear": [
+      -0.000001565549,
+      -0.00003499654,
+      -0.00003688824
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15774,6 +22076,12 @@ export const localStars: LocalStar[] = [
       -92.576,
       -53.619
     ],
+    "velocityLyPerYear": [
+      -0.00001324193,
+      0.000001500318,
+      0.00008225654
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15789,6 +22097,12 @@ export const localStars: LocalStar[] = [
       18.969,
       115.365
     ],
+    "velocityLyPerYear": [
+      -0.00001927582,
+      -0.0001176445,
+      0.0003576301
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15804,6 +22118,12 @@ export const localStars: LocalStar[] = [
       71.352,
       -72.798
     ],
+    "velocityLyPerYear": [
+      -0.00002981066,
+      0.00002110229,
+      0.00009106276
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15819,6 +22139,12 @@ export const localStars: LocalStar[] = [
       -6.476,
       107.437
     ],
+    "velocityLyPerYear": [
+      0.0001438674,
+      0.0000641875,
+      0.00006793829
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15834,6 +22160,12 @@ export const localStars: LocalStar[] = [
       -4.597,
       -71.199
     ],
+    "velocityLyPerYear": [
+      -0.00002175461,
+      -3.587716e-7,
+      0.00008480056
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15849,6 +22181,12 @@ export const localStars: LocalStar[] = [
       21.022,
       -21.158
     ],
+    "velocityLyPerYear": [
+      -0.00000681666,
+      -0.00004931479,
+      -0.00004944525
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15864,6 +22202,12 @@ export const localStars: LocalStar[] = [
       20.825,
       -78.605
     ],
+    "velocityLyPerYear": [
+      -0.00001089361,
+      -0.0000957594,
+      0.00004810801
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15879,6 +22223,12 @@ export const localStars: LocalStar[] = [
       -66.958,
       -49.11
     ],
+    "velocityLyPerYear": [
+      -0.0001909643,
+      -0.0002596528,
+      0.0001989878
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15894,6 +22244,12 @@ export const localStars: LocalStar[] = [
       -104.973,
       -11.519
     ],
+    "velocityLyPerYear": [
+      0.00003421376,
+      -0.00003871472,
+      -0.00005988224
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15909,6 +22265,12 @@ export const localStars: LocalStar[] = [
       56.128,
       99.102
     ],
+    "velocityLyPerYear": [
+      0.00004885817,
+      -0.00003111528,
+      0.0000692103
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15924,6 +22286,12 @@ export const localStars: LocalStar[] = [
       74.617,
       -22.848
     ],
+    "velocityLyPerYear": [
+      0.000009849911,
+      0.00003424638,
+      0.0001250482
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15939,6 +22307,12 @@ export const localStars: LocalStar[] = [
       -1.299,
       63.676
     ],
+    "velocityLyPerYear": [
+      -0.00003855164,
+      -0.0001996075,
+      -0.0001959219
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15954,6 +22328,12 @@ export const localStars: LocalStar[] = [
       -16.431,
       93.055
     ],
+    "velocityLyPerYear": [
+      0.00007609219,
+      -0.0001468354,
+      0.0000953354
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15969,6 +22349,12 @@ export const localStars: LocalStar[] = [
       -26.481,
       -40.673
     ],
+    "velocityLyPerYear": [
+      -0.00001095884,
+      -0.00007788605,
+      0.0001469985
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15984,6 +22370,12 @@ export const localStars: LocalStar[] = [
       95.262,
       -69.469
     ],
+    "velocityLyPerYear": [
+      -0.0000269731,
+      -0.00000570773,
+      0.00009758588
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -15999,6 +22391,12 @@ export const localStars: LocalStar[] = [
       111.784,
       20.447
     ],
+    "velocityLyPerYear": [
+      -0.00002837557,
+      -0.0000169275,
+      0.0004378318
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16014,6 +22412,12 @@ export const localStars: LocalStar[] = [
       -56.474,
       -103.141
     ],
+    "velocityLyPerYear": [
+      -0.000009817296,
+      -0.0002011078,
+      -0.00007139555
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16029,6 +22433,12 @@ export const localStars: LocalStar[] = [
       -14.489,
       107.632
     ],
+    "velocityLyPerYear": [
+      0.00001288316,
+      0.00004324829,
+      0.00004073688
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16044,6 +22454,12 @@ export const localStars: LocalStar[] = [
       66.892,
       -76.666
     ],
+    "velocityLyPerYear": [
+      0.00003613808,
+      -0.00007654881,
+      -0.00003476823
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16059,6 +22475,12 @@ export const localStars: LocalStar[] = [
       118.185,
       5.785
     ],
+    "velocityLyPerYear": [
+      0.000001598164,
+      -0.0000407695,
+      0.0002347019
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16074,6 +22496,12 @@ export const localStars: LocalStar[] = [
       17.526,
       7.748
     ],
+    "velocityLyPerYear": [
+      -9.132368e-7,
+      -0.00001382901,
+      -0.00003529008
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16089,6 +22517,12 @@ export const localStars: LocalStar[] = [
       -104.863,
       62.319
     ],
+    "velocityLyPerYear": [
+      0.0000386821,
+      -0.00008737719,
+      -0.0001638608
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16104,6 +22538,12 @@ export const localStars: LocalStar[] = [
       -20.348,
       -119.895
     ],
+    "velocityLyPerYear": [
+      -0.00005626191,
+      -0.0001307886,
+      0.00001725365
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16119,6 +22559,12 @@ export const localStars: LocalStar[] = [
       9.793,
       121.246
     ],
+    "velocityLyPerYear": [
+      0.000007208048,
+      0.00001037176,
+      0.0000503911
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16134,6 +22580,12 @@ export const localStars: LocalStar[] = [
       -86.768,
       -75.881
     ],
+    "velocityLyPerYear": [
+      0.00001904751,
+      0.00005215234,
+      0.00001343763
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16149,6 +22601,12 @@ export const localStars: LocalStar[] = [
       -61.087,
       85.339
     ],
+    "velocityLyPerYear": [
+      -0.00004249813,
+      -0.0001763199,
+      -0.000081539
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16164,6 +22622,12 @@ export const localStars: LocalStar[] = [
       108.256,
       14.138
     ],
+    "velocityLyPerYear": [
+      0.00001559026,
+      -0.00003639901,
+      0.00007990822
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16179,6 +22643,12 @@ export const localStars: LocalStar[] = [
       88.29,
       -51.449
     ],
+    "velocityLyPerYear": [
+      0.00003669255,
+      -0.00002266784,
+      -0.00004540092
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16194,6 +22664,12 @@ export const localStars: LocalStar[] = [
       -10.527,
       -118.122
     ],
+    "velocityLyPerYear": [
+      -0.00002400508,
+      -0.0000505868,
+      0.00003926918
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16209,6 +22685,12 @@ export const localStars: LocalStar[] = [
       34.376,
       -88.835
     ],
+    "velocityLyPerYear": [
+      0.000004696646,
+      -0.0001227651,
+      -0.00001079576
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16224,6 +22706,12 @@ export const localStars: LocalStar[] = [
       -90.959,
       -32.972
     ],
+    "velocityLyPerYear": [
+      0.0000564576,
+      -0.00005074987,
+      0.000007729897
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16239,6 +22727,12 @@ export const localStars: LocalStar[] = [
       -21.907,
       35.96
     ],
+    "velocityLyPerYear": [
+      -0.00001177423,
+      -0.00008939936,
+      0.0001320279
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16254,6 +22748,12 @@ export const localStars: LocalStar[] = [
       54.419,
       58.792
     ],
+    "velocityLyPerYear": [
+      0.00002061306,
+      -0.000009230215,
+      0.0001403449
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16269,6 +22769,12 @@ export const localStars: LocalStar[] = [
       99.633,
       -69.926
     ],
+    "velocityLyPerYear": [
+      -0.000004435722,
+      -0.00003349622,
+      0.0001225042
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16284,6 +22790,12 @@ export const localStars: LocalStar[] = [
       -86.124,
       35.486
     ],
+    "velocityLyPerYear": [
+      -0.00002886481,
+      0.00002775588,
+      0.0001342132
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16299,6 +22811,12 @@ export const localStars: LocalStar[] = [
       -111.653,
       -6.105
     ],
+    "velocityLyPerYear": [
+      0.00002041737,
+      -0.00001604688,
+      0.0001123281
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16314,6 +22832,12 @@ export const localStars: LocalStar[] = [
       -33.857,
       -53.023
     ],
+    "velocityLyPerYear": [
+      -0.00001963459,
+      -0.0002175787,
+      0.000006294811
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16329,6 +22853,12 @@ export const localStars: LocalStar[] = [
       -45.336,
       -103.456
     ],
+    "velocityLyPerYear": [
+      -0.00008985598,
+      -0.00001555764,
+      -0.00001513364
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16344,6 +22874,12 @@ export const localStars: LocalStar[] = [
       -97.859,
       -46.003
     ],
+    "velocityLyPerYear": [
+      -0.0001452699,
+      -0.0000158838,
+      0.0001209713
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16359,6 +22895,12 @@ export const localStars: LocalStar[] = [
       -114.465,
       34.988
     ],
+    "velocityLyPerYear": [
+      0.00003320268,
+      -0.00004125873,
+      -0.00003078913
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16374,6 +22916,12 @@ export const localStars: LocalStar[] = [
       -119.941,
       34.899
     ],
+    "velocityLyPerYear": [
+      -0.00008988859,
+      -0.00001823212,
+      -0.00005365266
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16389,6 +22937,12 @@ export const localStars: LocalStar[] = [
       60.408,
       98.565
     ],
+    "velocityLyPerYear": [
+      -0.0001217867,
+      -0.00004862986,
+      0.0001655568
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16404,6 +22958,12 @@ export const localStars: LocalStar[] = [
       -77.007,
       -94.395
     ],
+    "velocityLyPerYear": [
+      0.00002482047,
+      -0.000009458524,
+      0.00009520494
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16419,6 +22979,12 @@ export const localStars: LocalStar[] = [
       -98.997,
       -57.286
     ],
+    "velocityLyPerYear": [
+      -0.000005348958,
+      4.240028e-7,
+      0.00008075623
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16434,6 +23000,12 @@ export const localStars: LocalStar[] = [
       -122.571,
       -11.704
     ],
+    "velocityLyPerYear": [
+      0.000008936674,
+      -0.00005348958,
+      -0.00002941927
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16449,6 +23021,12 @@ export const localStars: LocalStar[] = [
       -100.981,
       71.461
     ],
+    "velocityLyPerYear": [
+      0.00006904723,
+      0.000003979103,
+      0.0000428569
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16464,6 +23042,12 @@ export const localStars: LocalStar[] = [
       -75.804,
       -100.339
     ],
+    "velocityLyPerYear": [
+      0.00002224384,
+      -0.00003672517,
+      -0.00007782082
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16479,6 +23063,12 @@ export const localStars: LocalStar[] = [
       102.324,
       73.569
     ],
+    "velocityLyPerYear": [
+      -0.00005257635,
+      -0.0000261251,
+      0.00008219131
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16494,6 +23084,12 @@ export const localStars: LocalStar[] = [
       -103.02,
       -35.51
     ],
+    "velocityLyPerYear": [
+      0.00007850575,
+      -0.00009239999,
+      0.00007270017
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16509,6 +23105,12 @@ export const localStars: LocalStar[] = [
       -95.362,
       -82.037
     ],
+    "velocityLyPerYear": [
+      0.00006193702,
+      -0.00001373117,
+      0.0001828757
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16524,6 +23126,12 @@ export const localStars: LocalStar[] = [
       113.061,
       37.894
     ],
+    "velocityLyPerYear": [
+      -0.00005567483,
+      -0.00004350921,
+      -0.00003147405
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16539,6 +23147,12 @@ export const localStars: LocalStar[] = [
       35.082,
       -90.654
     ],
+    "velocityLyPerYear": [
+      -0.000004566184,
+      -0.0001219497,
+      -0.00001872135
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16554,6 +23168,12 @@ export const localStars: LocalStar[] = [
       -113.811,
       -50.961
     ],
+    "velocityLyPerYear": [
+      0.00002700572,
+      0.00002198291,
+      -0.00001917797
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16569,6 +23189,12 @@ export const localStars: LocalStar[] = [
       72.741,
       55.669
     ],
+    "velocityLyPerYear": [
+      -0.00001428563,
+      -5.870808e-7,
+      0.00009928189
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16584,6 +23210,12 @@ export const localStars: LocalStar[] = [
       -38.91,
       -113.256
     ],
+    "velocityLyPerYear": [
+      -0.0000127527,
+      0.00001180685,
+      -0.00001327455
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16599,6 +23231,12 @@ export const localStars: LocalStar[] = [
       124.045,
       -0.957
     ],
+    "velocityLyPerYear": [
+      0.00006141517,
+      -0.000009523755,
+      0.000160958
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16614,6 +23252,12 @@ export const localStars: LocalStar[] = [
       -63.08,
       102.532
     ],
+    "velocityLyPerYear": [
+      0.00005727299,
+      -0.0001799729,
+      -0.00004660769
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16629,6 +23273,12 @@ export const localStars: LocalStar[] = [
       -116.812,
       3.153
     ],
+    "velocityLyPerYear": [
+      -0.00003594239,
+      -0.00004093258,
+      0.00006428535
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16644,6 +23294,12 @@ export const localStars: LocalStar[] = [
       72.683,
       2.246
     ],
+    "velocityLyPerYear": [
+      -0.0000280168,
+      0.0000633395,
+      0.0004760247
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16659,6 +23315,12 @@ export const localStars: LocalStar[] = [
       -126.089,
       -17.593
     ],
+    "velocityLyPerYear": [
+      -0.00003969319,
+      0.000004631415,
+      -0.00000437049
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16674,6 +23336,12 @@ export const localStars: LocalStar[] = [
       -60.03,
       112.956
     ],
+    "velocityLyPerYear": [
+      -0.000006914507,
+      -0.0000790276,
+      0.00006108902
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16689,6 +23357,12 @@ export const localStars: LocalStar[] = [
       -108.671,
       -59.844
     ],
+    "velocityLyPerYear": [
+      -0.00003215898,
+      0.00001350286,
+      0.000093672
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16704,6 +23378,12 @@ export const localStars: LocalStar[] = [
       84.764,
       40.043
     ],
+    "velocityLyPerYear": [
+      -0.000005968655,
+      -0.00007928852,
+      0.00008502887
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16719,6 +23399,12 @@ export const localStars: LocalStar[] = [
       -98.862,
       -74.745
     ],
+    "velocityLyPerYear": [
+      -0.00005326127,
+      0.00005286989,
+      0.0001210039
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16734,6 +23420,12 @@ export const localStars: LocalStar[] = [
       51.562,
       58.095
     ],
+    "velocityLyPerYear": [
+      0.00002860388,
+      -0.000009588986,
+      -0.00004947787
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16749,6 +23441,12 @@ export const localStars: LocalStar[] = [
       -100.633,
       -24.713
     ],
+    "velocityLyPerYear": [
+      -0.00001578595,
+      -0.00001793858,
+      0.00007628789
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16764,6 +23462,12 @@ export const localStars: LocalStar[] = [
       14.452,
       95.925
     ],
+    "velocityLyPerYear": [
+      0.00002687525,
+      -0.00001157854,
+      0.0001875071
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16779,6 +23483,12 @@ export const localStars: LocalStar[] = [
       -110.638,
       4.446
     ],
+    "velocityLyPerYear": [
+      0.00004001934,
+      -0.00002276569,
+      0.00003701871
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16794,6 +23504,12 @@ export const localStars: LocalStar[] = [
       -68.421,
       12.941
     ],
+    "velocityLyPerYear": [
+      0.00004321567,
+      -0.00001340501,
+      0.0001272008
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16809,6 +23525,12 @@ export const localStars: LocalStar[] = [
       -92.776,
       -90.205
     ],
+    "velocityLyPerYear": [
+      -0.00004902125,
+      -0.0001190469,
+      -0.000001598164
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16824,6 +23546,12 @@ export const localStars: LocalStar[] = [
       80.761,
       24.887
     ],
+    "velocityLyPerYear": [
+      -0.00001728627,
+      0.00003473561,
+      0.00009474832
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16839,6 +23567,12 @@ export const localStars: LocalStar[] = [
       -95.613,
       39.492
     ],
+    "velocityLyPerYear": [
+      0.00000326156,
+      0.00006121948,
+      0.00015799
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16854,6 +23588,12 @@ export const localStars: LocalStar[] = [
       122.762,
       -38.049
     ],
+    "velocityLyPerYear": [
+      -0.00006846014,
+      -0.0001140568,
+      -0.0001348655
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16869,6 +23609,12 @@ export const localStars: LocalStar[] = [
       -116.506,
       -57.62
     ],
+    "velocityLyPerYear": [
+      0.00000570773,
+      -0.00001020868,
+      0.0001412582
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16884,6 +23630,12 @@ export const localStars: LocalStar[] = [
       44.157,
       51.731
     ],
+    "velocityLyPerYear": [
+      -0.000007305894,
+      -0.0001325824,
+      -0.0002128494
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16899,6 +23651,12 @@ export const localStars: LocalStar[] = [
       -98.165,
       -15.396
     ],
+    "velocityLyPerYear": [
+      -0.000007795128,
+      0.00001461179,
+      0.0001186882
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16914,6 +23672,12 @@ export const localStars: LocalStar[] = [
       62.369,
       -2.458
     ],
+    "velocityLyPerYear": [
+      -0.00005554437,
+      -0.000009915142,
+      0.0003648055
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16929,6 +23693,12 @@ export const localStars: LocalStar[] = [
       -61.739,
       -103.763
     ],
+    "velocityLyPerYear": [
+      0.0001007822,
+      -0.00009259569,
+      0.0001378661
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16944,6 +23714,12 @@ export const localStars: LocalStar[] = [
       22.386,
       73.101
     ],
+    "velocityLyPerYear": [
+      -0.00002459216,
+      -0.000007827744,
+      0.0001274291
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16959,6 +23735,12 @@ export const localStars: LocalStar[] = [
       -93.734,
       -37.222
     ],
+    "velocityLyPerYear": [
+      0.00007886452,
+      -0.00007341772,
+      0.0001263528
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16974,6 +23756,12 @@ export const localStars: LocalStar[] = [
       40.682,
       93.391
     ],
+    "velocityLyPerYear": [
+      -0.00005697945,
+      -0.0001197319,
+      0.00008160423
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -16989,6 +23777,12 @@ export const localStars: LocalStar[] = [
       -91.095,
       -22.293
     ],
+    "velocityLyPerYear": [
+      -0.00001105669,
+      -0.0001794184,
+      0.0001521844
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17004,6 +23798,12 @@ export const localStars: LocalStar[] = [
       125.96,
       -24.232
     ],
+    "velocityLyPerYear": [
+      -0.00001992813,
+      0.00005662068,
+      0.00000949114
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17019,6 +23819,12 @@ export const localStars: LocalStar[] = [
       -98.363,
       -14.231
     ],
+    "velocityLyPerYear": [
+      -0.00002729926,
+      -0.00001523149,
+      0.000115818
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17034,6 +23840,12 @@ export const localStars: LocalStar[] = [
       -90.819,
       -21.969
     ],
+    "velocityLyPerYear": [
+      0.00001043699,
+      -0.00002945189,
+      -0.00003421376
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17049,6 +23861,12 @@ export const localStars: LocalStar[] = [
       -71.651,
       -97.394
     ],
+    "velocityLyPerYear": [
+      -0.0001285707,
+      -0.00007857098,
+      0.0002472589
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17064,6 +23882,12 @@ export const localStars: LocalStar[] = [
       43.903,
       2.971
     ],
+    "velocityLyPerYear": [
+      -0.00001470964,
+      -0.000002087398,
+      0.0002887785
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17079,6 +23903,12 @@ export const localStars: LocalStar[] = [
       -119.613,
       47.129
     ],
+    "velocityLyPerYear": [
+      -0.0001325824,
+      -0.0000311479,
+      0.0001875397
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17094,6 +23924,12 @@ export const localStars: LocalStar[] = [
       -56.298,
       102.766
     ],
+    "velocityLyPerYear": [
+      -0.00009800988,
+      -0.0001624257,
+      -0.00003036512
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17109,6 +23945,12 @@ export const localStars: LocalStar[] = [
       -89.154,
       -93.813
     ],
+    "velocityLyPerYear": [
+      -0.00003698609,
+      -0.00006526382,
+      0.0001622626
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17124,6 +23966,12 @@ export const localStars: LocalStar[] = [
       -129.746,
       12.955
     ],
+    "velocityLyPerYear": [
+      6.849276e-7,
+      -0.00001272008,
+      0.00007599435
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17139,6 +23987,12 @@ export const localStars: LocalStar[] = [
       -112.72,
       -12.501
     ],
+    "velocityLyPerYear": [
+      -0.00003020205,
+      -0.0001019237,
+      0.000145596
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17154,6 +24008,12 @@ export const localStars: LocalStar[] = [
       122.654,
       30.912
     ],
+    "velocityLyPerYear": [
+      -0.000005642499,
+      0.00001226347,
+      -0.00002687525
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17169,6 +24029,12 @@ export const localStars: LocalStar[] = [
       -63.883,
       116.185
     ],
+    "velocityLyPerYear": [
+      0.00003685563,
+      -0.00003900826,
+      0.0001255048
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17184,6 +24050,12 @@ export const localStars: LocalStar[] = [
       34.973,
       -30.715
     ],
+    "velocityLyPerYear": [
+      0.000003946488,
+      -0.00003003897,
+      0.00003969319
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17199,6 +24071,12 @@ export const localStars: LocalStar[] = [
       109.607,
       23.3
     ],
+    "velocityLyPerYear": [
+      -0.00001865612,
+      0.00001748196,
+      0.0001481074
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17214,6 +24092,12 @@ export const localStars: LocalStar[] = [
       -19.446,
       -121.588
     ],
+    "velocityLyPerYear": [
+      4.566184e-7,
+      0.000006979738,
+      0.0001122955
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17229,6 +24113,12 @@ export const localStars: LocalStar[] = [
       -121.754,
       10.239
     ],
+    "velocityLyPerYear": [
+      0.00003643163,
+      -0.00003140882,
+      0.00004256336
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17244,6 +24134,12 @@ export const localStars: LocalStar[] = [
       -52.662,
       -41.537
     ],
+    "velocityLyPerYear": [
+      0.0000393018,
+      -0.00001793858,
+      -0.00003307222
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17259,6 +24155,12 @@ export const localStars: LocalStar[] = [
       64.107,
       116.276
     ],
+    "velocityLyPerYear": [
+      -0.000003163713,
+      -0.00008489841,
+      0.00008183254
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17274,6 +24176,12 @@ export const localStars: LocalStar[] = [
       -64.038,
       -117.635
     ],
+    "velocityLyPerYear": [
+      -0.00002126537,
+      -0.00002185245,
+      0.00001161115
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17289,6 +24197,12 @@ export const localStars: LocalStar[] = [
       -94.537,
       -88.993
     ],
+    "velocityLyPerYear": [
+      0.00006363304,
+      -0.00006943861,
+      0.000002413554
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17304,6 +24218,12 @@ export const localStars: LocalStar[] = [
       -92.042,
       57.052
     ],
+    "velocityLyPerYear": [
+      -0.00001956936,
+      -0.0001208082,
+      -0.000003848641
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17319,6 +24239,12 @@ export const localStars: LocalStar[] = [
       80.706,
       8.623
     ],
+    "velocityLyPerYear": [
+      -0.000001272008,
+      -0.00003819287,
+      -0.0000437049
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17334,6 +24260,12 @@ export const localStars: LocalStar[] = [
       58.085,
       102.543
     ],
+    "velocityLyPerYear": [
+      0.00005649022,
+      -0.000267187,
+      -0.000001174162
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17349,6 +24281,12 @@ export const localStars: LocalStar[] = [
       -85.813,
       28.998
     ],
+    "velocityLyPerYear": [
+      -0.0001246568,
+      -0.0003139251,
+      -0.0001512385
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17364,6 +24302,12 @@ export const localStars: LocalStar[] = [
       77.56,
       -96.508
     ],
+    "velocityLyPerYear": [
+      -0.00005022802,
+      -0.00006653582,
+      0.00004452029
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17379,6 +24323,12 @@ export const localStars: LocalStar[] = [
       -120.29,
       8.425
     ],
+    "velocityLyPerYear": [
+      -0.0000177755,
+      -0.00005776223,
+      0.0000520545
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17394,6 +24344,12 @@ export const localStars: LocalStar[] = [
       -123.624,
       -40.994
     ],
+    "velocityLyPerYear": [
+      -0.000007827744,
+      -0.00002772326,
+      -0.00003320268
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17409,6 +24365,12 @@ export const localStars: LocalStar[] = [
       -131.309,
       3.268
     ],
+    "velocityLyPerYear": [
+      0.00001718842,
+      0.00003215898,
+      0.00008284362
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17424,6 +24386,12 @@ export const localStars: LocalStar[] = [
       -17.931,
       96.769
     ],
+    "velocityLyPerYear": [
+      0.000004500953,
+      0.000004729262,
+      0.00006663367
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17439,6 +24407,12 @@ export const localStars: LocalStar[] = [
       -108.917,
       77.069
     ],
+    "velocityLyPerYear": [
+      0.00007283063,
+      -0.000008545287,
+      0.0000591647
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17454,6 +24428,12 @@ export const localStars: LocalStar[] = [
       83.36,
       -91.581
     ],
+    "velocityLyPerYear": [
+      0.00004902125,
+      0.00001771027,
+      0.00004386798
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17469,6 +24449,12 @@ export const localStars: LocalStar[] = [
       -73.962,
       -53.324
     ],
+    "velocityLyPerYear": [
+      0.00004520522,
+      -0.00003773625,
+      0.00003571408
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17484,6 +24470,12 @@ export const localStars: LocalStar[] = [
       -116.695,
       -63.189
     ],
+    "velocityLyPerYear": [
+      0.00007341772,
+      -0.0001129478,
+      0.000103685
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17499,6 +24491,12 @@ export const localStars: LocalStar[] = [
       7.816,
       124.871
     ],
+    "velocityLyPerYear": [
+      0.000008871443,
+      0.0000284408,
+      0.000005675114
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17514,6 +24512,12 @@ export const localStars: LocalStar[] = [
       121.586,
       -49.231
     ],
+    "velocityLyPerYear": [
+      0.00002198291,
+      -0.00002478786,
+      0.00002025429
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17529,6 +24533,12 @@ export const localStars: LocalStar[] = [
       70.55,
       78.485
     ],
+    "velocityLyPerYear": [
+      -0.00005619668,
+      -0.0001035219,
+      0.000138812
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17544,6 +24554,12 @@ export const localStars: LocalStar[] = [
       -21.117,
       93.877
     ],
+    "velocityLyPerYear": [
+      -0.0000993145,
+      -0.0001335283,
+      -0.00002459216
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17559,6 +24575,12 @@ export const localStars: LocalStar[] = [
       66.844,
       -119.363
     ],
+    "velocityLyPerYear": [
+      0.00005459851,
+      -0.00001408994,
+      -7.827744e-7
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17574,6 +24596,12 @@ export const localStars: LocalStar[] = [
       -25.654,
       91.732
     ],
+    "velocityLyPerYear": [
+      0.0001702208,
+      -0.0000704497,
+      0.0001641869
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17589,6 +24617,12 @@ export const localStars: LocalStar[] = [
       -64.802,
       -5.855
     ],
+    "velocityLyPerYear": [
+      0.000011709,
+      -0.00008313716,
+      0.00006617705
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17604,6 +24638,12 @@ export const localStars: LocalStar[] = [
       93.626,
       43.712
     ],
+    "velocityLyPerYear": [
+      -0.000007827744,
+      0.00002005859,
+      0.000129647
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17619,6 +24659,12 @@ export const localStars: LocalStar[] = [
       7.899,
       -25.594
     ],
+    "velocityLyPerYear": [
+      0.00004801016,
+      0.000009328062,
+      0.0005084772
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17634,6 +24680,12 @@ export const localStars: LocalStar[] = [
       -136.387,
       -12.243
     ],
+    "velocityLyPerYear": [
+      0.00003189806,
+      0.0000227983,
+      0.00003819287
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17649,6 +24701,12 @@ export const localStars: LocalStar[] = [
       -37.256,
       -81.629
     ],
+    "velocityLyPerYear": [
+      0.00007064539,
+      -0.0002683612,
+      -0.0001333978
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17664,6 +24722,12 @@ export const localStars: LocalStar[] = [
       -77.214,
       -98.477
     ],
+    "velocityLyPerYear": [
+      0.00003665993,
+      -0.000006914507,
+      0.00003039774
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17679,6 +24743,12 @@ export const localStars: LocalStar[] = [
       -124.936,
       55.593
     ],
+    "velocityLyPerYear": [
+      0.0001469985,
+      -0.00006343734,
+      0.0002320926
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17694,6 +24764,12 @@ export const localStars: LocalStar[] = [
       50.973,
       -119.664
     ],
+    "velocityLyPerYear": [
+      -0.00003193067,
+      -0.00004086735,
+      0.00009664002
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17709,6 +24785,12 @@ export const localStars: LocalStar[] = [
       -28.795,
       -135.758
     ],
+    "velocityLyPerYear": [
+      -0.00001581857,
+      -0.00004575969,
+      0.000008186516
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17724,6 +24806,12 @@ export const localStars: LocalStar[] = [
       -117.259,
       31.208
     ],
+    "velocityLyPerYear": [
+      -0.00001904751,
+      -0.00005955609,
+      0.00005668591
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17739,6 +24827,12 @@ export const localStars: LocalStar[] = [
       -130.104,
       29.473
     ],
+    "velocityLyPerYear": [
+      0.00002681002,
+      -0.00001806904,
+      -0.00002253738
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17754,6 +24848,12 @@ export const localStars: LocalStar[] = [
       -131.782,
       44.585
     ],
+    "velocityLyPerYear": [
+      -0.00003672517,
+      0.00001500318,
+      0.00006438319
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17769,6 +24869,12 @@ export const localStars: LocalStar[] = [
       -45.026,
       21.077
     ],
+    "velocityLyPerYear": [
+      0.000004990187,
+      -0.00003046297,
+      0.0002092943
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17784,6 +24890,12 @@ export const localStars: LocalStar[] = [
       -81.652,
       110.885
     ],
+    "velocityLyPerYear": [
+      0.0000179712,
+      -0.000008708365,
+      0.00004089996
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17799,6 +24911,12 @@ export const localStars: LocalStar[] = [
       39.293,
       125.126
     ],
+    "velocityLyPerYear": [
+      -0.00001451394,
+      0.00002165676,
+      0.0001531629
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17814,6 +24932,12 @@ export const localStars: LocalStar[] = [
       -81.827,
       111.125
     ],
+    "velocityLyPerYear": [
+      0.00002181984,
+      0.00001007822,
+      0.00001298101
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17829,6 +24953,12 @@ export const localStars: LocalStar[] = [
       -134.563,
       38.062
     ],
+    "velocityLyPerYear": [
+      -0.00004546615,
+      -0.000149673,
+      0.00004240028
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17844,6 +24974,12 @@ export const localStars: LocalStar[] = [
       -64.66,
       29.609
     ],
+    "velocityLyPerYear": [
+      -0.00002211338,
+      -0.00003339837,
+      0.0001395622
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17859,6 +24995,12 @@ export const localStars: LocalStar[] = [
       -68.815,
       10.123
     ],
+    "velocityLyPerYear": [
+      -0.00002276569,
+      0.0001544023,
+      0.0002112186
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17874,6 +25016,12 @@ export const localStars: LocalStar[] = [
       112.38,
       16.268
     ],
+    "velocityLyPerYear": [
+      0.00009204122,
+      -0.00009047567,
+      -0.0001278858
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17889,6 +25037,12 @@ export const localStars: LocalStar[] = [
       139.988,
       -12.451
     ],
+    "velocityLyPerYear": [
+      -0.00001523149,
+      -0.0001654263,
+      -0.0001791575
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17904,6 +25058,12 @@ export const localStars: LocalStar[] = [
       58.399,
       115.611
     ],
+    "velocityLyPerYear": [
+      -0.00002126537,
+      -0.000006164348,
+      0.00007834267
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17919,6 +25079,12 @@ export const localStars: LocalStar[] = [
       -122.27,
       51.235
     ],
+    "velocityLyPerYear": [
+      0.00002941927,
+      -0.00007106939,
+      -0.00004145443
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17934,6 +25100,12 @@ export const localStars: LocalStar[] = [
       -138.367,
       -22.077
     ],
+    "velocityLyPerYear": [
+      -0.0001478465,
+      -0.0002033583,
+      0.0001550872
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17949,6 +25121,12 @@ export const localStars: LocalStar[] = [
       -52.62,
       -126.729
     ],
+    "velocityLyPerYear": [
+      0.00006979738,
+      -0.00007074324,
+      -0.00005208711
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17964,6 +25142,12 @@ export const localStars: LocalStar[] = [
       -107.374,
       36.097
     ],
+    "velocityLyPerYear": [
+      0.00002296138,
+      0.00008724673,
+      0.0001129804
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17979,6 +25163,12 @@ export const localStars: LocalStar[] = [
       -34.931,
       -12.141
     ],
+    "velocityLyPerYear": [
+      -0.00001268747,
+      -0.00003548577,
+      0.00003695347
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -17994,6 +25184,12 @@ export const localStars: LocalStar[] = [
       -107.706,
       14.832
     ],
+    "velocityLyPerYear": [
+      -0.0001170574,
+      -0.00005225019,
+      0.0002505204
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18009,6 +25205,12 @@ export const localStars: LocalStar[] = [
       -76.403,
       -45.435
     ],
+    "velocityLyPerYear": [
+      0.00002478786,
+      -0.00002165676,
+      0.00003447469
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18024,6 +25226,12 @@ export const localStars: LocalStar[] = [
       72.047,
       -82.366
     ],
+    "velocityLyPerYear": [
+      0.00005746869,
+      -0.00001229608,
+      -0.0000449443
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18039,6 +25247,12 @@ export const localStars: LocalStar[] = [
       -80.929,
       -117.605
     ],
+    "velocityLyPerYear": [
+      -0.00003682301,
+      -0.0000428569,
+      0.0000865618
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18054,6 +25268,12 @@ export const localStars: LocalStar[] = [
       -40.088,
       41.725
     ],
+    "velocityLyPerYear": [
+      -0.00005335912,
+      0.0001341153,
+      -0.00005091295
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18069,6 +25289,12 @@ export const localStars: LocalStar[] = [
       -103.278,
       4.13
     ],
+    "velocityLyPerYear": [
+      -0.0001150026,
+      -0.00006588351,
+      0.00008072361
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18084,6 +25310,12 @@ export const localStars: LocalStar[] = [
       122.301,
       -68.754
     ],
+    "velocityLyPerYear": [
+      0.00007214571,
+      -0.0001048918,
+      0.00005678376
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18099,6 +25331,12 @@ export const localStars: LocalStar[] = [
       94.387,
       106.344
     ],
+    "velocityLyPerYear": [
+      -0.00003636639,
+      -0.00006497028,
+      0.0000493474
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18114,6 +25352,12 @@ export const localStars: LocalStar[] = [
       -139.687,
       -27.793
     ],
+    "velocityLyPerYear": [
+      0.000002641864,
+      0.0000133724,
+      0.0001603057
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18129,6 +25373,12 @@ export const localStars: LocalStar[] = [
       -86.435,
       53.517
     ],
+    "velocityLyPerYear": [
+      -0.0002966063,
+      -0.00001350286,
+      0.0004097498
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18144,6 +25394,12 @@ export const localStars: LocalStar[] = [
       101.285,
       22.457
     ],
+    "velocityLyPerYear": [
+      0.000005675114,
+      -0.00002302661,
+      0.00004347659
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18159,6 +25415,12 @@ export const localStars: LocalStar[] = [
       -118.329,
       -84.016
     ],
+    "velocityLyPerYear": [
+      -0.00002605986,
+      -0.00005221758,
+      0.00009510709
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18174,6 +25436,12 @@ export const localStars: LocalStar[] = [
       -57.845,
       -19.984
     ],
+    "velocityLyPerYear": [
+      0.00003982365,
+      -0.00002570109,
+      0.00000541419
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18189,6 +25457,12 @@ export const localStars: LocalStar[] = [
       -87.338,
       -116.564
     ],
+    "velocityLyPerYear": [
+      -0.0000963791,
+      -0.00009641171,
+      0.0000606324
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18204,6 +25478,12 @@ export const localStars: LocalStar[] = [
       64.706,
       -108.157
     ],
+    "velocityLyPerYear": [
+      -0.00003829071,
+      0.00001591641,
+      0.00008522456
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18219,6 +25499,12 @@ export const localStars: LocalStar[] = [
       140.255,
       -39.673
     ],
+    "velocityLyPerYear": [
+      -0.0001105017,
+      -0.00007468972,
+      0.00006738383
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18234,6 +25520,12 @@ export const localStars: LocalStar[] = [
       48.182,
       127.647
     ],
+    "velocityLyPerYear": [
+      -0.00001921059,
+      0.00001803643,
+      0.0001507493
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18249,6 +25541,12 @@ export const localStars: LocalStar[] = [
       -68.185,
       114.266
     ],
+    "velocityLyPerYear": [
+      -0.00002097183,
+      -0.00003855164,
+      0.0002599137
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18264,6 +25562,12 @@ export const localStars: LocalStar[] = [
       40.039,
       132.782
     ],
+    "velocityLyPerYear": [
+      0.0000045988,
+      -0.00003600762,
+      0.00007935375
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18279,6 +25583,12 @@ export const localStars: LocalStar[] = [
       109.43,
       14.818
     ],
+    "velocityLyPerYear": [
+      -0.00009719449,
+      0.000002674479,
+      0.0002725686
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18294,6 +25604,12 @@ export const localStars: LocalStar[] = [
       19.04,
       51.77
     ],
+    "velocityLyPerYear": [
+      0.00000570773,
+      0.0001704491,
+      0.00007429834
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18309,6 +25625,12 @@ export const localStars: LocalStar[] = [
       98.045,
       34.563
     ],
+    "velocityLyPerYear": [
+      0.0001120346,
+      0.0001351264,
+      0.000273971
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18324,6 +25646,12 @@ export const localStars: LocalStar[] = [
       52.684,
       -116.285
     ],
+    "velocityLyPerYear": [
+      -0.0000449443,
+      0.00001810166,
+      0.0001489228
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18339,6 +25667,12 @@ export const localStars: LocalStar[] = [
       -97.915,
       50.401
     ],
+    "velocityLyPerYear": [
+      0.000009132368,
+      0.000003228944,
+      0.0003376367
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18354,6 +25688,12 @@ export const localStars: LocalStar[] = [
       -24.521,
       131.743
     ],
+    "velocityLyPerYear": [
+      0.00003398546,
+      -0.00001996075,
+      0.0000535222
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18369,6 +25709,12 @@ export const localStars: LocalStar[] = [
       139.295,
       -44.5
     ],
+    "velocityLyPerYear": [
+      0.00004080212,
+      0.00001888443,
+      0.00004660769
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18384,6 +25730,12 @@ export const localStars: LocalStar[] = [
       55.94,
       125.568
     ],
+    "velocityLyPerYear": [
+      -0.00002915835,
+      0.000009067137,
+      0.0001346046
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18399,6 +25751,12 @@ export const localStars: LocalStar[] = [
       45.719,
       129.466
     ],
+    "velocityLyPerYear": [
+      -0.00002400508,
+      0.00001369855,
+      0.0001395948
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18414,6 +25772,12 @@ export const localStars: LocalStar[] = [
       16.502,
       -20.563
     ],
+    "velocityLyPerYear": [
+      0.00001069792,
+      -0.00002873434,
+      -0.00009155199
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18429,6 +25793,12 @@ export const localStars: LocalStar[] = [
       -37.3,
       -10.828
     ],
+    "velocityLyPerYear": [
+      -0.00001347024,
+      -0.00004478122,
+      0.00007201524
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18444,6 +25814,12 @@ export const localStars: LocalStar[] = [
       -132.432,
       9.591
     ],
+    "velocityLyPerYear": [
+      -0.00003300699,
+      -0.0000311479,
+      0.00005795792
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18459,6 +25835,12 @@ export const localStars: LocalStar[] = [
       -117.953,
       57.3
     ],
+    "velocityLyPerYear": [
+      -0.00005508775,
+      0.000008414825,
+      0.00005851239
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18474,6 +25856,12 @@ export const localStars: LocalStar[] = [
       -95.867,
       -26.231
     ],
+    "velocityLyPerYear": [
+      0.00002765803,
+      -0.000006620967,
+      -0.00004497691
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18489,6 +25877,12 @@ export const localStars: LocalStar[] = [
       -60.748,
       -133.712
     ],
+    "velocityLyPerYear": [
+      0.00008095192,
+      -0.00002860388,
+      0.00005264158
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18504,6 +25898,12 @@ export const localStars: LocalStar[] = [
       39.41,
       102.918
     ],
+    "velocityLyPerYear": [
+      -0.0000179712,
+      0.000008480056,
+      -0.0000449443
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18519,6 +25919,12 @@ export const localStars: LocalStar[] = [
       -40.306,
       -119.12
     ],
+    "velocityLyPerYear": [
+      0.00004187843,
+      -0.00001627518,
+      0.0001067835
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18534,6 +25940,12 @@ export const localStars: LocalStar[] = [
       -147.586,
       -7.092
     ],
+    "velocityLyPerYear": [
+      -7.175432e-7,
+      -0.00007906021,
+      -0.00004197628
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18549,6 +25961,12 @@ export const localStars: LocalStar[] = [
       -91.582,
       -60.299
     ],
+    "velocityLyPerYear": [
+      -0.000007534204,
+      -0.00006761214,
+      0.00008998644
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18564,6 +25982,12 @@ export const localStars: LocalStar[] = [
       -136.396,
       61.348
     ],
+    "velocityLyPerYear": [
+      0.00002054783,
+      0.00001095884,
+      -0.000001435086
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18579,6 +26003,12 @@ export const localStars: LocalStar[] = [
       -23.663,
       -28.297
     ],
+    "velocityLyPerYear": [
+      -0.0000321916,
+      0.000001076315,
+      0.0002789938
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18594,6 +26024,12 @@ export const localStars: LocalStar[] = [
       39.311,
       -120.576
     ],
+    "velocityLyPerYear": [
+      -0.00001330716,
+      0.00002054783,
+      0.00009328062
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18609,6 +26045,12 @@ export const localStars: LocalStar[] = [
       -83.931,
       -107.056
     ],
+    "velocityLyPerYear": [
+      0.00004001934,
+      -0.00000763205,
+      0.00003835595
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18624,6 +26066,12 @@ export const localStars: LocalStar[] = [
       41.123,
       133.305
     ],
+    "velocityLyPerYear": [
+      -0.00002116752,
+      0.0000179712,
+      0.0001538804
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18639,6 +26087,12 @@ export const localStars: LocalStar[] = [
       40.409,
       103.542
     ],
+    "velocityLyPerYear": [
+      -0.00002015644,
+      0.00000978468,
+      -0.00004292213
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18654,6 +26108,12 @@ export const localStars: LocalStar[] = [
       7.261,
       76.363
     ],
+    "velocityLyPerYear": [
+      0.00001350286,
+      0.000001141546,
+      0.0000361707
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18669,6 +26129,12 @@ export const localStars: LocalStar[] = [
       -96.544,
       74.595
     ],
+    "velocityLyPerYear": [
+      -0.00009106276,
+      0.000003913872,
+      0.00005231542
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18684,6 +26150,12 @@ export const localStars: LocalStar[] = [
       -83.691,
       96.271
     ],
+    "velocityLyPerYear": [
+      -0.0001399209,
+      0.00005831669,
+      0.0001673833
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18699,6 +26171,12 @@ export const localStars: LocalStar[] = [
       -25.586,
       -148.53
     ],
+    "velocityLyPerYear": [
+      -0.000007664666,
+      -0.00009096491,
+      -0.00002831034
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18714,6 +26192,12 @@ export const localStars: LocalStar[] = [
       119.028,
       -51.537
     ],
+    "velocityLyPerYear": [
+      0.0000587407,
+      -0.0000541419,
+      -0.00001810166
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18729,6 +26213,12 @@ export const localStars: LocalStar[] = [
       -92.872,
       2.917
     ],
+    "velocityLyPerYear": [
+      -0.00002071091,
+      0.00003378976,
+      0.0002244932
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18744,6 +26234,12 @@ export const localStars: LocalStar[] = [
       50.143,
       -106.758
     ],
+    "velocityLyPerYear": [
+      -0.0001971939,
+      0.000153913,
+      0.000429841
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18759,6 +26255,12 @@ export const localStars: LocalStar[] = [
       -141.049,
       36.063
     ],
+    "velocityLyPerYear": [
+      -0.00003529008,
+      -0.00001842781,
+      0.00005437021
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18774,6 +26276,12 @@ export const localStars: LocalStar[] = [
       -84.572,
       76.01
     ],
+    "velocityLyPerYear": [
+      0.00003561624,
+      -0.00003189806,
+      0.00004396583
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18789,6 +26297,12 @@ export const localStars: LocalStar[] = [
       -11.204,
       -16.498
     ],
+    "velocityLyPerYear": [
+      -0.0001539782,
+      -0.0001673506,
+      0.00007550511
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18804,6 +26318,12 @@ export const localStars: LocalStar[] = [
       -66.366,
       93.197
     ],
+    "velocityLyPerYear": [
+      0.00008378948,
+      -0.00004272644,
+      0.0002566522
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18819,6 +26339,12 @@ export const localStars: LocalStar[] = [
       95.201,
       117.287
     ],
+    "velocityLyPerYear": [
+      0.00003137621,
+      0.000001565549,
+      0.0000836264
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18834,6 +26360,12 @@ export const localStars: LocalStar[] = [
       3.363,
       -22.063
     ],
+    "velocityLyPerYear": [
+      7.827744e-7,
+      -0.0000704497,
+      0.00006425273
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18849,6 +26381,12 @@ export const localStars: LocalStar[] = [
       -46.305,
       -10.095
     ],
+    "velocityLyPerYear": [
+      -4.89234e-7,
+      0.0000198629,
+      0.0001191122
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18864,6 +26402,12 @@ export const localStars: LocalStar[] = [
       -120.309,
       53.667
     ],
+    "velocityLyPerYear": [
+      -0.00003131098,
+      -0.00003626855,
+      0.00006046932
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18879,6 +26423,12 @@ export const localStars: LocalStar[] = [
       59.624,
       130.065
     ],
+    "velocityLyPerYear": [
+      -0.00002628817,
+      0.00001376378,
+      0.0001431173
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18894,6 +26444,12 @@ export const localStars: LocalStar[] = [
       58.391,
       130.447
     ],
+    "velocityLyPerYear": [
+      -0.00001754719,
+      0.00002015644,
+      0.0001560983
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18909,6 +26465,12 @@ export const localStars: LocalStar[] = [
       92.002,
       48.273
     ],
+    "velocityLyPerYear": [
+      -0.00002253738,
+      -0.00005362005,
+      0.0001129804
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18924,6 +26486,12 @@ export const localStars: LocalStar[] = [
       -96.324,
       -118.874
     ],
+    "velocityLyPerYear": [
+      -0.000001011084,
+      0.00003444207,
+      0.00005834931
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18939,6 +26507,12 @@ export const localStars: LocalStar[] = [
       -82.908,
       -35.845
     ],
+    "velocityLyPerYear": [
+      -0.00001849305,
+      0.00004063904,
+      0.00001373117
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18954,6 +26528,12 @@ export const localStars: LocalStar[] = [
       54.634,
       42.157
     ],
+    "velocityLyPerYear": [
+      -0.000002902788,
+      -0.00006239364,
+      0.00006591613
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18969,6 +26549,12 @@ export const localStars: LocalStar[] = [
       120.725,
       -96.056
     ],
+    "velocityLyPerYear": [
+      -0.00000570773,
+      -0.00008382209,
+      0.0000447486
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18984,6 +26570,12 @@ export const localStars: LocalStar[] = [
       42.449,
       136.754
     ],
+    "velocityLyPerYear": [
+      -0.00002120014,
+      0.00002589679,
+      0.0001514995
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -18999,6 +26591,12 @@ export const localStars: LocalStar[] = [
       11.336,
       -149.615
     ],
+    "velocityLyPerYear": [
+      -0.00001011084,
+      0.000008936674,
+      0.0001567506
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19014,6 +26612,12 @@ export const localStars: LocalStar[] = [
       -139.416,
       -0.707
     ],
+    "velocityLyPerYear": [
+      0.000007077585,
+      -0.0001190469,
+      0.00005906685
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19029,6 +26633,12 @@ export const localStars: LocalStar[] = [
       -111.205,
       -107.264
     ],
+    "velocityLyPerYear": [
+      0.000007403741,
+      -0.00003780148,
+      0.0001264833
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19044,6 +26654,12 @@ export const localStars: LocalStar[] = [
       25.966,
       152.745
     ],
+    "velocityLyPerYear": [
+      -0.00001223085,
+      -0.000002576632,
+      0.0001525758
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19059,6 +26675,12 @@ export const localStars: LocalStar[] = [
       40.28,
       -144.58
     ],
+    "velocityLyPerYear": [
+      -0.00007429834,
+      -0.00009517232,
+      0.0001253091
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19074,6 +26696,12 @@ export const localStars: LocalStar[] = [
       79.669,
       -128.49
     ],
+    "velocityLyPerYear": [
+      -0.00001350286,
+      -0.00002553801,
+      0.00008838828
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19089,6 +26717,12 @@ export const localStars: LocalStar[] = [
       41.242,
       -124.739
     ],
+    "velocityLyPerYear": [
+      0.00004021503,
+      -0.00003082174,
+      -0.0000326156
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19104,6 +26738,12 @@ export const localStars: LocalStar[] = [
       -95.233,
       -121.931
     ],
+    "velocityLyPerYear": [
+      6.52312e-8,
+      -0.00008359378,
+      0.00005339174
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19119,6 +26759,12 @@ export const localStars: LocalStar[] = [
       -151.622,
       27.516
     ],
+    "velocityLyPerYear": [
+      0.00005303297,
+      -0.00006500289,
+      0.00009347631
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19134,6 +26780,12 @@ export const localStars: LocalStar[] = [
       -59.328,
       -31.116
     ],
+    "velocityLyPerYear": [
+      -0.00001617734,
+      0.000004403106,
+      0.00001859089
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19149,6 +26801,12 @@ export const localStars: LocalStar[] = [
       42.657,
       140.389
     ],
+    "velocityLyPerYear": [
+      -0.00001709057,
+      0.00001878659,
+      0.0001336261
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19164,6 +26822,12 @@ export const localStars: LocalStar[] = [
       99.168,
       -117.58
     ],
+    "velocityLyPerYear": [
+      -0.00001236131,
+      -0.00002093922,
+      0.00008581164
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19179,6 +26843,12 @@ export const localStars: LocalStar[] = [
       94.887,
       -120.889
     ],
+    "velocityLyPerYear": [
+      -4.566184e-7,
+      -0.00003855164,
+      0.0000769402
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19194,6 +26864,12 @@ export const localStars: LocalStar[] = [
       46.903,
       135.264
     ],
+    "velocityLyPerYear": [
+      -0.00002041737,
+      0.00001846043,
+      0.0001524779
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19209,6 +26885,12 @@ export const localStars: LocalStar[] = [
       -27.193,
       -136.515
     ],
+    "velocityLyPerYear": [
+      -0.000004109566,
+      -0.00001725365,
+      0.00002834296
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19224,6 +26906,12 @@ export const localStars: LocalStar[] = [
       -6.528,
       85.403
     ],
+    "velocityLyPerYear": [
+      -0.0001686227,
+      -0.00005942562,
+      0.0002190464
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19239,6 +26927,12 @@ export const localStars: LocalStar[] = [
       95.273,
       -121.338
     ],
+    "velocityLyPerYear": [
+      0.00000600127,
+      -0.00003698609,
+      0.00008372425
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19254,6 +26948,12 @@ export const localStars: LocalStar[] = [
       -153.355,
       -27.974
     ],
+    "velocityLyPerYear": [
+      -0.00006852538,
+      -0.00002899527,
+      0.00008548549
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19269,6 +26969,12 @@ export const localStars: LocalStar[] = [
       -6.376,
       128.528
     ],
+    "velocityLyPerYear": [
+      -0.000145857,
+      -0.0001741021,
+      0.0002878979
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19284,6 +26990,12 @@ export const localStars: LocalStar[] = [
       -153.246,
       -32.032
     ],
+    "velocityLyPerYear": [
+      -0.0001092296,
+      0.0000393018,
+      0.0003403438
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19299,6 +27011,12 @@ export const localStars: LocalStar[] = [
       -45.026,
       -86.239
     ],
+    "velocityLyPerYear": [
+      -0.000003913872,
+      0.00001356809,
+      0.0001768418
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19314,6 +27032,12 @@ export const localStars: LocalStar[] = [
       -127.906,
       -85.577
     ],
+    "velocityLyPerYear": [
+      0.000008936674,
+      -0.00007208048,
+      0.00003144144
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19329,6 +27053,12 @@ export const localStars: LocalStar[] = [
       -24.556,
       -113.299
     ],
+    "velocityLyPerYear": [
+      0.000003196329,
+      -0.00002009121,
+      0.00004902125
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19344,6 +27074,12 @@ export const localStars: LocalStar[] = [
       -131.065,
       86.743
     ],
+    "velocityLyPerYear": [
+      0.0000305282,
+      -0.00002791895,
+      0.00000326156
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19359,6 +27095,12 @@ export const localStars: LocalStar[] = [
       39.993,
       -101.289
     ],
+    "velocityLyPerYear": [
+      0.0001198623,
+      8.806212e-7,
+      0.0001353221
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19374,6 +27116,12 @@ export const localStars: LocalStar[] = [
       -53.672,
       -103.053
     ],
+    "velocityLyPerYear": [
+      -0.00002544017,
+      -0.00002537494,
+      -0.00001324193
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19389,6 +27137,12 @@ export const localStars: LocalStar[] = [
       -90.04,
       -112.663
     ],
+    "velocityLyPerYear": [
+      0.00003248514,
+      -0.000009393293,
+      0.0001105343
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19404,6 +27158,12 @@ export const localStars: LocalStar[] = [
       40.544,
       142.29
     ],
+    "velocityLyPerYear": [
+      -0.00002475524,
+      0.00001493794,
+      0.000153913
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19419,6 +27179,12 @@ export const localStars: LocalStar[] = [
       97.408,
       11.487
     ],
+    "velocityLyPerYear": [
+      0.00003809502,
+      -0.000005512036,
+      0.00004846678
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19434,6 +27200,12 @@ export const localStars: LocalStar[] = [
       -95.569,
       26.161
     ],
+    "velocityLyPerYear": [
+      -0.0001978462,
+      -0.000163926,
+      -0.0001854197
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19449,6 +27221,12 @@ export const localStars: LocalStar[] = [
       -49.978,
       39.259
     ],
+    "velocityLyPerYear": [
+      -0.00008127808,
+      0.0000453683,
+      0.0003913546
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19464,6 +27242,12 @@ export const localStars: LocalStar[] = [
       -31.416,
       -105.735
     ],
+    "velocityLyPerYear": [
+      0.00001761242,
+      -0.000004044334,
+      0.00008065838
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19479,6 +27263,12 @@ export const localStars: LocalStar[] = [
       100.241,
       122.976
     ],
+    "velocityLyPerYear": [
+      0.00003033251,
+      -0.00003212637,
+      0.00003000635
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19494,6 +27284,12 @@ export const localStars: LocalStar[] = [
       -96.696,
       -119.609
     ],
+    "velocityLyPerYear": [
+      0.00001121977,
+      -0.00005704468,
+      0.00004217197
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19509,6 +27305,12 @@ export const localStars: LocalStar[] = [
       -113.642,
       57.659
     ],
+    "velocityLyPerYear": [
+      -0.00001992813,
+      -0.00007273279,
+      0.0002840166
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19524,6 +27326,12 @@ export const localStars: LocalStar[] = [
       -42.562,
       -138.352
     ],
+    "velocityLyPerYear": [
+      0.00009562894,
+      -0.0001494447,
+      0.00004311782
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19539,6 +27347,12 @@ export const localStars: LocalStar[] = [
       115.177,
       -74.592
     ],
+    "velocityLyPerYear": [
+      -0.00002720141,
+      -0.00005355482,
+      -0.00001709057
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19554,6 +27368,12 @@ export const localStars: LocalStar[] = [
       -130.434,
       59.898
     ],
+    "velocityLyPerYear": [
+      -0.00001536195,
+      0.000005088034,
+      0.00002031952
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19569,6 +27389,12 @@ export const localStars: LocalStar[] = [
       80.955,
       -84.968
     ],
+    "velocityLyPerYear": [
+      0.00002100445,
+      0.00005688161,
+      0.0001152635
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19584,6 +27410,12 @@ export const localStars: LocalStar[] = [
       -56.836,
       148.504
     ],
+    "velocityLyPerYear": [
+      -0.00000541419,
+      -0.00004589015,
+      -0.00006722075
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19599,6 +27431,12 @@ export const localStars: LocalStar[] = [
       15.937,
       123.271
     ],
+    "velocityLyPerYear": [
+      0.00001868874,
+      -0.000001761242,
+      0.00006330688
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19614,6 +27452,12 @@ export const localStars: LocalStar[] = [
       54.82,
       -128.772
     ],
+    "velocityLyPerYear": [
+      -0.00005577268,
+      0.00001255701,
+      0.0001376052
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19629,6 +27473,12 @@ export const localStars: LocalStar[] = [
       -43.781,
       -43.462
     ],
+    "velocityLyPerYear": [
+      0.00004073688,
+      -0.00003496392,
+      -0.00004768401
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19644,6 +27494,12 @@ export const localStars: LocalStar[] = [
       -139.923,
       47.141
     ],
+    "velocityLyPerYear": [
+      -0.00003091959,
+      -0.00006806876,
+      -0.00009145414
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19659,6 +27515,12 @@ export const localStars: LocalStar[] = [
       -104.288,
       86.278
     ],
+    "velocityLyPerYear": [
+      0.00006037148,
+      -0.00001056745,
+      7.501588e-7
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19674,6 +27536,12 @@ export const localStars: LocalStar[] = [
       48.379,
       140.678
     ],
+    "velocityLyPerYear": [
+      -0.00002501617,
+      0.00001402471,
+      0.0001555438
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19689,6 +27557,12 @@ export const localStars: LocalStar[] = [
       -54.84,
       -105.302
     ],
+    "velocityLyPerYear": [
+      0.00002795157,
+      -0.00004497691,
+      -0.00006927553
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19704,6 +27578,12 @@ export const localStars: LocalStar[] = [
       43.518,
       140.937
     ],
+    "velocityLyPerYear": [
+      -0.00002661433,
+      0.00001705796,
+      0.000156294
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19719,6 +27599,12 @@ export const localStars: LocalStar[] = [
       -110.81,
       -114.121
     ],
+    "velocityLyPerYear": [
+      0.00008506148,
+      -0.0001508798,
+      -0.00001947151
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19734,6 +27620,12 @@ export const localStars: LocalStar[] = [
       -143.329,
       66.909
     ],
+    "velocityLyPerYear": [
+      0.00001079576,
+      -0.00008848612,
+      0.00009517232
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19749,6 +27641,12 @@ export const localStars: LocalStar[] = [
       -134.561,
       -79.767
     ],
+    "velocityLyPerYear": [
+      0.00001373117,
+      -0.00002632079,
+      0.0001324846
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19764,6 +27662,12 @@ export const localStars: LocalStar[] = [
       23.313,
       148.584
     ],
+    "velocityLyPerYear": [
+      0.000008023438,
+      -0.0000192432,
+      0.00008610518
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19779,6 +27683,12 @@ export const localStars: LocalStar[] = [
       65.101,
       -25.298
     ],
+    "velocityLyPerYear": [
+      0.00005505513,
+      0.00001493794,
+      0.00001470964
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19794,6 +27704,12 @@ export const localStars: LocalStar[] = [
       -13.413,
       16.952
     ],
+    "velocityLyPerYear": [
+      -0.000001304624,
+      0.00002615771,
+      0.000008316978
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19809,6 +27725,12 @@ export const localStars: LocalStar[] = [
       -152.653,
       51.654
     ],
+    "velocityLyPerYear": [
+      -0.00003463777,
+      0.00003672517,
+      0.00006640536
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19824,6 +27746,12 @@ export const localStars: LocalStar[] = [
       -16.704,
       -158.711
     ],
+    "velocityLyPerYear": [
+      0.00005691422,
+      -0.0001398557,
+      0.0001173835
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19839,6 +27767,12 @@ export const localStars: LocalStar[] = [
       -48.048,
       -106.655
     ],
+    "velocityLyPerYear": [
+      0.000007273279,
+      -0.00003542054,
+      0.00007941899
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19854,6 +27788,12 @@ export const localStars: LocalStar[] = [
       -161.802,
       8.801
     ],
+    "velocityLyPerYear": [
+      0.00004784709,
+      0.00001529672,
+      0.00008199562
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19869,6 +27809,12 @@ export const localStars: LocalStar[] = [
       103.637,
       -122.632
     ],
+    "velocityLyPerYear": [
+      -0.00001298101,
+      -0.00002951712,
+      0.0001093927
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19884,6 +27830,12 @@ export const localStars: LocalStar[] = [
       -4.345,
       25.261
     ],
+    "velocityLyPerYear": [
+      0.00002534232,
+      -0.0001267442,
+      0.0001396274
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19899,6 +27851,12 @@ export const localStars: LocalStar[] = [
       -41.649,
       -127.433
     ],
+    "velocityLyPerYear": [
+      0.00009474832,
+      0.00002932142,
+      0.00004171535
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19914,6 +27872,12 @@ export const localStars: LocalStar[] = [
       24.785,
       -3.667
     ],
+    "velocityLyPerYear": [
+      0.0001090666,
+      0.00002866911,
+      0.0001768744
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19929,6 +27893,12 @@ export const localStars: LocalStar[] = [
       128.395,
       -55.596
     ],
+    "velocityLyPerYear": [
+      0.00005055418,
+      -0.00004973879,
+      -0.00002495093
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19944,6 +27914,12 @@ export const localStars: LocalStar[] = [
       -3.964,
       -68.102
     ],
+    "velocityLyPerYear": [
+      -0.00003480085,
+      0.000009132368,
+      0.0001287338
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19959,6 +27935,12 @@ export const localStars: LocalStar[] = [
       80.196,
       23.917
     ],
+    "velocityLyPerYear": [
+      -0.0001129804,
+      -0.0003131098,
+      -0.000203978
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19974,6 +27956,12 @@ export const localStars: LocalStar[] = [
       54.208,
       73.608
     ],
+    "velocityLyPerYear": [
+      -0.000009882527,
+      -0.00007550511,
+      0.00006647059
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -19989,6 +27977,12 @@ export const localStars: LocalStar[] = [
       -146.371,
       50.57
     ],
+    "velocityLyPerYear": [
+      -4.89234e-7,
+      -0.00008140854,
+      0.0001014345
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20004,6 +27998,12 @@ export const localStars: LocalStar[] = [
       -100.03,
       85.901
     ],
+    "velocityLyPerYear": [
+      -0.00001617734,
+      -0.00001637303,
+      -5.544652e-7
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20019,6 +28019,12 @@ export const localStars: LocalStar[] = [
       116.921,
       -104.391
     ],
+    "velocityLyPerYear": [
+      -0.000001956936,
+      -0.00001996075,
+      0.00008212608
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20034,6 +28040,12 @@ export const localStars: LocalStar[] = [
       43.915,
       31.558
     ],
+    "velocityLyPerYear": [
+      -0.00003241991,
+      -0.00005410928,
+      0.00005472898
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20049,6 +28061,12 @@ export const localStars: LocalStar[] = [
       -101.049,
       3.171
     ],
+    "velocityLyPerYear": [
+      0.000008740981,
+      0.00005965393,
+      0.0002647734
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20064,6 +28082,12 @@ export const localStars: LocalStar[] = [
       100.128,
       131.853
     ],
+    "velocityLyPerYear": [
+      -0.00003362668,
+      0.00001347024,
+      0.0001154592
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20079,6 +28103,12 @@ export const localStars: LocalStar[] = [
       75.872,
       99.472
     ],
+    "velocityLyPerYear": [
+      0.000004859724,
+      -0.00007710328,
+      0.00007573342
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20094,6 +28124,12 @@ export const localStars: LocalStar[] = [
       -22.758,
       145.506
     ],
+    "velocityLyPerYear": [
+      -0.00003378976,
+      0.0000850941,
+      -0.000004761878
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20109,6 +28145,12 @@ export const localStars: LocalStar[] = [
       94.407,
       124.312
     ],
+    "velocityLyPerYear": [
+      -0.00000437049,
+      -0.00006510074,
+      0.00007863621
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20124,6 +28166,12 @@ export const localStars: LocalStar[] = [
       -58.685,
       44.879
     ],
+    "velocityLyPerYear": [
+      0.0001470311,
+      -0.0001903446,
+      0.00007801652
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20139,6 +28187,12 @@ export const localStars: LocalStar[] = [
       17.317,
       119.914
     ],
+    "velocityLyPerYear": [
+      0.000006294811,
+      0.00001976505,
+      0.0001101429
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20154,6 +28208,12 @@ export const localStars: LocalStar[] = [
       79.215,
       -17.275
     ],
+    "velocityLyPerYear": [
+      -0.00005048895,
+      -0.00005153265,
+      0.00006213272
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20169,6 +28229,12 @@ export const localStars: LocalStar[] = [
       -23.824,
       -165.712
     ],
+    "velocityLyPerYear": [
+      0.00001063269,
+      -0.00001356809,
+      0.0001203842
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20184,6 +28250,12 @@ export const localStars: LocalStar[] = [
       -0.344,
       -60.596
     ],
+    "velocityLyPerYear": [
+      0.000001043699,
+      -0.00004559661,
+      0.00007687497
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20199,6 +28271,12 @@ export const localStars: LocalStar[] = [
       117.672,
       -10.283
     ],
+    "velocityLyPerYear": [
+      -0.000004957571,
+      -0.00003206113,
+      0.00006705767
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20214,6 +28292,12 @@ export const localStars: LocalStar[] = [
       -150.061,
       10.511
     ],
+    "velocityLyPerYear": [
+      -0.00002782111,
+      -0.00004670554,
+      0.00006865584
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20229,6 +28313,12 @@ export const localStars: LocalStar[] = [
       -48.494,
       -137.5
     ],
+    "velocityLyPerYear": [
+      0.00004804278,
+      0.0001029022,
+      -0.00007804913
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20244,6 +28334,12 @@ export const localStars: LocalStar[] = [
       -138.221,
       89.898
     ],
+    "velocityLyPerYear": [
+      -0.00002283092,
+      -0.00006513335,
+      0.00007155863
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20259,6 +28355,12 @@ export const localStars: LocalStar[] = [
       -61.716,
       -145.552
     ],
+    "velocityLyPerYear": [
+      0.000007795128,
+      0.00002390723,
+      -0.0000248857
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20274,6 +28376,12 @@ export const localStars: LocalStar[] = [
       84.638,
       44.932
     ],
+    "velocityLyPerYear": [
+      0.00007837529,
+      0.00002354846,
+      0.00008923628
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20289,6 +28397,12 @@ export const localStars: LocalStar[] = [
       12.415,
       -163.912
     ],
+    "velocityLyPerYear": [
+      -0.000001532933,
+      0.00001258962,
+      0.0001832997
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20304,6 +28418,12 @@ export const localStars: LocalStar[] = [
       -10.148,
       -142.638
     ],
+    "velocityLyPerYear": [
+      -0.00005107603,
+      -0.00002071091,
+      0.00006983
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20319,6 +28439,12 @@ export const localStars: LocalStar[] = [
       57.278,
       118.535
     ],
+    "velocityLyPerYear": [
+      -0.00004021503,
+      0.00002165676,
+      0.0001452373
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20334,6 +28460,12 @@ export const localStars: LocalStar[] = [
       109.878,
       -105.224
     ],
+    "velocityLyPerYear": [
+      0.00007367864,
+      0.00001575333,
+      0.00001757981
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20349,6 +28481,12 @@ export const localStars: LocalStar[] = [
       -24.149,
       -167.947
     ],
+    "velocityLyPerYear": [
+      0.00001611211,
+      -0.000009099752,
+      0.0001309516
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20364,6 +28502,12 @@ export const localStars: LocalStar[] = [
       -167.955,
       22.576
     ],
+    "velocityLyPerYear": [
+      0.00003907349,
+      -0.00003101744,
+      0.0001025434
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20379,6 +28523,12 @@ export const localStars: LocalStar[] = [
       47.138,
       -132.162
     ],
+    "velocityLyPerYear": [
+      0.00005071726,
+      -0.00000622958,
+      -0.00003033251
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20394,6 +28544,12 @@ export const localStars: LocalStar[] = [
       134.349,
       -42.525
     ],
+    "velocityLyPerYear": [
+      0.00008757289,
+      -0.0001204168,
+      -0.0000514348
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20409,6 +28565,12 @@ export const localStars: LocalStar[] = [
       74.727,
       -128.683
     ],
+    "velocityLyPerYear": [
+      -0.0000372144,
+      -0.00007508111,
+      0.00006395919
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20424,6 +28586,12 @@ export const localStars: LocalStar[] = [
       67.687,
       -23.534
     ],
+    "velocityLyPerYear": [
+      -0.00002110229,
+      0.00001307886,
+      0.0001645783
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20439,6 +28607,12 @@ export const localStars: LocalStar[] = [
       104.709,
       129.854
     ],
+    "velocityLyPerYear": [
+      -0.00002044998,
+      -0.00005355482,
+      0.00007064539
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20454,6 +28628,12 @@ export const localStars: LocalStar[] = [
       -164.471,
       43.709
     ],
+    "velocityLyPerYear": [
+      0.00001020868,
+      0.00004233505,
+      0.0001499991
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20469,6 +28649,12 @@ export const localStars: LocalStar[] = [
       170.047,
       -5.033
     ],
+    "velocityLyPerYear": [
+      -0.00002367893,
+      0.00003023466,
+      0.0001063595
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20484,6 +28670,12 @@ export const localStars: LocalStar[] = [
       -11.026,
       -152.938
     ],
+    "velocityLyPerYear": [
+      -0.000001043699,
+      -0.0001139915,
+      0.00008336547
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20499,6 +28691,12 @@ export const localStars: LocalStar[] = [
       83.825,
       100.124
     ],
+    "velocityLyPerYear": [
+      -0.00007703805,
+      -0.0001157201,
+      0.00009673787
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20514,6 +28712,12 @@ export const localStars: LocalStar[] = [
       171.808,
       -10.173
     ],
+    "velocityLyPerYear": [
+      0.00001435086,
+      -0.00002397247,
+      0.00004513999
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20529,6 +28733,12 @@ export const localStars: LocalStar[] = [
       -92.532,
       98.056
     ],
+    "velocityLyPerYear": [
+      0.00003923657,
+      0.00008193039,
+      0.0001340175
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20544,6 +28754,12 @@ export const localStars: LocalStar[] = [
       -129.988,
       15.548
     ],
+    "velocityLyPerYear": [
+      -0.000008316978,
+      0.00001575333,
+      0.0001178402
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20559,6 +28775,12 @@ export const localStars: LocalStar[] = [
       63.567,
       155.707
     ],
+    "velocityLyPerYear": [
+      -0.00002162414,
+      0.00001852566,
+      0.000149673
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20574,6 +28796,12 @@ export const localStars: LocalStar[] = [
       -44.523,
       166.857
     ],
+    "velocityLyPerYear": [
+      0.000011285,
+      -0.00001686227,
+      0.0001063269
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20589,6 +28817,12 @@ export const localStars: LocalStar[] = [
       54.828,
       -135.291
     ],
+    "velocityLyPerYear": [
+      0.00001187208,
+      0.00001356809,
+      0.0001253744
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20604,6 +28838,12 @@ export const localStars: LocalStar[] = [
       5.993,
       -160.108
     ],
+    "velocityLyPerYear": [
+      -0.000007468972,
+      -0.00006285026,
+      0.00005120649
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20619,6 +28859,12 @@ export const localStars: LocalStar[] = [
       -38.596,
       -168.3
     ],
+    "velocityLyPerYear": [
+      -0.00005166311,
+      -0.00002289615,
+      0.000112426
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20634,6 +28880,12 @@ export const localStars: LocalStar[] = [
       22.92,
       54.493
     ],
+    "velocityLyPerYear": [
+      -0.000003652947,
+      -0.00004249813,
+      0.0001246242
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20649,6 +28901,12 @@ export const localStars: LocalStar[] = [
       148.557,
       -5.108
     ],
+    "velocityLyPerYear": [
+      -0.00007426572,
+      -0.00003496392,
+      0.00005547914
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20664,6 +28922,12 @@ export const localStars: LocalStar[] = [
       -106.716,
       -16.177
     ],
+    "velocityLyPerYear": [
+      0.00003411592,
+      0.00002097183,
+      0.00007785344
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20679,6 +28943,12 @@ export const localStars: LocalStar[] = [
       23.169,
       -155.241
     ],
+    "velocityLyPerYear": [
+      -0.00000326156,
+      -0.0000131767,
+      0.0001091644
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20694,6 +28964,12 @@ export const localStars: LocalStar[] = [
       -164.485,
       -11.863
     ],
+    "velocityLyPerYear": [
+      0.00009448739,
+      0.00002393985,
+      0.0001339849
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20709,6 +28985,12 @@ export const localStars: LocalStar[] = [
       128.09,
       22.5
     ],
+    "velocityLyPerYear": [
+      0.0000556096,
+      0.0000102413,
+      -0.00001050222
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20724,6 +29006,12 @@ export const localStars: LocalStar[] = [
       -41.989,
       -80.859
     ],
+    "velocityLyPerYear": [
+      -0.00002240692,
+      -0.00003913872,
+      0.00005114126
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20739,6 +29027,12 @@ export const localStars: LocalStar[] = [
       41.704,
       -110.385
     ],
+    "velocityLyPerYear": [
+      0.00004171535,
+      -0.0000152641,
+      -0.00002312446
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20754,6 +29048,12 @@ export const localStars: LocalStar[] = [
       13.206,
       -124.882
     ],
+    "velocityLyPerYear": [
+      -0.00001992813,
+      -0.0001236457,
+      -0.0001176445
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20769,6 +29069,12 @@ export const localStars: LocalStar[] = [
       -146.843,
       98.33
     ],
+    "velocityLyPerYear": [
+      -0.00007080847,
+      -0.00007857098,
+      -0.00001826474
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20784,6 +29090,12 @@ export const localStars: LocalStar[] = [
       87.139,
       153.684
     ],
+    "velocityLyPerYear": [
+      0.00004938002,
+      -0.0001625888,
+      0.0001723408
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20799,6 +29111,12 @@ export const localStars: LocalStar[] = [
       -129.185,
       -40.043
     ],
+    "velocityLyPerYear": [
+      0.00004018242,
+      -0.000007501588,
+      0.0001092623
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20814,6 +29132,12 @@ export const localStars: LocalStar[] = [
       132.949,
       48.555
     ],
+    "velocityLyPerYear": [
+      0.00007635312,
+      -0.00002377677,
+      0.00009226953
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20829,6 +29153,12 @@ export const localStars: LocalStar[] = [
       -98.981,
       133.432
     ],
+    "velocityLyPerYear": [
+      -0.00002840819,
+      -0.00003822548,
+      0.00006526382
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20844,6 +29174,12 @@ export const localStars: LocalStar[] = [
       -115.932,
       -129.762
     ],
+    "velocityLyPerYear": [
+      0.00005022802,
+      -0.00006099117,
+      -0.00002185245
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20859,6 +29195,12 @@ export const localStars: LocalStar[] = [
       -24.409,
       -102.906
     ],
+    "velocityLyPerYear": [
+      -0.000001239393,
+      -0.00001138284,
+      0.0001225368
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20874,6 +29216,12 @@ export const localStars: LocalStar[] = [
       -133.952,
       -116.495
     ],
+    "velocityLyPerYear": [
+      -0.000006425273,
+      -0.0001203516,
+      0.0001395295
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20889,6 +29237,12 @@ export const localStars: LocalStar[] = [
       -119.636,
       118.108
     ],
+    "velocityLyPerYear": [
+      -0.00009295446,
+      -0.00003806241,
+      0.0001962481
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20904,6 +29258,12 @@ export const localStars: LocalStar[] = [
       -149.514,
       -78.933
     ],
+    "velocityLyPerYear": [
+      -0.00002951712,
+      -0.00004654246,
+      0.00005127172
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20919,6 +29279,12 @@ export const localStars: LocalStar[] = [
       69.382,
       -143.727
     ],
+    "velocityLyPerYear": [
+      0.00004973879,
+      -0.00001696011,
+      0.0000800713
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20934,6 +29300,12 @@ export const localStars: LocalStar[] = [
       9.959,
       85.027
     ],
+    "velocityLyPerYear": [
+      0.00007710328,
+      0.00002628817,
+      0.00006506812
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20949,6 +29321,12 @@ export const localStars: LocalStar[] = [
       156.223,
       69.439
     ],
+    "velocityLyPerYear": [
+      0.0000227983,
+      0.00001242654,
+      0.0001616429
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20964,6 +29342,12 @@ export const localStars: LocalStar[] = [
       -65.001,
       -114.029
     ],
+    "velocityLyPerYear": [
+      -0.00002997374,
+      -0.0000336593,
+      0.00004999971
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20979,6 +29363,12 @@ export const localStars: LocalStar[] = [
       -135.304,
       -88.196
     ],
+    "velocityLyPerYear": [
+      -0.00003268083,
+      -0.00001255701,
+      0.00008956244
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -20994,6 +29384,12 @@ export const localStars: LocalStar[] = [
       -27.143,
       109.989
     ],
+    "velocityLyPerYear": [
+      0.00001474225,
+      0.0000307239,
+      0.000004533568
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21009,6 +29405,12 @@ export const localStars: LocalStar[] = [
       -153.249,
       -11.847
     ],
+    "velocityLyPerYear": [
+      0.00001565549,
+      -0.000002576632,
+      0.0001578269
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21024,6 +29426,12 @@ export const localStars: LocalStar[] = [
       66.317,
       127.609
     ],
+    "velocityLyPerYear": [
+      0.000003979103,
+      0.000003326791,
+      0.0001390729
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21039,6 +29447,12 @@ export const localStars: LocalStar[] = [
       -105.237,
       143.307
     ],
+    "velocityLyPerYear": [
+      -0.0001150352,
+      -0.0000259294,
+      -0.000003228944
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21054,6 +29468,12 @@ export const localStars: LocalStar[] = [
       -2.609,
       18.223
     ],
+    "velocityLyPerYear": [
+      -0.000003979103,
+      0.00003816025,
+      -7.501588e-7
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21069,6 +29489,12 @@ export const localStars: LocalStar[] = [
       69.93,
       87.922
     ],
+    "velocityLyPerYear": [
+      0.00003225683,
+      -0.00001369855,
+      0.0000411935
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21084,6 +29510,12 @@ export const localStars: LocalStar[] = [
       24.957,
       48.839
     ],
+    "velocityLyPerYear": [
+      0.00003851902,
+      0.00002579894,
+      -0.00006291549
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21099,6 +29531,12 @@ export const localStars: LocalStar[] = [
       -118.352,
       -128.864
     ],
+    "velocityLyPerYear": [
+      0.000001174162,
+      -0.00007863621,
+      0.00007739682
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21114,6 +29552,12 @@ export const localStars: LocalStar[] = [
       -121.34,
       -118.623
     ],
+    "velocityLyPerYear": [
+      0.00007576604,
+      -0.00004628154,
+      -0.00009500924
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21129,6 +29573,12 @@ export const localStars: LocalStar[] = [
       -140.673,
       112.76
     ],
+    "velocityLyPerYear": [
+      -0.00003623593,
+      -0.0001296796,
+      0.0000240377
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21144,6 +29594,12 @@ export const localStars: LocalStar[] = [
       -97.021,
       -100.197
     ],
+    "velocityLyPerYear": [
+      0.00002175461,
+      -0.00001477487,
+      0.00004582492
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21159,6 +29615,12 @@ export const localStars: LocalStar[] = [
       -97.987,
       -27.452
     ],
+    "velocityLyPerYear": [
+      0.000009556371,
+      -0.00008649657,
+      0.00001591641
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21174,6 +29636,12 @@ export const localStars: LocalStar[] = [
       -105.054,
       148.863
     ],
+    "velocityLyPerYear": [
+      -0.000008284362,
+      0.00001728627,
+      0.0001097515
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21189,6 +29657,12 @@ export const localStars: LocalStar[] = [
       -103.772,
       -1.158
     ],
+    "velocityLyPerYear": [
+      0.000004272644,
+      0.00001545979,
+      0.0001644152
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21204,6 +29678,12 @@ export const localStars: LocalStar[] = [
       -163.721,
       53.462
     ],
+    "velocityLyPerYear": [
+      -0.00002879957,
+      0.00002945189,
+      -0.000002478786
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21219,6 +29699,12 @@ export const localStars: LocalStar[] = [
       -130.122,
       -27.725
     ],
+    "velocityLyPerYear": [
+      -6.52312e-8,
+      -0.000006947123,
+      0.0001204494
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21234,6 +29720,12 @@ export const localStars: LocalStar[] = [
       -104.18,
       -1.159
     ],
+    "velocityLyPerYear": [
+      -0.000004827109,
+      0.000005088034,
+      0.0001686227
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21249,6 +29741,12 @@ export const localStars: LocalStar[] = [
       94.182,
       -143.27
     ],
+    "velocityLyPerYear": [
+      -0.0000240377,
+      0.00003251775,
+      0.0001561635
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21264,6 +29762,12 @@ export const localStars: LocalStar[] = [
       27.007,
       -159.45
     ],
+    "velocityLyPerYear": [
+      0.00001810166,
+      -0.00009213907,
+      0.0001555112
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21279,6 +29783,12 @@ export const localStars: LocalStar[] = [
       -91.538,
       158.927
     ],
+    "velocityLyPerYear": [
+      -0.0001320606,
+      0.00001079576,
+      -0.00000163078
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21294,6 +29804,12 @@ export const localStars: LocalStar[] = [
       136.002,
       7.507
     ],
+    "velocityLyPerYear": [
+      0.00004631415,
+      -0.000005251112,
+      0.0001206125
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21309,6 +29825,12 @@ export const localStars: LocalStar[] = [
       -171.271,
       -51.002
     ],
+    "velocityLyPerYear": [
+      -0.00002566848,
+      -0.000001043699,
+      0.00006134994
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21324,6 +29846,12 @@ export const localStars: LocalStar[] = [
       -85.842,
       115.192
     ],
+    "velocityLyPerYear": [
+      -0.0000907366,
+      -0.000133724,
+      0.0001465093
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21339,6 +29867,12 @@ export const localStars: LocalStar[] = [
       -92.46,
       102.723
     ],
+    "velocityLyPerYear": [
+      -0.000229092,
+      0.000002641864,
+      0.0004724044
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21354,6 +29888,12 @@ export const localStars: LocalStar[] = [
       -11.729,
       34.548
     ],
+    "velocityLyPerYear": [
+      0.00002994112,
+      -0.00003121313,
+      0.00009256307
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21369,6 +29909,12 @@ export const localStars: LocalStar[] = [
       -179.484,
       23.226
     ],
+    "velocityLyPerYear": [
+      -0.000006751429,
+      -0.00004735785,
+      -0.00008496364
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21384,6 +29930,12 @@ export const localStars: LocalStar[] = [
       -49.533,
       -136.887
     ],
+    "velocityLyPerYear": [
+      0.000005642499,
+      0.00001118715,
+      -0.00003124574
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21399,6 +29951,12 @@ export const localStars: LocalStar[] = [
       -146.458,
       -108.327
     ],
+    "velocityLyPerYear": [
+      0.000004142181,
+      -0.00006839491,
+      0.00008232177
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21414,6 +29972,12 @@ export const localStars: LocalStar[] = [
       -30.178,
       -138.356
     ],
+    "velocityLyPerYear": [
+      0.00001164377,
+      6.52312e-7,
+      0.00014602
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21429,6 +29993,12 @@ export const localStars: LocalStar[] = [
       66.919,
       76.774
     ],
+    "velocityLyPerYear": [
+      -0.00001063269,
+      -0.00004011719,
+      0.000148825
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21444,6 +30014,12 @@ export const localStars: LocalStar[] = [
       -123.042,
       40.562
     ],
+    "velocityLyPerYear": [
+      0.00002850603,
+      -0.00002563586,
+      0.00004256336
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21459,6 +30035,12 @@ export const localStars: LocalStar[] = [
       -47.379,
       31.695
     ],
+    "velocityLyPerYear": [
+      -0.00001105669,
+      0.0001841477,
+      0.0001158506
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21474,6 +30056,12 @@ export const localStars: LocalStar[] = [
       43.455,
       173.878
     ],
+    "velocityLyPerYear": [
+      0.00007097155,
+      -0.00003949749,
+      -0.000006784045
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21489,6 +30077,12 @@ export const localStars: LocalStar[] = [
       -51.896,
       174.81
     ],
+    "velocityLyPerYear": [
+      -0.00002283092,
+      -0.00004001934,
+      0.00009223692
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21504,6 +30098,12 @@ export const localStars: LocalStar[] = [
       -43.125,
       -103.484
     ],
+    "velocityLyPerYear": [
+      0.00001545979,
+      0.00003434423,
+      0.00002958235
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21519,6 +30119,12 @@ export const localStars: LocalStar[] = [
       -66.994,
       118.465
     ],
+    "velocityLyPerYear": [
+      -5.544652e-7,
+      -0.000003294176,
+      -0.00004862986
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21534,6 +30140,12 @@ export const localStars: LocalStar[] = [
       -25.385,
       -80.806
     ],
+    "velocityLyPerYear": [
+      -3.26156e-8,
+      -0.00001294839,
+      0.000120058
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21549,6 +30161,12 @@ export const localStars: LocalStar[] = [
       -131.327,
       38.394
     ],
+    "velocityLyPerYear": [
+      0.00004748831,
+      -0.000008936674,
+      0.0002327123
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21564,6 +30182,12 @@ export const localStars: LocalStar[] = [
       -154.064,
       -54.8
     ],
+    "velocityLyPerYear": [
+      0.00004226982,
+      -0.00004288951,
+      0.00002058044
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21579,6 +30203,12 @@ export const localStars: LocalStar[] = [
       38.695,
       131.172
     ],
+    "velocityLyPerYear": [
+      0.000001304624,
+      -0.00003571408,
+      -0.00005521821
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21594,6 +30224,12 @@ export const localStars: LocalStar[] = [
       -144.322,
       -96.015
     ],
+    "velocityLyPerYear": [
+      -0.00006930815,
+      0.00005841454,
+      0.0002453998
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21609,6 +30245,12 @@ export const localStars: LocalStar[] = [
       126.45,
       88.675
     ],
+    "velocityLyPerYear": [
+      0.0000413892,
+      -0.00002710356,
+      -0.00001196993
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21624,6 +30266,12 @@ export const localStars: LocalStar[] = [
       37.278,
       -143.039
     ],
+    "velocityLyPerYear": [
+      0.00002097183,
+      -0.00001027391,
+      0.0000321916
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21639,6 +30287,12 @@ export const localStars: LocalStar[] = [
       105.624,
       152.681
     ],
+    "velocityLyPerYear": [
+      -0.00001647088,
+      0.000002902788,
+      0.00008088669
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21654,6 +30308,12 @@ export const localStars: LocalStar[] = [
       77.753,
       35.371
     ],
+    "velocityLyPerYear": [
+      -0.00002217861,
+      -0.0001013693,
+      -0.0000995102
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21669,6 +30329,12 @@ export const localStars: LocalStar[] = [
       -102.932,
       -148.709
     ],
+    "velocityLyPerYear": [
+      -0.00004918432,
+      -0.0002245258,
+      0.0003619679
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21684,6 +30350,12 @@ export const localStars: LocalStar[] = [
       -187.179,
       19.091
     ],
+    "velocityLyPerYear": [
+      -0.00001836258,
+      -0.000003131098,
+      0.0001786356
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21699,6 +30371,12 @@ export const localStars: LocalStar[] = [
       -166.694,
       -69.854
     ],
+    "velocityLyPerYear": [
+      0.00001330716,
+      -0.00005489205,
+      0.00006943861
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21714,6 +30392,12 @@ export const localStars: LocalStar[] = [
       -114.75,
       41.308
     ],
+    "velocityLyPerYear": [
+      0.0000483037,
+      -0.00009103014,
+      -0.00008548549
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21729,6 +30413,12 @@ export const localStars: LocalStar[] = [
       63.978,
       -147.3
     ],
+    "velocityLyPerYear": [
+      -0.00002266784,
+      -0.00005658807,
+      0.00006425273
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21744,6 +30434,12 @@ export const localStars: LocalStar[] = [
       -36.049,
       -154.276
     ],
+    "velocityLyPerYear": [
+      -0.0005042046,
+      -0.0001654589,
+      0.001086099
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21759,6 +30455,12 @@ export const localStars: LocalStar[] = [
       17.405,
       -124.427
     ],
+    "velocityLyPerYear": [
+      0.000002054783,
+      -0.00009151937,
+      0.00007116724
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21774,6 +30476,12 @@ export const localStars: LocalStar[] = [
       -118.641,
       102.699
     ],
+    "velocityLyPerYear": [
+      0.00001676442,
+      -0.00001872135,
+      0.00009083445
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21789,6 +30497,12 @@ export const localStars: LocalStar[] = [
       -130.893,
       -139.067
     ],
+    "velocityLyPerYear": [
+      -0.0001991509,
+      -0.0000600127,
+      0.0001840824
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21804,6 +30518,12 @@ export const localStars: LocalStar[] = [
       150.887,
       107.631
     ],
+    "velocityLyPerYear": [
+      -0.00009562894,
+      -0.00005410928,
+      0.0001191122
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21819,6 +30539,12 @@ export const localStars: LocalStar[] = [
       -150.488,
       15.636
     ],
+    "velocityLyPerYear": [
+      -0.00003343099,
+      0.00003091959,
+      0.0003317659
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21834,6 +30560,12 @@ export const localStars: LocalStar[] = [
       -92.636,
       106.348
     ],
+    "velocityLyPerYear": [
+      0.00004589015,
+      6.849276e-7,
+      0.0001171552
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21849,6 +30581,12 @@ export const localStars: LocalStar[] = [
       -131.22,
       140.25
     ],
+    "velocityLyPerYear": [
+      -0.00007707066,
+      0.0001076315,
+      0.0002688504
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21864,6 +30602,12 @@ export const localStars: LocalStar[] = [
       -44.619,
       -172.555
     ],
+    "velocityLyPerYear": [
+      -0.00003202852,
+      0.000001304624,
+      0.0000131767
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21879,6 +30623,12 @@ export const localStars: LocalStar[] = [
       84.162,
       -166.174
     ],
+    "velocityLyPerYear": [
+      -0.00009083445,
+      -0.0001477813,
+      0.0001748848
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21894,6 +30644,12 @@ export const localStars: LocalStar[] = [
       63.207,
       -165.573
     ],
+    "velocityLyPerYear": [
+      0.00001112192,
+      0.000001043699,
+      0.0001311473
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21909,6 +30665,12 @@ export const localStars: LocalStar[] = [
       28.41,
       115.055
     ],
+    "velocityLyPerYear": [
+      0.00000704497,
+      -0.000007990822,
+      0.00005423974
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21924,6 +30686,12 @@ export const localStars: LocalStar[] = [
       -129.451,
       -137.891
     ],
+    "velocityLyPerYear": [
+      0.00003372453,
+      -0.000002413554,
+      0.00007253709
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21939,6 +30707,12 @@ export const localStars: LocalStar[] = [
       64.868,
       -83.818
     ],
+    "velocityLyPerYear": [
+      0.0001252765,
+      -0.00005887116,
+      0.00003212637
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21954,6 +30728,12 @@ export const localStars: LocalStar[] = [
       -27.153,
       82.737
     ],
+    "velocityLyPerYear": [
+      0.00001989552,
+      -0.000004435722,
+      0.0001571093
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21969,6 +30749,12 @@ export const localStars: LocalStar[] = [
       -132.834,
       130.404
     ],
+    "velocityLyPerYear": [
+      -0.00007521157,
+      -0.00007237402,
+      0.0003314071
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21984,6 +30770,12 @@ export const localStars: LocalStar[] = [
       -187.453,
       -49.807
     ],
+    "velocityLyPerYear": [
+      0.00000652312,
+      -0.00001125238,
+      -0.00002198291
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -21999,6 +30791,12 @@ export const localStars: LocalStar[] = [
       105.545,
       116.844
     ],
+    "velocityLyPerYear": [
+      0.000002837557,
+      -0.00004279167,
+      0.00006914507
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22014,6 +30812,12 @@ export const localStars: LocalStar[] = [
       181.03,
       26.612
     ],
+    "velocityLyPerYear": [
+      -0.00006177395,
+      -0.00002769064,
+      0.00005198927
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22029,6 +30833,12 @@ export const localStars: LocalStar[] = [
       -108.091,
       -137.435
     ],
+    "velocityLyPerYear": [
+      -0.00000518588,
+      -0.00002886481,
+      0.000002283092
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22044,6 +30854,12 @@ export const localStars: LocalStar[] = [
       92.27,
       -42.001
     ],
+    "velocityLyPerYear": [
+      0.000009328062,
+      0.0001294839,
+      0.000181571
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22059,6 +30875,12 @@ export const localStars: LocalStar[] = [
       -56.971,
       -119.609
     ],
+    "velocityLyPerYear": [
+      0.00004938002,
+      -0.000006784045,
+      -0.000002544017
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22074,6 +30896,12 @@ export const localStars: LocalStar[] = [
       -128.874,
       -95.558
     ],
+    "velocityLyPerYear": [
+      0.000058969,
+      0.000008414825,
+      0.00004562922
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22089,6 +30917,12 @@ export const localStars: LocalStar[] = [
       114.987,
       48.081
     ],
+    "velocityLyPerYear": [
+      0.000007273279,
+      -0.00008887751,
+      0.0001784399
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22104,6 +30938,12 @@ export const localStars: LocalStar[] = [
       -172.564,
       -96.133
     ],
+    "velocityLyPerYear": [
+      -0.0000426612,
+      -0.00007576604,
+      0.00007273279
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22119,6 +30959,12 @@ export const localStars: LocalStar[] = [
       11.757,
       -47.578
     ],
+    "velocityLyPerYear": [
+      -0.00005368528,
+      -0.00005427236,
+      0.0004538135
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22134,6 +30980,12 @@ export const localStars: LocalStar[] = [
       -28.552,
       -194.741
     ],
+    "velocityLyPerYear": [
+      -0.000006588351,
+      -0.0003177738,
+      -0.00007720113
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22149,6 +31001,12 @@ export const localStars: LocalStar[] = [
       -68.35,
       -171.241
     ],
+    "velocityLyPerYear": [
+      -0.00001333978,
+      -0.00004386798,
+      0.00002110229
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22164,6 +31022,12 @@ export const localStars: LocalStar[] = [
       -173.421,
       -42.459
     ],
+    "velocityLyPerYear": [
+      0.000004142181,
+      -0.0001399535,
+      -0.00007857098
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22179,6 +31043,12 @@ export const localStars: LocalStar[] = [
       171.629,
       25.058
     ],
+    "velocityLyPerYear": [
+      -0.00001937367,
+      -0.000157142,
+      -0.00009739018
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22194,6 +31064,12 @@ export const localStars: LocalStar[] = [
       88.833,
       113.3
     ],
+    "velocityLyPerYear": [
+      -0.00006236103,
+      -8.806212e-7,
+      0.00008920367
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22209,6 +31085,12 @@ export const localStars: LocalStar[] = [
       -198.748,
       15.594
     ],
+    "velocityLyPerYear": [
+      -0.000003163713,
+      -0.000108349,
+      -0.00008029961
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22224,6 +31106,12 @@ export const localStars: LocalStar[] = [
       -184.717,
       -65.696
     ],
+    "velocityLyPerYear": [
+      0.0000606324,
+      0.0000273971,
+      0.00004305259
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22239,6 +31127,12 @@ export const localStars: LocalStar[] = [
       -21.295,
       -39.787
     ],
+    "velocityLyPerYear": [
+      -0.00001151331,
+      -0.000190736,
+      0.00004853201
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22254,6 +31148,12 @@ export const localStars: LocalStar[] = [
       7.361,
       -187.753
     ],
+    "velocityLyPerYear": [
+      -0.00001027391,
+      -0.00008333286,
+      8.480056e-7
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22269,6 +31169,12 @@ export const localStars: LocalStar[] = [
       -20.609,
       -195.069
     ],
+    "velocityLyPerYear": [
+      -0.00001927582,
+      -0.000008316978,
+      0.0003177412
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22284,6 +31190,12 @@ export const localStars: LocalStar[] = [
       -31.854,
       -196.541
     ],
+    "velocityLyPerYear": [
+      -0.00001953674,
+      0.00002557063,
+      0.0001468354
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22299,6 +31211,12 @@ export const localStars: LocalStar[] = [
       92.203,
       -118.926
     ],
+    "velocityLyPerYear": [
+      0.00002527709,
+      -0.00001741673,
+      0.00008832304
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22314,6 +31232,12 @@ export const localStars: LocalStar[] = [
       114.716,
       107.129
     ],
+    "velocityLyPerYear": [
+      0.00006611182,
+      0.00008359378,
+      0.0002302988
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22329,6 +31253,12 @@ export const localStars: LocalStar[] = [
       188.445,
       -13.594
     ],
+    "velocityLyPerYear": [
+      -0.00002211338,
+      -0.00005169573,
+      0.000058969
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22344,6 +31274,12 @@ export const localStars: LocalStar[] = [
       -45.184,
       -195.239
     ],
+    "velocityLyPerYear": [
+      0.00003861687,
+      -0.00000110893,
+      -0.00002377677
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22359,6 +31295,12 @@ export const localStars: LocalStar[] = [
       -47.498,
       170.37
     ],
+    "velocityLyPerYear": [
+      0.0000376384,
+      -0.0001550219,
+      0.0001814406
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22374,6 +31316,12 @@ export const localStars: LocalStar[] = [
       144.068,
       -127.721
     ],
+    "velocityLyPerYear": [
+      0.000006588351,
+      -0.00001258962,
+      0.00006754691
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22389,6 +31337,12 @@ export const localStars: LocalStar[] = [
       -111.309,
       -95.164
     ],
+    "velocityLyPerYear": [
+      -0.00002002598,
+      -0.00008166946,
+      0.00005123911
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22404,6 +31358,12 @@ export const localStars: LocalStar[] = [
       -151.195,
       -130.94
     ],
+    "velocityLyPerYear": [
+      -0.0001017933,
+      -0.00009399816,
+      -0.00001193731
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22419,6 +31379,12 @@ export const localStars: LocalStar[] = [
       38.403,
       -67.445
     ],
+    "velocityLyPerYear": [
+      0.00004928217,
+      -0.000006294811,
+      0.00006379611
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22434,6 +31400,12 @@ export const localStars: LocalStar[] = [
       -127.281,
       -158.1
     ],
+    "velocityLyPerYear": [
+      -0.00001813427,
+      0.00001177423,
+      0.00009960804
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22449,6 +31421,12 @@ export const localStars: LocalStar[] = [
       -86.057,
       17.098
     ],
+    "velocityLyPerYear": [
+      -0.0001947804,
+      -0.0003525746,
+      -0.00001291578
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22464,6 +31442,12 @@ export const localStars: LocalStar[] = [
       202.103,
       -15.864
     ],
+    "velocityLyPerYear": [
+      0.00002426601,
+      -0.00002684264,
+      -0.00002576632
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22479,6 +31463,12 @@ export const localStars: LocalStar[] = [
       -193.361,
       16.385
     ],
+    "velocityLyPerYear": [
+      -0.00002961496,
+      -0.0001178728,
+      -0.00000296802
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22494,6 +31484,12 @@ export const localStars: LocalStar[] = [
       -32.1,
       -203.095
     ],
+    "velocityLyPerYear": [
+      0.00005052156,
+      0.00005485944,
+      0.0000169275
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22509,6 +31505,12 @@ export const localStars: LocalStar[] = [
       130.663,
       160.138
     ],
+    "velocityLyPerYear": [
+      0.00002677741,
+      -0.00006200226,
+      -0.00003682301
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22524,6 +31526,12 @@ export const localStars: LocalStar[] = [
       -96.415,
       135.052
     ],
+    "velocityLyPerYear": [
+      0.00002080875,
+      0.00003966057,
+      0.0001755045
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22539,6 +31547,12 @@ export const localStars: LocalStar[] = [
       -34.272,
       -152.461
     ],
+    "velocityLyPerYear": [
+      -0.00001519887,
+      -0.00002628817,
+      0.00006500289
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22554,6 +31568,12 @@ export const localStars: LocalStar[] = [
       178.844,
       42.428
     ],
+    "velocityLyPerYear": [
+      0.00004513999,
+      0.000005218496,
+      -0.00002775588
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22569,6 +31589,12 @@ export const localStars: LocalStar[] = [
       -145.449,
       101.8
     ],
+    "velocityLyPerYear": [
+      -0.00007110201,
+      -0.0002689156,
+      -0.00009814034
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22584,6 +31610,12 @@ export const localStars: LocalStar[] = [
       35.344,
       161.921
     ],
+    "velocityLyPerYear": [
+      -0.00004272644,
+      -0.00003920395,
+      0.00003356145
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22599,6 +31631,12 @@ export const localStars: LocalStar[] = [
       -13.658,
       190.472
     ],
+    "velocityLyPerYear": [
+      0.00002788634,
+      -0.0000549899,
+      -0.00005668591
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22614,6 +31652,12 @@ export const localStars: LocalStar[] = [
       112.907,
       129.441
     ],
+    "velocityLyPerYear": [
+      0.00003496392,
+      -0.00001314409,
+      -0.00003166975
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22629,6 +31673,12 @@ export const localStars: LocalStar[] = [
       92.19,
       -16.716
     ],
+    "velocityLyPerYear": [
+      -0.00002573371,
+      0.00002798418,
+      0.0001419105
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22644,6 +31694,12 @@ export const localStars: LocalStar[] = [
       -116.497,
       -124.186
     ],
+    "velocityLyPerYear": [
+      0.00001294839,
+      -0.0001235153,
+      0.0001287664
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22659,6 +31715,12 @@ export const localStars: LocalStar[] = [
       -61.128,
       70.084
     ],
+    "velocityLyPerYear": [
+      -0.00002632079,
+      0.000008708365,
+      0.0001170574
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22674,6 +31736,12 @@ export const localStars: LocalStar[] = [
       -128.117,
       -87.711
     ],
+    "velocityLyPerYear": [
+      0.00004037811,
+      -0.000005805577,
+      0.00009034521
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22689,6 +31757,12 @@ export const localStars: LocalStar[] = [
       -204.499,
       11.592
     ],
+    "velocityLyPerYear": [
+      -0.00006992785,
+      0.00001976505,
+      0.0001248525
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22704,6 +31778,12 @@ export const localStars: LocalStar[] = [
       -107.132,
       123.57
     ],
+    "velocityLyPerYear": [
+      0.00003718178,
+      -0.00002981066,
+      -0.00003108267
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22719,6 +31799,12 @@ export const localStars: LocalStar[] = [
       -81.188,
       191.7
     ],
+    "velocityLyPerYear": [
+      -0.00002534232,
+      -0.0000704497,
+      -0.00001999336
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22734,6 +31820,12 @@ export const localStars: LocalStar[] = [
       -108.749,
       171.799
     ],
+    "velocityLyPerYear": [
+      0.0000407695,
+      -0.0000045988,
+      -0.00003525746
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22749,6 +31841,12 @@ export const localStars: LocalStar[] = [
       -15.768,
       -74.908
     ],
+    "velocityLyPerYear": [
+      -0.000008610518,
+      -0.0001265159,
+      -0.00007247186
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22764,6 +31862,12 @@ export const localStars: LocalStar[] = [
       -205.967,
       48.648
     ],
+    "velocityLyPerYear": [
+      0.00002661433,
+      -0.00001888443,
+      0.0001374421
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22779,6 +31883,12 @@ export const localStars: LocalStar[] = [
       17.092,
       -176.806
     ],
+    "velocityLyPerYear": [
+      -0.00003264822,
+      -0.0000529025,
+      -0.00002713618
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22794,6 +31904,12 @@ export const localStars: LocalStar[] = [
       107.863,
       -61.047
     ],
+    "velocityLyPerYear": [
+      0.00002827773,
+      -0.0000167318,
+      0.000004566184
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22809,6 +31925,12 @@ export const localStars: LocalStar[] = [
       153.021,
       52.818
     ],
+    "velocityLyPerYear": [
+      -0.00004628154,
+      -0.00002459216,
+      0.0000183952
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22824,6 +31946,12 @@ export const localStars: LocalStar[] = [
       -139.707,
       -57.78
     ],
+    "velocityLyPerYear": [
+      0.000008088669,
+      -0.0000876055,
+      0.00004722739
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22839,6 +31967,12 @@ export const localStars: LocalStar[] = [
       -114.896,
       78.265
     ],
+    "velocityLyPerYear": [
+      0.00003571408,
+      -0.00005864285,
+      -0.00006927553
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22854,6 +31988,12 @@ export const localStars: LocalStar[] = [
       207.581,
       -8.047
     ],
+    "velocityLyPerYear": [
+      -0.00007139555,
+      -0.00001301362,
+      0.000170286
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22869,6 +32009,12 @@ export const localStars: LocalStar[] = [
       -116.937,
       -52.501
     ],
+    "velocityLyPerYear": [
+      0.00002211338,
+      -0.00004931479,
+      -0.00004308521
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22884,6 +32030,12 @@ export const localStars: LocalStar[] = [
       42.239,
       127.258
     ],
+    "velocityLyPerYear": [
+      -0.00003290914,
+      -0.0000671229,
+      0.0001424976
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22899,6 +32051,12 @@ export const localStars: LocalStar[] = [
       -214.706,
       -17.212
     ],
+    "velocityLyPerYear": [
+      0.00006392658,
+      0.00004628154,
+      -0.0001608601
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22914,6 +32072,12 @@ export const localStars: LocalStar[] = [
       -144.478,
       -130.219
     ],
+    "velocityLyPerYear": [
+      -0.00002273307,
+      -0.00003685563,
+      0.00009089968
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22929,6 +32093,12 @@ export const localStars: LocalStar[] = [
       -68.971,
       -162.806
     ],
+    "velocityLyPerYear": [
+      -0.0000179712,
+      -0.00006624228,
+      0.00006751429
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22944,6 +32114,12 @@ export const localStars: LocalStar[] = [
       45.947,
       -82.591
     ],
+    "velocityLyPerYear": [
+      0.00009357416,
+      -0.000006327426,
+      0.0001840172
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22959,6 +32135,12 @@ export const localStars: LocalStar[] = [
       -211.639,
       0.338
     ],
+    "velocityLyPerYear": [
+      -0.0001632085,
+      -0.0001197319,
+      -0.0000606324
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22974,6 +32156,12 @@ export const localStars: LocalStar[] = [
       -179.522,
       -110.1
     ],
+    "velocityLyPerYear": [
+      -0.00003949749,
+      0.0001014997,
+      0.0001577617
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -22989,6 +32177,12 @@ export const localStars: LocalStar[] = [
       -177.846,
       -78.392
     ],
+    "velocityLyPerYear": [
+      0.00003750794,
+      0.0000045988,
+      -0.00002811465
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23004,6 +32198,12 @@ export const localStars: LocalStar[] = [
       -207.08,
       -68.354
     ],
+    "velocityLyPerYear": [
+      -0.00003153929,
+      -0.000002804942,
+      0.0001730584
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23019,6 +32219,12 @@ export const localStars: LocalStar[] = [
       -182.293,
       21.87
     ],
+    "velocityLyPerYear": [
+      0.00005055418,
+      0.000005675114,
+      0.0001064573
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23034,6 +32240,12 @@ export const localStars: LocalStar[] = [
       -188.804,
       104.236
     ],
+    "velocityLyPerYear": [
+      -0.00001627518,
+      0.00002361369,
+      0.00004833632
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23049,6 +32261,12 @@ export const localStars: LocalStar[] = [
       -147.875,
       -131.092
     ],
+    "velocityLyPerYear": [
+      -0.0001408342,
+      0.00005978439,
+      0.0000719174
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23064,6 +32282,12 @@ export const localStars: LocalStar[] = [
       -202.313,
       39.994
     ],
+    "velocityLyPerYear": [
+      0.000006392658,
+      0.00007886452,
+      0.00009540063
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23079,6 +32303,12 @@ export const localStars: LocalStar[] = [
       147.359,
       153.416
     ],
+    "velocityLyPerYear": [
+      0.00001125238,
+      0.0001201885,
+      0.00001780812
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23094,6 +32324,12 @@ export const localStars: LocalStar[] = [
       -187.656,
       -56.988
     ],
+    "velocityLyPerYear": [
+      0.00008542026,
+      -0.00009872742,
+      -0.00004168274
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23109,6 +32345,12 @@ export const localStars: LocalStar[] = [
       -156.421,
       -133.469
     ],
+    "velocityLyPerYear": [
+      -0.00007018877,
+      -0.00003692086,
+      0.0002131103
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23124,6 +32366,12 @@ export const localStars: LocalStar[] = [
       -166.224,
       -125.121
     ],
+    "velocityLyPerYear": [
+      0.00003447469,
+      0.000007990822,
+      -0.00002811465
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23139,6 +32387,12 @@ export const localStars: LocalStar[] = [
       43.472,
       -188.055
     ],
+    "velocityLyPerYear": [
+      -0.00001320932,
+      -0.00001307886,
+      0.00009474832
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23154,6 +32408,12 @@ export const localStars: LocalStar[] = [
       -124.123,
       -148.321
     ],
+    "velocityLyPerYear": [
+      0.00004602061,
+      0.00003131098,
+      0.00005508775
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23169,6 +32429,12 @@ export const localStars: LocalStar[] = [
       48.87,
       -176.482
     ],
+    "velocityLyPerYear": [
+      0.0000305282,
+      -0.000003228944,
+      -0.00003023466
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23184,6 +32450,12 @@ export const localStars: LocalStar[] = [
       92.852,
       193.419
     ],
+    "velocityLyPerYear": [
+      -0.00008033222,
+      -0.00004197628,
+      0.0002340495
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23199,6 +32471,12 @@ export const localStars: LocalStar[] = [
       23.116,
       36.935
     ],
+    "velocityLyPerYear": [
+      0.00003144144,
+      -0.00001536195,
+      0.00009393293
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23214,6 +32492,12 @@ export const localStars: LocalStar[] = [
       55.751,
       -165.857
     ],
+    "velocityLyPerYear": [
+      -0.00001510102,
+      -0.000009034521,
+      0.00009546586
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23229,6 +32513,12 @@ export const localStars: LocalStar[] = [
       -167.757,
       -39.187
     ],
+    "velocityLyPerYear": [
+      -0.000004827109,
+      -0.000007795128,
+      0.0000503911
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23244,6 +32534,12 @@ export const localStars: LocalStar[] = [
       -200.26,
       -90.965
     ],
+    "velocityLyPerYear": [
+      -0.00005613145,
+      -0.00003225683,
+      0.00006699244
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23259,6 +32555,12 @@ export const localStars: LocalStar[] = [
       -213.476,
       -20.922
     ],
+    "velocityLyPerYear": [
+      0.00006255672,
+      -0.0001270704,
+      0.0001489228
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23274,6 +32576,12 @@ export const localStars: LocalStar[] = [
       100.103,
       -169.993
     ],
+    "velocityLyPerYear": [
+      -0.00003864949,
+      -0.0001044352,
+      0.00009605294
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23289,6 +32597,12 @@ export const localStars: LocalStar[] = [
       -207.861,
       18.447
     ],
+    "velocityLyPerYear": [
+      -0.00003877995,
+      -0.00003193067,
+      -7.175432e-7
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23304,6 +32618,12 @@ export const localStars: LocalStar[] = [
       100.193,
       174.778
     ],
+    "velocityLyPerYear": [
+      0.00001376378,
+      -0.00001800381,
+      0.00005172834
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23319,6 +32639,12 @@ export const localStars: LocalStar[] = [
       -128.325,
       9.46
     ],
+    "velocityLyPerYear": [
+      0.00005068464,
+      -0.0000602084,
+      0.0001483031
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23334,6 +32660,12 @@ export const localStars: LocalStar[] = [
       2.833,
       145.559
     ],
+    "velocityLyPerYear": [
+      0.00006363304,
+      -0.00001813427,
+      0.0000740048
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23349,6 +32681,12 @@ export const localStars: LocalStar[] = [
       -144.931,
       -60.298
     ],
+    "velocityLyPerYear": [
+      -0.00002723403,
+      -0.00006138256,
+      0.0000637635
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23364,6 +32702,12 @@ export const localStars: LocalStar[] = [
       58.06,
       -163.018
     ],
+    "velocityLyPerYear": [
+      0.00001060007,
+      -0.00003581193,
+      -0.00004468337
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23379,6 +32723,12 @@ export const localStars: LocalStar[] = [
       -105.486,
       -160.109
     ],
+    "velocityLyPerYear": [
+      0.00003232206,
+      0.00003600762,
+      0.00006953646
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23394,6 +32744,12 @@ export const localStars: LocalStar[] = [
       34.729,
       211.682
     ],
+    "velocityLyPerYear": [
+      0.00002605986,
+      -0.00002155891,
+      0.00008029961
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23409,6 +32765,12 @@ export const localStars: LocalStar[] = [
       6.063,
       -113.823
     ],
+    "velocityLyPerYear": [
+      0.0000148401,
+      -0.00002328754,
+      -0.00001330716
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23424,6 +32786,12 @@ export const localStars: LocalStar[] = [
       145.958,
       -122.335
     ],
+    "velocityLyPerYear": [
+      -0.00001017607,
+      -0.00006754691,
+      0.00005225019
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23439,6 +32807,12 @@ export const localStars: LocalStar[] = [
       -112.775,
       79.857
     ],
+    "velocityLyPerYear": [
+      -0.00001627518,
+      0.00003727963,
+      0.0001364311
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23454,6 +32828,12 @@ export const localStars: LocalStar[] = [
       -100.903,
       -198.283
     ],
+    "velocityLyPerYear": [
+      8.806212e-7,
+      -0.00003587716,
+      0.00006059978
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23469,6 +32849,12 @@ export const localStars: LocalStar[] = [
       -76.635,
       -160.342
     ],
+    "velocityLyPerYear": [
+      -0.0000192432,
+      -0.00004611846,
+      0.00005815361
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23484,6 +32870,12 @@ export const localStars: LocalStar[] = [
       41.716,
       -180.717
     ],
+    "velocityLyPerYear": [
+      0.000009425908,
+      -0.00001973244,
+      0.0001484988
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23499,6 +32891,12 @@ export const localStars: LocalStar[] = [
       190.409,
       22.128
     ],
+    "velocityLyPerYear": [
+      0.00001219823,
+      -0.00003075651,
+      0.00005877331
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23514,6 +32912,12 @@ export const localStars: LocalStar[] = [
       -48.912,
       31.884
     ],
+    "velocityLyPerYear": [
+      -0.000009393293,
+      0.00002149368,
+      0.0001113823
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23529,6 +32933,12 @@ export const localStars: LocalStar[] = [
       -155.069,
       126.859
     ],
+    "velocityLyPerYear": [
+      0.00001405732,
+      0.00002106968,
+      0.00002420078
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23544,6 +32954,12 @@ export const localStars: LocalStar[] = [
       208.626,
       -88.363
     ],
+    "velocityLyPerYear": [
+      -0.00001353547,
+      -0.00006917769,
+      0.00008222393
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23559,6 +32975,12 @@ export const localStars: LocalStar[] = [
       -122.247,
       -136.187
     ],
+    "velocityLyPerYear": [
+      0.00003440946,
+      -0.00003222421,
+      -0.00003727963
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23574,6 +32996,12 @@ export const localStars: LocalStar[] = [
       91.285,
       52.065
     ],
+    "velocityLyPerYear": [
+      0.000002120014,
+      -0.00006030624,
+      -0.00004970617
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23589,6 +33017,12 @@ export const localStars: LocalStar[] = [
       -199.855,
       -10.566
     ],
+    "velocityLyPerYear": [
+      -0.00009810772,
+      0.00006503551,
+      0.000182256
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23604,6 +33038,12 @@ export const localStars: LocalStar[] = [
       145.419,
       178.506
     ],
+    "velocityLyPerYear": [
+      -0.000008512672,
+      0.00002139583,
+      0.0000259294
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23619,6 +33059,12 @@ export const localStars: LocalStar[] = [
       152.624,
       71.314
     ],
+    "velocityLyPerYear": [
+      0.0001078924,
+      -0.00001790596,
+      0.00004970617
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23634,6 +33080,12 @@ export const localStars: LocalStar[] = [
       -152.368,
       -56.595
     ],
+    "velocityLyPerYear": [
+      0.000006718814,
+      -0.0001426606,
+      0.000009752064
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23649,6 +33101,12 @@ export const localStars: LocalStar[] = [
       198.074,
       -10.601
     ],
+    "velocityLyPerYear": [
+      -0.00008930151,
+      -0.0001126543,
+      0.00002270046
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23664,6 +33122,12 @@ export const localStars: LocalStar[] = [
       -90.885,
       -63.18
     ],
+    "velocityLyPerYear": [
+      0.00006578567,
+      -0.0000163078,
+      0.0000439006
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23679,6 +33143,12 @@ export const localStars: LocalStar[] = [
       124.548,
       -190.515
     ],
+    "velocityLyPerYear": [
+      -0.000005153265,
+      0.000005870808,
+      -0.0000378341
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23694,6 +33164,12 @@ export const localStars: LocalStar[] = [
       88.698,
       212.919
     ],
+    "velocityLyPerYear": [
+      -0.00008512672,
+      -0.00004259597,
+      0.0002088051
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23709,6 +33185,12 @@ export const localStars: LocalStar[] = [
       -47.678,
       221.958
     ],
+    "velocityLyPerYear": [
+      -0.00001206777,
+      -0.00005150003,
+      0.00007857098
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23724,6 +33206,12 @@ export const localStars: LocalStar[] = [
       -102.545,
       160.493
     ],
+    "velocityLyPerYear": [
+      -0.00003473561,
+      -0.00005805577,
+      0.0000836264
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23739,6 +33227,12 @@ export const localStars: LocalStar[] = [
       -121.559,
       53.27
     ],
+    "velocityLyPerYear": [
+      -0.00003780148,
+      0.00002860388,
+      0.00008414825
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23754,6 +33248,12 @@ export const localStars: LocalStar[] = [
       -43.016,
       44.005
     ],
+    "velocityLyPerYear": [
+      -0.00001859089,
+      -0.0001273965,
+      -0.00001164377
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23769,6 +33269,12 @@ export const localStars: LocalStar[] = [
       -160.286,
       63.928
     ],
+    "velocityLyPerYear": [
+      -0.00008333286,
+      -0.0002306575,
+      -0.00005606622
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23784,6 +33290,12 @@ export const localStars: LocalStar[] = [
       -128.921,
       194.34
     ],
+    "velocityLyPerYear": [
+      0.00003127836,
+      -0.00004416152,
+      -0.00003832333
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23799,6 +33311,12 @@ export const localStars: LocalStar[] = [
       -106.168,
       -192.67
     ],
+    "velocityLyPerYear": [
+      -0.0000209066,
+      0.000004109566,
+      0.0001163072
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23814,6 +33332,12 @@ export const localStars: LocalStar[] = [
       -164.04,
       -130.603
     ],
+    "velocityLyPerYear": [
+      0.000005577268,
+      -0.00004990187,
+      0.00001333978
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23829,6 +33353,12 @@ export const localStars: LocalStar[] = [
       -67.816,
       89.28
     ],
+    "velocityLyPerYear": [
+      -0.00003489869,
+      -0.0001256353,
+      0.0001741673
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23844,6 +33374,12 @@ export const localStars: LocalStar[] = [
       -40.928,
       -123.302
     ],
+    "velocityLyPerYear": [
+      0.0000391061,
+      0.00001027391,
+      0.00005864285
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23859,6 +33395,12 @@ export const localStars: LocalStar[] = [
       -42.157,
       108.047
     ],
+    "velocityLyPerYear": [
+      -0.000001402471,
+      -0.00004801016,
+      0.00004921694
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23874,6 +33416,12 @@ export const localStars: LocalStar[] = [
       -22.329,
       223.963
     ],
+    "velocityLyPerYear": [
+      0.00001467702,
+      0.00003029989,
+      -0.00002240692
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23889,6 +33437,12 @@ export const localStars: LocalStar[] = [
       -209.951,
       -1.393
     ],
+    "velocityLyPerYear": [
+      -0.000005512036,
+      0.000009067137,
+      0.0001736781
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23904,6 +33458,12 @@ export const localStars: LocalStar[] = [
       53.237,
       -180.105
     ],
+    "velocityLyPerYear": [
+      0.00001448133,
+      0.000005609883,
+      0.0001225042
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23919,6 +33479,12 @@ export const localStars: LocalStar[] = [
       -217.467,
       -79.779
     ],
+    "velocityLyPerYear": [
+      0.0000275928,
+      -0.0001609906,
+      0.00004005196
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23934,6 +33500,12 @@ export const localStars: LocalStar[] = [
       -58.153,
       -155.338
     ],
+    "velocityLyPerYear": [
+      -0.00003851902,
+      -0.00001327455,
+      0.00006770999
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23949,6 +33521,12 @@ export const localStars: LocalStar[] = [
       196.829,
       134.199
     ],
+    "velocityLyPerYear": [
+      0.000003326791,
+      -0.00002188507,
+      -0.00003904087
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23964,6 +33542,12 @@ export const localStars: LocalStar[] = [
       -219.866,
       -80.944
     ],
+    "velocityLyPerYear": [
+      -0.00008851874,
+      -0.0001771353,
+      0.0001442588
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23979,6 +33563,12 @@ export const localStars: LocalStar[] = [
       -69.798,
       85.107
     ],
+    "velocityLyPerYear": [
+      3.26156e-7,
+      -0.0001081859,
+      0.00002465739
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -23994,6 +33584,12 @@ export const localStars: LocalStar[] = [
       -108.603,
       -209.012
     ],
+    "velocityLyPerYear": [
+      0.00007113462,
+      -0.00003284391,
+      -0.00005257635
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   },
   {
@@ -24009,6 +33605,12 @@ export const localStars: LocalStar[] = [
       -226.239,
       61.964
     ],
+    "velocityLyPerYear": [
+      1.956936e-7,
+      -0.00005570744,
+      -0.00003519223
+    ],
+    "hasMeasuredMotion": true,
     "fact": "Its catalog distance and 3D position come from the HYG star database."
   }
 ]
